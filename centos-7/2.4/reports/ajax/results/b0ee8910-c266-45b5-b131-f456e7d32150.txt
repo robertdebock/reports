@@ -1,0 +1,36 @@
+{
+  "data": [
+    [
+      "\n<div class=\"pull-left\">Create Dockerfiles from image names</div>\n", 
+      "localhost", 
+      "<a href=\"#\" data-toggle=\"modal\" data-target=\"#file_modal\" data-load=\"27a15697-71b1-4912-ac73-3a9062bc4a1c/#line-13\">template</a>\n", 
+      "0:00:00", 
+      "0:00:00", 
+      "<a href=\"#\" data-toggle=\"modal\" data-target=\"#task_result_modal\" data-load=\"b27af59a-c08a-47fb-8063-1eaee1375b66/\"><span class=\"changed label\">CHANGED</span></a>"
+    ], 
+    [
+      "\n<div class=\"pull-left\">Discover local Docker images</div>\n", 
+      "localhost", 
+      "<a href=\"#\" data-toggle=\"modal\" data-target=\"#file_modal\" data-load=\"27a15697-71b1-4912-ac73-3a9062bc4a1c/#line-20\">docker_image_facts</a>\n", 
+      "0:00:00", 
+      "0:00:00", 
+      "<a href=\"#\" data-toggle=\"modal\" data-target=\"#task_result_modal\" data-load=\"1f3887bc-a9e7-4bdc-8c83-9f723e2ac1b0/\"><span class=\"ok label\">OK</span></a>"
+    ], 
+    [
+      "\n<div class=\"pull-left\">Build an Ansible compatible image</div>\n", 
+      "localhost", 
+      "<a href=\"#\" data-toggle=\"modal\" data-target=\"#file_modal\" data-load=\"27a15697-71b1-4912-ac73-3a9062bc4a1c/#line-26\">docker_image</a>\n", 
+      "0:00:01", 
+      "0:00:07", 
+      "<a href=\"#\" data-toggle=\"modal\" data-target=\"#task_result_modal\" data-load=\"53c6b9e4-93ed-4b5b-9193-7ceafac73dbb/\"><span class=\"changed label\">CHANGED</span></a>"
+    ], 
+    [
+      "\n<div class=\"pull-left\">Create molecule instance(s)</div>\n", 
+      "localhost", 
+      "<a href=\"#\" data-toggle=\"modal\" data-target=\"#file_modal\" data-load=\"27a15697-71b1-4912-ac73-3a9062bc4a1c/#line-35\">docker_container</a>\n", 
+      "0:00:08", 
+      "0:00:00", 
+      "<a href=\"#\" data-toggle=\"modal\" data-target=\"#task_result_modal\" data-load=\"6edd0493-3e82-4544-aca6-4f51ea3572d7/\"><span class=\"changed label\">CHANGED</span></a>"
+    ]
+  ]
+}

@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html class="layout-pf">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="ARA | Ansible Run Analysis records Ansible playbook runs seamlessly to make them easier to visualize, understand and troubleshoot">
+    <title>ARA | Ansible Run Analysis</title>
+    <script src="../../static/packaged/jquery/jquery.min.js"></script>
+    <script src="../../static/packaged/datatables/js/jquery.dataTables.min.js"></script>
+    <script src="../../static/packaged/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../../static/packaged/patternfly_bootstrap_treeview/js/bootstrap-treeview.min.js"></script>
+    <script src="../../static/packaged/patternfly/js/patternfly.min.js"></script>
+    <script src="../../static/js/ara.js"></script>
+    <link href="../../static/packaged/patternfly/css/patternfly.min.css" rel="stylesheet">
+    <link href="../../static/packaged/patternfly/css/patternfly-additions.min.css" rel="stylesheet">
+    <link href="../../static/packaged/patternfly_bootstrap_treeview/css/bootstrap-treeview.min.css" rel="stylesheet">
+    <link href="../../static/css/pygments.css" rel="stylesheet">
+    <link href="../../static/css/ara.css" rel="stylesheet">
+    <link rel="shortcut icon" href="../../static/images/favicon.ico">
+</head>
+
+
+
+<body>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12 results">
+          <h2>Task: <strong>ansible-role-bootstrap : install software to support preview modules</strong></h2>
+          <h2>Host: <strong>bootstrap-centos-7</strong></h2>
+          <p>Time: <strong>2018-04-04 16:23:17</strong></p>
+          <p>Ansible version: <strong>2.4.3.0</strong></p>
+          
+          
+              
+    
+        
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    
+    
+
+        <h2>Msg</h2>
+                <div class="codehilite"><pre><span></span>All items completed
+</pre></div>
+
+            <h2>Results</h2>
+                <div class="codehilite"><pre><span></span><span class="p">[</span>
+    <span class="p">{</span>
+        <span class="nt">&quot;_ansible_ignore_errors&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+        <span class="nt">&quot;_ansible_item_result&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span> 
+        <span class="nt">&quot;_ansible_no_log&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+        <span class="nt">&quot;_ansible_parsed&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span> 
+        <span class="nt">&quot;changed&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span> 
+        <span class="nt">&quot;failed&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+        <span class="nt">&quot;invocation&quot;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="nt">&quot;module_args&quot;</span><span class="p">:</span> <span class="p">{</span>
+                <span class="nt">&quot;allow_downgrade&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+                <span class="nt">&quot;conf_file&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                <span class="nt">&quot;disable_gpg_check&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+                <span class="nt">&quot;disablerepo&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                <span class="nt">&quot;enablerepo&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                <span class="nt">&quot;exclude&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                <span class="nt">&quot;install_repoquery&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span> 
+                <span class="nt">&quot;installroot&quot;</span><span class="p">:</span> <span class="s2">&quot;/&quot;</span><span class="p">,</span> 
+                <span class="nt">&quot;list&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="p">[</span>
+                    <span class="s2">&quot;lvm2&quot;</span>
+                <span class="p">],</span> 
+                <span class="nt">&quot;security&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+                <span class="nt">&quot;skip_broken&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+                <span class="nt">&quot;state&quot;</span><span class="p">:</span> <span class="s2">&quot;installed&quot;</span><span class="p">,</span> 
+                <span class="nt">&quot;update_cache&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+                <span class="nt">&quot;validate_certs&quot;</span><span class="p">:</span> <span class="kc">true</span>
+            <span class="p">}</span>
+        <span class="p">},</span> 
+        <span class="nt">&quot;item&quot;</span><span class="p">:</span> <span class="s2">&quot;lvm2&quot;</span><span class="p">,</span> 
+        <span class="nt">&quot;msg&quot;</span><span class="p">:</span> <span class="s2">&quot;Non-fatal POSTIN scriptlet failure in rpm package 7:device-mapper-event-1.02.140-8.el7.x86_64\nNon-fatal POSTIN scriptlet failure in rpm package 7:lvm2-2.02.171-8.el7.x86_64\n&quot;</span><span class="p">,</span> 
+        <span class="nt">&quot;rc&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> 
+        <span class="nt">&quot;results&quot;</span><span class="p">:</span> <span class="p">[</span>
+            <span class="s2">&quot;Loaded plugins: fastestmirror, ovl\nLoading mirror speeds from cached hostfile\n * base: mirror.us.oneandone.net\n * extras: mirrors.cmich.edu\n * updates: mirrors.usinternet.com\nResolving Dependencies\n--&gt; Running transaction check\n---&gt; Package lvm2.x86_64 7:2.02.171-8.el7 will be installed\n--&gt; Processing Dependency: lvm2-libs = 7:2.02.171-8.el7 for package: 7:lvm2-2.02.171-8.el7.x86_64\n--&gt; Processing Dependency: device-mapper-persistent-data &gt;= 0.7.0-0.1.rc6 for package: 7:lvm2-2.02.171-8.el7.x86_64\n--&gt; Processing Dependency: liblvm2app.so.2.2(Base)(64bit) for package: 7:lvm2-2.02.171-8.el7.x86_64\n--&gt; Processing Dependency: libdevmapper-event.so.1.02(Base)(64bit) for package: 7:lvm2-2.02.171-8.el7.x86_64\n--&gt; Processing Dependency: liblvm2app.so.2.2()(64bit) for package: 7:lvm2-2.02.171-8.el7.x86_64\n--&gt; Processing Dependency: libdevmapper-event.so.1.02()(64bit) for package: 7:lvm2-2.02.171-8.el7.x86_64\n--&gt; Running transaction check\n---&gt; Package device-mapper-event-libs.x86_64 7:1.02.140-8.el7 will be installed\n---&gt; Package device-mapper-persistent-data.x86_64 0:0.7.0-0.1.rc6.el7_4.1 will be installed\n--&gt; Processing Dependency: libaio.so.1(LIBAIO_0.4)(64bit) for package: device-mapper-persistent-data-0.7.0-0.1.rc6.el7_4.1.x86_64\n--&gt; Processing Dependency: libaio.so.1(LIBAIO_0.1)(64bit) for package: device-mapper-persistent-data-0.7.0-0.1.rc6.el7_4.1.x86_64\n--&gt; Processing Dependency: libaio.so.1()(64bit) for package: device-mapper-persistent-data-0.7.0-0.1.rc6.el7_4.1.x86_64\n---&gt; Package lvm2-libs.x86_64 7:2.02.171-8.el7 will be installed\n--&gt; Processing Dependency: device-mapper-event = 7:1.02.140-8.el7 for package: 7:lvm2-libs-2.02.171-8.el7.x86_64\n--&gt; Running transaction check\n---&gt; Package device-mapper-event.x86_64 7:1.02.140-8.el7 will be installed\n---&gt; Package libaio.x86_64 0:0.3.109-13.el7 will be installed\n--&gt; Finished Dependency Resolution\n\nDependencies Resolved\n\n================================================================================\n Package                        Arch    Version                  Repository\n                                                                           Size\n================================================================================\nInstalling:\n lvm2                           x86_64  7:2.02.171-8.el7         base     1.3 M\nInstalling for dependencies:\n device-mapper-event            x86_64  7:1.02.140-8.el7         base     180 k\n device-mapper-event-libs       x86_64  7:1.02.140-8.el7         base     179 k\n device-mapper-persistent-data  x86_64  0.7.0-0.1.rc6.el7_4.1    updates  400 k\n libaio                         x86_64  0.3.109-13.el7           base      24 k\n lvm2-libs                      x86_64  7:2.02.171-8.el7         base     1.0 M\n\nTransaction Summary\n================================================================================\nInstall  1 Package (+5 Dependent packages)\n\nTotal download size: 3.1 M\nInstalled size: 7.7 M\nDownloading packages:\n--------------------------------------------------------------------------------\nTotal                                              435 kB/s | 3.1 MB  00:07     \nRunning transaction check\nRunning transaction test\nTransaction test succeeded\nRunning transaction\n  Installing : 7:device-mapper-event-libs-1.02.140-8.el7.x86_64             1/6 \n  Installing : 7:device-mapper-event-1.02.140-8.el7.x86_64                  2/6 \nFailed to get D-Bus connection: Operation not permitted\nwarning: %post(device-mapper-event-7:1.02.140-8.el7.x86_64) scriptlet failed, exit status 1\n  Installing : 7:lvm2-libs-2.02.171-8.el7.x86_64                            3/6 \n  Installing : libaio-0.3.109-13.el7.x86_64                                 4/6 \n  Installing : device-mapper-persistent-data-0.7.0-0.1.rc6.el7_4.1.x86_64   5/6 \n  Installing : 7:lvm2-2.02.171-8.el7.x86_64                                 6/6 \nFailed to get D-Bus connection: Operation not permitted\nFailed to get D-Bus connection: Operation not permitted\nCreated symlink /etc/systemd/system/sysinit.target.wants/lvm2-lvmpolld.socket, pointing to /usr/lib/systemd/system/lvm2-lvmpolld.socket.\nFailed to get D-Bus connection: Operation not permitted\nwarning: %post(lvm2-7:2.02.171-8.el7.x86_64) scriptlet failed, exit status 1\n  Verifying  : 7:device-mapper-event-libs-1.02.140-8.el7.x86_64             1/6 \n  Verifying  : 7:device-mapper-event-1.02.140-8.el7.x86_64                  2/6 \n  Verifying  : 7:lvm2-libs-2.02.171-8.el7.x86_64                            3/6 \n  Verifying  : device-mapper-persistent-data-0.7.0-0.1.rc6.el7_4.1.x86_64   4/6 \n  Verifying  : 7:lvm2-2.02.171-8.el7.x86_64                                 5/6 \n  Verifying  : libaio-0.3.109-13.el7.x86_64                                 6/6 \n\nInstalled:\n  lvm2.x86_64 7:2.02.171-8.el7                                                  \n\nDependency Installed:\n  device-mapper-event.x86_64 7:1.02.140-8.el7                                   \n  device-mapper-event-libs.x86_64 7:1.02.140-8.el7                              \n  device-mapper-persistent-data.x86_64 0:0.7.0-0.1.rc6.el7_4.1                  \n  libaio.x86_64 0:0.3.109-13.el7                                                \n  lvm2-libs.x86_64 7:2.02.171-8.el7                                             \n\nComplete!\n&quot;</span>
+        <span class="p">]</span>
+    <span class="p">},</span> 
+    <span class="p">{</span>
+        <span class="nt">&quot;_ansible_ignore_errors&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+        <span class="nt">&quot;_ansible_item_result&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span> 
+        <span class="nt">&quot;_ansible_no_log&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+        <span class="nt">&quot;_ansible_parsed&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span> 
+        <span class="nt">&quot;changed&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+        <span class="nt">&quot;failed&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+        <span class="nt">&quot;invocation&quot;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="nt">&quot;module_args&quot;</span><span class="p">:</span> <span class="p">{</span>
+                <span class="nt">&quot;allow_downgrade&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+                <span class="nt">&quot;conf_file&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                <span class="nt">&quot;disable_gpg_check&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+                <span class="nt">&quot;disablerepo&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                <span class="nt">&quot;enablerepo&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                <span class="nt">&quot;exclude&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                <span class="nt">&quot;install_repoquery&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span> 
+                <span class="nt">&quot;installroot&quot;</span><span class="p">:</span> <span class="s2">&quot;/&quot;</span><span class="p">,</span> 
+                <span class="nt">&quot;list&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="p">[</span>
+                    <span class="s2">&quot;tar&quot;</span>
+                <span class="p">],</span> 
+                <span class="nt">&quot;security&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+                <span class="nt">&quot;skip_broken&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+                <span class="nt">&quot;state&quot;</span><span class="p">:</span> <span class="s2">&quot;installed&quot;</span><span class="p">,</span> 
+                <span class="nt">&quot;update_cache&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+                <span class="nt">&quot;validate_certs&quot;</span><span class="p">:</span> <span class="kc">true</span>
+            <span class="p">}</span>
+        <span class="p">},</span> 
+        <span class="nt">&quot;item&quot;</span><span class="p">:</span> <span class="s2">&quot;tar&quot;</span><span class="p">,</span> 
+        <span class="nt">&quot;msg&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span> 
+        <span class="nt">&quot;rc&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> 
+        <span class="nt">&quot;results&quot;</span><span class="p">:</span> <span class="p">[</span>
+            <span class="s2">&quot;2:tar-1.26-32.el7.x86_64 providing tar is already installed&quot;</span>
+        <span class="p">]</span>
+    <span class="p">},</span> 
+    <span class="p">{</span>
+        <span class="nt">&quot;_ansible_ignore_errors&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+        <span class="nt">&quot;_ansible_item_result&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span> 
+        <span class="nt">&quot;_ansible_no_log&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+        <span class="nt">&quot;_ansible_parsed&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span> 
+        <span class="nt">&quot;changed&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span> 
+        <span class="nt">&quot;failed&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+        <span class="nt">&quot;invocation&quot;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="nt">&quot;module_args&quot;</span><span class="p">:</span> <span class="p">{</span>
+                <span class="nt">&quot;allow_downgrade&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+                <span class="nt">&quot;conf_file&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                <span class="nt">&quot;disable_gpg_check&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+                <span class="nt">&quot;disablerepo&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                <span class="nt">&quot;enablerepo&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                <span class="nt">&quot;exclude&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                <span class="nt">&quot;install_repoquery&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span> 
+                <span class="nt">&quot;installroot&quot;</span><span class="p">:</span> <span class="s2">&quot;/&quot;</span><span class="p">,</span> 
+                <span class="nt">&quot;list&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="p">[</span>
+                    <span class="s2">&quot;unzip&quot;</span>
+                <span class="p">],</span> 
+                <span class="nt">&quot;security&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+                <span class="nt">&quot;skip_broken&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+                <span class="nt">&quot;state&quot;</span><span class="p">:</span> <span class="s2">&quot;installed&quot;</span><span class="p">,</span> 
+                <span class="nt">&quot;update_cache&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+                <span class="nt">&quot;validate_certs&quot;</span><span class="p">:</span> <span class="kc">true</span>
+            <span class="p">}</span>
+        <span class="p">},</span> 
+        <span class="nt">&quot;item&quot;</span><span class="p">:</span> <span class="s2">&quot;unzip&quot;</span><span class="p">,</span> 
+        <span class="nt">&quot;msg&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span> 
+        <span class="nt">&quot;rc&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> 
+        <span class="nt">&quot;results&quot;</span><span class="p">:</span> <span class="p">[</span>
+            <span class="s2">&quot;Loaded plugins: fastestmirror, ovl\nLoading mirror speeds from cached hostfile\n * base: mirror.us.oneandone.net\n * extras: mirrors.cmich.edu\n * updates: mirrors.usinternet.com\nResolving Dependencies\n--&gt; Running transaction check\n---&gt; Package unzip.x86_64 0:6.0-16.el7 will be installed\n--&gt; Finished Dependency Resolution\n\nDependencies Resolved\n\n================================================================================\n Package          Arch              Version               Repository       Size\n================================================================================\nInstalling:\n unzip            x86_64            6.0-16.el7            base            169 k\n\nTransaction Summary\n================================================================================\nInstall  1 Package\n\nTotal download size: 169 k\nInstalled size: 365 k\nDownloading packages:\nRunning transaction check\nRunning transaction test\nTransaction test succeeded\nRunning transaction\n  Installing : unzip-6.0-16.el7.x86_64                                      1/1 \n  Verifying  : unzip-6.0-16.el7.x86_64                                      1/1 \n\nInstalled:\n  unzip.x86_64 0:6.0-16.el7                                                     \n\nComplete!\n&quot;</span>
+        <span class="p">]</span>
+    <span class="p">}</span>
+<span class="p">]</span>
+</pre></div>
+
+            
+                </div>
+            </div>
+        
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    
+    <h2>Item</h2>
+            <div class="codehilite"><pre><span></span>lvm2
+</pre></div>
+
+        
+
+        <h2>Msg</h2>
+                <div class="codehilite"><pre><span></span>Non-fatal POSTIN scriptlet failure in rpm package 7:device-mapper-event-1.02.140-8.el7.x86_64
+Non-fatal POSTIN scriptlet failure in rpm package 7:lvm2-2.02.171-8.el7.x86_64
+</pre></div>
+
+            <h2>Results</h2>
+                <div class="codehilite"><pre><span></span><span class="p">[</span>
+    <span class="s2">&quot;Loaded plugins: fastestmirror, ovl\nLoading mirror speeds from cached hostfile\n * base: mirror.us.oneandone.net\n * extras: mirrors.cmich.edu\n * updates: mirrors.usinternet.com\nResolving Dependencies\n--&gt; Running transaction check\n---&gt; Package lvm2.x86_64 7:2.02.171-8.el7 will be installed\n--&gt; Processing Dependency: lvm2-libs = 7:2.02.171-8.el7 for package: 7:lvm2-2.02.171-8.el7.x86_64\n--&gt; Processing Dependency: device-mapper-persistent-data &gt;= 0.7.0-0.1.rc6 for package: 7:lvm2-2.02.171-8.el7.x86_64\n--&gt; Processing Dependency: liblvm2app.so.2.2(Base)(64bit) for package: 7:lvm2-2.02.171-8.el7.x86_64\n--&gt; Processing Dependency: libdevmapper-event.so.1.02(Base)(64bit) for package: 7:lvm2-2.02.171-8.el7.x86_64\n--&gt; Processing Dependency: liblvm2app.so.2.2()(64bit) for package: 7:lvm2-2.02.171-8.el7.x86_64\n--&gt; Processing Dependency: libdevmapper-event.so.1.02()(64bit) for package: 7:lvm2-2.02.171-8.el7.x86_64\n--&gt; Running transaction check\n---&gt; Package device-mapper-event-libs.x86_64 7:1.02.140-8.el7 will be installed\n---&gt; Package device-mapper-persistent-data.x86_64 0:0.7.0-0.1.rc6.el7_4.1 will be installed\n--&gt; Processing Dependency: libaio.so.1(LIBAIO_0.4)(64bit) for package: device-mapper-persistent-data-0.7.0-0.1.rc6.el7_4.1.x86_64\n--&gt; Processing Dependency: libaio.so.1(LIBAIO_0.1)(64bit) for package: device-mapper-persistent-data-0.7.0-0.1.rc6.el7_4.1.x86_64\n--&gt; Processing Dependency: libaio.so.1()(64bit) for package: device-mapper-persistent-data-0.7.0-0.1.rc6.el7_4.1.x86_64\n---&gt; Package lvm2-libs.x86_64 7:2.02.171-8.el7 will be installed\n--&gt; Processing Dependency: device-mapper-event = 7:1.02.140-8.el7 for package: 7:lvm2-libs-2.02.171-8.el7.x86_64\n--&gt; Running transaction check\n---&gt; Package device-mapper-event.x86_64 7:1.02.140-8.el7 will be installed\n---&gt; Package libaio.x86_64 0:0.3.109-13.el7 will be installed\n--&gt; Finished Dependency Resolution\n\nDependencies Resolved\n\n================================================================================\n Package                        Arch    Version                  Repository\n                                                                           Size\n================================================================================\nInstalling:\n lvm2                           x86_64  7:2.02.171-8.el7         base     1.3 M\nInstalling for dependencies:\n device-mapper-event            x86_64  7:1.02.140-8.el7         base     180 k\n device-mapper-event-libs       x86_64  7:1.02.140-8.el7         base     179 k\n device-mapper-persistent-data  x86_64  0.7.0-0.1.rc6.el7_4.1    updates  400 k\n libaio                         x86_64  0.3.109-13.el7           base      24 k\n lvm2-libs                      x86_64  7:2.02.171-8.el7         base     1.0 M\n\nTransaction Summary\n================================================================================\nInstall  1 Package (+5 Dependent packages)\n\nTotal download size: 3.1 M\nInstalled size: 7.7 M\nDownloading packages:\n--------------------------------------------------------------------------------\nTotal                                              435 kB/s | 3.1 MB  00:07     \nRunning transaction check\nRunning transaction test\nTransaction test succeeded\nRunning transaction\n  Installing : 7:device-mapper-event-libs-1.02.140-8.el7.x86_64             1/6 \n  Installing : 7:device-mapper-event-1.02.140-8.el7.x86_64                  2/6 \nFailed to get D-Bus connection: Operation not permitted\nwarning: %post(device-mapper-event-7:1.02.140-8.el7.x86_64) scriptlet failed, exit status 1\n  Installing : 7:lvm2-libs-2.02.171-8.el7.x86_64                            3/6 \n  Installing : libaio-0.3.109-13.el7.x86_64                                 4/6 \n  Installing : device-mapper-persistent-data-0.7.0-0.1.rc6.el7_4.1.x86_64   5/6 \n  Installing : 7:lvm2-2.02.171-8.el7.x86_64                                 6/6 \nFailed to get D-Bus connection: Operation not permitted\nFailed to get D-Bus connection: Operation not permitted\nCreated symlink /etc/systemd/system/sysinit.target.wants/lvm2-lvmpolld.socket, pointing to /usr/lib/systemd/system/lvm2-lvmpolld.socket.\nFailed to get D-Bus connection: Operation not permitted\nwarning: %post(lvm2-7:2.02.171-8.el7.x86_64) scriptlet failed, exit status 1\n  Verifying  : 7:device-mapper-event-libs-1.02.140-8.el7.x86_64             1/6 \n  Verifying  : 7:device-mapper-event-1.02.140-8.el7.x86_64                  2/6 \n  Verifying  : 7:lvm2-libs-2.02.171-8.el7.x86_64                            3/6 \n  Verifying  : device-mapper-persistent-data-0.7.0-0.1.rc6.el7_4.1.x86_64   4/6 \n  Verifying  : 7:lvm2-2.02.171-8.el7.x86_64                                 5/6 \n  Verifying  : libaio-0.3.109-13.el7.x86_64                                 6/6 \n\nInstalled:\n  lvm2.x86_64 7:2.02.171-8.el7                                                  \n\nDependency Installed:\n  device-mapper-event.x86_64 7:1.02.140-8.el7                                   \n  device-mapper-event-libs.x86_64 7:1.02.140-8.el7                              \n  device-mapper-persistent-data.x86_64 0:0.7.0-0.1.rc6.el7_4.1                  \n  libaio.x86_64 0:0.3.109-13.el7                                                \n  lvm2-libs.x86_64 7:2.02.171-8.el7                                             \n\nComplete!\n&quot;</span>
+<span class="p">]</span>
+</pre></div>
+
+            
+                </div>
+            </div>
+        
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    
+    <h2>Item</h2>
+            <div class="codehilite"><pre><span></span>tar
+</pre></div>
+
+        
+
+        <h2>Results</h2>
+                <div class="codehilite"><pre><span></span><span class="p">[</span>
+    <span class="s2">&quot;2:tar-1.26-32.el7.x86_64 providing tar is already installed&quot;</span>
+<span class="p">]</span>
+</pre></div>
+
+            
+                </div>
+            </div>
+        
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    
+    <h2>Item</h2>
+            <div class="codehilite"><pre><span></span>unzip
+</pre></div>
+
+        
+
+        <h2>Results</h2>
+                <div class="codehilite"><pre><span></span><span class="p">[</span>
+    <span class="s2">&quot;Loaded plugins: fastestmirror, ovl\nLoading mirror speeds from cached hostfile\n * base: mirror.us.oneandone.net\n * extras: mirrors.cmich.edu\n * updates: mirrors.usinternet.com\nResolving Dependencies\n--&gt; Running transaction check\n---&gt; Package unzip.x86_64 0:6.0-16.el7 will be installed\n--&gt; Finished Dependency Resolution\n\nDependencies Resolved\n\n================================================================================\n Package          Arch              Version               Repository       Size\n================================================================================\nInstalling:\n unzip            x86_64            6.0-16.el7            base            169 k\n\nTransaction Summary\n================================================================================\nInstall  1 Package\n\nTotal download size: 169 k\nInstalled size: 365 k\nDownloading packages:\nRunning transaction check\nRunning transaction test\nTransaction test succeeded\nRunning transaction\n  Installing : unzip-6.0-16.el7.x86_64                                      1/1 \n  Verifying  : unzip-6.0-16.el7.x86_64                                      1/1 \n\nInstalled:\n  unzip.x86_64 0:6.0-16.el7                                                     \n\nComplete!\n&quot;</span>
+<span class="p">]</span>
+</pre></div>
+
+            
+                </div>
+            </div>
+        
+    
+          
+        </div>
+    </div>
+</div>
+</body>
+</html>

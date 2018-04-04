@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html class="layout-pf">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="ARA | Ansible Run Analysis records Ansible playbook runs seamlessly to make them easier to visualize, understand and troubleshoot">
+    <title>ARA | Ansible Run Analysis</title>
+    <script src="../../static/packaged/jquery/jquery.min.js"></script>
+    <script src="../../static/packaged/datatables/js/jquery.dataTables.min.js"></script>
+    <script src="../../static/packaged/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../../static/packaged/patternfly_bootstrap_treeview/js/bootstrap-treeview.min.js"></script>
+    <script src="../../static/packaged/patternfly/js/patternfly.min.js"></script>
+    <script src="../../static/js/ara.js"></script>
+    <link href="../../static/packaged/patternfly/css/patternfly.min.css" rel="stylesheet">
+    <link href="../../static/packaged/patternfly/css/patternfly-additions.min.css" rel="stylesheet">
+    <link href="../../static/packaged/patternfly_bootstrap_treeview/css/bootstrap-treeview.min.css" rel="stylesheet">
+    <link href="../../static/css/pygments.css" rel="stylesheet">
+    <link href="../../static/css/ara.css" rel="stylesheet">
+    <link rel="shortcut icon" href="../../static/images/favicon.ico">
+</head>
+
+
+
+<body>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12 results">
+          <h2>Task: <strong>ansible-role-bootstrap : install software to support preview modules</strong></h2>
+          <h2>Host: <strong>bootstrap-debian-wheezy</strong></h2>
+          <p>Time: <strong>2018-04-04 16:26:17</strong></p>
+          <p>Ansible version: <strong>2.3.3.0</strong></p>
+          
+          
+              
+    
+        
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    
+    
+
+        <h2>Msg</h2>
+                <div class="codehilite"><pre><span></span>All items completed
+</pre></div>
+
+            
+                </div>
+            </div>
+        
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    
+    <h2>Item</h2>
+            <div class="codehilite"><pre><span></span>apt-transport-https
+</pre></div>
+
+        
+
+        <h2>Cache_update_time</h2>
+                <div class="codehilite"><pre><span></span>1522859162
+</pre></div>
+
+            <h2>Stderr</h2>
+                <div class="codehilite"><pre><span></span>debconf: delaying package configuration, since apt-utils is not installed
+</pre></div>
+
+            <h2>Stderr_lines</h2>
+                <div class="codehilite"><pre><span></span><span class="p">[</span>
+    <span class="s2">&quot;debconf: delaying package configuration, since apt-utils is not installed&quot;</span>
+<span class="p">]</span>
+</pre></div>
+
+            <h2>Stdout</h2>
+                <div class="codehilite"><pre><span></span>Reading package lists...
+Building dependency tree...
+Reading state information...
+The following extra packages will be installed:
+  krb5-locales libcurl3-gnutls libgcrypt11 libgnutls26 libgpg-error0
+  libgssapi-krb5-2 libidn11 libk5crypto3 libkeyutils1 libkrb5-3
+  libkrb5support0 libldap-2.4-2 libp11-kit0 librtmp0 libsasl2-2
+  libsasl2-modules libssh2-1 libtasn1-3
+Suggested packages:
+  rng-tools krb5-doc krb5-user libsasl2-modules-otp libsasl2-modules-ldap
+  libsasl2-modules-sql libsasl2-modules-gssapi-mit
+  libsasl2-modules-gssapi-heimdal
+The following NEW packages will be installed:
+  apt-transport-https krb5-locales libcurl3-gnutls libgcrypt11 libgnutls26
+  libgpg-error0 libgssapi-krb5-2 libidn11 libk5crypto3 libkeyutils1 libkrb5-3
+  libkrb5support0 libldap-2.4-2 libp11-kit0 librtmp0 libsasl2-2
+  libsasl2-modules libssh2-1 libtasn1-3
+0 upgraded, 19 newly installed, 0 to remove and 1 not upgraded.
+Need to get 4632 kB of archives.
+After this operation, 8507 kB of additional disk space will be used.
+Get:1 http://security.debian.org/ wheezy/updates/main libgcrypt11 amd64 1.5.0-5+deb7u6 [301 kB]
+Get:2 http://deb.debian.org/debian/ wheezy/main libgpg-error0 amd64 1.10-3.1 [77.9 kB]
+Get:3 http://security.debian.org/ wheezy/updates/main libtasn1-3 amd64 2.13-2+deb7u5 [68.9 kB]
+Get:4 http://security.debian.org/ wheezy/updates/main libkrb5support0 amd64 1.10.1+dfsg-5+deb7u9 [50.7 kB]
+Get:5 http://deb.debian.org/debian/ wheezy/main libp11-kit0 amd64 0.12-3 [52.8 kB]
+Get:6 http://security.debian.org/ wheezy/updates/main libk5crypto3 amd64 1.10.1+dfsg-5+deb7u9 [114 kB]
+Get:7 http://security.debian.org/ wheezy/updates/main libkrb5-3 amd64 1.10.1+dfsg-5+deb7u9 [394 kB]
+Get:8 http://deb.debian.org/debian/ wheezy/main libgnutls26 amd64 2.12.20-8+deb7u5 [620 kB]
+Get:9 http://security.debian.org/ wheezy/updates/main libgssapi-krb5-2 amd64 1.10.1+dfsg-5+deb7u9 [150 kB]
+Get:10 http://security.debian.org/ wheezy/updates/main libidn11 amd64 1.25-2+deb7u3 [180 kB]
+Get:11 http://deb.debian.org/debian/ wheezy/main libkeyutils1 amd64 1.5.5-3+deb7u1 [8664 B]
+Get:12 http://security.debian.org/ wheezy/updates/main libldap-2.4-2 amd64 2.4.31-2+deb7u3 [244 kB]
+Get:13 http://security.debian.org/ wheezy/updates/main librtmp0 amd64 2.4+20111222.git4e06e21-1+deb7u1 [62.5 kB]
+Get:14 http://deb.debian.org/debian/ wheezy/main libsasl2-2 amd64 2.1.25.dfsg1-6+deb7u1 [120 kB]
+Get:15 http://security.debian.org/ wheezy/updates/main libcurl3-gnutls amd64 7.26.0-1+wheezy25 [325 kB]
+Get:16 http://security.debian.org/ wheezy/updates/main krb5-locales all 1.10.1+dfsg-5+deb7u9 [1504 kB]
+Get:17 http://deb.debian.org/debian/ wheezy/main libssh2-1 amd64 1.4.2-1.1+deb7u2 [134 kB]
+Get:18 http://deb.debian.org/debian/ wheezy/main apt-transport-https amd64 0.9.7.9+deb7u7 [109 kB]
+Get:19 http://deb.debian.org/debian/ wheezy/main libsasl2-modules amd64 2.1.25.dfsg1-6+deb7u1 [116 kB]
+Fetched 4632 kB in 0s (4735 kB/s)
+Selecting previously unselected package libgpg-error0:amd64.
+(Reading database ... 8896 files and directories currently installed.)
+Unpacking libgpg-error0:amd64 (from .../libgpg-error0_1.10-3.1_amd64.deb) ...
+Selecting previously unselected package libgcrypt11:amd64.
+Unpacking libgcrypt11:amd64 (from .../libgcrypt11_1.5.0-5+deb7u6_amd64.deb) ...
+Selecting previously unselected package libtasn1-3:amd64.
+Unpacking libtasn1-3:amd64 (from .../libtasn1-3_2.13-2+deb7u5_amd64.deb) ...
+Selecting previously unselected package libp11-kit0:amd64.
+Unpacking libp11-kit0:amd64 (from .../libp11-kit0_0.12-3_amd64.deb) ...
+Selecting previously unselected package libgnutls26:amd64.
+Unpacking libgnutls26:amd64 (from .../libgnutls26_2.12.20-8+deb7u5_amd64.deb) ...
+Selecting previously unselected package libkeyutils1:amd64.
+Unpacking libkeyutils1:amd64 (from .../libkeyutils1_1.5.5-3+deb7u1_amd64.deb) ...
+Selecting previously unselected package libkrb5support0:amd64.
+Unpacking libkrb5support0:amd64 (from .../libkrb5support0_1.10.1+dfsg-5+deb7u9_amd64.deb) ...
+Selecting previously unselected package libk5crypto3:amd64.
+Unpacking libk5crypto3:amd64 (from .../libk5crypto3_1.10.1+dfsg-5+deb7u9_amd64.deb) ...
+Selecting previously unselected package libkrb5-3:amd64.
+Unpacking libkrb5-3:amd64 (from .../libkrb5-3_1.10.1+dfsg-5+deb7u9_amd64.deb) ...
+Selecting previously unselected package libgssapi-krb5-2:amd64.
+Unpacking libgssapi-krb5-2:amd64 (from .../libgssapi-krb5-2_1.10.1+dfsg-5+deb7u9_amd64.deb) ...
+Selecting previously unselected package libidn11:amd64.
+Unpacking libidn11:amd64 (from .../libidn11_1.25-2+deb7u3_amd64.deb) ...
+Selecting previously unselected package libsasl2-2:amd64.
+Unpacking libsasl2-2:amd64 (from .../libsasl2-2_2.1.25.dfsg1-6+deb7u1_amd64.deb) ...
+Selecting previously unselected package libldap-2.4-2:amd64.
+Unpacking libldap-2.4-2:amd64 (from .../libldap-2.4-2_2.4.31-2+deb7u3_amd64.deb) ...
+Selecting previously unselected package librtmp0:amd64.
+Unpacking librtmp0:amd64 (from .../librtmp0_2.4+20111222.git4e06e21-1+deb7u1_amd64.deb) ...
+Selecting previously unselected package libssh2-1:amd64.
+Unpacking libssh2-1:amd64 (from .../libssh2-1_1.4.2-1.1+deb7u2_amd64.deb) ...
+Selecting previously unselected package libcurl3-gnutls:amd64.
+Unpacking libcurl3-gnutls:amd64 (from .../libcurl3-gnutls_7.26.0-1+wheezy25_amd64.deb) ...
+Selecting previously unselected package krb5-locales.
+Unpacking krb5-locales (from .../krb5-locales_1.10.1+dfsg-5+deb7u9_all.deb) ...
+Selecting previously unselected package apt-transport-https.
+Unpacking apt-transport-https (from .../apt-transport-https_0.9.7.9+deb7u7_amd64.deb) ...
+Selecting previously unselected package libsasl2-modules:amd64.
+Unpacking libsasl2-modules:amd64 (from .../libsasl2-modules_2.1.25.dfsg1-6+deb7u1_amd64.deb) ...
+Setting up libgpg-error0:amd64 (1.10-3.1) ...
+Setting up libgcrypt11:amd64 (1.5.0-5+deb7u6) ...
+Setting up libtasn1-3:amd64 (2.13-2+deb7u5) ...
+Setting up libp11-kit0:amd64 (0.12-3) ...
+Setting up libgnutls26:amd64 (2.12.20-8+deb7u5) ...
+Setting up libkeyutils1:amd64 (1.5.5-3+deb7u1) ...
+Setting up libkrb5support0:amd64 (1.10.1+dfsg-5+deb7u9) ...
+Setting up libk5crypto3:amd64 (1.10.1+dfsg-5+deb7u9) ...
+Setting up libkrb5-3:amd64 (1.10.1+dfsg-5+deb7u9) ...
+Setting up libgssapi-krb5-2:amd64 (1.10.1+dfsg-5+deb7u9) ...
+Setting up libidn11:amd64 (1.25-2+deb7u3) ...
+Setting up libsasl2-2:amd64 (2.1.25.dfsg1-6+deb7u1) ...
+Setting up libldap-2.4-2:amd64 (2.4.31-2+deb7u3) ...
+Setting up librtmp0:amd64 (2.4+20111222.git4e06e21-1+deb7u1) ...
+Setting up libssh2-1:amd64 (1.4.2-1.1+deb7u2) ...
+Setting up libcurl3-gnutls:amd64 (7.26.0-1+wheezy25) ...
+Setting up krb5-locales (1.10.1+dfsg-5+deb7u9) ...
+Setting up apt-transport-https (0.9.7.9+deb7u7) ...
+Setting up libsasl2-modules:amd64 (2.1.25.dfsg1-6+deb7u1) ...
+</pre></div>
+
+            
+                </div>
+            </div>
+        
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    
+    <h2>Item</h2>
+            <div class="codehilite"><pre><span></span>lvm2
+</pre></div>
+
+        
+
+        <h2>Cache_update_time</h2>
+                <div class="codehilite"><pre><span></span>1522859162
+</pre></div>
+
+            <h2>Stderr</h2>
+                <div class="codehilite"><pre><span></span>debconf: delaying package configuration, since apt-utils is not installed
+invoke-rc.d: policy-rc.d denied execution of start.
+</pre></div>
+
+            <h2>Stderr_lines</h2>
+                <div class="codehilite"><pre><span></span><span class="p">[</span>
+    <span class="s2">&quot;debconf: delaying package configuration, since apt-utils is not installed&quot;</span><span class="p">,</span> 
+    <span class="s2">&quot;invoke-rc.d: policy-rc.d denied execution of start.&quot;</span>
+<span class="p">]</span>
+</pre></div>
+
+            <h2>Stdout</h2>
+                <div class="codehilite"><pre><span></span>Reading package lists...
+Building dependency tree...
+Reading state information...
+The following extra packages will be installed:
+  dmsetup libdevmapper-event1.02.1 libdevmapper1.02.1 libreadline5 libudev0
+The following NEW packages will be installed:
+  dmsetup libdevmapper-event1.02.1 libdevmapper1.02.1 libreadline5 libudev0
+  lvm2
+0 upgraded, 6 newly installed, 0 to remove and 1 not upgraded.
+Need to get 1091 kB of archives.
+After this operation, 2064 kB of additional disk space will be used.
+Get:1 http://deb.debian.org/debian/ wheezy/main libudev0 amd64 175-7.2 [126 kB]
+Get:2 http://deb.debian.org/debian/ wheezy/main dmsetup amd64 2:1.02.74-8 [67.9 kB]
+Get:3 http://deb.debian.org/debian/ wheezy/main libdevmapper1.02.1 amd64 2:1.02.74-8 [130 kB]
+Get:4 http://deb.debian.org/debian/ wheezy/main libdevmapper-event1.02.1 amd64 2:1.02.74-8 [32.6 kB]
+Get:5 http://deb.debian.org/debian/ wheezy/main libreadline5 amd64 5.2+dfsg-2~deb7u1 [150 kB]
+Get:6 http://deb.debian.org/debian/ wheezy/main lvm2 amd64 2.02.95-8 [584 kB]
+Fetched 1091 kB in 0s (1210 kB/s)
+Selecting previously unselected package libudev0:amd64.
+(Reading database ... 9113 files and directories currently installed.)
+Unpacking libudev0:amd64 (from .../libudev0_175-7.2_amd64.deb) ...
+Selecting previously unselected package dmsetup.
+Unpacking dmsetup (from .../dmsetup_2%3a1.02.74-8_amd64.deb) ...
+Selecting previously unselected package libdevmapper1.02.1:amd64.
+Unpacking libdevmapper1.02.1:amd64 (from .../libdevmapper1.02.1_2%3a1.02.74-8_amd64.deb) ...
+Selecting previously unselected package libdevmapper-event1.02.1:amd64.
+Unpacking libdevmapper-event1.02.1:amd64 (from .../libdevmapper-event1.02.1_2%3a1.02.74-8_amd64.deb) ...
+Selecting previously unselected package libreadline5:amd64.
+Unpacking libreadline5:amd64 (from .../libreadline5_5.2+dfsg-2~deb7u1_amd64.deb) ...
+Selecting previously unselected package lvm2.
+Unpacking lvm2 (from .../lvm2_2.02.95-8_amd64.deb) ...
+Setting up libudev0:amd64 (175-7.2) ...
+Setting up libreadline5:amd64 (5.2+dfsg-2~deb7u1) ...
+Setting up libdevmapper1.02.1:amd64 (2:1.02.74-8) ...
+Setting up libdevmapper-event1.02.1:amd64 (2:1.02.74-8) ...
+Setting up dmsetup (2:1.02.74-8) ...
+Setting up lvm2 (2.02.95-8) ...
+</pre></div>
+
+            
+                </div>
+            </div>
+        
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    
+    <h2>Item</h2>
+            <div class="codehilite"><pre><span></span>tar
+</pre></div>
+
+        
+
+        <h2>Cache_update_time</h2>
+                <div class="codehilite"><pre><span></span>1522859162
+</pre></div>
+
+            
+                </div>
+            </div>
+        
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    
+    <h2>Item</h2>
+            <div class="codehilite"><pre><span></span>unzip
+</pre></div>
+
+        
+
+        <h2>Cache_update_time</h2>
+                <div class="codehilite"><pre><span></span>1522859162
+</pre></div>
+
+            <h2>Stderr</h2>
+                <div class="codehilite"><pre><span></span>debconf: delaying package configuration, since apt-utils is not installed
+</pre></div>
+
+            <h2>Stderr_lines</h2>
+                <div class="codehilite"><pre><span></span><span class="p">[</span>
+    <span class="s2">&quot;debconf: delaying package configuration, since apt-utils is not installed&quot;</span>
+<span class="p">]</span>
+</pre></div>
+
+            <h2>Stdout</h2>
+                <div class="codehilite"><pre><span></span>Reading package lists...
+Building dependency tree...
+Reading state information...
+Suggested packages:
+  zip
+The following NEW packages will be installed:
+  unzip
+0 upgraded, 1 newly installed, 0 to remove and 1 not upgraded.
+Need to get 196 kB of archives.
+After this operation, 387 kB of additional disk space will be used.
+Get:1 http://security.debian.org/ wheezy/updates/main unzip amd64 6.0-8+deb7u6 [196 kB]
+Fetched 196 kB in 0s (852 kB/s)
+Selecting previously unselected package unzip.
+(Reading database ... 9272 files and directories currently installed.)
+Unpacking unzip (from .../unzip_6.0-8+deb7u6_amd64.deb) ...
+Processing triggers for mime-support ...
+Setting up unzip (6.0-8+deb7u6) ...
+</pre></div>
+
+            
+                </div>
+            </div>
+        
+    
+          
+        </div>
+    </div>
+</div>
+</body>
+</html>

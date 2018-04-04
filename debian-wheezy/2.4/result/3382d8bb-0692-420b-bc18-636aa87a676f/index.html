@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html class="layout-pf">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="ARA | Ansible Run Analysis records Ansible playbook runs seamlessly to make them easier to visualize, understand and troubleshoot">
+    <title>ARA | Ansible Run Analysis</title>
+    <script src="../../static/packaged/jquery/jquery.min.js"></script>
+    <script src="../../static/packaged/datatables/js/jquery.dataTables.min.js"></script>
+    <script src="../../static/packaged/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../../static/packaged/patternfly_bootstrap_treeview/js/bootstrap-treeview.min.js"></script>
+    <script src="../../static/packaged/patternfly/js/patternfly.min.js"></script>
+    <script src="../../static/js/ara.js"></script>
+    <link href="../../static/packaged/patternfly/css/patternfly.min.css" rel="stylesheet">
+    <link href="../../static/packaged/patternfly/css/patternfly-additions.min.css" rel="stylesheet">
+    <link href="../../static/packaged/patternfly_bootstrap_treeview/css/bootstrap-treeview.min.css" rel="stylesheet">
+    <link href="../../static/css/pygments.css" rel="stylesheet">
+    <link href="../../static/css/ara.css" rel="stylesheet">
+    <link rel="shortcut icon" href="../../static/images/favicon.ico">
+</head>
+
+
+
+<body>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12 results">
+          <h2>Task: <strong>ansible-role-bootstrap : install software to support stable modules</strong></h2>
+          <h2>Host: <strong>bootstrap-debian-wheezy</strong></h2>
+          <p>Time: <strong>2018-04-04 16:26:47</strong></p>
+          <p>Ansible version: <strong>2.4.3.0</strong></p>
+          
+          
+              
+    
+        
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    
+    
+
+        <h2>Msg</h2>
+                <div class="codehilite"><pre><span></span>All items completed
+</pre></div>
+
+            <h2>Results</h2>
+                <div class="codehilite"><pre><span></span><span class="p">[</span>
+    <span class="p">{</span>
+        <span class="nt">&quot;_ansible_ignore_errors&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+        <span class="nt">&quot;_ansible_item_result&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span> 
+        <span class="nt">&quot;_ansible_no_log&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+        <span class="nt">&quot;_ansible_parsed&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span> 
+        <span class="nt">&quot;cache_update_time&quot;</span><span class="p">:</span> <span class="mi">1522859209</span><span class="p">,</span> 
+        <span class="nt">&quot;cache_updated&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+        <span class="nt">&quot;changed&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span> 
+        <span class="nt">&quot;diff&quot;</span><span class="p">:</span> <span class="p">{},</span> 
+        <span class="nt">&quot;failed&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+        <span class="nt">&quot;invocation&quot;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="nt">&quot;module_args&quot;</span><span class="p">:</span> <span class="p">{</span>
+                <span class="nt">&quot;allow_unauthenticated&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+                <span class="nt">&quot;autoclean&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+                <span class="nt">&quot;autoremove&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+                <span class="nt">&quot;cache_valid_time&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> 
+                <span class="nt">&quot;deb&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                <span class="nt">&quot;default_release&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                <span class="nt">&quot;dpkg_options&quot;</span><span class="p">:</span> <span class="s2">&quot;force-confdef,force-confold&quot;</span><span class="p">,</span> 
+                <span class="nt">&quot;force&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+                <span class="nt">&quot;force_apt_get&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+                <span class="nt">&quot;install_recommends&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;ca-certificates&quot;</span><span class="p">,</span> 
+                <span class="nt">&quot;only_upgrade&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+                <span class="nt">&quot;package&quot;</span><span class="p">:</span> <span class="p">[</span>
+                    <span class="s2">&quot;ca-certificates&quot;</span>
+                <span class="p">],</span> 
+                <span class="nt">&quot;purge&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+                <span class="nt">&quot;state&quot;</span><span class="p">:</span> <span class="s2">&quot;present&quot;</span><span class="p">,</span> 
+                <span class="nt">&quot;update_cache&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                <span class="nt">&quot;upgrade&quot;</span><span class="p">:</span> <span class="kc">null</span>
+            <span class="p">}</span>
+        <span class="p">},</span> 
+        <span class="nt">&quot;item&quot;</span><span class="p">:</span> <span class="s2">&quot;ca-certificates&quot;</span><span class="p">,</span> 
+        <span class="nt">&quot;stderr&quot;</span><span class="p">:</span> <span class="s2">&quot;debconf: delaying package configuration, since apt-utils is not installed\n&quot;</span><span class="p">,</span> 
+        <span class="nt">&quot;stderr_lines&quot;</span><span class="p">:</span> <span class="p">[</span>
+            <span class="s2">&quot;debconf: delaying package configuration, since apt-utils is not installed&quot;</span>
+        <span class="p">],</span> 
+        <span class="nt">&quot;stdout&quot;</span><span class="p">:</span> <span class="s2">&quot;Reading package lists...\nBuilding dependency tree...\nReading state information...\nThe following extra packages will be installed:\n  openssl\nThe following NEW packages will be installed:\n  ca-certificates openssl\n0 upgraded, 2 newly installed, 0 to remove and 1 not upgraded.\nNeed to get 911 kB of archives.\nAfter this operation, 1546 kB of additional disk space will be used.\nGet:1 http://security.debian.org/ wheezy/updates/main openssl amd64 1.0.1t-1+deb7u4 [701 kB]\nGet:2 http://security.debian.org/ wheezy/updates/main ca-certificates all 20130119+deb7u2 [210 kB]\nFetched 911 kB in 0s (2878 kB/s)\nSelecting previously unselected package openssl.\n(Reading database ... 8416 files and directories currently installed.)\nUnpacking openssl (from .../openssl_1.0.1t-1+deb7u4_amd64.deb) ...\nSelecting previously unselected package ca-certificates.\nUnpacking ca-certificates (from .../ca-certificates_20130119+deb7u2_all.deb) ...\nSetting up openssl (1.0.1t-1+deb7u4) ...\nSetting up ca-certificates (20130119+deb7u2) ...\nProcessing triggers for ca-certificates ...\nUpdating certificates in /etc/ssl/certs... 165 added, 0 removed; done.\nRunning hooks in /etc/ca-certificates/update.d....done.\n&quot;</span><span class="p">,</span> 
+        <span class="nt">&quot;stdout_lines&quot;</span><span class="p">:</span> <span class="p">[</span>
+            <span class="s2">&quot;Reading package lists...&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;Building dependency tree...&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;Reading state information...&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;The following extra packages will be installed:&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;  openssl&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;The following NEW packages will be installed:&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;  ca-certificates openssl&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;0 upgraded, 2 newly installed, 0 to remove and 1 not upgraded.&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;Need to get 911 kB of archives.&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;After this operation, 1546 kB of additional disk space will be used.&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;Get:1 http://security.debian.org/ wheezy/updates/main openssl amd64 1.0.1t-1+deb7u4 [701 kB]&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;Get:2 http://security.debian.org/ wheezy/updates/main ca-certificates all 20130119+deb7u2 [210 kB]&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;Fetched 911 kB in 0s (2878 kB/s)&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;Selecting previously unselected package openssl.&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;(Reading database ... 8416 files and directories currently installed.)&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;Unpacking openssl (from .../openssl_1.0.1t-1+deb7u4_amd64.deb) ...&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;Selecting previously unselected package ca-certificates.&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;Unpacking ca-certificates (from .../ca-certificates_20130119+deb7u2_all.deb) ...&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;Setting up openssl (1.0.1t-1+deb7u4) ...&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;Setting up ca-certificates (20130119+deb7u2) ...&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;Processing triggers for ca-certificates ...&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;Updating certificates in /etc/ssl/certs... 165 added, 0 removed; done.&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;Running hooks in /etc/ca-certificates/update.d....done.&quot;</span>
+        <span class="p">]</span>
+    <span class="p">},</span> 
+    <span class="p">{</span>
+        <span class="nt">&quot;_ansible_ignore_errors&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+        <span class="nt">&quot;_ansible_item_result&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span> 
+        <span class="nt">&quot;_ansible_no_log&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+        <span class="nt">&quot;_ansible_parsed&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span> 
+        <span class="nt">&quot;cache_update_time&quot;</span><span class="p">:</span> <span class="mi">1522859209</span><span class="p">,</span> 
+        <span class="nt">&quot;cache_updated&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+        <span class="nt">&quot;changed&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+        <span class="nt">&quot;failed&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+        <span class="nt">&quot;invocation&quot;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="nt">&quot;module_args&quot;</span><span class="p">:</span> <span class="p">{</span>
+                <span class="nt">&quot;allow_unauthenticated&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+                <span class="nt">&quot;autoclean&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+                <span class="nt">&quot;autoremove&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+                <span class="nt">&quot;cache_valid_time&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> 
+                <span class="nt">&quot;deb&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                <span class="nt">&quot;default_release&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                <span class="nt">&quot;dpkg_options&quot;</span><span class="p">:</span> <span class="s2">&quot;force-confdef,force-confold&quot;</span><span class="p">,</span> 
+                <span class="nt">&quot;force&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+                <span class="nt">&quot;force_apt_get&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+                <span class="nt">&quot;install_recommends&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;python-apt&quot;</span><span class="p">,</span> 
+                <span class="nt">&quot;only_upgrade&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+                <span class="nt">&quot;package&quot;</span><span class="p">:</span> <span class="p">[</span>
+                    <span class="s2">&quot;python-apt&quot;</span>
+                <span class="p">],</span> 
+                <span class="nt">&quot;purge&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+                <span class="nt">&quot;state&quot;</span><span class="p">:</span> <span class="s2">&quot;present&quot;</span><span class="p">,</span> 
+                <span class="nt">&quot;update_cache&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                <span class="nt">&quot;upgrade&quot;</span><span class="p">:</span> <span class="kc">null</span>
+            <span class="p">}</span>
+        <span class="p">},</span> 
+        <span class="nt">&quot;item&quot;</span><span class="p">:</span> <span class="s2">&quot;python-apt&quot;</span>
+    <span class="p">},</span> 
+    <span class="p">{</span>
+        <span class="nt">&quot;_ansible_ignore_errors&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+        <span class="nt">&quot;_ansible_item_result&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span> 
+        <span class="nt">&quot;_ansible_no_log&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+        <span class="nt">&quot;_ansible_parsed&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span> 
+        <span class="nt">&quot;cache_update_time&quot;</span><span class="p">:</span> <span class="mi">1522859209</span><span class="p">,</span> 
+        <span class="nt">&quot;cache_updated&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+        <span class="nt">&quot;changed&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span> 
+        <span class="nt">&quot;diff&quot;</span><span class="p">:</span> <span class="p">{},</span> 
+        <span class="nt">&quot;failed&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+        <span class="nt">&quot;invocation&quot;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="nt">&quot;module_args&quot;</span><span class="p">:</span> <span class="p">{</span>
+                <span class="nt">&quot;allow_unauthenticated&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+                <span class="nt">&quot;autoclean&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+                <span class="nt">&quot;autoremove&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+                <span class="nt">&quot;cache_valid_time&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> 
+                <span class="nt">&quot;deb&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                <span class="nt">&quot;default_release&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                <span class="nt">&quot;dpkg_options&quot;</span><span class="p">:</span> <span class="s2">&quot;force-confdef,force-confold&quot;</span><span class="p">,</span> 
+                <span class="nt">&quot;force&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+                <span class="nt">&quot;force_apt_get&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+                <span class="nt">&quot;install_recommends&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;python-simplejson&quot;</span><span class="p">,</span> 
+                <span class="nt">&quot;only_upgrade&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+                <span class="nt">&quot;package&quot;</span><span class="p">:</span> <span class="p">[</span>
+                    <span class="s2">&quot;python-simplejson&quot;</span>
+                <span class="p">],</span> 
+                <span class="nt">&quot;purge&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+                <span class="nt">&quot;state&quot;</span><span class="p">:</span> <span class="s2">&quot;present&quot;</span><span class="p">,</span> 
+                <span class="nt">&quot;update_cache&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                <span class="nt">&quot;upgrade&quot;</span><span class="p">:</span> <span class="kc">null</span>
+            <span class="p">}</span>
+        <span class="p">},</span> 
+        <span class="nt">&quot;item&quot;</span><span class="p">:</span> <span class="s2">&quot;python-simplejson&quot;</span><span class="p">,</span> 
+        <span class="nt">&quot;stderr&quot;</span><span class="p">:</span> <span class="s2">&quot;debconf: delaying package configuration, since apt-utils is not installed\n&quot;</span><span class="p">,</span> 
+        <span class="nt">&quot;stderr_lines&quot;</span><span class="p">:</span> <span class="p">[</span>
+            <span class="s2">&quot;debconf: delaying package configuration, since apt-utils is not installed&quot;</span>
+        <span class="p">],</span> 
+        <span class="nt">&quot;stdout&quot;</span><span class="p">:</span> <span class="s2">&quot;Reading package lists...\nBuilding dependency tree...\nReading state information...\nThe following extra packages will be installed:\n  javascript-common libjs-jquery wwwconfig-common\nSuggested packages:\n  apache2 httpd mysql-client postgresql-client\nThe following NEW packages will be installed:\n  javascript-common libjs-jquery python-simplejson wwwconfig-common\n0 upgraded, 4 newly installed, 0 to remove and 1 not upgraded.\nNeed to get 204 kB of archives.\nAfter this operation, 1029 kB of additional disk space will be used.\nGet:1 http://deb.debian.org/debian/ wheezy/main wwwconfig-common all 0.2.2 [22.8 kB]\nGet:2 http://deb.debian.org/debian/ wheezy/main javascript-common all 7 [3810 B]\nGet:3 http://deb.debian.org/debian/ wheezy/main libjs-jquery all 1.7.2+dfsg-1 [80.1 kB]\nGet:4 http://deb.debian.org/debian/ wheezy/main python-simplejson amd64 2.5.2-1 [97.6 kB]\nFetched 204 kB in 0s (365 kB/s)\nSelecting previously unselected package wwwconfig-common.\n(Reading database ... 8692 files and directories currently installed.)\nUnpacking wwwconfig-common (from .../wwwconfig-common_0.2.2_all.deb) ...\nSelecting previously unselected package javascript-common.\nUnpacking javascript-common (from .../javascript-common_7_all.deb) ...\nSelecting previously unselected package libjs-jquery.\nUnpacking libjs-jquery (from .../libjs-jquery_1.7.2+dfsg-1_all.deb) ...\nSelecting previously unselected package python-simplejson.\nUnpacking python-simplejson (from .../python-simplejson_2.5.2-1_amd64.deb) ...\nSetting up wwwconfig-common (0.2.2) ...\nSetting up javascript-common (7) ...\nSetting up libjs-jquery (1.7.2+dfsg-1) ...\nSetting up python-simplejson (2.5.2-1) ...\n&quot;</span><span class="p">,</span> 
+        <span class="nt">&quot;stdout_lines&quot;</span><span class="p">:</span> <span class="p">[</span>
+            <span class="s2">&quot;Reading package lists...&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;Building dependency tree...&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;Reading state information...&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;The following extra packages will be installed:&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;  javascript-common libjs-jquery wwwconfig-common&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;Suggested packages:&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;  apache2 httpd mysql-client postgresql-client&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;The following NEW packages will be installed:&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;  javascript-common libjs-jquery python-simplejson wwwconfig-common&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;0 upgraded, 4 newly installed, 0 to remove and 1 not upgraded.&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;Need to get 204 kB of archives.&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;After this operation, 1029 kB of additional disk space will be used.&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;Get:1 http://deb.debian.org/debian/ wheezy/main wwwconfig-common all 0.2.2 [22.8 kB]&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;Get:2 http://deb.debian.org/debian/ wheezy/main javascript-common all 7 [3810 B]&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;Get:3 http://deb.debian.org/debian/ wheezy/main libjs-jquery all 1.7.2+dfsg-1 [80.1 kB]&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;Get:4 http://deb.debian.org/debian/ wheezy/main python-simplejson amd64 2.5.2-1 [97.6 kB]&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;Fetched 204 kB in 0s (365 kB/s)&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;Selecting previously unselected package wwwconfig-common.&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;(Reading database ... 8692 files and directories currently installed.)&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;Unpacking wwwconfig-common (from .../wwwconfig-common_0.2.2_all.deb) ...&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;Selecting previously unselected package javascript-common.&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;Unpacking javascript-common (from .../javascript-common_7_all.deb) ...&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;Selecting previously unselected package libjs-jquery.&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;Unpacking libjs-jquery (from .../libjs-jquery_1.7.2+dfsg-1_all.deb) ...&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;Selecting previously unselected package python-simplejson.&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;Unpacking python-simplejson (from .../python-simplejson_2.5.2-1_amd64.deb) ...&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;Setting up wwwconfig-common (0.2.2) ...&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;Setting up javascript-common (7) ...&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;Setting up libjs-jquery (1.7.2+dfsg-1) ...&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;Setting up python-simplejson (2.5.2-1) ...&quot;</span>
+        <span class="p">]</span>
+    <span class="p">}</span>
+<span class="p">]</span>
+</pre></div>
+
+            
+                </div>
+            </div>
+        
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    
+    <h2>Item</h2>
+            <div class="codehilite"><pre><span></span>ca-certificates
+</pre></div>
+
+        
+
+        <h2>Cache_update_time</h2>
+                <div class="codehilite"><pre><span></span>1522859209
+</pre></div>
+
+            <h2>Stderr</h2>
+                <div class="codehilite"><pre><span></span>debconf: delaying package configuration, since apt-utils is not installed
+</pre></div>
+
+            <h2>Stderr_lines</h2>
+                <div class="codehilite"><pre><span></span><span class="p">[</span>
+    <span class="s2">&quot;debconf: delaying package configuration, since apt-utils is not installed&quot;</span>
+<span class="p">]</span>
+</pre></div>
+
+            <h2>Stdout</h2>
+                <div class="codehilite"><pre><span></span>Reading package lists...
+Building dependency tree...
+Reading state information...
+The following extra packages will be installed:
+  openssl
+The following NEW packages will be installed:
+  ca-certificates openssl
+0 upgraded, 2 newly installed, 0 to remove and 1 not upgraded.
+Need to get 911 kB of archives.
+After this operation, 1546 kB of additional disk space will be used.
+Get:1 http://security.debian.org/ wheezy/updates/main openssl amd64 1.0.1t-1+deb7u4 [701 kB]
+Get:2 http://security.debian.org/ wheezy/updates/main ca-certificates all 20130119+deb7u2 [210 kB]
+Fetched 911 kB in 0s (2878 kB/s)
+Selecting previously unselected package openssl.
+(Reading database ... 8416 files and directories currently installed.)
+Unpacking openssl (from .../openssl_1.0.1t-1+deb7u4_amd64.deb) ...
+Selecting previously unselected package ca-certificates.
+Unpacking ca-certificates (from .../ca-certificates_20130119+deb7u2_all.deb) ...
+Setting up openssl (1.0.1t-1+deb7u4) ...
+Setting up ca-certificates (20130119+deb7u2) ...
+Processing triggers for ca-certificates ...
+Updating certificates in /etc/ssl/certs... 165 added, 0 removed; done.
+Running hooks in /etc/ca-certificates/update.d....done.
+</pre></div>
+
+            
+                </div>
+            </div>
+        
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    
+    <h2>Item</h2>
+            <div class="codehilite"><pre><span></span>python-apt
+</pre></div>
+
+        
+
+        <h2>Cache_update_time</h2>
+                <div class="codehilite"><pre><span></span>1522859209
+</pre></div>
+
+            
+                </div>
+            </div>
+        
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    
+    <h2>Item</h2>
+            <div class="codehilite"><pre><span></span>python-simplejson
+</pre></div>
+
+        
+
+        <h2>Cache_update_time</h2>
+                <div class="codehilite"><pre><span></span>1522859209
+</pre></div>
+
+            <h2>Stderr</h2>
+                <div class="codehilite"><pre><span></span>debconf: delaying package configuration, since apt-utils is not installed
+</pre></div>
+
+            <h2>Stderr_lines</h2>
+                <div class="codehilite"><pre><span></span><span class="p">[</span>
+    <span class="s2">&quot;debconf: delaying package configuration, since apt-utils is not installed&quot;</span>
+<span class="p">]</span>
+</pre></div>
+
+            <h2>Stdout</h2>
+                <div class="codehilite"><pre><span></span>Reading package lists...
+Building dependency tree...
+Reading state information...
+The following extra packages will be installed:
+  javascript-common libjs-jquery wwwconfig-common
+Suggested packages:
+  apache2 httpd mysql-client postgresql-client
+The following NEW packages will be installed:
+  javascript-common libjs-jquery python-simplejson wwwconfig-common
+0 upgraded, 4 newly installed, 0 to remove and 1 not upgraded.
+Need to get 204 kB of archives.
+After this operation, 1029 kB of additional disk space will be used.
+Get:1 http://deb.debian.org/debian/ wheezy/main wwwconfig-common all 0.2.2 [22.8 kB]
+Get:2 http://deb.debian.org/debian/ wheezy/main javascript-common all 7 [3810 B]
+Get:3 http://deb.debian.org/debian/ wheezy/main libjs-jquery all 1.7.2+dfsg-1 [80.1 kB]
+Get:4 http://deb.debian.org/debian/ wheezy/main python-simplejson amd64 2.5.2-1 [97.6 kB]
+Fetched 204 kB in 0s (365 kB/s)
+Selecting previously unselected package wwwconfig-common.
+(Reading database ... 8692 files and directories currently installed.)
+Unpacking wwwconfig-common (from .../wwwconfig-common_0.2.2_all.deb) ...
+Selecting previously unselected package javascript-common.
+Unpacking javascript-common (from .../javascript-common_7_all.deb) ...
+Selecting previously unselected package libjs-jquery.
+Unpacking libjs-jquery (from .../libjs-jquery_1.7.2+dfsg-1_all.deb) ...
+Selecting previously unselected package python-simplejson.
+Unpacking python-simplejson (from .../python-simplejson_2.5.2-1_amd64.deb) ...
+Setting up wwwconfig-common (0.2.2) ...
+Setting up javascript-common (7) ...
+Setting up libjs-jquery (1.7.2+dfsg-1) ...
+Setting up python-simplejson (2.5.2-1) ...
+</pre></div>
+
+            
+                </div>
+            </div>
+        
+    
+          
+        </div>
+    </div>
+</div>
+</body>
+</html>

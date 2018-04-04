@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html class="layout-pf">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="ARA | Ansible Run Analysis records Ansible playbook runs seamlessly to make them easier to visualize, understand and troubleshoot">
+    <title>ARA | Ansible Run Analysis</title>
+    <script src="../../static/packaged/jquery/jquery.min.js"></script>
+    <script src="../../static/packaged/datatables/js/jquery.dataTables.min.js"></script>
+    <script src="../../static/packaged/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../../static/packaged/patternfly_bootstrap_treeview/js/bootstrap-treeview.min.js"></script>
+    <script src="../../static/packaged/patternfly/js/patternfly.min.js"></script>
+    <script src="../../static/js/ara.js"></script>
+    <link href="../../static/packaged/patternfly/css/patternfly.min.css" rel="stylesheet">
+    <link href="../../static/packaged/patternfly/css/patternfly-additions.min.css" rel="stylesheet">
+    <link href="../../static/packaged/patternfly_bootstrap_treeview/css/bootstrap-treeview.min.css" rel="stylesheet">
+    <link href="../../static/css/pygments.css" rel="stylesheet">
+    <link href="../../static/css/ara.css" rel="stylesheet">
+    <link rel="shortcut icon" href="../../static/images/favicon.ico">
+</head>
+
+
+
+<body>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12 results">
+          <h2>Task: <strong>ansible-role-bootstrap : install software with zypper</strong></h2>
+          <h2>Host: <strong>bootstrap-opensuse-42.2</strong></h2>
+          <p>Time: <strong>2018-04-04 16:56:04</strong></p>
+          <p>Ansible version: <strong>2.3.3.0</strong></p>
+          
+          
+              
+    
+
+        <h2>Stdout</h2>
+                <div class="codehilite"><pre><span></span>Retrieving repository &#39;NON OSS&#39; metadata [.done]
+Building repository &#39;NON OSS&#39; cache [....done]
+Retrieving repository &#39;NON OSS Update&#39; metadata [....done]
+Building repository &#39;NON OSS Update&#39; cache [....done]
+Retrieving repository &#39;OSS&#39; metadata [...done]
+Building repository &#39;OSS&#39; cache [....done]
+Retrieving repository &#39;OSS Update&#39; metadata [............done]
+Building repository &#39;OSS Update&#39; cache [....done]
+Loading repository data...
+Warning: Repository &#39;OSS Update&#39; appears to be outdated. Consider using a different mirror or server.
+Reading installed packages...
+Resolving package dependencies...
+
+The following 7 NEW packages are going to be installed:
+  libdb-4_8 libpython2_7-1_0 libsqlite3-0 python python-base python-xml sudo
+
+7 new packages to install.
+Overall download size: 8.6 MiB. Already cached: 0 B. After the operation, additional 34.3 MiB will be used.
+Continue? [y/n/...? shows all options] (y): y
+Retrieving package libdb-4_8-4.8.30-31.51.x86_64 (1/7), 667.3 KiB (  3.1 MiB unpacked)
+Retrieving: libdb-4_8-4.8.30-31.51.x86_64.rpm [.done]
+Retrieving package libpython2_7-1_0-2.7.13-25.3.1.x86_64 (2/7), 712.8 KiB (  1.9 MiB unpacked)
+Retrieving: libpython2_7-1_0-2.7.13-25.3.1.x86_64.rpm [.done (16.1 KiB/s)]
+Retrieving package libsqlite3-0-3.8.10.2-8.3.1.x86_64 (3/7), 409.0 KiB (794.8 KiB unpacked)
+Retrieving: libsqlite3-0-3.8.10.2-8.3.1.x86_64.rpm [done]
+Retrieving package sudo-1.8.10p3-9.9.1.x86_64 (4/7), 817.3 KiB (  3.2 MiB unpacked)
+Retrieving: sudo-1.8.10p3-9.9.1.x86_64.rpm [.done (3.7 MiB/s)]
+Retrieving package python-base-2.7.13-25.3.1.x86_64 (5/7),   5.5 MiB ( 23.0 MiB unpacked)
+Retrieving: python-base-2.7.13-25.3.1.x86_64.rpm [done]
+Retrieving package python-xml-2.7.13-25.3.1.x86_64 (6/7), 191.9 KiB (877.2 KiB unpacked)
+Retrieving: python-xml-2.7.13-25.3.1.x86_64.rpm [.done (7.9 KiB/s)]
+Retrieving package python-2.7.13-25.3.1.x86_64 (7/7), 312.5 KiB (  1.4 MiB unpacked)
+Retrieving: python-2.7.13-25.3.1.x86_64.rpm [done]
+Checking for file conflicts: [.......done]
+(1/7) Installing: libdb-4_8-4.8.30-31.51.x86_64 [............done]
+(2/7) Installing: libpython2_7-1_0-2.7.13-25.3.1.x86_64 [...........done]
+(3/7) Installing: libsqlite3-0-3.8.10.2-8.3.1.x86_64 [..........done]
+(4/7) Installing: sudo-1.8.10p3-9.9.1.x86_64 [............done]
+(5/7) Installing: python-base-2.7.13-25.3.1.x86_64 [............done]
+(6/7) Installing: python-xml-2.7.13-25.3.1.x86_64 [...........done]
+(7/7) Installing: python-2.7.13-25.3.1.x86_64 [............done]
+</pre></div>
+
+            
+          
+        </div>
+    </div>
+</div>
+</body>
+</html>

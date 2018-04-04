@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html class="layout-pf">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="ARA | Ansible Run Analysis records Ansible playbook runs seamlessly to make them easier to visualize, understand and troubleshoot">
+    <title>ARA | Ansible Run Analysis</title>
+    <script src="../../static/packaged/jquery/jquery.min.js"></script>
+    <script src="../../static/packaged/datatables/js/jquery.dataTables.min.js"></script>
+    <script src="../../static/packaged/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../../static/packaged/patternfly_bootstrap_treeview/js/bootstrap-treeview.min.js"></script>
+    <script src="../../static/packaged/patternfly/js/patternfly.min.js"></script>
+    <script src="../../static/js/ara.js"></script>
+    <link href="../../static/packaged/patternfly/css/patternfly.min.css" rel="stylesheet">
+    <link href="../../static/packaged/patternfly/css/patternfly-additions.min.css" rel="stylesheet">
+    <link href="../../static/packaged/patternfly_bootstrap_treeview/css/bootstrap-treeview.min.css" rel="stylesheet">
+    <link href="../../static/css/pygments.css" rel="stylesheet">
+    <link href="../../static/css/ara.css" rel="stylesheet">
+    <link rel="shortcut icon" href="../../static/images/favicon.ico">
+</head>
+
+
+
+<body>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12 results">
+          <h2>Task: <strong>ansible-role-bootstrap : install software to support preview modules</strong></h2>
+          <h2>Host: <strong>bootstrap-opensuse-42.2</strong></h2>
+          <p>Time: <strong>2018-04-04 16:56:47</strong></p>
+          <p>Ansible version: <strong>2.3.3.0</strong></p>
+          
+          
+              
+    
+        
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    
+    
+
+        <h2>Msg</h2>
+                <div class="codehilite"><pre><span></span>All items completed
+</pre></div>
+
+            
+                </div>
+            </div>
+        
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    
+    <h2>Item</h2>
+            <div class="codehilite"><pre><span></span>lvm2
+</pre></div>
+
+        
+
+        <h2>Cmd</h2>
+                <div class="codehilite"><pre><span></span><span class="p">[</span>
+    <span class="s2">&quot;/usr/bin/zypper&quot;</span><span class="p">,</span> 
+    <span class="s2">&quot;--quiet&quot;</span><span class="p">,</span> 
+    <span class="s2">&quot;--non-interactive&quot;</span><span class="p">,</span> 
+    <span class="s2">&quot;--xmlout&quot;</span><span class="p">,</span> 
+    <span class="s2">&quot;install&quot;</span><span class="p">,</span> 
+    <span class="s2">&quot;--type&quot;</span><span class="p">,</span> 
+    <span class="s2">&quot;package&quot;</span><span class="p">,</span> 
+    <span class="s2">&quot;--auto-agree-with-licenses&quot;</span><span class="p">,</span> 
+    <span class="s2">&quot;--no-recommends&quot;</span><span class="p">,</span> 
+    <span class="s2">&quot;--&quot;</span><span class="p">,</span> 
+    <span class="s2">&quot;lvm2&quot;</span>
+<span class="p">]</span>
+</pre></div>
+
+            <h2>Name</h2>
+                <div class="codehilite"><pre><span></span><span class="p">[</span>
+    <span class="s2">&quot;lvm2&quot;</span>
+<span class="p">]</span>
+</pre></div>
+
+            <h2>State</h2>
+                <div class="codehilite"><pre><span></span>present
+</pre></div>
+
+            <h2>Stdout</h2>
+                <div class="codehilite"><pre><span></span>&lt;?xml version=&#39;1.0&#39;?&gt;
+&lt;stream&gt;
+&lt;message type=&quot;warning&quot;&gt;Repository &#39;OSS Update&#39; appears to be outdated. Consider using a different mirror or server.&lt;/message&gt;
+&lt;install-summary download-size=&quot;1059786&quot; space-usage-diff=&quot;4580213&quot;&gt;
+&lt;to-install&gt;
+&lt;solvable type=&quot;package&quot; name=&quot;lvm2&quot; edition=&quot;2.02.120-73.9.1&quot; arch=&quot;x86_64&quot; summary=&quot;Logical Volume Manager Tools&quot;&gt;
+&lt;description&gt;Programs and man pages for configuring and using the LVM2 Logical
+Volume Manager.&lt;/description&gt;&lt;/solvable&gt;
+&lt;/to-install&gt;
+&lt;/install-summary&gt;
+&lt;prompt id=&quot;0&quot;&gt;
+&lt;text&gt;Continue?&lt;/text&gt;
+&lt;option default=&quot;1&quot; value=&quot;y&quot; desc=&quot;Yes, accept the summary and proceed with installation/removal of packages.&quot;/&gt;
+&lt;option value=&quot;n&quot; desc=&quot;No, cancel the operation.&quot;/&gt;
+&lt;option value=&quot;v&quot; desc=&quot;Toggle display of package versions.&quot;/&gt;
+&lt;option value=&quot;a&quot; desc=&quot;Toggle display of package architectures.&quot;/&gt;
+&lt;option value=&quot;r&quot; desc=&quot;Toggle display of repositories from which the packages will be installed.&quot;/&gt;
+&lt;option value=&quot;m&quot; desc=&quot;Toggle display of package vendor names.&quot;/&gt;
+&lt;option value=&quot;d&quot; desc=&quot;Toggle between showing all details and as few details as possible.&quot;/&gt;
+&lt;option value=&quot;g&quot; desc=&quot;View the summary in pager.&quot;/&gt;
+&lt;/prompt&gt;
+&lt;download url=&quot;http://download.opensuse.org/update/leap/42.2/oss/x86_64/lvm2-2.02.120-73.9.1.x86_64.rpm&quot; percent=&quot;-1&quot; rate=&quot;-1&quot;/&gt;
+&lt;download url=&quot;http://download.opensuse.org/update/leap/42.2/oss/x86_64/lvm2-2.02.120-73.9.1.x86_64.rpm&quot; percent=&quot;0&quot; rate=&quot;0&quot;/&gt;
+&lt;download url=&quot;http://download.opensuse.org/update/leap/42.2/oss/x86_64/lvm2-2.02.120-73.9.1.x86_64.rpm&quot; rate=&quot;0&quot; done=&quot;1&quot;/&gt;
+&lt;/stream&gt;
+</pre></div>
+
+            
+                </div>
+            </div>
+        
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    
+    <h2>Item</h2>
+            <div class="codehilite"><pre><span></span>tar
+</pre></div>
+
+        
+
+        <h2>Cmd</h2>
+                <div class="codehilite"><pre><span></span><span class="p">[</span>
+    <span class="s2">&quot;/usr/bin/zypper&quot;</span><span class="p">,</span> 
+    <span class="s2">&quot;--quiet&quot;</span><span class="p">,</span> 
+    <span class="s2">&quot;--non-interactive&quot;</span><span class="p">,</span> 
+    <span class="s2">&quot;--xmlout&quot;</span><span class="p">,</span> 
+    <span class="s2">&quot;install&quot;</span><span class="p">,</span> 
+    <span class="s2">&quot;--type&quot;</span><span class="p">,</span> 
+    <span class="s2">&quot;package&quot;</span><span class="p">,</span> 
+    <span class="s2">&quot;--auto-agree-with-licenses&quot;</span><span class="p">,</span> 
+    <span class="s2">&quot;--no-recommends&quot;</span><span class="p">,</span> 
+    <span class="s2">&quot;--&quot;</span><span class="p">,</span> 
+    <span class="s2">&quot;tar&quot;</span>
+<span class="p">]</span>
+</pre></div>
+
+            <h2>Name</h2>
+                <div class="codehilite"><pre><span></span><span class="p">[</span>
+    <span class="s2">&quot;tar&quot;</span>
+<span class="p">]</span>
+</pre></div>
+
+            <h2>State</h2>
+                <div class="codehilite"><pre><span></span>present
+</pre></div>
+
+            <h2>Stdout</h2>
+                <div class="codehilite"><pre><span></span>&lt;?xml version=&#39;1.0&#39;?&gt;
+&lt;stream&gt;
+&lt;message type=&quot;warning&quot;&gt;Repository &#39;OSS Update&#39; appears to be outdated. Consider using a different mirror or server.&lt;/message&gt;
+&lt;install-summary download-size=&quot;504712&quot; space-usage-diff=&quot;1209666&quot;&gt;
+&lt;to-install&gt;
+&lt;solvable type=&quot;package&quot; name=&quot;tar&quot; edition=&quot;1.27.1-11.1&quot; arch=&quot;x86_64&quot; summary=&quot;GNU implementation of tar ((t)ape (ar)chiver)&quot;&gt;
+&lt;description&gt;This package normally also includes the program &quot;rmt&quot;, which provides
+remote tape drive control. Since there are compatible versions of &#39;rmt&#39;
+in either the &#39;star&#39; package or the &#39;dump&#39; package, we didn&#39;t put &#39;rmt&#39;
+into this package. If you are planning to use the remote tape features
+provided by tar you have to also install the &#39;dump&#39; or the &#39;star&#39;
+package.&lt;/description&gt;&lt;/solvable&gt;
+&lt;/to-install&gt;
+&lt;/install-summary&gt;
+&lt;prompt id=&quot;0&quot;&gt;
+&lt;text&gt;Continue?&lt;/text&gt;
+&lt;option default=&quot;1&quot; value=&quot;y&quot; desc=&quot;Yes, accept the summary and proceed with installation/removal of packages.&quot;/&gt;
+&lt;option value=&quot;n&quot; desc=&quot;No, cancel the operation.&quot;/&gt;
+&lt;option value=&quot;v&quot; desc=&quot;Toggle display of package versions.&quot;/&gt;
+&lt;option value=&quot;a&quot; desc=&quot;Toggle display of package architectures.&quot;/&gt;
+&lt;option value=&quot;r&quot; desc=&quot;Toggle display of repositories from which the packages will be installed.&quot;/&gt;
+&lt;option value=&quot;m&quot; desc=&quot;Toggle display of package vendor names.&quot;/&gt;
+&lt;option value=&quot;d&quot; desc=&quot;Toggle between showing all details and as few details as possible.&quot;/&gt;
+&lt;option value=&quot;g&quot; desc=&quot;View the summary in pager.&quot;/&gt;
+&lt;/prompt&gt;
+&lt;download url=&quot;http://download.opensuse.org/update/leap/42.2/oss/x86_64/tar-1.27.1-11.1.x86_64.rpm&quot; percent=&quot;-1&quot; rate=&quot;-1&quot;/&gt;
+&lt;download url=&quot;http://download.opensuse.org/update/leap/42.2/oss/x86_64/tar-1.27.1-11.1.x86_64.rpm&quot; percent=&quot;76&quot; rate=&quot;1658397&quot;/&gt;
+&lt;download url=&quot;http://download.opensuse.org/update/leap/42.2/oss/x86_64/tar-1.27.1-11.1.x86_64.rpm&quot; rate=&quot;1658397&quot; done=&quot;1&quot;/&gt;
+&lt;/stream&gt;
+</pre></div>
+
+            
+                </div>
+            </div>
+        
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    
+    <h2>Item</h2>
+            <div class="codehilite"><pre><span></span>unzip
+</pre></div>
+
+        
+
+        <h2>Cmd</h2>
+                <div class="codehilite"><pre><span></span><span class="p">[</span>
+    <span class="s2">&quot;/usr/bin/zypper&quot;</span><span class="p">,</span> 
+    <span class="s2">&quot;--quiet&quot;</span><span class="p">,</span> 
+    <span class="s2">&quot;--non-interactive&quot;</span><span class="p">,</span> 
+    <span class="s2">&quot;--xmlout&quot;</span><span class="p">,</span> 
+    <span class="s2">&quot;install&quot;</span><span class="p">,</span> 
+    <span class="s2">&quot;--type&quot;</span><span class="p">,</span> 
+    <span class="s2">&quot;package&quot;</span><span class="p">,</span> 
+    <span class="s2">&quot;--auto-agree-with-licenses&quot;</span><span class="p">,</span> 
+    <span class="s2">&quot;--no-recommends&quot;</span><span class="p">,</span> 
+    <span class="s2">&quot;--&quot;</span><span class="p">,</span> 
+    <span class="s2">&quot;unzip&quot;</span>
+<span class="p">]</span>
+</pre></div>
+
+            <h2>Name</h2>
+                <div class="codehilite"><pre><span></span><span class="p">[</span>
+    <span class="s2">&quot;unzip&quot;</span>
+<span class="p">]</span>
+</pre></div>
+
+            <h2>State</h2>
+                <div class="codehilite"><pre><span></span>present
+</pre></div>
+
+            <h2>Stdout</h2>
+                <div class="codehilite"><pre><span></span>&lt;?xml version=&#39;1.0&#39;?&gt;
+&lt;stream&gt;
+&lt;message type=&quot;warning&quot;&gt;Repository &#39;OSS Update&#39; appears to be outdated. Consider using a different mirror or server.&lt;/message&gt;
+&lt;install-summary download-size=&quot;95228&quot; space-usage-diff=&quot;269297&quot;&gt;
+&lt;to-install&gt;
+&lt;solvable type=&quot;package&quot; name=&quot;unzip&quot; edition=&quot;6.00-28.5&quot; arch=&quot;x86_64&quot; summary=&quot;A program to unpack compressed files&quot;&gt;
+&lt;description&gt;UnZip is an extraction utility for archives compressed in .zip format
+(known as &quot;zip files&quot;).  Although highly compatible both with PKWARE&#39;s
+PKZIP(tm) and PKUNZIP utilities for MS-DOS and with Info-ZIP&#39;s own Zip
+program, our primary objectives have been portability and non-MS-DOS
+functionality. This version can also extract encrypted archives.&lt;/description&gt;&lt;/solvable&gt;
+&lt;/to-install&gt;
+&lt;/install-summary&gt;
+&lt;prompt id=&quot;0&quot;&gt;
+&lt;text&gt;Continue?&lt;/text&gt;
+&lt;option default=&quot;1&quot; value=&quot;y&quot; desc=&quot;Yes, accept the summary and proceed with installation/removal of packages.&quot;/&gt;
+&lt;option value=&quot;n&quot; desc=&quot;No, cancel the operation.&quot;/&gt;
+&lt;option value=&quot;v&quot; desc=&quot;Toggle display of package versions.&quot;/&gt;
+&lt;option value=&quot;a&quot; desc=&quot;Toggle display of package architectures.&quot;/&gt;
+&lt;option value=&quot;r&quot; desc=&quot;Toggle display of repositories from which the packages will be installed.&quot;/&gt;
+&lt;option value=&quot;m&quot; desc=&quot;Toggle display of package vendor names.&quot;/&gt;
+&lt;option value=&quot;d&quot; desc=&quot;Toggle between showing all details and as few details as possible.&quot;/&gt;
+&lt;option value=&quot;g&quot; desc=&quot;View the summary in pager.&quot;/&gt;
+&lt;/prompt&gt;
+&lt;download url=&quot;http://download.opensuse.org/distribution/leap/42.2/repo/oss/suse/x86_64/unzip-6.00-28.5.x86_64.rpm&quot; percent=&quot;-1&quot; rate=&quot;-1&quot;/&gt;
+&lt;download url=&quot;http://download.opensuse.org/distribution/leap/42.2/repo/oss/suse/x86_64/unzip-6.00-28.5.x86_64.rpm&quot; percent=&quot;0&quot; rate=&quot;0&quot;/&gt;
+&lt;download url=&quot;http://download.opensuse.org/distribution/leap/42.2/repo/oss/suse/x86_64/unzip-6.00-28.5.x86_64.rpm&quot; rate=&quot;0&quot; done=&quot;1&quot;/&gt;
+&lt;/stream&gt;
+</pre></div>
+
+            
+                </div>
+            </div>
+        
+    
+          
+        </div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,60 @@
+{
+  "data": [
+    [
+      "\n<div class=\"pull-left\" data-toggle=\"tooltip\" data-placement=\"bottom\" data-html=\"true\" title=\"This task has the following tags:\n    <ul>\n        <li>always</li>\n        \n    </ul>\n\">Gathering Facts</div>\n", 
+      "bootstrap-ubuntu-artful", 
+      "<a href=\"#\" data-toggle=\"modal\" data-target=\"#file_modal\" data-load=\"3466c8da-bd85-43b9-ba3c-5cedc531d8cc/#line-1\">setup</a>\n", 
+      "0:00:00", 
+      "0:00:01", 
+      "<a href=\"#\" data-toggle=\"modal\" data-target=\"#task_result_modal\" data-load=\"c6f215b0-2d5f-4733-88f6-0ad723a01ef4/\"><span class=\"ok label\">OK</span></a>"
+    ], 
+    [
+      "\n<div class=\"pull-left\">Download and install Goss</div>\n", 
+      "bootstrap-ubuntu-artful", 
+      "<a href=\"#\" data-toggle=\"modal\" data-target=\"#file_modal\" data-load=\"3466c8da-bd85-43b9-ba3c-5cedc531d8cc/#line-23\">get_url</a>\n", 
+      "0:00:01", 
+      "0:00:03", 
+      "<a href=\"#\" data-toggle=\"modal\" data-target=\"#task_result_modal\" data-load=\"393fa24c-7094-4ccd-a33a-356a77a27dd2/\"><span class=\"changed label\">CHANGED</span></a>"
+    ], 
+    [
+      "\n<div class=\"pull-left\">Copy Goss tests to remote</div>\n", 
+      "bootstrap-ubuntu-artful", 
+      "<a href=\"#\" data-toggle=\"modal\" data-target=\"#file_modal\" data-load=\"3466c8da-bd85-43b9-ba3c-5cedc531d8cc/#line-30\">copy</a>\n", 
+      "0:00:04", 
+      "0:00:01", 
+      "<a href=\"#\" data-toggle=\"modal\" data-target=\"#task_result_modal\" data-load=\"16ff1ce7-e3fb-407d-aa97-142b0cd49a39/\"><span class=\"changed label\">CHANGED</span></a>"
+    ], 
+    [
+      "\n<div class=\"pull-left\">Register test files</div>\n", 
+      "bootstrap-ubuntu-artful", 
+      "<a href=\"#\" data-toggle=\"modal\" data-target=\"#file_modal\" data-load=\"3466c8da-bd85-43b9-ba3c-5cedc531d8cc/#line-37\">command</a>\n", 
+      "0:00:05", 
+      "0:00:00", 
+      "<a href=\"#\" data-toggle=\"modal\" data-target=\"#task_result_modal\" data-load=\"91442f6c-bccd-4999-bada-707ffa676979/\"><span class=\"changed label\">CHANGED</span></a>"
+    ], 
+    [
+      "\n<div class=\"pull-left\">Execute Goss tests</div>\n", 
+      "bootstrap-ubuntu-artful", 
+      "<a href=\"#\" data-toggle=\"modal\" data-target=\"#file_modal\" data-load=\"3466c8da-bd85-43b9-ba3c-5cedc531d8cc/#line-41\">command</a>\n", 
+      "0:00:06", 
+      "0:00:00", 
+      "<a href=\"#\" data-toggle=\"modal\" data-target=\"#task_result_modal\" data-load=\"422b4761-66ff-429a-8d17-a13225ed7a99/\"><span class=\"changed label\">CHANGED</span></a>"
+    ], 
+    [
+      "\n<div class=\"pull-left\">Display details about the goss results</div>\n", 
+      "bootstrap-ubuntu-artful", 
+      "<a href=\"#\" data-toggle=\"modal\" data-target=\"#file_modal\" data-load=\"3466c8da-bd85-43b9-ba3c-5cedc531d8cc/#line-47\">debug</a>\n", 
+      "0:00:07", 
+      "0:00:00", 
+      "<a href=\"#\" data-toggle=\"modal\" data-target=\"#task_result_modal\" data-load=\"cd3e2fa6-28aa-4b72-926a-34eec95e32b7/\"><span class=\"ok label\">OK</span></a>"
+    ], 
+    [
+      "\n<div class=\"pull-left\">Fail when tests fail</div>\n", 
+      "bootstrap-ubuntu-artful", 
+      "<a href=\"#\" data-toggle=\"modal\" data-target=\"#file_modal\" data-load=\"3466c8da-bd85-43b9-ba3c-5cedc531d8cc/#line-52\">fail</a>\n", 
+      "0:00:07", 
+      "0:00:00", 
+      "<a href=\"#\" data-toggle=\"modal\" data-target=\"#task_result_modal\" data-load=\"1393dbcb-07e6-44d1-b7c7-92f40bdf586e/\"><span class=\"skipped label\">SKIPPED</span></a>"
+    ]
+  ]
+}

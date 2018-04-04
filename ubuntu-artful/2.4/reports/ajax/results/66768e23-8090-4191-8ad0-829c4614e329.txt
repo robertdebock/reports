@@ -1,0 +1,140 @@
+{
+  "data": [
+    [
+      "\n<div class=\"pull-left\">ansible-role-bootstrap : register apk</div>\n", 
+      "bootstrap-ubuntu-artful", 
+      "<a href=\"#\" data-toggle=\"modal\" data-target=\"#file_modal\" data-load=\"a45c0298-70f7-40af-a9fd-9d42ba334308/#line-3\">raw</a>\n", 
+      "0:00:00", 
+      "0:00:00", 
+      "<a href=\"#\" data-toggle=\"modal\" data-target=\"#task_result_modal\" data-load=\"8df5975d-5e72-4de4-9d7e-a7f0b56dcec6/\"><span class=\"ok label\">OK</span></a>"
+    ], 
+    [
+      "\n<div class=\"pull-left\">ansible-role-bootstrap : register apt_get</div>\n", 
+      "bootstrap-ubuntu-artful", 
+      "<a href=\"#\" data-toggle=\"modal\" data-target=\"#file_modal\" data-load=\"a45c0298-70f7-40af-a9fd-9d42ba334308/#line-11\">raw</a>\n", 
+      "0:00:00", 
+      "0:00:00", 
+      "<a href=\"#\" data-toggle=\"modal\" data-target=\"#task_result_modal\" data-load=\"7f9beffb-db4d-4f10-afba-4564d2eb7b5c/\"><span class=\"ok label\">OK</span></a>"
+    ], 
+    [
+      "\n<div class=\"pull-left\">ansible-role-bootstrap : register dnf</div>\n", 
+      "bootstrap-ubuntu-artful", 
+      "<a href=\"#\" data-toggle=\"modal\" data-target=\"#file_modal\" data-load=\"a45c0298-70f7-40af-a9fd-9d42ba334308/#line-19\">raw</a>\n", 
+      "0:00:00", 
+      "0:00:00", 
+      "<a href=\"#\" data-toggle=\"modal\" data-target=\"#task_result_modal\" data-load=\"b17e7ce7-3da8-42e3-b64d-a3f83d9c1567/\"><span class=\"ok label\">OK</span></a>"
+    ], 
+    [
+      "\n<div class=\"pull-left\">ansible-role-bootstrap : register pacman</div>\n", 
+      "bootstrap-ubuntu-artful", 
+      "<a href=\"#\" data-toggle=\"modal\" data-target=\"#file_modal\" data-load=\"a45c0298-70f7-40af-a9fd-9d42ba334308/#line-27\">raw</a>\n", 
+      "0:00:00", 
+      "0:00:00", 
+      "<a href=\"#\" data-toggle=\"modal\" data-target=\"#task_result_modal\" data-load=\"40d45843-b8d2-4ef6-8feb-8c94cefb7832/\"><span class=\"ok label\">OK</span></a>"
+    ], 
+    [
+      "\n<div class=\"pull-left\">ansible-role-bootstrap : register yum</div>\n", 
+      "bootstrap-ubuntu-artful", 
+      "<a href=\"#\" data-toggle=\"modal\" data-target=\"#file_modal\" data-load=\"a45c0298-70f7-40af-a9fd-9d42ba334308/#line-35\">raw</a>\n", 
+      "0:00:00", 
+      "0:00:00", 
+      "<a href=\"#\" data-toggle=\"modal\" data-target=\"#task_result_modal\" data-load=\"fe3a4123-8405-4233-ba39-f12b9fec0803/\"><span class=\"ok label\">OK</span></a>"
+    ], 
+    [
+      "\n<div class=\"pull-left\">ansible-role-bootstrap : register zypper</div>\n", 
+      "bootstrap-ubuntu-artful", 
+      "<a href=\"#\" data-toggle=\"modal\" data-target=\"#file_modal\" data-load=\"a45c0298-70f7-40af-a9fd-9d42ba334308/#line-43\">raw</a>\n", 
+      "0:00:01", 
+      "0:00:00", 
+      "<a href=\"#\" data-toggle=\"modal\" data-target=\"#task_result_modal\" data-load=\"f3ac038d-fa54-4bda-bf3b-06f422ca7505/\"><span class=\"ok label\">OK</span></a>"
+    ], 
+    [
+      "\n<div class=\"pull-left\">ansible-role-bootstrap : install software with apk</div>\n", 
+      "bootstrap-ubuntu-artful", 
+      "<a href=\"#\" data-toggle=\"modal\" data-target=\"#file_modal\" data-load=\"a45c0298-70f7-40af-a9fd-9d42ba334308/#line-51\">raw</a>\n", 
+      "0:00:01", 
+      "0:00:00", 
+      "<a href=\"#\" data-toggle=\"modal\" data-target=\"#task_result_modal\" data-load=\"e5bb330a-2e4c-4137-bbc0-d1d8d7b9493c/\"><span class=\"skipped label\">SKIPPED</span></a>"
+    ], 
+    [
+      "\n<div class=\"pull-left\">ansible-role-bootstrap : install software with apt-get</div>\n", 
+      "bootstrap-ubuntu-artful", 
+      "<a href=\"#\" data-toggle=\"modal\" data-target=\"#file_modal\" data-load=\"a45c0298-70f7-40af-a9fd-9d42ba334308/#line-60\">raw</a>\n", 
+      "0:00:01", 
+      "0:00:20", 
+      "<a href=\"#\" data-toggle=\"modal\" data-target=\"#task_result_modal\" data-load=\"8cdf041f-7d03-4d56-bdc4-cd923f31cfe0/\"><span class=\"changed label\">CHANGED</span></a>"
+    ], 
+    [
+      "\n<div class=\"pull-left\">ansible-role-bootstrap : install software with dnf</div>\n", 
+      "bootstrap-ubuntu-artful", 
+      "<a href=\"#\" data-toggle=\"modal\" data-target=\"#file_modal\" data-load=\"a45c0298-70f7-40af-a9fd-9d42ba334308/#line-69\">raw</a>\n", 
+      "0:00:22", 
+      "0:00:00", 
+      "<a href=\"#\" data-toggle=\"modal\" data-target=\"#task_result_modal\" data-load=\"375c8bff-79f0-44d1-9936-df70bb81f5eb/\"><span class=\"skipped label\">SKIPPED</span></a>"
+    ], 
+    [
+      "\n<div class=\"pull-left\">ansible-role-bootstrap : install software with pacman</div>\n", 
+      "bootstrap-ubuntu-artful", 
+      "<a href=\"#\" data-toggle=\"modal\" data-target=\"#file_modal\" data-load=\"a45c0298-70f7-40af-a9fd-9d42ba334308/#line-78\">raw</a>\n", 
+      "0:00:22", 
+      "0:00:00", 
+      "<a href=\"#\" data-toggle=\"modal\" data-target=\"#task_result_modal\" data-load=\"f87802f6-bcf5-466e-a246-c4df4406fe27/\"><span class=\"skipped label\">SKIPPED</span></a>"
+    ], 
+    [
+      "\n<div class=\"pull-left\">ansible-role-bootstrap : install software with yum</div>\n", 
+      "bootstrap-ubuntu-artful", 
+      "<a href=\"#\" data-toggle=\"modal\" data-target=\"#file_modal\" data-load=\"a45c0298-70f7-40af-a9fd-9d42ba334308/#line-87\">raw</a>\n", 
+      "0:00:22", 
+      "0:00:00", 
+      "<a href=\"#\" data-toggle=\"modal\" data-target=\"#task_result_modal\" data-load=\"143f47d2-84ae-4aa0-aba7-58e29f919187/\"><span class=\"skipped label\">SKIPPED</span></a>"
+    ], 
+    [
+      "\n<div class=\"pull-left\">ansible-role-bootstrap : install software with zypper</div>\n", 
+      "bootstrap-ubuntu-artful", 
+      "<a href=\"#\" data-toggle=\"modal\" data-target=\"#file_modal\" data-load=\"a45c0298-70f7-40af-a9fd-9d42ba334308/#line-96\">raw</a>\n", 
+      "0:00:22", 
+      "0:00:00", 
+      "<a href=\"#\" data-toggle=\"modal\" data-target=\"#task_result_modal\" data-load=\"3fb016f6-f26d-4121-9487-f65a0ad5eedc/\"><span class=\"skipped label\">SKIPPED</span></a>"
+    ], 
+    [
+      "\n<div class=\"pull-left\">ansible-role-bootstrap : gather facts</div>\n", 
+      "bootstrap-ubuntu-artful", 
+      "<a href=\"#\" data-toggle=\"modal\" data-target=\"#file_modal\" data-load=\"a45c0298-70f7-40af-a9fd-9d42ba334308/#line-106\">setup</a>\n", 
+      "0:00:22", 
+      "0:00:00", 
+      "<a href=\"#\" data-toggle=\"modal\" data-target=\"#task_result_modal\" data-load=\"7a28e61f-1e9f-4281-87c3-660240cef3c3/\"><span class=\"ok label\">OK</span></a>"
+    ], 
+    [
+      "\n<div class=\"pull-left\">ansible-role-bootstrap : install software to support stable modules</div>\n", 
+      "bootstrap-ubuntu-artful", 
+      "<a href=\"#\" data-toggle=\"modal\" data-target=\"#file_modal\" data-load=\"a45c0298-70f7-40af-a9fd-9d42ba334308/#line-111\">package</a>\n", 
+      "0:00:23", 
+      "0:00:30", 
+      "<a href=\"#\" data-toggle=\"modal\" data-target=\"#task_result_modal\" data-load=\"678e930a-f170-4fcb-a9a1-b722fbbdd6e7/\"><span class=\"changed label\">CHANGED</span></a>"
+    ], 
+    [
+      "\n<div class=\"pull-left\">ansible-role-bootstrap : install software to support preview modules</div>\n", 
+      "bootstrap-ubuntu-artful", 
+      "<a href=\"#\" data-toggle=\"modal\" data-target=\"#file_modal\" data-load=\"a45c0298-70f7-40af-a9fd-9d42ba334308/#line-119\">package</a>\n", 
+      "0:00:54", 
+      "0:00:19", 
+      "<a href=\"#\" data-toggle=\"modal\" data-target=\"#task_result_modal\" data-load=\"80061ba8-6a64-4253-b299-f10aa6f438eb/\"><span class=\"changed label\">CHANGED</span></a>"
+    ], 
+    [
+      "\n<div class=\"pull-left\">ansible-role-bootstrap : gather facts after installation of packages</div>\n", 
+      "bootstrap-ubuntu-artful", 
+      "<a href=\"#\" data-toggle=\"modal\" data-target=\"#file_modal\" data-load=\"a45c0298-70f7-40af-a9fd-9d42ba334308/#line-129\">setup</a>\n", 
+      "0:01:13", 
+      "0:00:00", 
+      "<a href=\"#\" data-toggle=\"modal\" data-target=\"#task_result_modal\" data-load=\"3bc8ff33-945b-419f-9b07-10f549831fca/\"><span class=\"ok label\">OK</span></a>"
+    ], 
+    [
+      "\n<div class=\"pull-left\">test connection</div>\n", 
+      "bootstrap-ubuntu-artful", 
+      "<a href=\"#\" data-toggle=\"modal\" data-target=\"#file_modal\" data-load=\"ca9dfd11-50c4-4a49-ab7b-3975ea6d3653/#line-11\">ping</a>\n", 
+      "0:01:14", 
+      "0:00:00", 
+      "<a href=\"#\" data-toggle=\"modal\" data-target=\"#task_result_modal\" data-load=\"880c4d82-04af-4172-a93c-6ffad5029aa7/\"><span class=\"ok label\">OK</span></a>"
+    ]
+  ]
+}

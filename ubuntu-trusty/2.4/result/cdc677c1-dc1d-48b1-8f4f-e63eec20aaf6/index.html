@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html class="layout-pf">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="ARA | Ansible Run Analysis records Ansible playbook runs seamlessly to make them easier to visualize, understand and troubleshoot">
+    <title>ARA | Ansible Run Analysis</title>
+    <script src="../../static/packaged/jquery/jquery.min.js"></script>
+    <script src="../../static/packaged/datatables/js/jquery.dataTables.min.js"></script>
+    <script src="../../static/packaged/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../../static/packaged/patternfly_bootstrap_treeview/js/bootstrap-treeview.min.js"></script>
+    <script src="../../static/packaged/patternfly/js/patternfly.min.js"></script>
+    <script src="../../static/js/ara.js"></script>
+    <link href="../../static/packaged/patternfly/css/patternfly.min.css" rel="stylesheet">
+    <link href="../../static/packaged/patternfly/css/patternfly-additions.min.css" rel="stylesheet">
+    <link href="../../static/packaged/patternfly_bootstrap_treeview/css/bootstrap-treeview.min.css" rel="stylesheet">
+    <link href="../../static/css/pygments.css" rel="stylesheet">
+    <link href="../../static/css/ara.css" rel="stylesheet">
+    <link rel="shortcut icon" href="../../static/images/favicon.ico">
+</head>
+
+
+
+<body>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12 results">
+          <h2>Task: <strong>ansible-role-bootstrap : install software to support preview modules</strong></h2>
+          <h2>Host: <strong>bootstrap-ubuntu-trusty</strong></h2>
+          <p>Time: <strong>2018-04-04 17:02:15</strong></p>
+          <p>Ansible version: <strong>2.4.3.0</strong></p>
+          
+          
+              
+    
+        
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    
+    
+
+        <h2>Msg</h2>
+                <div class="codehilite"><pre><span></span>All items completed
+</pre></div>
+
+            <h2>Results</h2>
+                <div class="codehilite"><pre><span></span><span class="p">[</span>
+    <span class="p">{</span>
+        <span class="nt">&quot;_ansible_ignore_errors&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+        <span class="nt">&quot;_ansible_item_result&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span> 
+        <span class="nt">&quot;_ansible_no_log&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+        <span class="nt">&quot;_ansible_parsed&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span> 
+        <span class="nt">&quot;cache_update_time&quot;</span><span class="p">:</span> <span class="mi">1522861308</span><span class="p">,</span> 
+        <span class="nt">&quot;cache_updated&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+        <span class="nt">&quot;changed&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span> 
+        <span class="nt">&quot;diff&quot;</span><span class="p">:</span> <span class="p">{},</span> 
+        <span class="nt">&quot;failed&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+        <span class="nt">&quot;invocation&quot;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="nt">&quot;module_args&quot;</span><span class="p">:</span> <span class="p">{</span>
+                <span class="nt">&quot;allow_unauthenticated&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+                <span class="nt">&quot;autoclean&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+                <span class="nt">&quot;autoremove&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+                <span class="nt">&quot;cache_valid_time&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> 
+                <span class="nt">&quot;deb&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                <span class="nt">&quot;default_release&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                <span class="nt">&quot;dpkg_options&quot;</span><span class="p">:</span> <span class="s2">&quot;force-confdef,force-confold&quot;</span><span class="p">,</span> 
+                <span class="nt">&quot;force&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+                <span class="nt">&quot;force_apt_get&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+                <span class="nt">&quot;install_recommends&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;apt-transport-https&quot;</span><span class="p">,</span> 
+                <span class="nt">&quot;only_upgrade&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+                <span class="nt">&quot;package&quot;</span><span class="p">:</span> <span class="p">[</span>
+                    <span class="s2">&quot;apt-transport-https&quot;</span>
+                <span class="p">],</span> 
+                <span class="nt">&quot;purge&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+                <span class="nt">&quot;state&quot;</span><span class="p">:</span> <span class="s2">&quot;present&quot;</span><span class="p">,</span> 
+                <span class="nt">&quot;update_cache&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                <span class="nt">&quot;upgrade&quot;</span><span class="p">:</span> <span class="kc">null</span>
+            <span class="p">}</span>
+        <span class="p">},</span> 
+        <span class="nt">&quot;item&quot;</span><span class="p">:</span> <span class="s2">&quot;apt-transport-https&quot;</span><span class="p">,</span> 
+        <span class="nt">&quot;stderr&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span> 
+        <span class="nt">&quot;stderr_lines&quot;</span><span class="p">:</span> <span class="p">[],</span> 
+        <span class="nt">&quot;stdout&quot;</span><span class="p">:</span> <span class="s2">&quot;Reading package lists...\nBuilding dependency tree...\nReading state information...\nThe following extra packages will be installed:\n  krb5-locales libasn1-8-heimdal libcurl3-gnutls libgssapi-krb5-2\n  libgssapi3-heimdal libhcrypto4-heimdal libheimbase1-heimdal\n  libheimntlm0-heimdal libhx509-5-heimdal libidn11 libk5crypto3 libkeyutils1\n  libkrb5-26-heimdal libkrb5-3 libkrb5support0 libldap-2.4-2\n  libroken18-heimdal librtmp0 libsasl2-2 libsasl2-modules libsasl2-modules-db\n  libwind0-heimdal\nSuggested packages:\n  krb5-doc krb5-user libsasl2-modules-otp libsasl2-modules-ldap\n  libsasl2-modules-sql libsasl2-modules-gssapi-mit\n  libsasl2-modules-gssapi-heimdal\nThe following NEW packages will be installed:\n  apt-transport-https krb5-locales libasn1-8-heimdal libcurl3-gnutls\n  libgssapi-krb5-2 libgssapi3-heimdal libhcrypto4-heimdal libheimbase1-heimdal\n  libheimntlm0-heimdal libhx509-5-heimdal libidn11 libk5crypto3 libkeyutils1\n  libkrb5-26-heimdal libkrb5-3 libkrb5support0 libldap-2.4-2\n  libroken18-heimdal librtmp0 libsasl2-2 libsasl2-modules libsasl2-modules-db\n  libwind0-heimdal\n0 upgraded, 23 newly installed, 0 to remove and 4 not upgraded.\nNeed to get 1899 kB of archives.\nAfter this operation, 10.1 MB of additional disk space will be used.\nGet:1 http://archive.ubuntu.com/ubuntu/ trusty-updates/main libroken18-heimdal amd64 1.6~git20131207+dfsg-1ubuntu1.2 [39.9 kB]\nGet:2 http://archive.ubuntu.com/ubuntu/ trusty-updates/main libasn1-8-heimdal amd64 1.6~git20131207+dfsg-1ubuntu1.2 [160 kB]\nGet:3 http://archive.ubuntu.com/ubuntu/ trusty-updates/main libkrb5support0 amd64 1.12+dfsg-2ubuntu5.3 [30.7 kB]\nGet:4 http://archive.ubuntu.com/ubuntu/ trusty-updates/main libk5crypto3 amd64 1.12+dfsg-2ubuntu5.3 [79.6 kB]\nGet:5 http://archive.ubuntu.com/ubuntu/ trusty/main libkeyutils1 amd64 1.5.6-1 [7318 B]\nGet:6 http://archive.ubuntu.com/ubuntu/ trusty-updates/main libkrb5-3 amd64 1.12+dfsg-2ubuntu5.3 [262 kB]\nGet:7 http://archive.ubuntu.com/ubuntu/ trusty-updates/main libgssapi-krb5-2 amd64 1.12+dfsg-2ubuntu5.3 [114 kB]\nGet:8 http://archive.ubuntu.com/ubuntu/ trusty-updates/main libidn11 amd64 1.28-1ubuntu2.2 [94.6 kB]\nGet:9 http://archive.ubuntu.com/ubuntu/ trusty-updates/main libhcrypto4-heimdal amd64 1.6~git20131207+dfsg-1ubuntu1.2 [84.1 kB]\nGet:10 http://archive.ubuntu.com/ubuntu/ trusty-updates/main libheimbase1-heimdal amd64 1.6~git20131207+dfsg-1ubuntu1.2 [29.0 kB]\nGet:11 http://archive.ubuntu.com/ubuntu/ trusty-updates/main libwind0-heimdal amd64 1.6~git20131207+dfsg-1ubuntu1.2 [47.9 kB]\nGet:12 http://archive.ubuntu.com/ubuntu/ trusty-updates/main libhx509-5-heimdal amd64 1.6~git20131207+dfsg-1ubuntu1.2 [104 kB]\nGet:13 http://archive.ubuntu.com/ubuntu/ trusty-updates/main libkrb5-26-heimdal amd64 1.6~git20131207+dfsg-1ubuntu1.2 [196 kB]\nGet:14 http://archive.ubuntu.com/ubuntu/ trusty-updates/main libheimntlm0-heimdal amd64 1.6~git20131207+dfsg-1ubuntu1.2 [15.2 kB]\nGet:15 http://archive.ubuntu.com/ubuntu/ trusty-updates/main libgssapi3-heimdal amd64 1.6~git20131207+dfsg-1ubuntu1.2 [89.7 kB]\nGet:16 http://archive.ubuntu.com/ubuntu/ trusty/main libsasl2-modules-db amd64 2.1.25.dfsg1-17build1 [14.9 kB]\nGet:17 http://archive.ubuntu.com/ubuntu/ trusty/main libsasl2-2 amd64 2.1.25.dfsg1-17build1 [56.5 kB]\nGet:18 http://archive.ubuntu.com/ubuntu/ trusty-updates/main libldap-2.4-2 amd64 2.4.31-1+nmu2ubuntu8.4 [153 kB]\nGet:19 http://archive.ubuntu.com/ubuntu/ trusty-updates/main librtmp0 amd64 2.4+20121230.gitdf6c518-1ubuntu0.1 [50.4 kB]\nGet:20 http://archive.ubuntu.com/ubuntu/ trusty-updates/main libcurl3-gnutls amd64 7.35.0-1ubuntu2.15 [166 kB]\nGet:21 http://archive.ubuntu.com/ubuntu/ trusty-updates/main apt-transport-https amd64 1.0.1ubuntu2.17 [25.0 kB]\nGet:22 http://archive.ubuntu.com/ubuntu/ trusty-updates/main krb5-locales all 1.12+dfsg-2ubuntu5.3 [13.5 kB]\nGet:23 http://archive.ubuntu.com/ubuntu/ trusty/main libsasl2-modules amd64 2.1.25.dfsg1-17build1 [64.3 kB]\nFetched 1899 kB in 1s (1856 kB/s)\nSelecting previously unselected package libroken18-heimdal:amd64.\n(Reading database ... 13306 files and directories currently installed.)\nPreparing to unpack .../libroken18-heimdal_1.6~git20131207+dfsg-1ubuntu1.2_amd64.deb ...\nUnpacking libroken18-heimdal:amd64 (1.6~git20131207+dfsg-1ubuntu1.2) ...\nSelecting previously unselected package libasn1-8-heimdal:amd64.\nPreparing to unpack .../libasn1-8-heimdal_1.6~git20131207+dfsg-1ubuntu1.2_amd64.deb ...\nUnpacking libasn1-8-heimdal:amd64 (1.6~git20131207+dfsg-1ubuntu1.2) ...\nSelecting previously unselected package libkrb5support0:amd64.\nPreparing to unpack .../libkrb5support0_1.12+dfsg-2ubuntu5.3_amd64.deb ...\nUnpacking libkrb5support0:amd64 (1.12+dfsg-2ubuntu5.3) ...\nSelecting previously unselected package libk5crypto3:amd64.\nPreparing to unpack .../libk5crypto3_1.12+dfsg-2ubuntu5.3_amd64.deb ...\nUnpacking libk5crypto3:amd64 (1.12+dfsg-2ubuntu5.3) ...\nSelecting previously unselected package libkeyutils1:amd64.\nPreparing to unpack .../libkeyutils1_1.5.6-1_amd64.deb ...\nUnpacking libkeyutils1:amd64 (1.5.6-1) ...\nSelecting previously unselected package libkrb5-3:amd64.\nPreparing to unpack .../libkrb5-3_1.12+dfsg-2ubuntu5.3_amd64.deb ...\nUnpacking libkrb5-3:amd64 (1.12+dfsg-2ubuntu5.3) ...\nSelecting previously unselected package libgssapi-krb5-2:amd64.\nPreparing to unpack .../libgssapi-krb5-2_1.12+dfsg-2ubuntu5.3_amd64.deb ...\nUnpacking libgssapi-krb5-2:amd64 (1.12+dfsg-2ubuntu5.3) ...\nSelecting previously unselected package libidn11:amd64.\nPreparing to unpack .../libidn11_1.28-1ubuntu2.2_amd64.deb ...\nUnpacking libidn11:amd64 (1.28-1ubuntu2.2) ...\nSelecting previously unselected package libhcrypto4-heimdal:amd64.\nPreparing to unpack .../libhcrypto4-heimdal_1.6~git20131207+dfsg-1ubuntu1.2_amd64.deb ...\nUnpacking libhcrypto4-heimdal:amd64 (1.6~git20131207+dfsg-1ubuntu1.2) ...\nSelecting previously unselected package libheimbase1-heimdal:amd64.\nPreparing to unpack .../libheimbase1-heimdal_1.6~git20131207+dfsg-1ubuntu1.2_amd64.deb ...\nUnpacking libheimbase1-heimdal:amd64 (1.6~git20131207+dfsg-1ubuntu1.2) ...\nSelecting previously unselected package libwind0-heimdal:amd64.\nPreparing to unpack .../libwind0-heimdal_1.6~git20131207+dfsg-1ubuntu1.2_amd64.deb ...\nUnpacking libwind0-heimdal:amd64 (1.6~git20131207+dfsg-1ubuntu1.2) ...\nSelecting previously unselected package libhx509-5-heimdal:amd64.\nPreparing to unpack .../libhx509-5-heimdal_1.6~git20131207+dfsg-1ubuntu1.2_amd64.deb ...\nUnpacking libhx509-5-heimdal:amd64 (1.6~git20131207+dfsg-1ubuntu1.2) ...\nSelecting previously unselected package libkrb5-26-heimdal:amd64.\nPreparing to unpack .../libkrb5-26-heimdal_1.6~git20131207+dfsg-1ubuntu1.2_amd64.deb ...\nUnpacking libkrb5-26-heimdal:amd64 (1.6~git20131207+dfsg-1ubuntu1.2) ...\nSelecting previously unselected package libheimntlm0-heimdal:amd64.\nPreparing to unpack .../libheimntlm0-heimdal_1.6~git20131207+dfsg-1ubuntu1.2_amd64.deb ...\nUnpacking libheimntlm0-heimdal:amd64 (1.6~git20131207+dfsg-1ubuntu1.2) ...\nSelecting previously unselected package libgssapi3-heimdal:amd64.\nPreparing to unpack .../libgssapi3-heimdal_1.6~git20131207+dfsg-1ubuntu1.2_amd64.deb ...\nUnpacking libgssapi3-heimdal:amd64 (1.6~git20131207+dfsg-1ubuntu1.2) ...\nSelecting previously unselected package libsasl2-modules-db:amd64.\nPreparing to unpack .../libsasl2-modules-db_2.1.25.dfsg1-17build1_amd64.deb ...\nUnpacking libsasl2-modules-db:amd64 (2.1.25.dfsg1-17build1) ...\nSelecting previously unselected package libsasl2-2:amd64.\nPreparing to unpack .../libsasl2-2_2.1.25.dfsg1-17build1_amd64.deb ...\nUnpacking libsasl2-2:amd64 (2.1.25.dfsg1-17build1) ...\nSelecting previously unselected package libldap-2.4-2:amd64.\nPreparing to unpack .../libldap-2.4-2_2.4.31-1+nmu2ubuntu8.4_amd64.deb ...\nUnpacking libldap-2.4-2:amd64 (2.4.31-1+nmu2ubuntu8.4) ...\nSelecting previously unselected package librtmp0:amd64.\nPreparing to unpack .../librtmp0_2.4+20121230.gitdf6c518-1ubuntu0.1_amd64.deb ...\nUnpacking librtmp0:amd64 (2.4+20121230.gitdf6c518-1ubuntu0.1) ...\nSelecting previously unselected package libcurl3-gnutls:amd64.\nPreparing to unpack .../libcurl3-gnutls_7.35.0-1ubuntu2.15_amd64.deb ...\nUnpacking libcurl3-gnutls:amd64 (7.35.0-1ubuntu2.15) ...\nSelecting previously unselected package apt-transport-https.\nPreparing to unpack .../apt-transport-https_1.0.1ubuntu2.17_amd64.deb ...\nUnpacking apt-transport-https (1.0.1ubuntu2.17) ...\nSelecting previously unselected package krb5-locales.\nPreparing to unpack .../krb5-locales_1.12+dfsg-2ubuntu5.3_all.deb ...\nUnpacking krb5-locales (1.12+dfsg-2ubuntu5.3) ...\nSelecting previously unselected package libsasl2-modules:amd64.\nPreparing to unpack .../libsasl2-modules_2.1.25.dfsg1-17build1_amd64.deb ...\nUnpacking libsasl2-modules:amd64 (2.1.25.dfsg1-17build1) ...\nSetting up libroken18-heimdal:amd64 (1.6~git20131207+dfsg-1ubuntu1.2) ...\nSetting up libasn1-8-heimdal:amd64 (1.6~git20131207+dfsg-1ubuntu1.2) ...\nSetting up libkrb5support0:amd64 (1.12+dfsg-2ubuntu5.3) ...\nSetting up libk5crypto3:amd64 (1.12+dfsg-2ubuntu5.3) ...\nSetting up libkeyutils1:amd64 (1.5.6-1) ...\nSetting up libkrb5-3:amd64 (1.12+dfsg-2ubuntu5.3) ...\nSetting up libgssapi-krb5-2:amd64 (1.12+dfsg-2ubuntu5.3) ...\nSetting up libidn11:amd64 (1.28-1ubuntu2.2) ...\nSetting up libhcrypto4-heimdal:amd64 (1.6~git20131207+dfsg-1ubuntu1.2) ...\nSetting up libheimbase1-heimdal:amd64 (1.6~git20131207+dfsg-1ubuntu1.2) ...\nSetting up libwind0-heimdal:amd64 (1.6~git20131207+dfsg-1ubuntu1.2) ...\nSetting up libhx509-5-heimdal:amd64 (1.6~git20131207+dfsg-1ubuntu1.2) ...\nSetting up libkrb5-26-heimdal:amd64 (1.6~git20131207+dfsg-1ubuntu1.2) ...\nSetting up libheimntlm0-heimdal:amd64 (1.6~git20131207+dfsg-1ubuntu1.2) ...\nSetting up libgssapi3-heimdal:amd64 (1.6~git20131207+dfsg-1ubuntu1.2) ...\nSetting up libsasl2-modules-db:amd64 (2.1.25.dfsg1-17build1) ...\nSetting up libsasl2-2:amd64 (2.1.25.dfsg1-17build1) ...\nSetting up libldap-2.4-2:amd64 (2.4.31-1+nmu2ubuntu8.4) ...\nSetting up librtmp0:amd64 (2.4+20121230.gitdf6c518-1ubuntu0.1) ...\nSetting up libcurl3-gnutls:amd64 (7.35.0-1ubuntu2.15) ...\nSetting up apt-transport-https (1.0.1ubuntu2.17) ...\nSetting up krb5-locales (1.12+dfsg-2ubuntu5.3) ...\nSetting up libsasl2-modules:amd64 (2.1.25.dfsg1-17build1) ...\nProcessing triggers for libc-bin (2.19-0ubuntu6.14) ...\n&quot;</span><span class="p">,</span> 
+        <span class="nt">&quot;stdout_lines&quot;</span><span class="p">:</span> <span class="p">[</span>
+            <span class="s2">&quot;Reading package lists...&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;Building dependency tree...&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;Reading state information...&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;The following extra packages will be installed:&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;  krb5-locales libasn1-8-heimdal libcurl3-gnutls libgssapi-krb5-2&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;  libgssapi3-heimdal libhcrypto4-heimdal libheimbase1-heimdal&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;  libheimntlm0-heimdal libhx509-5-heimdal libidn11 libk5crypto3 libkeyutils1&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;  libkrb5-26-heimdal libkrb5-3 libkrb5support0 libldap-2.4-2&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;  libroken18-heimdal librtmp0 libsasl2-2 libsasl2-modules libsasl2-modules-db&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;  libwind0-heimdal&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;Suggested packages:&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;  krb5-doc krb5-user libsasl2-modules-otp libsasl2-modules-ldap&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;  libsasl2-modules-sql libsasl2-modules-gssapi-mit&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;  libsasl2-modules-gssapi-heimdal&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;The following NEW packages will be installed:&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;  apt-transport-https krb5-locales libasn1-8-heimdal libcurl3-gnutls&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;  libgssapi-krb5-2 libgssapi3-heimdal libhcrypto4-heimdal libheimbase1-heimdal&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;  libheimntlm0-heimdal libhx509-5-heimdal libidn11 libk5crypto3 libkeyutils1&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;  libkrb5-26-heimdal libkrb5-3 libkrb5support0 libldap-2.4-2&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;  libroken18-heimdal librtmp0 libsasl2-2 libsasl2-modules libsasl2-modules-db&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;  libwind0-heimdal&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;0 upgraded, 23 newly installed, 0 to remove and 4 not upgraded.&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;Need to get 1899 kB of archives.&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;After this operation, 10.1 MB of additional disk space will be used.&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;Get:1 http://archive.ubuntu.com/ubuntu/ trusty-updates/main libroken18-heimdal amd64 1.6~git20131207+dfsg-1ubuntu1.2 [39.9 kB]&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;Get:2 http://archive.ubuntu.com/ubuntu/ trusty-updates/main libasn1-8-heimdal amd64 1.6~git20131207+dfsg-1ubuntu1.2 [160 kB]&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;Get:3 http://archive.ubuntu.com/ubuntu/ trusty-updates/main libkrb5support0 amd64 1.12+dfsg-2ubuntu5.3 [30.7 kB]&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;Get:4 http://archive.ubuntu.com/ubuntu/ trusty-updates/main libk5crypto3 amd64 1.12+dfsg-2ubuntu5.3 [79.6 kB]&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;Get:5 http://archive.ubuntu.com/ubuntu/ trusty/main libkeyutils1 amd64 1.5.6-1 [7318 B]&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;Get:6 http://archive.ubuntu.com/ubuntu/ trusty-updates/main libkrb5-3 amd64 1.12+dfsg-2ubuntu5.3 [262 kB]&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;Get:7 http://archive.ubuntu.com/ubuntu/ trusty-updates/main libgssapi-krb5-2 amd64 1.12+dfsg-2ubuntu5.3 [114 kB]&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;Get:8 http://archive.ubuntu.com/ubuntu/ trusty-updates/main libidn11 amd64 1.28-1ubuntu2.2 [94.6 kB]&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;Get:9 http://archive.ubuntu.com/ubuntu/ trusty-updates/main libhcrypto4-heimdal amd64 1.6~git20131207+dfsg-1ubuntu1.2 [84.1 kB]&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;Get:10 http://archive.ubuntu.com/ubuntu/ trusty-updates/main libheimbase1-heimdal amd64 1.6~git20131207+dfsg-1ubuntu1.2 [29.0 kB]&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;Get:11 http://archive.ubuntu.com/ubuntu/ trusty-updates/main libwind0-heimdal amd64 1.6~git20131207+dfsg-1ubuntu1.2 [47.9 kB]&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;Get:12 http://archive.ubuntu.com/ubuntu/ trusty-updates/main libhx509-5-heimdal amd64 1.6~git20131207+dfsg-1ubuntu1.2 [104 kB]&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;Get:13 http://archive.ubuntu.com/ubuntu/ trusty-updates/main libkrb5-26-heimdal amd64 1.6~git20131207+dfsg-1ubuntu1.2 [196 kB]&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;Get:14 http://archive.ubuntu.com/ubuntu/ trusty-updates/main libheimntlm0-heimdal amd64 1.6~git20131207+dfsg-1ubuntu1.2 [15.2 kB]&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;Get:15 http://archive.ubuntu.com/ubuntu/ trusty-updates/main libgssapi3-heimdal amd64 1.6~git20131207+dfsg-1ubuntu1.2 [89.7 kB]&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;Get:16 http://archive.ubuntu.com/ubuntu/ trusty/main libsasl2-modules-db amd64 2.1.25.dfsg1-17build1 [14.9 kB]&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;Get:17 http://archive.ubuntu.com/ubuntu/ trusty/main libsasl2-2 amd64 2.1.25.dfsg1-17build1 [56.5 kB]&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;Get:18 http://archive.ubuntu.com/ubuntu/ trusty-updates/main libldap-2.4-2 amd64 2.4.31-1+nmu2ubuntu8.4 [153 kB]&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;Get:19 http://archive.ubuntu.com/ubuntu/ trusty-updates/main librtmp0 amd64 2.4+20121230.gitdf6c518-1ubuntu0.1 [50.4 kB]&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;Get:20 http://archive.ubuntu.com/ubuntu/ trusty-updates/main libcurl3-gnutls amd64 7.35.0-1ubuntu2.15 [166 kB]&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;Get:21 http://archive.ubuntu.com/ubuntu/ trusty-updates/main apt-transport-https amd64 1.0.1ubuntu2.17 [25.0 kB]&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;Get:22 http://archive.ubuntu.com/ubuntu/ trusty-updates/main krb5-locales all 1.12+dfsg-2ubuntu5.3 [13.5 kB]&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;Get:23 http://archive.ubuntu.com/ubuntu/ trusty/main libsasl2-modules amd64 2.1.25.dfsg1-17build1 [64.3 kB]&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;Fetched 1899 kB in 1s (1856 kB/s)&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;Selecting previously unselected package libroken18-heimdal:amd64.&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;(Reading database ... 13306 files and directories currently installed.)&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;Preparing to unpack .../libroken18-heimdal_1.6~git20131207+dfsg-1ubuntu1.2_amd64.deb ...&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;Unpacking libroken18-heimdal:amd64 (1.6~git20131207+dfsg-1ubuntu1.2) ...&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;Selecting previously unselected package libasn1-8-heimdal:amd64.&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;Preparing to unpack .../libasn1-8-heimdal_1.6~git20131207+dfsg-1ubuntu1.2_amd64.deb ...&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;Unpacking libasn1-8-heimdal:amd64 (1.6~git20131207+dfsg-1ubuntu1.2) ...&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;Selecting previously unselected package libkrb5support0:amd64.&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;Preparing to unpack .../libkrb5support0_1.12+dfsg-2ubuntu5.3_amd64.deb ...&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;Unpacking libkrb5support0:amd64 (1.12+dfsg-2ubuntu5.3) ...&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;Selecting previously unselected package libk5crypto3:amd64.&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;Preparing to unpack .../libk5crypto3_1.12+dfsg-2ubuntu5.3_amd64.deb ...&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;Unpacking libk5crypto3:amd64 (1.12+dfsg-2ubuntu5.3) ...&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;Selecting previously unselected package libkeyutils1:amd64.&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;Preparing to unpack .../libkeyutils1_1.5.6-1_amd64.deb ...&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;Unpacking libkeyutils1:amd64 (1.5.6-1) ...&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;Selecting previously unselected package libkrb5-3:amd64.&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;Preparing to unpack .../libkrb5-3_1.12+dfsg-2ubuntu5.3_amd64.deb ...&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;Unpacking libkrb5-3:amd64 (1.12+dfsg-2ubuntu5.3) ...&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;Selecting previously unselected package libgssapi-krb5-2:amd64.&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;Preparing to unpack .../libgssapi-krb5-2_1.12+dfsg-2ubuntu5.3_amd64.deb ...&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;Unpacking libgssapi-krb5-2:amd64 (1.12+dfsg-2ubuntu5.3) ...&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;Selecting previously unselected package libidn11:amd64.&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;Preparing to unpack .../libidn11_1.28-1ubuntu2.2_amd64.deb ...&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;Unpacking libidn11:amd64 (1.28-1ubuntu2.2) ...&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;Selecting previously unselected package libhcrypto4-heimdal:amd64.&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;Preparing to unpack .../libhcrypto4-heimdal_1.6~git20131207+dfsg-1ubuntu1.2_amd64.deb ...&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;Unpacking libhcrypto4-heimdal:amd64 (1.6~git20131207+dfsg-1ubuntu1.2) ...&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;Selecting previously unselected package libheimbase1-heimdal:amd64.&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;Preparing to unpack .../libheimbase1-heimdal_1.6~git20131207+dfsg-1ubuntu1.2_amd64.deb ...&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;Unpacking libheimbase1-heimdal:amd64 (1.6~git20131207+dfsg-1ubuntu1.2) ...&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;Selecting previously unselected package libwind0-heimdal:amd64.&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;Preparing to unpack .../libwind0-heimdal_1.6~git20131207+dfsg-1ubuntu1.2_amd64.deb ...&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;Unpacking libwind0-heimdal:amd64 (1.6~git20131207+dfsg-1ubuntu1.2) ...&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;Selecting previously unselected package libhx509-5-heimdal:amd64.&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;Preparing to unpack .../libhx509-5-heimdal_1.6~git20131207+dfsg-1ubuntu1.2_amd64.deb ...&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;Unpacking libhx509-5-heimdal:amd64 (1.6~git20131207+dfsg-1ubuntu1.2) ...&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;Selecting previously unselected package libkrb5-26-heimdal:amd64.&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;Preparing to unpack .../libkrb5-26-heimdal_1.6~git20131207+dfsg-1ubuntu1.2_amd64.deb ...&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;Unpacking libkrb5-26-heimdal:amd64 (1.6~git20131207+dfsg-1ubuntu1.2) ...&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;Selecting previously unselected package libheimntlm0-heimdal:amd64.&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;Preparing to unpack .../libheimntlm0-heimdal_1.6~git20131207+dfsg-1ubuntu1.2_amd64.deb ...&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;Unpacking libheimntlm0-heimdal:amd64 (1.6~git20131207+dfsg-1ubuntu1.2) ...&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;Selecting previously unselected package libgssapi3-heimdal:amd64.&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;Preparing to unpack .../libgssapi3-heimdal_1.6~git20131207+dfsg-1ubuntu1.2_amd64.deb ...&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;Unpacking libgssapi3-heimdal:amd64 (1.6~git20131207+dfsg-1ubuntu1.2) ...&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;Selecting previously unselected package libsasl2-modules-db:amd64.&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;Preparing to unpack .../libsasl2-modules-db_2.1.25.dfsg1-17build1_amd64.deb ...&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;Unpacking libsasl2-modules-db:amd64 (2.1.25.dfsg1-17build1) ...&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;Selecting previously unselected package libsasl2-2:amd64.&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;Preparing to unpack .../libsasl2-2_2.1.25.dfsg1-17build1_amd64.deb ...&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;Unpacking libsasl2-2:amd64 (2.1.25.dfsg1-17build1) ...&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;Selecting previously unselected package libldap-2.4-2:amd64.&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;Preparing to unpack .../libldap-2.4-2_2.4.31-1+nmu2ubuntu8.4_amd64.deb ...&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;Unpacking libldap-2.4-2:amd64 (2.4.31-1+nmu2ubuntu8.4) ...&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;Selecting previously unselected package librtmp0:amd64.&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;Preparing to unpack .../librtmp0_2.4+20121230.gitdf6c518-1ubuntu0.1_amd64.deb ...&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;Unpacking librtmp0:amd64 (2.4+20121230.gitdf6c518-1ubuntu0.1) ...&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;Selecting previously unselected package libcurl3-gnutls:amd64.&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;Preparing to unpack .../libcurl3-gnutls_7.35.0-1ubuntu2.15_amd64.deb ...&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;Unpacking libcurl3-gnutls:amd64 (7.35.0-1ubuntu2.15) ...&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;Selecting previously unselected package apt-transport-https.&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;Preparing to unpack .../apt-transport-https_1.0.1ubuntu2.17_amd64.deb ...&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;Unpacking apt-transport-https (1.0.1ubuntu2.17) ...&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;Selecting previously unselected package krb5-locales.&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;Preparing to unpack .../krb5-locales_1.12+dfsg-2ubuntu5.3_all.deb ...&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;Unpacking krb5-locales (1.12+dfsg-2ubuntu5.3) ...&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;Selecting previously unselected package libsasl2-modules:amd64.&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;Preparing to unpack .../libsasl2-modules_2.1.25.dfsg1-17build1_amd64.deb ...&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;Unpacking libsasl2-modules:amd64 (2.1.25.dfsg1-17build1) ...&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;Setting up libroken18-heimdal:amd64 (1.6~git20131207+dfsg-1ubuntu1.2) ...&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;Setting up libasn1-8-heimdal:amd64 (1.6~git20131207+dfsg-1ubuntu1.2) ...&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;Setting up libkrb5support0:amd64 (1.12+dfsg-2ubuntu5.3) ...&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;Setting up libk5crypto3:amd64 (1.12+dfsg-2ubuntu5.3) ...&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;Setting up libkeyutils1:amd64 (1.5.6-1) ...&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;Setting up libkrb5-3:amd64 (1.12+dfsg-2ubuntu5.3) ...&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;Setting up libgssapi-krb5-2:amd64 (1.12+dfsg-2ubuntu5.3) ...&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;Setting up libidn11:amd64 (1.28-1ubuntu2.2) ...&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;Setting up libhcrypto4-heimdal:amd64 (1.6~git20131207+dfsg-1ubuntu1.2) ...&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;Setting up libheimbase1-heimdal:amd64 (1.6~git20131207+dfsg-1ubuntu1.2) ...&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;Setting up libwind0-heimdal:amd64 (1.6~git20131207+dfsg-1ubuntu1.2) ...&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;Setting up libhx509-5-heimdal:amd64 (1.6~git20131207+dfsg-1ubuntu1.2) ...&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;Setting up libkrb5-26-heimdal:amd64 (1.6~git20131207+dfsg-1ubuntu1.2) ...&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;Setting up libheimntlm0-heimdal:amd64 (1.6~git20131207+dfsg-1ubuntu1.2) ...&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;Setting up libgssapi3-heimdal:amd64 (1.6~git20131207+dfsg-1ubuntu1.2) ...&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;Setting up libsasl2-modules-db:amd64 (2.1.25.dfsg1-17build1) ...&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;Setting up libsasl2-2:amd64 (2.1.25.dfsg1-17build1) ...&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;Setting up libldap-2.4-2:amd64 (2.4.31-1+nmu2ubuntu8.4) ...&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;Setting up librtmp0:amd64 (2.4+20121230.gitdf6c518-1ubuntu0.1) ...&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;Setting up libcurl3-gnutls:amd64 (7.35.0-1ubuntu2.15) ...&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;Setting up apt-transport-https (1.0.1ubuntu2.17) ...&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;Setting up krb5-locales (1.12+dfsg-2ubuntu5.3) ...&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;Setting up libsasl2-modules:amd64 (2.1.25.dfsg1-17build1) ...&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;Processing triggers for libc-bin (2.19-0ubuntu6.14) ...&quot;</span>
+        <span class="p">]</span>
+    <span class="p">},</span> 
+    <span class="p">{</span>
+        <span class="nt">&quot;_ansible_ignore_errors&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+        <span class="nt">&quot;_ansible_item_result&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span> 
+        <span class="nt">&quot;_ansible_no_log&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+        <span class="nt">&quot;_ansible_parsed&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span> 
+        <span class="nt">&quot;cache_update_time&quot;</span><span class="p">:</span> <span class="mi">1522861308</span><span class="p">,</span> 
+        <span class="nt">&quot;cache_updated&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+        <span class="nt">&quot;changed&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span> 
+        <span class="nt">&quot;diff&quot;</span><span class="p">:</span> <span class="p">{},</span> 
+        <span class="nt">&quot;failed&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+        <span class="nt">&quot;invocation&quot;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="nt">&quot;module_args&quot;</span><span class="p">:</span> <span class="p">{</span>
+                <span class="nt">&quot;allow_unauthenticated&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+                <span class="nt">&quot;autoclean&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+                <span class="nt">&quot;autoremove&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+                <span class="nt">&quot;cache_valid_time&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> 
+                <span class="nt">&quot;deb&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                <span class="nt">&quot;default_release&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                <span class="nt">&quot;dpkg_options&quot;</span><span class="p">:</span> <span class="s2">&quot;force-confdef,force-confold&quot;</span><span class="p">,</span> 
+                <span class="nt">&quot;force&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+                <span class="nt">&quot;force_apt_get&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+                <span class="nt">&quot;install_recommends&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;lvm2&quot;</span><span class="p">,</span> 
+                <span class="nt">&quot;only_upgrade&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+                <span class="nt">&quot;package&quot;</span><span class="p">:</span> <span class="p">[</span>
+                    <span class="s2">&quot;lvm2&quot;</span>
+                <span class="p">],</span> 
+                <span class="nt">&quot;purge&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+                <span class="nt">&quot;state&quot;</span><span class="p">:</span> <span class="s2">&quot;present&quot;</span><span class="p">,</span> 
+                <span class="nt">&quot;update_cache&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                <span class="nt">&quot;upgrade&quot;</span><span class="p">:</span> <span class="kc">null</span>
+            <span class="p">}</span>
+        <span class="p">},</span> 
+        <span class="nt">&quot;item&quot;</span><span class="p">:</span> <span class="s2">&quot;lvm2&quot;</span><span class="p">,</span> 
+        <span class="nt">&quot;stderr&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span> 
+        <span class="nt">&quot;stderr_lines&quot;</span><span class="p">:</span> <span class="p">[],</span> 
+        <span class="nt">&quot;stdout&quot;</span><span class="p">:</span> <span class="s2">&quot;Reading package lists...\nBuilding dependency tree...\nReading state information...\nThe following extra packages will be installed:\n  libdevmapper-event1.02.1 libreadline5 watershed\nSuggested packages:\n  thin-provisioning-tools\nThe following NEW packages will be installed:\n  libdevmapper-event1.02.1 libreadline5 lvm2 watershed\n0 upgraded, 4 newly installed, 0 to remove and 4 not upgraded.\nNeed to get 622 kB of archives.\nAfter this operation, 1797 kB of additional disk space will be used.\nGet:1 http://archive.ubuntu.com/ubuntu/ trusty/main libdevmapper-event1.02.1 amd64 2:1.02.77-6ubuntu2 [10.8 kB]\nGet:2 http://archive.ubuntu.com/ubuntu/ trusty/main libreadline5 amd64 5.2+dfsg-2 [130 kB]\nGet:3 http://archive.ubuntu.com/ubuntu/ trusty/main watershed amd64 7 [11.4 kB]\nGet:4 http://archive.ubuntu.com/ubuntu/ trusty/main lvm2 amd64 2.02.98-6ubuntu2 [470 kB]\nFetched 622 kB in 0s (1817 kB/s)\nSelecting previously unselected package libdevmapper-event1.02.1:amd64.\n(Reading database ... 13481 files and directories currently installed.)\nPreparing to unpack .../libdevmapper-event1.02.1_2%3a1.02.77-6ubuntu2_amd64.deb ...\nUnpacking libdevmapper-event1.02.1:amd64 (2:1.02.77-6ubuntu2) ...\nSelecting previously unselected package libreadline5:amd64.\nPreparing to unpack .../libreadline5_5.2+dfsg-2_amd64.deb ...\nUnpacking libreadline5:amd64 (5.2+dfsg-2) ...\nSelecting previously unselected package watershed.\nPreparing to unpack .../archives/watershed_7_amd64.deb ...\nUnpacking watershed (7) ...\nSelecting previously unselected package lvm2.\nPreparing to unpack .../lvm2_2.02.98-6ubuntu2_amd64.deb ...\nUnpacking lvm2 (2.02.98-6ubuntu2) ...\nSetting up libdevmapper-event1.02.1:amd64 (2:1.02.77-6ubuntu2) ...\nSetting up libreadline5:amd64 (5.2+dfsg-2) ...\nSetting up watershed (7) ...\nupdate-initramfs: deferring update (trigger activated)\nSetting up lvm2 (2.02.98-6ubuntu2) ...\nupdate-initramfs: deferring update (trigger activated)\nProcessing triggers for libc-bin (2.19-0ubuntu6.14) ...\nProcessing triggers for initramfs-tools (0.103ubuntu4.10) ...\n&quot;</span><span class="p">,</span> 
+        <span class="nt">&quot;stdout_lines&quot;</span><span class="p">:</span> <span class="p">[</span>
+            <span class="s2">&quot;Reading package lists...&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;Building dependency tree...&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;Reading state information...&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;The following extra packages will be installed:&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;  libdevmapper-event1.02.1 libreadline5 watershed&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;Suggested packages:&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;  thin-provisioning-tools&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;The following NEW packages will be installed:&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;  libdevmapper-event1.02.1 libreadline5 lvm2 watershed&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;0 upgraded, 4 newly installed, 0 to remove and 4 not upgraded.&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;Need to get 622 kB of archives.&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;After this operation, 1797 kB of additional disk space will be used.&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;Get:1 http://archive.ubuntu.com/ubuntu/ trusty/main libdevmapper-event1.02.1 amd64 2:1.02.77-6ubuntu2 [10.8 kB]&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;Get:2 http://archive.ubuntu.com/ubuntu/ trusty/main libreadline5 amd64 5.2+dfsg-2 [130 kB]&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;Get:3 http://archive.ubuntu.com/ubuntu/ trusty/main watershed amd64 7 [11.4 kB]&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;Get:4 http://archive.ubuntu.com/ubuntu/ trusty/main lvm2 amd64 2.02.98-6ubuntu2 [470 kB]&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;Fetched 622 kB in 0s (1817 kB/s)&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;Selecting previously unselected package libdevmapper-event1.02.1:amd64.&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;(Reading database ... 13481 files and directories currently installed.)&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;Preparing to unpack .../libdevmapper-event1.02.1_2%3a1.02.77-6ubuntu2_amd64.deb ...&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;Unpacking libdevmapper-event1.02.1:amd64 (2:1.02.77-6ubuntu2) ...&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;Selecting previously unselected package libreadline5:amd64.&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;Preparing to unpack .../libreadline5_5.2+dfsg-2_amd64.deb ...&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;Unpacking libreadline5:amd64 (5.2+dfsg-2) ...&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;Selecting previously unselected package watershed.&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;Preparing to unpack .../archives/watershed_7_amd64.deb ...&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;Unpacking watershed (7) ...&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;Selecting previously unselected package lvm2.&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;Preparing to unpack .../lvm2_2.02.98-6ubuntu2_amd64.deb ...&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;Unpacking lvm2 (2.02.98-6ubuntu2) ...&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;Setting up libdevmapper-event1.02.1:amd64 (2:1.02.77-6ubuntu2) ...&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;Setting up libreadline5:amd64 (5.2+dfsg-2) ...&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;Setting up watershed (7) ...&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;update-initramfs: deferring update (trigger activated)&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;Setting up lvm2 (2.02.98-6ubuntu2) ...&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;update-initramfs: deferring update (trigger activated)&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;Processing triggers for libc-bin (2.19-0ubuntu6.14) ...&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;Processing triggers for initramfs-tools (0.103ubuntu4.10) ...&quot;</span>
+        <span class="p">]</span>
+    <span class="p">},</span> 
+    <span class="p">{</span>
+        <span class="nt">&quot;_ansible_ignore_errors&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+        <span class="nt">&quot;_ansible_item_result&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span> 
+        <span class="nt">&quot;_ansible_no_log&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+        <span class="nt">&quot;_ansible_parsed&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span> 
+        <span class="nt">&quot;cache_update_time&quot;</span><span class="p">:</span> <span class="mi">1522861308</span><span class="p">,</span> 
+        <span class="nt">&quot;cache_updated&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+        <span class="nt">&quot;changed&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+        <span class="nt">&quot;failed&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+        <span class="nt">&quot;invocation&quot;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="nt">&quot;module_args&quot;</span><span class="p">:</span> <span class="p">{</span>
+                <span class="nt">&quot;allow_unauthenticated&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+                <span class="nt">&quot;autoclean&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+                <span class="nt">&quot;autoremove&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+                <span class="nt">&quot;cache_valid_time&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> 
+                <span class="nt">&quot;deb&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                <span class="nt">&quot;default_release&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                <span class="nt">&quot;dpkg_options&quot;</span><span class="p">:</span> <span class="s2">&quot;force-confdef,force-confold&quot;</span><span class="p">,</span> 
+                <span class="nt">&quot;force&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+                <span class="nt">&quot;force_apt_get&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+                <span class="nt">&quot;install_recommends&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;tar&quot;</span><span class="p">,</span> 
+                <span class="nt">&quot;only_upgrade&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+                <span class="nt">&quot;package&quot;</span><span class="p">:</span> <span class="p">[</span>
+                    <span class="s2">&quot;tar&quot;</span>
+                <span class="p">],</span> 
+                <span class="nt">&quot;purge&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+                <span class="nt">&quot;state&quot;</span><span class="p">:</span> <span class="s2">&quot;present&quot;</span><span class="p">,</span> 
+                <span class="nt">&quot;update_cache&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                <span class="nt">&quot;upgrade&quot;</span><span class="p">:</span> <span class="kc">null</span>
+            <span class="p">}</span>
+        <span class="p">},</span> 
+        <span class="nt">&quot;item&quot;</span><span class="p">:</span> <span class="s2">&quot;tar&quot;</span>
+    <span class="p">},</span> 
+    <span class="p">{</span>
+        <span class="nt">&quot;_ansible_ignore_errors&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+        <span class="nt">&quot;_ansible_item_result&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span> 
+        <span class="nt">&quot;_ansible_no_log&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+        <span class="nt">&quot;_ansible_parsed&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span> 
+        <span class="nt">&quot;cache_update_time&quot;</span><span class="p">:</span> <span class="mi">1522861308</span><span class="p">,</span> 
+        <span class="nt">&quot;cache_updated&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+        <span class="nt">&quot;changed&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span> 
+        <span class="nt">&quot;diff&quot;</span><span class="p">:</span> <span class="p">{},</span> 
+        <span class="nt">&quot;failed&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+        <span class="nt">&quot;invocation&quot;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="nt">&quot;module_args&quot;</span><span class="p">:</span> <span class="p">{</span>
+                <span class="nt">&quot;allow_unauthenticated&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+                <span class="nt">&quot;autoclean&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+                <span class="nt">&quot;autoremove&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+                <span class="nt">&quot;cache_valid_time&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> 
+                <span class="nt">&quot;deb&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                <span class="nt">&quot;default_release&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                <span class="nt">&quot;dpkg_options&quot;</span><span class="p">:</span> <span class="s2">&quot;force-confdef,force-confold&quot;</span><span class="p">,</span> 
+                <span class="nt">&quot;force&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+                <span class="nt">&quot;force_apt_get&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+                <span class="nt">&quot;install_recommends&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;unzip&quot;</span><span class="p">,</span> 
+                <span class="nt">&quot;only_upgrade&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+                <span class="nt">&quot;package&quot;</span><span class="p">:</span> <span class="p">[</span>
+                    <span class="s2">&quot;unzip&quot;</span>
+                <span class="p">],</span> 
+                <span class="nt">&quot;purge&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+                <span class="nt">&quot;state&quot;</span><span class="p">:</span> <span class="s2">&quot;present&quot;</span><span class="p">,</span> 
+                <span class="nt">&quot;update_cache&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                <span class="nt">&quot;upgrade&quot;</span><span class="p">:</span> <span class="kc">null</span>
+            <span class="p">}</span>
+        <span class="p">},</span> 
+        <span class="nt">&quot;item&quot;</span><span class="p">:</span> <span class="s2">&quot;unzip&quot;</span><span class="p">,</span> 
+        <span class="nt">&quot;stderr&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span> 
+        <span class="nt">&quot;stderr_lines&quot;</span><span class="p">:</span> <span class="p">[],</span> 
+        <span class="nt">&quot;stdout&quot;</span><span class="p">:</span> <span class="s2">&quot;Reading package lists...\nBuilding dependency tree...\nReading state information...\nSuggested packages:\n  zip\nThe following NEW packages will be installed:\n  unzip\n0 upgraded, 1 newly installed, 0 to remove and 4 not upgraded.\nNeed to get 157 kB of archives.\nAfter this operation, 395 kB of additional disk space will be used.\nGet:1 http://archive.ubuntu.com/ubuntu/ trusty-updates/main unzip amd64 6.0-9ubuntu1.5 [157 kB]\nFetched 157 kB in 0s (741 kB/s)\nSelecting previously unselected package unzip.\n(Reading database ... 13615 files and directories currently installed.)\nPreparing to unpack .../unzip_6.0-9ubuntu1.5_amd64.deb ...\nUnpacking unzip (6.0-9ubuntu1.5) ...\nProcessing triggers for mime-support (3.54ubuntu1.1) ...\nSetting up unzip (6.0-9ubuntu1.5) ...\n&quot;</span><span class="p">,</span> 
+        <span class="nt">&quot;stdout_lines&quot;</span><span class="p">:</span> <span class="p">[</span>
+            <span class="s2">&quot;Reading package lists...&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;Building dependency tree...&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;Reading state information...&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;Suggested packages:&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;  zip&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;The following NEW packages will be installed:&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;  unzip&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;0 upgraded, 1 newly installed, 0 to remove and 4 not upgraded.&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;Need to get 157 kB of archives.&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;After this operation, 395 kB of additional disk space will be used.&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;Get:1 http://archive.ubuntu.com/ubuntu/ trusty-updates/main unzip amd64 6.0-9ubuntu1.5 [157 kB]&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;Fetched 157 kB in 0s (741 kB/s)&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;Selecting previously unselected package unzip.&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;(Reading database ... 13615 files and directories currently installed.)&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;Preparing to unpack .../unzip_6.0-9ubuntu1.5_amd64.deb ...&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;Unpacking unzip (6.0-9ubuntu1.5) ...&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;Processing triggers for mime-support (3.54ubuntu1.1) ...&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;Setting up unzip (6.0-9ubuntu1.5) ...&quot;</span>
+        <span class="p">]</span>
+    <span class="p">}</span>
+<span class="p">]</span>
+</pre></div>
+
+            
+                </div>
+            </div>
+        
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    
+    <h2>Item</h2>
+            <div class="codehilite"><pre><span></span>apt-transport-https
+</pre></div>
+
+        
+
+        <h2>Cache_update_time</h2>
+                <div class="codehilite"><pre><span></span>1522861308
+</pre></div>
+
+            <h2>Stdout</h2>
+                <div class="codehilite"><pre><span></span>Reading package lists...
+Building dependency tree...
+Reading state information...
+The following extra packages will be installed:
+  krb5-locales libasn1-8-heimdal libcurl3-gnutls libgssapi-krb5-2
+  libgssapi3-heimdal libhcrypto4-heimdal libheimbase1-heimdal
+  libheimntlm0-heimdal libhx509-5-heimdal libidn11 libk5crypto3 libkeyutils1
+  libkrb5-26-heimdal libkrb5-3 libkrb5support0 libldap-2.4-2
+  libroken18-heimdal librtmp0 libsasl2-2 libsasl2-modules libsasl2-modules-db
+  libwind0-heimdal
+Suggested packages:
+  krb5-doc krb5-user libsasl2-modules-otp libsasl2-modules-ldap
+  libsasl2-modules-sql libsasl2-modules-gssapi-mit
+  libsasl2-modules-gssapi-heimdal
+The following NEW packages will be installed:
+  apt-transport-https krb5-locales libasn1-8-heimdal libcurl3-gnutls
+  libgssapi-krb5-2 libgssapi3-heimdal libhcrypto4-heimdal libheimbase1-heimdal
+  libheimntlm0-heimdal libhx509-5-heimdal libidn11 libk5crypto3 libkeyutils1
+  libkrb5-26-heimdal libkrb5-3 libkrb5support0 libldap-2.4-2
+  libroken18-heimdal librtmp0 libsasl2-2 libsasl2-modules libsasl2-modules-db
+  libwind0-heimdal
+0 upgraded, 23 newly installed, 0 to remove and 4 not upgraded.
+Need to get 1899 kB of archives.
+After this operation, 10.1 MB of additional disk space will be used.
+Get:1 http://archive.ubuntu.com/ubuntu/ trusty-updates/main libroken18-heimdal amd64 1.6~git20131207+dfsg-1ubuntu1.2 [39.9 kB]
+Get:2 http://archive.ubuntu.com/ubuntu/ trusty-updates/main libasn1-8-heimdal amd64 1.6~git20131207+dfsg-1ubuntu1.2 [160 kB]
+Get:3 http://archive.ubuntu.com/ubuntu/ trusty-updates/main libkrb5support0 amd64 1.12+dfsg-2ubuntu5.3 [30.7 kB]
+Get:4 http://archive.ubuntu.com/ubuntu/ trusty-updates/main libk5crypto3 amd64 1.12+dfsg-2ubuntu5.3 [79.6 kB]
+Get:5 http://archive.ubuntu.com/ubuntu/ trusty/main libkeyutils1 amd64 1.5.6-1 [7318 B]
+Get:6 http://archive.ubuntu.com/ubuntu/ trusty-updates/main libkrb5-3 amd64 1.12+dfsg-2ubuntu5.3 [262 kB]
+Get:7 http://archive.ubuntu.com/ubuntu/ trusty-updates/main libgssapi-krb5-2 amd64 1.12+dfsg-2ubuntu5.3 [114 kB]
+Get:8 http://archive.ubuntu.com/ubuntu/ trusty-updates/main libidn11 amd64 1.28-1ubuntu2.2 [94.6 kB]
+Get:9 http://archive.ubuntu.com/ubuntu/ trusty-updates/main libhcrypto4-heimdal amd64 1.6~git20131207+dfsg-1ubuntu1.2 [84.1 kB]
+Get:10 http://archive.ubuntu.com/ubuntu/ trusty-updates/main libheimbase1-heimdal amd64 1.6~git20131207+dfsg-1ubuntu1.2 [29.0 kB]
+Get:11 http://archive.ubuntu.com/ubuntu/ trusty-updates/main libwind0-heimdal amd64 1.6~git20131207+dfsg-1ubuntu1.2 [47.9 kB]
+Get:12 http://archive.ubuntu.com/ubuntu/ trusty-updates/main libhx509-5-heimdal amd64 1.6~git20131207+dfsg-1ubuntu1.2 [104 kB]
+Get:13 http://archive.ubuntu.com/ubuntu/ trusty-updates/main libkrb5-26-heimdal amd64 1.6~git20131207+dfsg-1ubuntu1.2 [196 kB]
+Get:14 http://archive.ubuntu.com/ubuntu/ trusty-updates/main libheimntlm0-heimdal amd64 1.6~git20131207+dfsg-1ubuntu1.2 [15.2 kB]
+Get:15 http://archive.ubuntu.com/ubuntu/ trusty-updates/main libgssapi3-heimdal amd64 1.6~git20131207+dfsg-1ubuntu1.2 [89.7 kB]
+Get:16 http://archive.ubuntu.com/ubuntu/ trusty/main libsasl2-modules-db amd64 2.1.25.dfsg1-17build1 [14.9 kB]
+Get:17 http://archive.ubuntu.com/ubuntu/ trusty/main libsasl2-2 amd64 2.1.25.dfsg1-17build1 [56.5 kB]
+Get:18 http://archive.ubuntu.com/ubuntu/ trusty-updates/main libldap-2.4-2 amd64 2.4.31-1+nmu2ubuntu8.4 [153 kB]
+Get:19 http://archive.ubuntu.com/ubuntu/ trusty-updates/main librtmp0 amd64 2.4+20121230.gitdf6c518-1ubuntu0.1 [50.4 kB]
+Get:20 http://archive.ubuntu.com/ubuntu/ trusty-updates/main libcurl3-gnutls amd64 7.35.0-1ubuntu2.15 [166 kB]
+Get:21 http://archive.ubuntu.com/ubuntu/ trusty-updates/main apt-transport-https amd64 1.0.1ubuntu2.17 [25.0 kB]
+Get:22 http://archive.ubuntu.com/ubuntu/ trusty-updates/main krb5-locales all 1.12+dfsg-2ubuntu5.3 [13.5 kB]
+Get:23 http://archive.ubuntu.com/ubuntu/ trusty/main libsasl2-modules amd64 2.1.25.dfsg1-17build1 [64.3 kB]
+Fetched 1899 kB in 1s (1856 kB/s)
+Selecting previously unselected package libroken18-heimdal:amd64.
+(Reading database ... 13306 files and directories currently installed.)
+Preparing to unpack .../libroken18-heimdal_1.6~git20131207+dfsg-1ubuntu1.2_amd64.deb ...
+Unpacking libroken18-heimdal:amd64 (1.6~git20131207+dfsg-1ubuntu1.2) ...
+Selecting previously unselected package libasn1-8-heimdal:amd64.
+Preparing to unpack .../libasn1-8-heimdal_1.6~git20131207+dfsg-1ubuntu1.2_amd64.deb ...
+Unpacking libasn1-8-heimdal:amd64 (1.6~git20131207+dfsg-1ubuntu1.2) ...
+Selecting previously unselected package libkrb5support0:amd64.
+Preparing to unpack .../libkrb5support0_1.12+dfsg-2ubuntu5.3_amd64.deb ...
+Unpacking libkrb5support0:amd64 (1.12+dfsg-2ubuntu5.3) ...
+Selecting previously unselected package libk5crypto3:amd64.
+Preparing to unpack .../libk5crypto3_1.12+dfsg-2ubuntu5.3_amd64.deb ...
+Unpacking libk5crypto3:amd64 (1.12+dfsg-2ubuntu5.3) ...
+Selecting previously unselected package libkeyutils1:amd64.
+Preparing to unpack .../libkeyutils1_1.5.6-1_amd64.deb ...
+Unpacking libkeyutils1:amd64 (1.5.6-1) ...
+Selecting previously unselected package libkrb5-3:amd64.
+Preparing to unpack .../libkrb5-3_1.12+dfsg-2ubuntu5.3_amd64.deb ...
+Unpacking libkrb5-3:amd64 (1.12+dfsg-2ubuntu5.3) ...
+Selecting previously unselected package libgssapi-krb5-2:amd64.
+Preparing to unpack .../libgssapi-krb5-2_1.12+dfsg-2ubuntu5.3_amd64.deb ...
+Unpacking libgssapi-krb5-2:amd64 (1.12+dfsg-2ubuntu5.3) ...
+Selecting previously unselected package libidn11:amd64.
+Preparing to unpack .../libidn11_1.28-1ubuntu2.2_amd64.deb ...
+Unpacking libidn11:amd64 (1.28-1ubuntu2.2) ...
+Selecting previously unselected package libhcrypto4-heimdal:amd64.
+Preparing to unpack .../libhcrypto4-heimdal_1.6~git20131207+dfsg-1ubuntu1.2_amd64.deb ...
+Unpacking libhcrypto4-heimdal:amd64 (1.6~git20131207+dfsg-1ubuntu1.2) ...
+Selecting previously unselected package libheimbase1-heimdal:amd64.
+Preparing to unpack .../libheimbase1-heimdal_1.6~git20131207+dfsg-1ubuntu1.2_amd64.deb ...
+Unpacking libheimbase1-heimdal:amd64 (1.6~git20131207+dfsg-1ubuntu1.2) ...
+Selecting previously unselected package libwind0-heimdal:amd64.
+Preparing to unpack .../libwind0-heimdal_1.6~git20131207+dfsg-1ubuntu1.2_amd64.deb ...
+Unpacking libwind0-heimdal:amd64 (1.6~git20131207+dfsg-1ubuntu1.2) ...
+Selecting previously unselected package libhx509-5-heimdal:amd64.
+Preparing to unpack .../libhx509-5-heimdal_1.6~git20131207+dfsg-1ubuntu1.2_amd64.deb ...
+Unpacking libhx509-5-heimdal:amd64 (1.6~git20131207+dfsg-1ubuntu1.2) ...
+Selecting previously unselected package libkrb5-26-heimdal:amd64.
+Preparing to unpack .../libkrb5-26-heimdal_1.6~git20131207+dfsg-1ubuntu1.2_amd64.deb ...
+Unpacking libkrb5-26-heimdal:amd64 (1.6~git20131207+dfsg-1ubuntu1.2) ...
+Selecting previously unselected package libheimntlm0-heimdal:amd64.
+Preparing to unpack .../libheimntlm0-heimdal_1.6~git20131207+dfsg-1ubuntu1.2_amd64.deb ...
+Unpacking libheimntlm0-heimdal:amd64 (1.6~git20131207+dfsg-1ubuntu1.2) ...
+Selecting previously unselected package libgssapi3-heimdal:amd64.
+Preparing to unpack .../libgssapi3-heimdal_1.6~git20131207+dfsg-1ubuntu1.2_amd64.deb ...
+Unpacking libgssapi3-heimdal:amd64 (1.6~git20131207+dfsg-1ubuntu1.2) ...
+Selecting previously unselected package libsasl2-modules-db:amd64.
+Preparing to unpack .../libsasl2-modules-db_2.1.25.dfsg1-17build1_amd64.deb ...
+Unpacking libsasl2-modules-db:amd64 (2.1.25.dfsg1-17build1) ...
+Selecting previously unselected package libsasl2-2:amd64.
+Preparing to unpack .../libsasl2-2_2.1.25.dfsg1-17build1_amd64.deb ...
+Unpacking libsasl2-2:amd64 (2.1.25.dfsg1-17build1) ...
+Selecting previously unselected package libldap-2.4-2:amd64.
+Preparing to unpack .../libldap-2.4-2_2.4.31-1+nmu2ubuntu8.4_amd64.deb ...
+Unpacking libldap-2.4-2:amd64 (2.4.31-1+nmu2ubuntu8.4) ...
+Selecting previously unselected package librtmp0:amd64.
+Preparing to unpack .../librtmp0_2.4+20121230.gitdf6c518-1ubuntu0.1_amd64.deb ...
+Unpacking librtmp0:amd64 (2.4+20121230.gitdf6c518-1ubuntu0.1) ...
+Selecting previously unselected package libcurl3-gnutls:amd64.
+Preparing to unpack .../libcurl3-gnutls_7.35.0-1ubuntu2.15_amd64.deb ...
+Unpacking libcurl3-gnutls:amd64 (7.35.0-1ubuntu2.15) ...
+Selecting previously unselected package apt-transport-https.
+Preparing to unpack .../apt-transport-https_1.0.1ubuntu2.17_amd64.deb ...
+Unpacking apt-transport-https (1.0.1ubuntu2.17) ...
+Selecting previously unselected package krb5-locales.
+Preparing to unpack .../krb5-locales_1.12+dfsg-2ubuntu5.3_all.deb ...
+Unpacking krb5-locales (1.12+dfsg-2ubuntu5.3) ...
+Selecting previously unselected package libsasl2-modules:amd64.
+Preparing to unpack .../libsasl2-modules_2.1.25.dfsg1-17build1_amd64.deb ...
+Unpacking libsasl2-modules:amd64 (2.1.25.dfsg1-17build1) ...
+Setting up libroken18-heimdal:amd64 (1.6~git20131207+dfsg-1ubuntu1.2) ...
+Setting up libasn1-8-heimdal:amd64 (1.6~git20131207+dfsg-1ubuntu1.2) ...
+Setting up libkrb5support0:amd64 (1.12+dfsg-2ubuntu5.3) ...
+Setting up libk5crypto3:amd64 (1.12+dfsg-2ubuntu5.3) ...
+Setting up libkeyutils1:amd64 (1.5.6-1) ...
+Setting up libkrb5-3:amd64 (1.12+dfsg-2ubuntu5.3) ...
+Setting up libgssapi-krb5-2:amd64 (1.12+dfsg-2ubuntu5.3) ...
+Setting up libidn11:amd64 (1.28-1ubuntu2.2) ...
+Setting up libhcrypto4-heimdal:amd64 (1.6~git20131207+dfsg-1ubuntu1.2) ...
+Setting up libheimbase1-heimdal:amd64 (1.6~git20131207+dfsg-1ubuntu1.2) ...
+Setting up libwind0-heimdal:amd64 (1.6~git20131207+dfsg-1ubuntu1.2) ...
+Setting up libhx509-5-heimdal:amd64 (1.6~git20131207+dfsg-1ubuntu1.2) ...
+Setting up libkrb5-26-heimdal:amd64 (1.6~git20131207+dfsg-1ubuntu1.2) ...
+Setting up libheimntlm0-heimdal:amd64 (1.6~git20131207+dfsg-1ubuntu1.2) ...
+Setting up libgssapi3-heimdal:amd64 (1.6~git20131207+dfsg-1ubuntu1.2) ...
+Setting up libsasl2-modules-db:amd64 (2.1.25.dfsg1-17build1) ...
+Setting up libsasl2-2:amd64 (2.1.25.dfsg1-17build1) ...
+Setting up libldap-2.4-2:amd64 (2.4.31-1+nmu2ubuntu8.4) ...
+Setting up librtmp0:amd64 (2.4+20121230.gitdf6c518-1ubuntu0.1) ...
+Setting up libcurl3-gnutls:amd64 (7.35.0-1ubuntu2.15) ...
+Setting up apt-transport-https (1.0.1ubuntu2.17) ...
+Setting up krb5-locales (1.12+dfsg-2ubuntu5.3) ...
+Setting up libsasl2-modules:amd64 (2.1.25.dfsg1-17build1) ...
+Processing triggers for libc-bin (2.19-0ubuntu6.14) ...
+</pre></div>
+
+            
+                </div>
+            </div>
+        
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    
+    <h2>Item</h2>
+            <div class="codehilite"><pre><span></span>lvm2
+</pre></div>
+
+        
+
+        <h2>Cache_update_time</h2>
+                <div class="codehilite"><pre><span></span>1522861308
+</pre></div>
+
+            <h2>Stdout</h2>
+                <div class="codehilite"><pre><span></span>Reading package lists...
+Building dependency tree...
+Reading state information...
+The following extra packages will be installed:
+  libdevmapper-event1.02.1 libreadline5 watershed
+Suggested packages:
+  thin-provisioning-tools
+The following NEW packages will be installed:
+  libdevmapper-event1.02.1 libreadline5 lvm2 watershed
+0 upgraded, 4 newly installed, 0 to remove and 4 not upgraded.
+Need to get 622 kB of archives.
+After this operation, 1797 kB of additional disk space will be used.
+Get:1 http://archive.ubuntu.com/ubuntu/ trusty/main libdevmapper-event1.02.1 amd64 2:1.02.77-6ubuntu2 [10.8 kB]
+Get:2 http://archive.ubuntu.com/ubuntu/ trusty/main libreadline5 amd64 5.2+dfsg-2 [130 kB]
+Get:3 http://archive.ubuntu.com/ubuntu/ trusty/main watershed amd64 7 [11.4 kB]
+Get:4 http://archive.ubuntu.com/ubuntu/ trusty/main lvm2 amd64 2.02.98-6ubuntu2 [470 kB]
+Fetched 622 kB in 0s (1817 kB/s)
+Selecting previously unselected package libdevmapper-event1.02.1:amd64.
+(Reading database ... 13481 files and directories currently installed.)
+Preparing to unpack .../libdevmapper-event1.02.1_2%3a1.02.77-6ubuntu2_amd64.deb ...
+Unpacking libdevmapper-event1.02.1:amd64 (2:1.02.77-6ubuntu2) ...
+Selecting previously unselected package libreadline5:amd64.
+Preparing to unpack .../libreadline5_5.2+dfsg-2_amd64.deb ...
+Unpacking libreadline5:amd64 (5.2+dfsg-2) ...
+Selecting previously unselected package watershed.
+Preparing to unpack .../archives/watershed_7_amd64.deb ...
+Unpacking watershed (7) ...
+Selecting previously unselected package lvm2.
+Preparing to unpack .../lvm2_2.02.98-6ubuntu2_amd64.deb ...
+Unpacking lvm2 (2.02.98-6ubuntu2) ...
+Setting up libdevmapper-event1.02.1:amd64 (2:1.02.77-6ubuntu2) ...
+Setting up libreadline5:amd64 (5.2+dfsg-2) ...
+Setting up watershed (7) ...
+update-initramfs: deferring update (trigger activated)
+Setting up lvm2 (2.02.98-6ubuntu2) ...
+update-initramfs: deferring update (trigger activated)
+Processing triggers for libc-bin (2.19-0ubuntu6.14) ...
+Processing triggers for initramfs-tools (0.103ubuntu4.10) ...
+</pre></div>
+
+            
+                </div>
+            </div>
+        
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    
+    <h2>Item</h2>
+            <div class="codehilite"><pre><span></span>tar
+</pre></div>
+
+        
+
+        <h2>Cache_update_time</h2>
+                <div class="codehilite"><pre><span></span>1522861308
+</pre></div>
+
+            
+                </div>
+            </div>
+        
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    
+    <h2>Item</h2>
+            <div class="codehilite"><pre><span></span>unzip
+</pre></div>
+
+        
+
+        <h2>Cache_update_time</h2>
+                <div class="codehilite"><pre><span></span>1522861308
+</pre></div>
+
+            <h2>Stdout</h2>
+                <div class="codehilite"><pre><span></span>Reading package lists...
+Building dependency tree...
+Reading state information...
+Suggested packages:
+  zip
+The following NEW packages will be installed:
+  unzip
+0 upgraded, 1 newly installed, 0 to remove and 4 not upgraded.
+Need to get 157 kB of archives.
+After this operation, 395 kB of additional disk space will be used.
+Get:1 http://archive.ubuntu.com/ubuntu/ trusty-updates/main unzip amd64 6.0-9ubuntu1.5 [157 kB]
+Fetched 157 kB in 0s (741 kB/s)
+Selecting previously unselected package unzip.
+(Reading database ... 13615 files and directories currently installed.)
+Preparing to unpack .../unzip_6.0-9ubuntu1.5_amd64.deb ...
+Unpacking unzip (6.0-9ubuntu1.5) ...
+Processing triggers for mime-support (3.54ubuntu1.1) ...
+Setting up unzip (6.0-9ubuntu1.5) ...
+</pre></div>
+
+            
+                </div>
+            </div>
+        
+    
+          
+        </div>
+    </div>
+</div>
+</body>
+</html>

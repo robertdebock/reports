@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html class="layout-pf">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="ARA | Ansible Run Analysis records Ansible playbook runs seamlessly to make them easier to visualize, understand and troubleshoot">
+    <title>ARA | Ansible Run Analysis</title>
+    <script src="../../static/packaged/jquery/jquery.min.js"></script>
+    <script src="../../static/packaged/datatables/js/jquery.dataTables.min.js"></script>
+    <script src="../../static/packaged/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../../static/packaged/patternfly_bootstrap_treeview/js/bootstrap-treeview.min.js"></script>
+    <script src="../../static/packaged/patternfly/js/patternfly.min.js"></script>
+    <script src="../../static/js/ara.js"></script>
+    <link href="../../static/packaged/patternfly/css/patternfly.min.css" rel="stylesheet">
+    <link href="../../static/packaged/patternfly/css/patternfly-additions.min.css" rel="stylesheet">
+    <link href="../../static/packaged/patternfly_bootstrap_treeview/css/bootstrap-treeview.min.css" rel="stylesheet">
+    <link href="../../static/css/pygments.css" rel="stylesheet">
+    <link href="../../static/css/ara.css" rel="stylesheet">
+    <link rel="shortcut icon" href="../../static/images/favicon.ico">
+</head>
+
+
+
+<body>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12 results">
+          <h2>Task: <strong>ansible-role-bootstrap : install software with yum</strong></h2>
+          <h2>Host: <strong>bootstrap-centos-6</strong></h2>
+          <p>Time: <strong>2018-04-04 16:18:03</strong></p>
+          <p>Ansible version: <strong>2.3.3.0</strong></p>
+          
+          
+              
+    
+
+        <h2>Stderr</h2>
+                <div class="codehilite"><pre><span></span>warning: rpmts_HdrFromFdno: Header V3 RSA/SHA1 Signature, key ID c105b9de: NOKEY
+Importing GPG key 0xC105B9DE:
+ Userid : CentOS-6 Key (CentOS 6 Official Signing Key) &lt;centos-6-key@centos.org&gt;
+ Package: centos-release-6-9.el6.12.3.x86_64 (@CentOS/6.9)
+ From   : /etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-6
+</pre></div>
+
+            <h2>Stdout</h2>
+                <div class="codehilite"><pre><span></span>Loaded plugins: fastestmirror, ovl
+Setting up Install Process
+Package python-2.6.6-66.el6_8.x86_64 already installed and latest version
+Resolving Dependencies
+--&gt; Running transaction check
+---&gt; Package sudo.x86_64 0:1.8.6p3-29.el6_9 will be installed
+--&gt; Finished Dependency Resolution
+
+Dependencies Resolved
+
+================================================================================
+ Package       Arch            Version                   Repository        Size
+================================================================================
+Installing:
+ sudo          x86_64          1.8.6p3-29.el6_9          updates          711 k
+
+Transaction Summary
+================================================================================
+Install       1 Package(s)
+
+Total download size: 711 k
+Installed size: 2.4 M
+Downloading Packages:
+Retrieving key from file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-6
+Running rpm_check_debug
+Running Transaction Test
+Transaction Test Succeeded
+Running Transaction
+
+  Installing : sudo-1.8.6p3-29.el6_9.x86_64                                 1/1 
+
+  Verifying  : sudo-1.8.6p3-29.el6_9.x86_64                                 1/1 
+
+Installed:
+  sudo.x86_64 0:1.8.6p3-29.el6_9                                                
+
+Complete!
+</pre></div>
+
+            
+          
+        </div>
+    </div>
+</div>
+</body>
+</html>

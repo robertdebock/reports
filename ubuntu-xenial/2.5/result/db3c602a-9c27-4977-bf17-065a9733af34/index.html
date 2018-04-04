@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html class="layout-pf">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="ARA | Ansible Run Analysis records Ansible playbook runs seamlessly to make them easier to visualize, understand and troubleshoot">
+    <title>ARA | Ansible Run Analysis</title>
+    <script src="../../static/packaged/jquery/jquery.min.js"></script>
+    <script src="../../static/packaged/datatables/js/jquery.dataTables.min.js"></script>
+    <script src="../../static/packaged/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../../static/packaged/patternfly_bootstrap_treeview/js/bootstrap-treeview.min.js"></script>
+    <script src="../../static/packaged/patternfly/js/patternfly.min.js"></script>
+    <script src="../../static/js/ara.js"></script>
+    <link href="../../static/packaged/patternfly/css/patternfly.min.css" rel="stylesheet">
+    <link href="../../static/packaged/patternfly/css/patternfly-additions.min.css" rel="stylesheet">
+    <link href="../../static/packaged/patternfly_bootstrap_treeview/css/bootstrap-treeview.min.css" rel="stylesheet">
+    <link href="../../static/css/pygments.css" rel="stylesheet">
+    <link href="../../static/css/ara.css" rel="stylesheet">
+    <link rel="shortcut icon" href="../../static/images/favicon.ico">
+</head>
+
+
+
+<body>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12 results">
+          <h2>Task: <strong>Create molecule instance(s)</strong></h2>
+          <h2>Host: <strong>localhost</strong></h2>
+          <p>Time: <strong>2018-04-04 17:09:20</strong></p>
+          <p>Ansible version: <strong>2.5.0</strong></p>
+          
+          
+              
+    
+        
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    
+    
+
+        <h2>Msg</h2>
+                <div class="codehilite"><pre><span></span>All items completed
+</pre></div>
+
+            <h2>Results</h2>
+                <div class="codehilite"><pre><span></span><span class="p">[</span>
+    <span class="p">{</span>
+        <span class="nt">&quot;_ansible_ignore_errors&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+        <span class="nt">&quot;_ansible_item_result&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span> 
+        <span class="nt">&quot;_ansible_no_log&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span> 
+        <span class="nt">&quot;_ansible_parsed&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span> 
+        <span class="nt">&quot;ansible_facts&quot;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="nt">&quot;docker_container&quot;</span><span class="p">:</span> <span class="p">{</span>
+                <span class="nt">&quot;AppArmorProfile&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span> 
+                <span class="nt">&quot;Args&quot;</span><span class="p">:</span> <span class="p">[</span>
+                    <span class="s2">&quot;-c&quot;</span><span class="p">,</span> 
+                    <span class="s2">&quot;while true; do sleep 10000; done&quot;</span>
+                <span class="p">],</span> 
+                <span class="nt">&quot;Config&quot;</span><span class="p">:</span> <span class="p">{</span>
+                    <span class="nt">&quot;AttachStderr&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+                    <span class="nt">&quot;AttachStdin&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+                    <span class="nt">&quot;AttachStdout&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+                    <span class="nt">&quot;Cmd&quot;</span><span class="p">:</span> <span class="p">[</span>
+                        <span class="s2">&quot;sh&quot;</span><span class="p">,</span> 
+                        <span class="s2">&quot;-c&quot;</span><span class="p">,</span> 
+                        <span class="s2">&quot;while true; do sleep 10000; done&quot;</span>
+                    <span class="p">],</span> 
+                    <span class="nt">&quot;Domainname&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span> 
+                    <span class="nt">&quot;Entrypoint&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                    <span class="nt">&quot;Env&quot;</span><span class="p">:</span> <span class="p">[</span>
+                        <span class="s2">&quot;PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin&quot;</span>
+                    <span class="p">],</span> 
+                    <span class="nt">&quot;Hostname&quot;</span><span class="p">:</span> <span class="s2">&quot;bootstrap-ubuntu-xenial&quot;</span><span class="p">,</span> 
+                    <span class="nt">&quot;Image&quot;</span><span class="p">:</span> <span class="s2">&quot;molecule_local/ubuntu:xenial&quot;</span><span class="p">,</span> 
+                    <span class="nt">&quot;Labels&quot;</span><span class="p">:</span> <span class="p">{},</span> 
+                    <span class="nt">&quot;OnBuild&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                    <span class="nt">&quot;OpenStdin&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+                    <span class="nt">&quot;StdinOnce&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+                    <span class="nt">&quot;Tty&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+                    <span class="nt">&quot;User&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span> 
+                    <span class="nt">&quot;Volumes&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                    <span class="nt">&quot;WorkingDir&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span>
+                <span class="p">},</span> 
+                <span class="nt">&quot;Created&quot;</span><span class="p">:</span> <span class="s2">&quot;2018-04-04T17:09:21.046803791Z&quot;</span><span class="p">,</span> 
+                <span class="nt">&quot;Driver&quot;</span><span class="p">:</span> <span class="s2">&quot;overlay2&quot;</span><span class="p">,</span> 
+                <span class="nt">&quot;ExecIDs&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                <span class="nt">&quot;GraphDriver&quot;</span><span class="p">:</span> <span class="p">{</span>
+                    <span class="nt">&quot;Data&quot;</span><span class="p">:</span> <span class="p">{</span>
+                        <span class="nt">&quot;LowerDir&quot;</span><span class="p">:</span> <span class="s2">&quot;/var/lib/docker/overlay2/3b958026ebba25eed2a902426b500c688c0e034ec3ff001392f824da82223dc5-init/diff:/var/lib/docker/overlay2/3680ab63fd032885747f36bc8bb73957228e2eeaecf48e9db7af0347ff42212d/diff:/var/lib/docker/overlay2/ede23e1fcfa5b70ab8f0169c0583cdaf2a07d75c6adc86f0e4107f285ab9be41/diff:/var/lib/docker/overlay2/759041fa92320880c5966f2dbdcaa45b390314a3343881a39cc88fb5c67c9524/diff:/var/lib/docker/overlay2/a94298d0ae1b9ccc1d3ec5b0f3ca05cae90c2ef4e77d1e247c4e1186d27c8acf/diff:/var/lib/docker/overlay2/260a2182265c9a77a20b000127f0b499affbfba26a064286ed4dff8fcbf4cbd0/diff&quot;</span><span class="p">,</span> 
+                        <span class="nt">&quot;MergedDir&quot;</span><span class="p">:</span> <span class="s2">&quot;/var/lib/docker/overlay2/3b958026ebba25eed2a902426b500c688c0e034ec3ff001392f824da82223dc5/merged&quot;</span><span class="p">,</span> 
+                        <span class="nt">&quot;UpperDir&quot;</span><span class="p">:</span> <span class="s2">&quot;/var/lib/docker/overlay2/3b958026ebba25eed2a902426b500c688c0e034ec3ff001392f824da82223dc5/diff&quot;</span><span class="p">,</span> 
+                        <span class="nt">&quot;WorkDir&quot;</span><span class="p">:</span> <span class="s2">&quot;/var/lib/docker/overlay2/3b958026ebba25eed2a902426b500c688c0e034ec3ff001392f824da82223dc5/work&quot;</span>
+                    <span class="p">},</span> 
+                    <span class="nt">&quot;Name&quot;</span><span class="p">:</span> <span class="s2">&quot;overlay2&quot;</span>
+                <span class="p">},</span> 
+                <span class="nt">&quot;HostConfig&quot;</span><span class="p">:</span> <span class="p">{</span>
+                    <span class="nt">&quot;AutoRemove&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+                    <span class="nt">&quot;Binds&quot;</span><span class="p">:</span> <span class="p">[],</span> 
+                    <span class="nt">&quot;BlkioDeviceReadBps&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                    <span class="nt">&quot;BlkioDeviceReadIOps&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                    <span class="nt">&quot;BlkioDeviceWriteBps&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                    <span class="nt">&quot;BlkioDeviceWriteIOps&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                    <span class="nt">&quot;BlkioWeight&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> 
+                    <span class="nt">&quot;BlkioWeightDevice&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                    <span class="nt">&quot;CapAdd&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                    <span class="nt">&quot;CapDrop&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                    <span class="nt">&quot;Cgroup&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span> 
+                    <span class="nt">&quot;CgroupParent&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span> 
+                    <span class="nt">&quot;ConsoleSize&quot;</span><span class="p">:</span> <span class="p">[</span>
+                        <span class="mi">0</span><span class="p">,</span> 
+                        <span class="mi">0</span>
+                    <span class="p">],</span> 
+                    <span class="nt">&quot;ContainerIDFile&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span> 
+                    <span class="nt">&quot;CpuCount&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> 
+                    <span class="nt">&quot;CpuPercent&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> 
+                    <span class="nt">&quot;CpuPeriod&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> 
+                    <span class="nt">&quot;CpuQuota&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> 
+                    <span class="nt">&quot;CpuRealtimePeriod&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> 
+                    <span class="nt">&quot;CpuRealtimeRuntime&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> 
+                    <span class="nt">&quot;CpuShares&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> 
+                    <span class="nt">&quot;CpusetCpus&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span> 
+                    <span class="nt">&quot;CpusetMems&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span> 
+                    <span class="nt">&quot;DeviceCgroupRules&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                    <span class="nt">&quot;Devices&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                    <span class="nt">&quot;DiskQuota&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> 
+                    <span class="nt">&quot;Dns&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                    <span class="nt">&quot;DnsOptions&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                    <span class="nt">&quot;DnsSearch&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                    <span class="nt">&quot;ExtraHosts&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                    <span class="nt">&quot;GroupAdd&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                    <span class="nt">&quot;IOMaximumBandwidth&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> 
+                    <span class="nt">&quot;IOMaximumIOps&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> 
+                    <span class="nt">&quot;IpcMode&quot;</span><span class="p">:</span> <span class="s2">&quot;shareable&quot;</span><span class="p">,</span> 
+                    <span class="nt">&quot;Isolation&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span> 
+                    <span class="nt">&quot;KernelMemory&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> 
+                    <span class="nt">&quot;Links&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                    <span class="nt">&quot;LogConfig&quot;</span><span class="p">:</span> <span class="p">{</span>
+                        <span class="nt">&quot;Config&quot;</span><span class="p">:</span> <span class="p">{},</span> 
+                        <span class="nt">&quot;Type&quot;</span><span class="p">:</span> <span class="s2">&quot;json-file&quot;</span>
+                    <span class="p">},</span> 
+                    <span class="nt">&quot;Memory&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> 
+                    <span class="nt">&quot;MemoryReservation&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> 
+                    <span class="nt">&quot;MemorySwap&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> 
+                    <span class="nt">&quot;MemorySwappiness&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                    <span class="nt">&quot;NanoCpus&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> 
+                    <span class="nt">&quot;NetworkMode&quot;</span><span class="p">:</span> <span class="s2">&quot;default&quot;</span><span class="p">,</span> 
+                    <span class="nt">&quot;OomKillDisable&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+                    <span class="nt">&quot;OomScoreAdj&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> 
+                    <span class="nt">&quot;PidMode&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span> 
+                    <span class="nt">&quot;PidsLimit&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> 
+                    <span class="nt">&quot;PortBindings&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                    <span class="nt">&quot;Privileged&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+                    <span class="nt">&quot;PublishAllPorts&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+                    <span class="nt">&quot;ReadonlyRootfs&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+                    <span class="nt">&quot;RestartPolicy&quot;</span><span class="p">:</span> <span class="p">{</span>
+                        <span class="nt">&quot;MaximumRetryCount&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> 
+                        <span class="nt">&quot;Name&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span>
+                    <span class="p">},</span> 
+                    <span class="nt">&quot;Runtime&quot;</span><span class="p">:</span> <span class="s2">&quot;runc&quot;</span><span class="p">,</span> 
+                    <span class="nt">&quot;SecurityOpt&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                    <span class="nt">&quot;ShmSize&quot;</span><span class="p">:</span> <span class="mi">67108864</span><span class="p">,</span> 
+                    <span class="nt">&quot;UTSMode&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span> 
+                    <span class="nt">&quot;Ulimits&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                    <span class="nt">&quot;UsernsMode&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span> 
+                    <span class="nt">&quot;VolumeDriver&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span> 
+                    <span class="nt">&quot;VolumesFrom&quot;</span><span class="p">:</span> <span class="kc">null</span>
+                <span class="p">},</span> 
+                <span class="nt">&quot;HostnamePath&quot;</span><span class="p">:</span> <span class="s2">&quot;/var/lib/docker/containers/efc29ac4cbfa8fa215a37d08d8c061f34bb4951780ecf7d128ca2ebff5aa3c7a/hostname&quot;</span><span class="p">,</span> 
+                <span class="nt">&quot;HostsPath&quot;</span><span class="p">:</span> <span class="s2">&quot;/var/lib/docker/containers/efc29ac4cbfa8fa215a37d08d8c061f34bb4951780ecf7d128ca2ebff5aa3c7a/hosts&quot;</span><span class="p">,</span> 
+                <span class="nt">&quot;Id&quot;</span><span class="p">:</span> <span class="s2">&quot;efc29ac4cbfa8fa215a37d08d8c061f34bb4951780ecf7d128ca2ebff5aa3c7a&quot;</span><span class="p">,</span> 
+                <span class="nt">&quot;Image&quot;</span><span class="p">:</span> <span class="s2">&quot;sha256:f975c50357489439eb9145dbfa16bb7cd06c02c31aa4df45c77de4d2baa4e232&quot;</span><span class="p">,</span> 
+                <span class="nt">&quot;LogPath&quot;</span><span class="p">:</span> <span class="s2">&quot;/var/lib/docker/containers/efc29ac4cbfa8fa215a37d08d8c061f34bb4951780ecf7d128ca2ebff5aa3c7a/efc29ac4cbfa8fa215a37d08d8c061f34bb4951780ecf7d128ca2ebff5aa3c7a-json.log&quot;</span><span class="p">,</span> 
+                <span class="nt">&quot;MountLabel&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span> 
+                <span class="nt">&quot;Mounts&quot;</span><span class="p">:</span> <span class="p">[],</span> 
+                <span class="nt">&quot;Name&quot;</span><span class="p">:</span> <span class="s2">&quot;/bootstrap-ubuntu-xenial&quot;</span><span class="p">,</span> 
+                <span class="nt">&quot;NetworkSettings&quot;</span><span class="p">:</span> <span class="p">{</span>
+                    <span class="nt">&quot;Bridge&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span> 
+                    <span class="nt">&quot;EndpointID&quot;</span><span class="p">:</span> <span class="s2">&quot;6f4b555acf86c0ac03bf24c4f032f628ced79a6337a8feaeb13274d58f018a40&quot;</span><span class="p">,</span> 
+                    <span class="nt">&quot;Gateway&quot;</span><span class="p">:</span> <span class="s2">&quot;172.17.0.1&quot;</span><span class="p">,</span> 
+                    <span class="nt">&quot;GlobalIPv6Address&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span> 
+                    <span class="nt">&quot;GlobalIPv6PrefixLen&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> 
+                    <span class="nt">&quot;HairpinMode&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+                    <span class="nt">&quot;IPAddress&quot;</span><span class="p">:</span> <span class="s2">&quot;172.17.0.2&quot;</span><span class="p">,</span> 
+                    <span class="nt">&quot;IPPrefixLen&quot;</span><span class="p">:</span> <span class="mi">16</span><span class="p">,</span> 
+                    <span class="nt">&quot;IPv6Gateway&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span> 
+                    <span class="nt">&quot;LinkLocalIPv6Address&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span> 
+                    <span class="nt">&quot;LinkLocalIPv6PrefixLen&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> 
+                    <span class="nt">&quot;MacAddress&quot;</span><span class="p">:</span> <span class="s2">&quot;02:42:ac:11:00:02&quot;</span><span class="p">,</span> 
+                    <span class="nt">&quot;Networks&quot;</span><span class="p">:</span> <span class="p">{</span>
+                        <span class="nt">&quot;bridge&quot;</span><span class="p">:</span> <span class="p">{</span>
+                            <span class="nt">&quot;Aliases&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                            <span class="nt">&quot;DriverOpts&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                            <span class="nt">&quot;EndpointID&quot;</span><span class="p">:</span> <span class="s2">&quot;6f4b555acf86c0ac03bf24c4f032f628ced79a6337a8feaeb13274d58f018a40&quot;</span><span class="p">,</span> 
+                            <span class="nt">&quot;Gateway&quot;</span><span class="p">:</span> <span class="s2">&quot;172.17.0.1&quot;</span><span class="p">,</span> 
+                            <span class="nt">&quot;GlobalIPv6Address&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span> 
+                            <span class="nt">&quot;GlobalIPv6PrefixLen&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> 
+                            <span class="nt">&quot;IPAMConfig&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                            <span class="nt">&quot;IPAddress&quot;</span><span class="p">:</span> <span class="s2">&quot;172.17.0.2&quot;</span><span class="p">,</span> 
+                            <span class="nt">&quot;IPPrefixLen&quot;</span><span class="p">:</span> <span class="mi">16</span><span class="p">,</span> 
+                            <span class="nt">&quot;IPv6Gateway&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span> 
+                            <span class="nt">&quot;Links&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                            <span class="nt">&quot;MacAddress&quot;</span><span class="p">:</span> <span class="s2">&quot;02:42:ac:11:00:02&quot;</span><span class="p">,</span> 
+                            <span class="nt">&quot;NetworkID&quot;</span><span class="p">:</span> <span class="s2">&quot;71f788792b4e8626d7214bfe99fced4ddd5fc99a805f55a0c9567e4a6a955240&quot;</span>
+                        <span class="p">}</span>
+                    <span class="p">},</span> 
+                    <span class="nt">&quot;Ports&quot;</span><span class="p">:</span> <span class="p">{},</span> 
+                    <span class="nt">&quot;SandboxID&quot;</span><span class="p">:</span> <span class="s2">&quot;83380e12b2d4802d96660c2fbadfe83983aaaa0501c3a7db3977b85d761ba8f2&quot;</span><span class="p">,</span> 
+                    <span class="nt">&quot;SandboxKey&quot;</span><span class="p">:</span> <span class="s2">&quot;/var/run/docker/netns/83380e12b2d4&quot;</span><span class="p">,</span> 
+                    <span class="nt">&quot;SecondaryIPAddresses&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                    <span class="nt">&quot;SecondaryIPv6Addresses&quot;</span><span class="p">:</span> <span class="kc">null</span>
+                <span class="p">},</span> 
+                <span class="nt">&quot;Path&quot;</span><span class="p">:</span> <span class="s2">&quot;sh&quot;</span><span class="p">,</span> 
+                <span class="nt">&quot;Platform&quot;</span><span class="p">:</span> <span class="s2">&quot;linux&quot;</span><span class="p">,</span> 
+                <span class="nt">&quot;ProcessLabel&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span> 
+                <span class="nt">&quot;ResolvConfPath&quot;</span><span class="p">:</span> <span class="s2">&quot;/var/lib/docker/containers/efc29ac4cbfa8fa215a37d08d8c061f34bb4951780ecf7d128ca2ebff5aa3c7a/resolv.conf&quot;</span><span class="p">,</span> 
+                <span class="nt">&quot;RestartCount&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> 
+                <span class="nt">&quot;State&quot;</span><span class="p">:</span> <span class="p">{</span>
+                    <span class="nt">&quot;Dead&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+                    <span class="nt">&quot;Error&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span> 
+                    <span class="nt">&quot;ExitCode&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> 
+                    <span class="nt">&quot;FinishedAt&quot;</span><span class="p">:</span> <span class="s2">&quot;0001-01-01T00:00:00Z&quot;</span><span class="p">,</span> 
+                    <span class="nt">&quot;OOMKilled&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+                    <span class="nt">&quot;Paused&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+                    <span class="nt">&quot;Pid&quot;</span><span class="p">:</span> <span class="mi">5264</span><span class="p">,</span> 
+                    <span class="nt">&quot;Restarting&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+                    <span class="nt">&quot;Running&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span> 
+                    <span class="nt">&quot;StartedAt&quot;</span><span class="p">:</span> <span class="s2">&quot;2018-04-04T17:09:21.415881808Z&quot;</span><span class="p">,</span> 
+                    <span class="nt">&quot;Status&quot;</span><span class="p">:</span> <span class="s2">&quot;running&quot;</span>
+                <span class="p">}</span>
+            <span class="p">}</span>
+        <span class="p">},</span> 
+        <span class="nt">&quot;changed&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span> 
+        <span class="nt">&quot;failed&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+        <span class="nt">&quot;invocation&quot;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="nt">&quot;module_args&quot;</span><span class="p">:</span> <span class="p">{</span>
+                <span class="nt">&quot;api_version&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                <span class="nt">&quot;auto_remove&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+                <span class="nt">&quot;blkio_weight&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                <span class="nt">&quot;cacert_path&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                <span class="nt">&quot;capabilities&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                <span class="nt">&quot;cert_path&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                <span class="nt">&quot;cleanup&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+                <span class="nt">&quot;command&quot;</span><span class="p">:</span> <span class="s2">&quot;sh -c \&quot;while true; do sleep 10000; done\&quot;&quot;</span><span class="p">,</span> 
+                <span class="nt">&quot;cpu_period&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                <span class="nt">&quot;cpu_quota&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                <span class="nt">&quot;cpu_shares&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                <span class="nt">&quot;cpuset_cpus&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                <span class="nt">&quot;cpuset_mems&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                <span class="nt">&quot;debug&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+                <span class="nt">&quot;detach&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span> 
+                <span class="nt">&quot;devices&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                <span class="nt">&quot;dns_opts&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                <span class="nt">&quot;dns_search_domains&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                <span class="nt">&quot;dns_servers&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                <span class="nt">&quot;docker_host&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                <span class="nt">&quot;domainname&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                <span class="nt">&quot;entrypoint&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                <span class="nt">&quot;env&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                <span class="nt">&quot;env_file&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                <span class="nt">&quot;etc_hosts&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                <span class="nt">&quot;exposed_ports&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                <span class="nt">&quot;filter_logger&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+                <span class="nt">&quot;force_kill&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+                <span class="nt">&quot;groups&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                <span class="nt">&quot;hostname&quot;</span><span class="p">:</span> <span class="s2">&quot;bootstrap-ubuntu-xenial&quot;</span><span class="p">,</span> 
+                <span class="nt">&quot;ignore_image&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+                <span class="nt">&quot;image&quot;</span><span class="p">:</span> <span class="s2">&quot;molecule_local/ubuntu:xenial&quot;</span><span class="p">,</span> 
+                <span class="nt">&quot;interactive&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+                <span class="nt">&quot;ipc_mode&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                <span class="nt">&quot;keep_volumes&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span> 
+                <span class="nt">&quot;kernel_memory&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                <span class="nt">&quot;key_path&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                <span class="nt">&quot;kill_signal&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                <span class="nt">&quot;labels&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                <span class="nt">&quot;links&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                <span class="nt">&quot;log_driver&quot;</span><span class="p">:</span> <span class="s2">&quot;json-file&quot;</span><span class="p">,</span> 
+                <span class="nt">&quot;log_options&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                <span class="nt">&quot;mac_address&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                <span class="nt">&quot;memory&quot;</span><span class="p">:</span> <span class="s2">&quot;0&quot;</span><span class="p">,</span> 
+                <span class="nt">&quot;memory_reservation&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                <span class="nt">&quot;memory_swap&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                <span class="nt">&quot;memory_swappiness&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;bootstrap-ubuntu-xenial&quot;</span><span class="p">,</span> 
+                <span class="nt">&quot;network_mode&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                <span class="nt">&quot;networks&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                <span class="nt">&quot;oom_killer&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                <span class="nt">&quot;oom_score_adj&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                <span class="nt">&quot;paused&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+                <span class="nt">&quot;pid_mode&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                <span class="nt">&quot;privileged&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+                <span class="nt">&quot;published_ports&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                <span class="nt">&quot;pull&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+                <span class="nt">&quot;purge_networks&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+                <span class="nt">&quot;read_only&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+                <span class="nt">&quot;recreate&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+                <span class="nt">&quot;restart&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+                <span class="nt">&quot;restart_policy&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                <span class="nt">&quot;restart_retries&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                <span class="nt">&quot;security_opts&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                <span class="nt">&quot;shm_size&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                <span class="nt">&quot;ssl_version&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                <span class="nt">&quot;state&quot;</span><span class="p">:</span> <span class="s2">&quot;started&quot;</span><span class="p">,</span> 
+                <span class="nt">&quot;stop_signal&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                <span class="nt">&quot;stop_timeout&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                <span class="nt">&quot;sysctls&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                <span class="nt">&quot;timeout&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                <span class="nt">&quot;tls&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                <span class="nt">&quot;tls_hostname&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                <span class="nt">&quot;tls_verify&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                <span class="nt">&quot;tmpfs&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                <span class="nt">&quot;trust_image_content&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+                <span class="nt">&quot;tty&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+                <span class="nt">&quot;ulimits&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                <span class="nt">&quot;user&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                <span class="nt">&quot;userns_mode&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                <span class="nt">&quot;uts&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                <span class="nt">&quot;volume_driver&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                <span class="nt">&quot;volumes&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                <span class="nt">&quot;volumes_from&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                <span class="nt">&quot;working_dir&quot;</span><span class="p">:</span> <span class="kc">null</span>
+            <span class="p">}</span>
+        <span class="p">},</span> 
+        <span class="nt">&quot;item&quot;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="nt">&quot;image&quot;</span><span class="p">:</span> <span class="s2">&quot;ubuntu:xenial&quot;</span><span class="p">,</span> 
+            <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;bootstrap-ubuntu-xenial&quot;</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+<span class="p">]</span>
+</pre></div>
+
+            
+                </div>
+            </div>
+        
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    
+    
+
+        <h2>Censored</h2>
+                <div class="codehilite"><pre><span></span>the output has been hidden due to the fact that &#39;no_log: true&#39; was specified for this result
+</pre></div>
+
+            
+                </div>
+            </div>
+        
+    
+          
+        </div>
+    </div>
+</div>
+</body>
+</html>

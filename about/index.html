@@ -38,10 +38,13 @@
         <ul class="nav navbar-nav navbar-utility">
             <li><a href="https://ara.readthedocs.io/en/latest/" target="_blank">Documentation</a></li>
             <li><a href="https://github.com/openstack/ara" target="_blank"><strong>ARA</strong> 0.14.6</a></li>
-            <li><a href="https://www.ansible.com/" target="_blank"><strong>Ansible</strong> 2.3.3.0</a></li>
+            <li><a href="https://www.ansible.com/" target="_blank"><strong>Ansible</strong> 2.5.0</a></li>
             <li><a href="https://www.python.org/" target="_blank"><strong>Python</strong> 2.7</a></li>
         </ul>
         <ul class="nav navbar-nav navbar-primary">
+            <li>
+            <a href="../reports/index.html">Playbook reports</a>
+            </li>
             <li class="active">
             <a href="index.html">About</a>
             </li>
@@ -69,12 +72,41 @@
                 You can read about the project's core values and principles in the <a href="https://ara.readthedocs.io/en/latest/manifesto.html" target="_blank">project manifesto</a>.
             </h3>
             <br>
-            <h2><strong>The ARA database is empty or the web application is not configured properly to find your playbook data.</strong></h2>
-            <h2>Get started by <a href="https://ara.readthedocs.io/en/latest/configuration.html" target="_blank">configuring Ansible to use ARA</a>.</h2>
-            <h2>Your data will be available in the interface after an <code>ansible-playbook</code> is run after configuring Ansible to use ARA.</h2>
+            <h2>ARA makes the following data available:</h2>
             <br>
-            <br>
-                <h3>Need help ? Look at the <a href="https://ara.readthedocs.io/en/latest/" target="_blank">documentation</a> or come chat with the <a href="https://github.com/openstack/ara#community-and-getting-help" target="_blank">community</a> !</h3>
+            <div class="list-group stat-highlight col-md-4 col-md-offset-4">
+                <button type="button" class="list-group-item list-group-item-action">
+                    <span class="badge">8</span>
+                    Playbook runs
+                </button>
+                <button type="button" class="list-group-item list-group-item-action">
+                    <span class="badge">64</span>
+                    Tasks
+                </button>
+                <button type="button" class="list-group-item list-group-item-action">
+                    <span class="badge">64</span>
+                    Task results
+                </button>
+                <button type="button" class="list-group-item list-group-item-action">
+                    <span class="badge">7</span>
+                    Hosts
+                </button>
+                <button type="button" class="list-group-item list-group-item-action">
+                    <span class="badge">4</span>
+                    Hosts with gathered facts
+                </button>
+                <button type="button" class="list-group-item list-group-item-action">
+                    <span class="badge">11</span>
+                    Playbook, role and task files
+                </button>
+                <button type="button" class="list-group-item list-group-item-action">
+                    <span class="badge">0</span>
+                    Recorded key/values
+                </button>
+            </div>
+        </div>
+        <div class="row text-center">
+            <h2>Get started by looking at your <a href="../reports/index.html">playbook reports</a>.</h2>
             </div>
     </div>
 </div>

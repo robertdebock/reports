@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html class="layout-pf">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="ARA | Ansible Run Analysis records Ansible playbook runs seamlessly to make them easier to visualize, understand and troubleshoot">
+    <title>ARA | Ansible Run Analysis</title>
+    <script src="../../static/packaged/jquery/jquery.min.js"></script>
+    <script src="../../static/packaged/datatables/js/jquery.dataTables.min.js"></script>
+    <script src="../../static/packaged/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../../static/packaged/patternfly_bootstrap_treeview/js/bootstrap-treeview.min.js"></script>
+    <script src="../../static/packaged/patternfly/js/patternfly.min.js"></script>
+    <script src="../../static/js/ara.js"></script>
+    <link href="../../static/packaged/patternfly/css/patternfly.min.css" rel="stylesheet">
+    <link href="../../static/packaged/patternfly/css/patternfly-additions.min.css" rel="stylesheet">
+    <link href="../../static/packaged/patternfly_bootstrap_treeview/css/bootstrap-treeview.min.css" rel="stylesheet">
+    <link href="../../static/css/pygments.css" rel="stylesheet">
+    <link href="../../static/css/ara.css" rel="stylesheet">
+    <link rel="shortcut icon" href="../../static/images/favicon.ico">
+</head>
+
+
+
+<body>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12 results">
+          <h2>Task: <strong>ansible-role-bootstrap : install software to support stable modules</strong></h2>
+          <h2>Host: <strong>bootstrap-alpine-3.6</strong></h2>
+          <p>Time: <strong>2018-04-04 05:15:51</strong></p>
+          <p>Ansible version: <strong>2.4.3.0</strong></p>
+          
+          
+              
+    
+        
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    
+    
+
+        <h2>Msg</h2>
+                <div class="codehilite"><pre><span></span>All items completed
+</pre></div>
+
+            <h2>Results</h2>
+                <div class="codehilite"><pre><span></span><span class="p">[</span>
+    <span class="p">{</span>
+        <span class="nt">&quot;_ansible_ignore_errors&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+        <span class="nt">&quot;_ansible_item_result&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span> 
+        <span class="nt">&quot;_ansible_no_log&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+        <span class="nt">&quot;_ansible_parsed&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span> 
+        <span class="nt">&quot;changed&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span> 
+        <span class="nt">&quot;failed&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+        <span class="nt">&quot;invocation&quot;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="nt">&quot;module_args&quot;</span><span class="p">:</span> <span class="p">{</span>
+                <span class="nt">&quot;available&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+                <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="p">[</span>
+                    <span class="s2">&quot;ca-certificates&quot;</span>
+                <span class="p">],</span> 
+                <span class="nt">&quot;repository&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                <span class="nt">&quot;state&quot;</span><span class="p">:</span> <span class="s2">&quot;present&quot;</span><span class="p">,</span> 
+                <span class="nt">&quot;update_cache&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+                <span class="nt">&quot;upgrade&quot;</span><span class="p">:</span> <span class="kc">false</span>
+            <span class="p">}</span>
+        <span class="p">},</span> 
+        <span class="nt">&quot;item&quot;</span><span class="p">:</span> <span class="s2">&quot;ca-certificates&quot;</span><span class="p">,</span> 
+        <span class="nt">&quot;msg&quot;</span><span class="p">:</span> <span class="s2">&quot;installed ca-certificates package(s)&quot;</span><span class="p">,</span> 
+        <span class="nt">&quot;packages&quot;</span><span class="p">:</span> <span class="p">[</span>
+            <span class="s2">&quot;ca-certificates&quot;</span>
+        <span class="p">],</span> 
+        <span class="nt">&quot;stderr&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span> 
+        <span class="nt">&quot;stderr_lines&quot;</span><span class="p">:</span> <span class="p">[],</span> 
+        <span class="nt">&quot;stdout&quot;</span><span class="p">:</span> <span class="s2">&quot;(1/1) Installing ca-certificates (20161130-r2)\nExecuting busybox-1.26.2-r9.trigger\nExecuting ca-certificates-20161130-r2.trigger\nOK: 53 MiB in 23 packages\n&quot;</span><span class="p">,</span> 
+        <span class="nt">&quot;stdout_lines&quot;</span><span class="p">:</span> <span class="p">[</span>
+            <span class="s2">&quot;(1/1) Installing ca-certificates (20161130-r2)&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;Executing busybox-1.26.2-r9.trigger&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;Executing ca-certificates-20161130-r2.trigger&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;OK: 53 MiB in 23 packages&quot;</span>
+        <span class="p">]</span>
+    <span class="p">},</span> 
+    <span class="p">{</span>
+        <span class="nt">&quot;_ansible_ignore_errors&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+        <span class="nt">&quot;_ansible_item_result&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span> 
+        <span class="nt">&quot;_ansible_no_log&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+        <span class="nt">&quot;_ansible_parsed&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span> 
+        <span class="nt">&quot;changed&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span> 
+        <span class="nt">&quot;failed&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+        <span class="nt">&quot;invocation&quot;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="nt">&quot;module_args&quot;</span><span class="p">:</span> <span class="p">{</span>
+                <span class="nt">&quot;available&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+                <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="p">[</span>
+                    <span class="s2">&quot;py-simplejson&quot;</span>
+                <span class="p">],</span> 
+                <span class="nt">&quot;repository&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                <span class="nt">&quot;state&quot;</span><span class="p">:</span> <span class="s2">&quot;present&quot;</span><span class="p">,</span> 
+                <span class="nt">&quot;update_cache&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+                <span class="nt">&quot;upgrade&quot;</span><span class="p">:</span> <span class="kc">false</span>
+            <span class="p">}</span>
+        <span class="p">},</span> 
+        <span class="nt">&quot;item&quot;</span><span class="p">:</span> <span class="s2">&quot;py-simplejson&quot;</span><span class="p">,</span> 
+        <span class="nt">&quot;msg&quot;</span><span class="p">:</span> <span class="s2">&quot;installed py-simplejson package(s)&quot;</span><span class="p">,</span> 
+        <span class="nt">&quot;packages&quot;</span><span class="p">:</span> <span class="p">[</span>
+            <span class="s2">&quot;py-simplejson&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;py2-simplejson&quot;</span>
+        <span class="p">],</span> 
+        <span class="nt">&quot;stderr&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span> 
+        <span class="nt">&quot;stderr_lines&quot;</span><span class="p">:</span> <span class="p">[],</span> 
+        <span class="nt">&quot;stdout&quot;</span><span class="p">:</span> <span class="s2">&quot;(1/2) Installing py-simplejson (3.8.2-r2)\n(2/2) Installing py2-simplejson (3.8.2-r2)\nOK: 53 MiB in 25 packages\n&quot;</span><span class="p">,</span> 
+        <span class="nt">&quot;stdout_lines&quot;</span><span class="p">:</span> <span class="p">[</span>
+            <span class="s2">&quot;(1/2) Installing py-simplejson (3.8.2-r2)&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;(2/2) Installing py2-simplejson (3.8.2-r2)&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;OK: 53 MiB in 25 packages&quot;</span>
+        <span class="p">]</span>
+    <span class="p">},</span> 
+    <span class="p">{</span>
+        <span class="nt">&quot;_ansible_ignore_errors&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+        <span class="nt">&quot;_ansible_item_result&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span> 
+        <span class="nt">&quot;_ansible_no_log&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+        <span class="nt">&quot;_ansible_parsed&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span> 
+        <span class="nt">&quot;changed&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span> 
+        <span class="nt">&quot;failed&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+        <span class="nt">&quot;invocation&quot;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="nt">&quot;module_args&quot;</span><span class="p">:</span> <span class="p">{</span>
+                <span class="nt">&quot;available&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+                <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="p">[</span>
+                    <span class="s2">&quot;shadow&quot;</span>
+                <span class="p">],</span> 
+                <span class="nt">&quot;repository&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                <span class="nt">&quot;state&quot;</span><span class="p">:</span> <span class="s2">&quot;present&quot;</span><span class="p">,</span> 
+                <span class="nt">&quot;update_cache&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+                <span class="nt">&quot;upgrade&quot;</span><span class="p">:</span> <span class="kc">false</span>
+            <span class="p">}</span>
+        <span class="p">},</span> 
+        <span class="nt">&quot;item&quot;</span><span class="p">:</span> <span class="s2">&quot;shadow&quot;</span><span class="p">,</span> 
+        <span class="nt">&quot;msg&quot;</span><span class="p">:</span> <span class="s2">&quot;installed shadow package(s)&quot;</span><span class="p">,</span> 
+        <span class="nt">&quot;packages&quot;</span><span class="p">:</span> <span class="p">[</span>
+            <span class="s2">&quot;linux-pam&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;shadow&quot;</span>
+        <span class="p">],</span> 
+        <span class="nt">&quot;stderr&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span> 
+        <span class="nt">&quot;stderr_lines&quot;</span><span class="p">:</span> <span class="p">[],</span> 
+        <span class="nt">&quot;stdout&quot;</span><span class="p">:</span> <span class="s2">&quot;(1/2) Installing linux-pam (1.2.1-r1)\n(2/2) Installing shadow (4.2.1-r11)\nExecuting busybox-1.26.2-r9.trigger\nOK: 55 MiB in 27 packages\n&quot;</span><span class="p">,</span> 
+        <span class="nt">&quot;stdout_lines&quot;</span><span class="p">:</span> <span class="p">[</span>
+            <span class="s2">&quot;(1/2) Installing linux-pam (1.2.1-r1)&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;(2/2) Installing shadow (4.2.1-r11)&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;Executing busybox-1.26.2-r9.trigger&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;OK: 55 MiB in 27 packages&quot;</span>
+        <span class="p">]</span>
+    <span class="p">}</span>
+<span class="p">]</span>
+</pre></div>
+
+            
+                </div>
+            </div>
+        
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    
+    <h2>Item</h2>
+            <div class="codehilite"><pre><span></span>ca-certificates
+</pre></div>
+
+        
+
+        <h2>Msg</h2>
+                <div class="codehilite"><pre><span></span>installed ca-certificates package(s)
+</pre></div>
+
+            <h2>Packages</h2>
+                <div class="codehilite"><pre><span></span><span class="p">[</span>
+    <span class="s2">&quot;ca-certificates&quot;</span>
+<span class="p">]</span>
+</pre></div>
+
+            <h2>Stdout</h2>
+                <div class="codehilite"><pre><span></span>(1/1) Installing ca-certificates (20161130-r2)
+Executing busybox-1.26.2-r9.trigger
+Executing ca-certificates-20161130-r2.trigger
+OK: 53 MiB in 23 packages
+</pre></div>
+
+            
+                </div>
+            </div>
+        
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    
+    <h2>Item</h2>
+            <div class="codehilite"><pre><span></span>py-simplejson
+</pre></div>
+
+        
+
+        <h2>Msg</h2>
+                <div class="codehilite"><pre><span></span>installed py-simplejson package(s)
+</pre></div>
+
+            <h2>Packages</h2>
+                <div class="codehilite"><pre><span></span><span class="p">[</span>
+    <span class="s2">&quot;py-simplejson&quot;</span><span class="p">,</span> 
+    <span class="s2">&quot;py2-simplejson&quot;</span>
+<span class="p">]</span>
+</pre></div>
+
+            <h2>Stdout</h2>
+                <div class="codehilite"><pre><span></span>(1/2) Installing py-simplejson (3.8.2-r2)
+(2/2) Installing py2-simplejson (3.8.2-r2)
+OK: 53 MiB in 25 packages
+</pre></div>
+
+            
+                </div>
+            </div>
+        
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    
+    <h2>Item</h2>
+            <div class="codehilite"><pre><span></span>shadow
+</pre></div>
+
+        
+
+        <h2>Msg</h2>
+                <div class="codehilite"><pre><span></span>installed shadow package(s)
+</pre></div>
+
+            <h2>Packages</h2>
+                <div class="codehilite"><pre><span></span><span class="p">[</span>
+    <span class="s2">&quot;linux-pam&quot;</span><span class="p">,</span> 
+    <span class="s2">&quot;shadow&quot;</span>
+<span class="p">]</span>
+</pre></div>
+
+            <h2>Stdout</h2>
+                <div class="codehilite"><pre><span></span>(1/2) Installing linux-pam (1.2.1-r1)
+(2/2) Installing shadow (4.2.1-r11)
+Executing busybox-1.26.2-r9.trigger
+OK: 55 MiB in 27 packages
+</pre></div>
+
+            
+                </div>
+            </div>
+        
+    
+          
+        </div>
+    </div>
+</div>
+</body>
+</html>

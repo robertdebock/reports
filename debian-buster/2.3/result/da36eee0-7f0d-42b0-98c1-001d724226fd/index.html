@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html class="layout-pf">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="ARA | Ansible Run Analysis records Ansible playbook runs seamlessly to make them easier to visualize, understand and troubleshoot">
+    <title>ARA | Ansible Run Analysis</title>
+    <script src="../../static/packaged/jquery/jquery.min.js"></script>
+    <script src="../../static/packaged/datatables/js/jquery.dataTables.min.js"></script>
+    <script src="../../static/packaged/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../../static/packaged/patternfly_bootstrap_treeview/js/bootstrap-treeview.min.js"></script>
+    <script src="../../static/packaged/patternfly/js/patternfly.min.js"></script>
+    <script src="../../static/js/ara.js"></script>
+    <link href="../../static/packaged/patternfly/css/patternfly.min.css" rel="stylesheet">
+    <link href="../../static/packaged/patternfly/css/patternfly-additions.min.css" rel="stylesheet">
+    <link href="../../static/packaged/patternfly_bootstrap_treeview/css/bootstrap-treeview.min.css" rel="stylesheet">
+    <link href="../../static/css/pygments.css" rel="stylesheet">
+    <link href="../../static/css/ara.css" rel="stylesheet">
+    <link rel="shortcut icon" href="../../static/images/favicon.ico">
+</head>
+
+
+
+<body>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12 results">
+          <h2>Task: <strong>ansible-role-bootstrap : install software to support preview modules</strong></h2>
+          <h2>Host: <strong>bootstrap-debian-buster</strong></h2>
+          <p>Time: <strong>2018-04-04 16:37:01</strong></p>
+          <p>Ansible version: <strong>2.3.3.0</strong></p>
+          
+          
+              
+    
+        
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    
+    
+
+        <h2>Msg</h2>
+                <div class="codehilite"><pre><span></span>All items completed
+</pre></div>
+
+            
+                </div>
+            </div>
+        
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    
+    <h2>Item</h2>
+            <div class="codehilite"><pre><span></span>apt-transport-https
+</pre></div>
+
+        
+
+        <h2>Cache_update_time</h2>
+                <div class="codehilite"><pre><span></span>1522859792
+</pre></div>
+
+            <h2>Stderr</h2>
+                <div class="codehilite"><pre><span></span>debconf: delaying package configuration, since apt-utils is not installed
+</pre></div>
+
+            <h2>Stderr_lines</h2>
+                <div class="codehilite"><pre><span></span><span class="p">[</span>
+    <span class="s2">&quot;debconf: delaying package configuration, since apt-utils is not installed&quot;</span>
+<span class="p">]</span>
+</pre></div>
+
+            <h2>Stdout</h2>
+                <div class="codehilite"><pre><span></span>Reading package lists...
+Building dependency tree...
+Reading state information...
+The following NEW packages will be installed:
+  apt-transport-https
+0 upgraded, 1 newly installed, 0 to remove and 29 not upgraded.
+Need to get 144 kB of archives.
+After this operation, 151 kB of additional disk space will be used.
+Get:1 http://deb.debian.org/debian buster/main amd64 apt-transport-https all 1.6~beta1 [144 kB]
+Fetched 144 kB in 0s (1995 kB/s)
+Selecting previously unselected package apt-transport-https.
+(Reading database ... 
+(Reading database ... 5%
+(Reading database ... 10%
+(Reading database ... 15%
+(Reading database ... 20%
+(Reading database ... 25%
+(Reading database ... 30%
+(Reading database ... 35%
+(Reading database ... 40%
+(Reading database ... 45%
+(Reading database ... 50%
+(Reading database ... 55%
+(Reading database ... 60%
+(Reading database ... 65%
+(Reading database ... 70%
+(Reading database ... 75%
+(Reading database ... 80%
+(Reading database ... 85%
+(Reading database ... 90%
+(Reading database ... 95%
+(Reading database ... 100%
+(Reading database ... 10621 files and directories currently installed.)
+Preparing to unpack .../apt-transport-https_1.6~beta1_all.deb ...
+Unpacking apt-transport-https (1.6~beta1) ...
+Setting up apt-transport-https (1.6~beta1) ...
+</pre></div>
+
+            
+                </div>
+            </div>
+        
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    
+    <h2>Item</h2>
+            <div class="codehilite"><pre><span></span>lvm2
+</pre></div>
+
+        
+
+        <h2>Cache_update_time</h2>
+                <div class="codehilite"><pre><span></span>1522859792
+</pre></div>
+
+            <h2>Stderr</h2>
+                <div class="codehilite"><pre><span></span>debconf: delaying package configuration, since apt-utils is not installed
+</pre></div>
+
+            <h2>Stderr_lines</h2>
+                <div class="codehilite"><pre><span></span><span class="p">[</span>
+    <span class="s2">&quot;debconf: delaying package configuration, since apt-utils is not installed&quot;</span>
+<span class="p">]</span>
+</pre></div>
+
+            <h2>Stdout</h2>
+                <div class="codehilite"><pre><span></span>Reading package lists...
+Building dependency tree...
+Reading state information...
+The following additional packages will be installed:
+  dmeventd dmsetup libaio1 libdevmapper-event1.02.1 libdevmapper1.02.1
+  liblvm2app2.2 liblvm2cmd2.02 libreadline5 thin-provisioning-tools
+The following NEW packages will be installed:
+  dmeventd dmsetup libaio1 libdevmapper-event1.02.1 libdevmapper1.02.1
+  liblvm2app2.2 liblvm2cmd2.02 libreadline5 lvm2 thin-provisioning-tools
+0 upgraded, 10 newly installed, 0 to remove and 29 not upgraded.
+Need to get 2870 kB of archives.
+After this operation, 10.3 MB of additional disk space will be used.
+Get:1 http://deb.debian.org/debian buster/main amd64 dmsetup amd64 2:1.02.145-4.1 [89.6 kB]
+Get:2 http://deb.debian.org/debian buster/main amd64 libdevmapper1.02.1 amd64 2:1.02.145-4.1 [140 kB]
+Get:3 http://deb.debian.org/debian buster/main amd64 libdevmapper-event1.02.1 amd64 2:1.02.145-4.1 [21.4 kB]
+Get:4 http://deb.debian.org/debian buster/main amd64 liblvm2cmd2.02 amd64 2.02.176-4.1 [595 kB]
+Get:5 http://deb.debian.org/debian buster/main amd64 dmeventd amd64 2:1.02.145-4.1 [62.7 kB]
+Get:6 http://deb.debian.org/debian buster/main amd64 libaio1 amd64 0.3.111-1 [10.5 kB]
+Get:7 http://deb.debian.org/debian buster/main amd64 liblvm2app2.2 amd64 2.02.176-4.1 [443 kB]
+Get:8 http://deb.debian.org/debian buster/main amd64 libreadline5 amd64 5.2+dfsg-3+b1 [119 kB]
+Get:9 http://deb.debian.org/debian buster/main amd64 lvm2 amd64 2.02.176-4.1 [1028 kB]
+Get:10 http://deb.debian.org/debian buster/main amd64 thin-provisioning-tools amd64 0.7.4-2 [361 kB]
+Fetched 2870 kB in 0s (9922 kB/s)
+Selecting previously unselected package dmsetup.
+(Reading database ... 
+(Reading database ... 5%
+(Reading database ... 10%
+(Reading database ... 15%
+(Reading database ... 20%
+(Reading database ... 25%
+(Reading database ... 30%
+(Reading database ... 35%
+(Reading database ... 40%
+(Reading database ... 45%
+(Reading database ... 50%
+(Reading database ... 55%
+(Reading database ... 60%
+(Reading database ... 65%
+(Reading database ... 70%
+(Reading database ... 75%
+(Reading database ... 80%
+(Reading database ... 85%
+(Reading database ... 90%
+(Reading database ... 95%
+(Reading database ... 100%
+(Reading database ... 10625 files and directories currently installed.)
+Preparing to unpack .../0-dmsetup_2%3a1.02.145-4.1_amd64.deb ...
+Unpacking dmsetup (2:1.02.145-4.1) ...
+Selecting previously unselected package libdevmapper1.02.1:amd64.
+Preparing to unpack .../1-libdevmapper1.02.1_2%3a1.02.145-4.1_amd64.deb ...
+Unpacking libdevmapper1.02.1:amd64 (2:1.02.145-4.1) ...
+Selecting previously unselected package libdevmapper-event1.02.1:amd64.
+Preparing to unpack .../2-libdevmapper-event1.02.1_2%3a1.02.145-4.1_amd64.deb ...
+Unpacking libdevmapper-event1.02.1:amd64 (2:1.02.145-4.1) ...
+Selecting previously unselected package liblvm2cmd2.02:amd64.
+Preparing to unpack .../3-liblvm2cmd2.02_2.02.176-4.1_amd64.deb ...
+Unpacking liblvm2cmd2.02:amd64 (2.02.176-4.1) ...
+Selecting previously unselected package dmeventd.
+Preparing to unpack .../4-dmeventd_2%3a1.02.145-4.1_amd64.deb ...
+Unpacking dmeventd (2:1.02.145-4.1) ...
+Selecting previously unselected package libaio1:amd64.
+Preparing to unpack .../5-libaio1_0.3.111-1_amd64.deb ...
+Unpacking libaio1:amd64 (0.3.111-1) ...
+Selecting previously unselected package liblvm2app2.2:amd64.
+Preparing to unpack .../6-liblvm2app2.2_2.02.176-4.1_amd64.deb ...
+Unpacking liblvm2app2.2:amd64 (2.02.176-4.1) ...
+Selecting previously unselected package libreadline5:amd64.
+Preparing to unpack .../7-libreadline5_5.2+dfsg-3+b1_amd64.deb ...
+Unpacking libreadline5:amd64 (5.2+dfsg-3+b1) ...
+Selecting previously unselected package lvm2.
+Preparing to unpack .../8-lvm2_2.02.176-4.1_amd64.deb ...
+Unpacking lvm2 (2.02.176-4.1) ...
+Selecting previously unselected package thin-provisioning-tools.
+Preparing to unpack .../9-thin-provisioning-tools_0.7.4-2_amd64.deb ...
+Unpacking thin-provisioning-tools (0.7.4-2) ...
+Processing triggers for libc-bin (2.27-1) ...
+Setting up libaio1:amd64 (0.3.111-1) ...
+Setting up thin-provisioning-tools (0.7.4-2) ...
+Setting up libreadline5:amd64 (5.2+dfsg-3+b1) ...
+Setting up libdevmapper1.02.1:amd64 (2:1.02.145-4.1) ...
+Setting up libdevmapper-event1.02.1:amd64 (2:1.02.145-4.1) ...
+Setting up liblvm2cmd2.02:amd64 (2.02.176-4.1) ...
+Setting up dmsetup (2:1.02.145-4.1) ...
+Setting up liblvm2app2.2:amd64 (2.02.176-4.1) ...
+Setting up dmeventd (2:1.02.145-4.1) ...
+Setting up lvm2 (2.02.176-4.1) ...
+invoke-rc.d: could not determine current runlevel
+invoke-rc.d: policy-rc.d denied execution of start.
+invoke-rc.d: could not determine current runlevel
+invoke-rc.d: policy-rc.d denied execution of start.
+invoke-rc.d: could not determine current runlevel
+invoke-rc.d: policy-rc.d denied execution of start.
+Processing triggers for libc-bin (2.27-1) ...
+</pre></div>
+
+            
+                </div>
+            </div>
+        
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    
+    <h2>Item</h2>
+            <div class="codehilite"><pre><span></span>tar
+</pre></div>
+
+        
+
+        <h2>Cache_update_time</h2>
+                <div class="codehilite"><pre><span></span>1522859792
+</pre></div>
+
+            
+                </div>
+            </div>
+        
+    
+          
+        </div>
+    </div>
+</div>
+</body>
+</html>

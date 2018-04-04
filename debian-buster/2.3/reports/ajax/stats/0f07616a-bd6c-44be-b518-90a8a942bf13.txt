@@ -1,0 +1,12 @@
+{
+  "data": [
+    [
+      "\n<div class=\"pull-left\" data-toggle=\"tooltip\" data-placement=\"bottom\" data-html=\"true\" title=\"<dl class='dl-horizontal'>\n            <dt>ansible_fqdn</dt>\n                <dd>bootstrap-debian-buster</dd>\n                <dt>ansible_processor_cores</dt>\n                <dd>1</dd>\n                <dt>ansible_processor_vcpus</dt>\n                <dd>2</dd>\n                <dt>ansible_memtotal_mb</dt>\n                <dd>7479</dd>\n                <dt>ansible_distribution</dt>\n                <dd>Debian</dd>\n                <dt>ansible_distribution_version</dt>\n                <dd>buster/sid</dd>\n                \n            <dt>ansible_all_ipv4_addresses</dt>\n                    <dd>172.17.0.2</dd>\n                    \n                \n        </dl>\n    \n\"><a href=\"#\" data-toggle=\"modal\" data-target=\"#host_modal\" data-load=\"d0beb2a0-8ffb-49d3-b654-3c6c6a329fd9/\">bootstrap-debian-buster</a></div>", 
+      11, 
+      0, 
+      0, 
+      6, 
+      0
+    ]
+  ]
+}

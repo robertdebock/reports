@@ -1,0 +1,60 @@
+{
+  "data": [
+    [
+      "\n<div class=\"pull-left\" data-toggle=\"tooltip\" data-placement=\"bottom\" data-html=\"true\" title=\"This task has the following tags:\n    <ul>\n        <li>always</li>\n        \n    </ul>\n\">Gathering Facts</div>\n", 
+      "bootstrap-debian-buster", 
+      "<a href=\"#\" data-toggle=\"modal\" data-target=\"#file_modal\" data-load=\"22286ac1-aa2a-4867-acf6-844206ceb174/#line-1\">setup</a>\n", 
+      "0:00:00", 
+      "0:00:01", 
+      "<a href=\"#\" data-toggle=\"modal\" data-target=\"#task_result_modal\" data-load=\"bdb4c19e-0b95-49eb-9b2f-04326d75b990/\"><span class=\"ok label\">OK</span></a>"
+    ], 
+    [
+      "\n<div class=\"pull-left\">Download and install Goss</div>\n", 
+      "bootstrap-debian-buster", 
+      "<a href=\"#\" data-toggle=\"modal\" data-target=\"#file_modal\" data-load=\"22286ac1-aa2a-4867-acf6-844206ceb174/#line-23\">get_url</a>\n", 
+      "0:00:02", 
+      "0:00:02", 
+      "<a href=\"#\" data-toggle=\"modal\" data-target=\"#task_result_modal\" data-load=\"bd4bf166-fbce-447e-8e72-e01164fce25d/\"><span class=\"changed label\">CHANGED</span></a>"
+    ], 
+    [
+      "\n<div class=\"pull-left\">Copy Goss tests to remote</div>\n", 
+      "bootstrap-debian-buster", 
+      "<a href=\"#\" data-toggle=\"modal\" data-target=\"#file_modal\" data-load=\"22286ac1-aa2a-4867-acf6-844206ceb174/#line-30\">copy</a>\n", 
+      "0:00:05", 
+      "0:00:01", 
+      "<a href=\"#\" data-toggle=\"modal\" data-target=\"#task_result_modal\" data-load=\"1024a3e7-92f6-4241-8921-c4404c3c9853/\"><span class=\"changed label\">CHANGED</span></a>"
+    ], 
+    [
+      "\n<div class=\"pull-left\">Register test files</div>\n", 
+      "bootstrap-debian-buster", 
+      "<a href=\"#\" data-toggle=\"modal\" data-target=\"#file_modal\" data-load=\"22286ac1-aa2a-4867-acf6-844206ceb174/#line-37\">command</a>\n", 
+      "0:00:06", 
+      "0:00:00", 
+      "<a href=\"#\" data-toggle=\"modal\" data-target=\"#task_result_modal\" data-load=\"182cb2ec-3463-4626-b788-10a56c29b50f/\"><span class=\"changed label\">CHANGED</span></a>"
+    ], 
+    [
+      "\n<div class=\"pull-left\">Execute Goss tests</div>\n", 
+      "bootstrap-debian-buster", 
+      "<a href=\"#\" data-toggle=\"modal\" data-target=\"#file_modal\" data-load=\"22286ac1-aa2a-4867-acf6-844206ceb174/#line-41\">command</a>\n", 
+      "0:00:07", 
+      "0:00:00", 
+      "<a href=\"#\" data-toggle=\"modal\" data-target=\"#task_result_modal\" data-load=\"c7f0e514-a0f4-4c3a-9143-63eeaef867de/\"><span class=\"changed label\">CHANGED</span></a>"
+    ], 
+    [
+      "\n<div class=\"pull-left\">Display details about the goss results</div>\n", 
+      "bootstrap-debian-buster", 
+      "<a href=\"#\" data-toggle=\"modal\" data-target=\"#file_modal\" data-load=\"22286ac1-aa2a-4867-acf6-844206ceb174/#line-47\">debug</a>\n", 
+      "0:00:07", 
+      "0:00:00", 
+      "<a href=\"#\" data-toggle=\"modal\" data-target=\"#task_result_modal\" data-load=\"5b8a5495-9571-4b93-92d5-1c53ba7384d2/\"><span class=\"ok label\">OK</span></a>"
+    ], 
+    [
+      "\n<div class=\"pull-left\">Fail when tests fail</div>\n", 
+      "bootstrap-debian-buster", 
+      "<a href=\"#\" data-toggle=\"modal\" data-target=\"#file_modal\" data-load=\"22286ac1-aa2a-4867-acf6-844206ceb174/#line-52\">fail</a>\n", 
+      "0:00:07", 
+      "0:00:00", 
+      "<a href=\"#\" data-toggle=\"modal\" data-target=\"#task_result_modal\" data-load=\"ac760d30-4912-4b46-9537-5307ab29d33c/\"><span class=\"skipped label\">SKIPPED</span></a>"
+    ]
+  ]
+}

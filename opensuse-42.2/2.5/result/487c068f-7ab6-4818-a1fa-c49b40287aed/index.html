@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html class="layout-pf">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="ARA | Ansible Run Analysis records Ansible playbook runs seamlessly to make them easier to visualize, understand and troubleshoot">
+    <title>ARA | Ansible Run Analysis</title>
+    <script src="../../static/packaged/jquery/jquery.min.js"></script>
+    <script src="../../static/packaged/datatables/js/jquery.dataTables.min.js"></script>
+    <script src="../../static/packaged/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../../static/packaged/patternfly_bootstrap_treeview/js/bootstrap-treeview.min.js"></script>
+    <script src="../../static/packaged/patternfly/js/patternfly.min.js"></script>
+    <script src="../../static/js/ara.js"></script>
+    <link href="../../static/packaged/patternfly/css/patternfly.min.css" rel="stylesheet">
+    <link href="../../static/packaged/patternfly/css/patternfly-additions.min.css" rel="stylesheet">
+    <link href="../../static/packaged/patternfly_bootstrap_treeview/css/bootstrap-treeview.min.css" rel="stylesheet">
+    <link href="../../static/css/pygments.css" rel="stylesheet">
+    <link href="../../static/css/ara.css" rel="stylesheet">
+    <link rel="shortcut icon" href="../../static/images/favicon.ico">
+</head>
+
+
+
+<body>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12 results">
+          <h2>Task: <strong>ansible-role-bootstrap : install software to support stable modules</strong></h2>
+          <h2>Host: <strong>bootstrap-opensuse-42.2</strong></h2>
+          <p>Time: <strong>2018-04-04 17:45:38</strong></p>
+          <p>Ansible version: <strong>2.5.0</strong></p>
+          
+          
+              
+    
+        
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    
+    
+
+        <h2>Msg</h2>
+                <div class="codehilite"><pre><span></span>All items completed
+</pre></div>
+
+            <h2>Results</h2>
+                <div class="codehilite"><pre><span></span><span class="p">[</span>
+    <span class="p">{</span>
+        <span class="nt">&quot;_ansible_ignore_errors&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+        <span class="nt">&quot;_ansible_item_result&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span> 
+        <span class="nt">&quot;_ansible_no_log&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+        <span class="nt">&quot;_ansible_parsed&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span> 
+        <span class="nt">&quot;changed&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+        <span class="nt">&quot;failed&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+        <span class="nt">&quot;invocation&quot;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="nt">&quot;module_args&quot;</span><span class="p">:</span> <span class="p">{</span>
+                <span class="nt">&quot;disable_gpg_check&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+                <span class="nt">&quot;disable_recommends&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span> 
+                <span class="nt">&quot;extra_args&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                <span class="nt">&quot;force&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+                <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="p">[</span>
+                    <span class="s2">&quot;ca-certificates&quot;</span>
+                <span class="p">],</span> 
+                <span class="nt">&quot;oldpackage&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+                <span class="nt">&quot;state&quot;</span><span class="p">:</span> <span class="s2">&quot;present&quot;</span><span class="p">,</span> 
+                <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;package&quot;</span><span class="p">,</span> 
+                <span class="nt">&quot;update_cache&quot;</span><span class="p">:</span> <span class="kc">false</span>
+            <span class="p">}</span>
+        <span class="p">},</span> 
+        <span class="nt">&quot;item&quot;</span><span class="p">:</span> <span class="s2">&quot;ca-certificates&quot;</span><span class="p">,</span> 
+        <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="p">[</span>
+            <span class="s2">&quot;ca-certificates&quot;</span>
+        <span class="p">],</span> 
+        <span class="nt">&quot;rc&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> 
+        <span class="nt">&quot;state&quot;</span><span class="p">:</span> <span class="s2">&quot;present&quot;</span><span class="p">,</span> 
+        <span class="nt">&quot;update_cache&quot;</span><span class="p">:</span> <span class="kc">false</span>
+    <span class="p">},</span> 
+    <span class="p">{</span>
+        <span class="nt">&quot;_ansible_ignore_errors&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+        <span class="nt">&quot;_ansible_item_result&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span> 
+        <span class="nt">&quot;_ansible_no_log&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+        <span class="nt">&quot;_ansible_parsed&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span> 
+        <span class="nt">&quot;changed&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span> 
+        <span class="nt">&quot;cmd&quot;</span><span class="p">:</span> <span class="p">[</span>
+            <span class="s2">&quot;/usr/bin/zypper&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;--quiet&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;--non-interactive&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;--xmlout&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;install&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;--type&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;package&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;--auto-agree-with-licenses&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;--no-recommends&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;--&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;+python-selinux&quot;</span>
+        <span class="p">],</span> 
+        <span class="nt">&quot;failed&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+        <span class="nt">&quot;invocation&quot;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="nt">&quot;module_args&quot;</span><span class="p">:</span> <span class="p">{</span>
+                <span class="nt">&quot;disable_gpg_check&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+                <span class="nt">&quot;disable_recommends&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span> 
+                <span class="nt">&quot;extra_args&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                <span class="nt">&quot;force&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+                <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="p">[</span>
+                    <span class="s2">&quot;python-selinux&quot;</span>
+                <span class="p">],</span> 
+                <span class="nt">&quot;oldpackage&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+                <span class="nt">&quot;state&quot;</span><span class="p">:</span> <span class="s2">&quot;present&quot;</span><span class="p">,</span> 
+                <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;package&quot;</span><span class="p">,</span> 
+                <span class="nt">&quot;update_cache&quot;</span><span class="p">:</span> <span class="kc">false</span>
+            <span class="p">}</span>
+        <span class="p">},</span> 
+        <span class="nt">&quot;item&quot;</span><span class="p">:</span> <span class="s2">&quot;python-selinux&quot;</span><span class="p">,</span> 
+        <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="p">[</span>
+            <span class="s2">&quot;python-selinux&quot;</span>
+        <span class="p">],</span> 
+        <span class="nt">&quot;rc&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> 
+        <span class="nt">&quot;state&quot;</span><span class="p">:</span> <span class="s2">&quot;present&quot;</span><span class="p">,</span> 
+        <span class="nt">&quot;stderr&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span> 
+        <span class="nt">&quot;stderr_lines&quot;</span><span class="p">:</span> <span class="p">[],</span> 
+        <span class="nt">&quot;stdout&quot;</span><span class="p">:</span> <span class="s2">&quot;&lt;?xml version=&#39;1.0&#39;?&gt;\n&lt;stream&gt;\n&lt;message type=\&quot;warning\&quot;&gt;Repository &#39;OSS Update&#39; appears to be outdated. Consider using a different mirror or server.&lt;/message&gt;\n&lt;install-summary download-size=\&quot;140740\&quot; space-usage-diff=\&quot;521469\&quot;&gt;\n&lt;to-install&gt;\n&lt;solvable type=\&quot;package\&quot; name=\&quot;python-selinux\&quot; edition=\&quot;2.5-2.9\&quot; arch=\&quot;x86_64\&quot; summary=\&quot;Python bindings for the SELinux runtime library\&quot;&gt;\n&lt;description&gt;libselinux provides an interface to get and set process and file\nsecurity contexts and to obtain security policy decisions.\n\nThis subpackage contains Python extensions to use SELinux from that\nlanguage.&lt;/description&gt;&lt;/solvable&gt;\n&lt;/to-install&gt;\n&lt;/install-summary&gt;\n&lt;prompt id=\&quot;0\&quot;&gt;\n&lt;text&gt;Continue?&lt;/text&gt;\n&lt;option default=\&quot;1\&quot; value=\&quot;y\&quot; desc=\&quot;Yes, accept the summary and proceed with installation/removal of packages.\&quot;/&gt;\n&lt;option value=\&quot;n\&quot; desc=\&quot;No, cancel the operation.\&quot;/&gt;\n&lt;option value=\&quot;v\&quot; desc=\&quot;Toggle display of package versions.\&quot;/&gt;\n&lt;option value=\&quot;a\&quot; desc=\&quot;Toggle display of package architectures.\&quot;/&gt;\n&lt;option value=\&quot;r\&quot; desc=\&quot;Toggle display of repositories from which the packages will be installed.\&quot;/&gt;\n&lt;option value=\&quot;m\&quot; desc=\&quot;Toggle display of package vendor names.\&quot;/&gt;\n&lt;option value=\&quot;d\&quot; desc=\&quot;Toggle between showing all details and as few details as possible.\&quot;/&gt;\n&lt;option value=\&quot;g\&quot; desc=\&quot;View the summary in pager.\&quot;/&gt;\n&lt;/prompt&gt;\n&lt;download url=\&quot;http://download.opensuse.org/distribution/leap/42.2/repo/oss/suse/x86_64/python-selinux-2.5-2.9.x86_64.rpm\&quot; percent=\&quot;-1\&quot; rate=\&quot;-1\&quot;/&gt;\n&lt;download url=\&quot;http://download.opensuse.org/distribution/leap/42.2/repo/oss/suse/x86_64/python-selinux-2.5-2.9.x86_64.rpm\&quot; percent=\&quot;0\&quot; rate=\&quot;16024\&quot;/&gt;\n&lt;download url=\&quot;http://download.opensuse.org/distribution/leap/42.2/repo/oss/suse/x86_64/python-selinux-2.5-2.9.x86_64.rpm\&quot; rate=\&quot;16024\&quot; done=\&quot;1\&quot;/&gt;\n&lt;/stream&gt;\n&quot;</span><span class="p">,</span> 
+        <span class="nt">&quot;stdout_lines&quot;</span><span class="p">:</span> <span class="p">[</span>
+            <span class="s2">&quot;&lt;?xml version=&#39;1.0&#39;?&gt;&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;&lt;stream&gt;&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;&lt;message type=\&quot;warning\&quot;&gt;Repository &#39;OSS Update&#39; appears to be outdated. Consider using a different mirror or server.&lt;/message&gt;&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;&lt;install-summary download-size=\&quot;140740\&quot; space-usage-diff=\&quot;521469\&quot;&gt;&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;&lt;to-install&gt;&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;&lt;solvable type=\&quot;package\&quot; name=\&quot;python-selinux\&quot; edition=\&quot;2.5-2.9\&quot; arch=\&quot;x86_64\&quot; summary=\&quot;Python bindings for the SELinux runtime library\&quot;&gt;&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;&lt;description&gt;libselinux provides an interface to get and set process and file&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;security contexts and to obtain security policy decisions.&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;This subpackage contains Python extensions to use SELinux from that&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;language.&lt;/description&gt;&lt;/solvable&gt;&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;&lt;/to-install&gt;&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;&lt;/install-summary&gt;&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;&lt;prompt id=\&quot;0\&quot;&gt;&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;&lt;text&gt;Continue?&lt;/text&gt;&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;&lt;option default=\&quot;1\&quot; value=\&quot;y\&quot; desc=\&quot;Yes, accept the summary and proceed with installation/removal of packages.\&quot;/&gt;&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;&lt;option value=\&quot;n\&quot; desc=\&quot;No, cancel the operation.\&quot;/&gt;&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;&lt;option value=\&quot;v\&quot; desc=\&quot;Toggle display of package versions.\&quot;/&gt;&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;&lt;option value=\&quot;a\&quot; desc=\&quot;Toggle display of package architectures.\&quot;/&gt;&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;&lt;option value=\&quot;r\&quot; desc=\&quot;Toggle display of repositories from which the packages will be installed.\&quot;/&gt;&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;&lt;option value=\&quot;m\&quot; desc=\&quot;Toggle display of package vendor names.\&quot;/&gt;&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;&lt;option value=\&quot;d\&quot; desc=\&quot;Toggle between showing all details and as few details as possible.\&quot;/&gt;&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;&lt;option value=\&quot;g\&quot; desc=\&quot;View the summary in pager.\&quot;/&gt;&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;&lt;/prompt&gt;&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;&lt;download url=\&quot;http://download.opensuse.org/distribution/leap/42.2/repo/oss/suse/x86_64/python-selinux-2.5-2.9.x86_64.rpm\&quot; percent=\&quot;-1\&quot; rate=\&quot;-1\&quot;/&gt;&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;&lt;download url=\&quot;http://download.opensuse.org/distribution/leap/42.2/repo/oss/suse/x86_64/python-selinux-2.5-2.9.x86_64.rpm\&quot; percent=\&quot;0\&quot; rate=\&quot;16024\&quot;/&gt;&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;&lt;download url=\&quot;http://download.opensuse.org/distribution/leap/42.2/repo/oss/suse/x86_64/python-selinux-2.5-2.9.x86_64.rpm\&quot; rate=\&quot;16024\&quot; done=\&quot;1\&quot;/&gt;&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;&lt;/stream&gt;&quot;</span>
+        <span class="p">],</span> 
+        <span class="nt">&quot;update_cache&quot;</span><span class="p">:</span> <span class="kc">false</span>
+    <span class="p">}</span>
+<span class="p">]</span>
+</pre></div>
+
+            
+                </div>
+            </div>
+        
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    
+    <h2>Item</h2>
+            <div class="codehilite"><pre><span></span>ca-certificates
+</pre></div>
+
+        
+
+        <h2>Name</h2>
+                <div class="codehilite"><pre><span></span><span class="p">[</span>
+    <span class="s2">&quot;ca-certificates&quot;</span>
+<span class="p">]</span>
+</pre></div>
+
+            <h2>State</h2>
+                <div class="codehilite"><pre><span></span>present
+</pre></div>
+
+            
+                </div>
+            </div>
+        
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    
+    <h2>Item</h2>
+            <div class="codehilite"><pre><span></span>python-selinux
+</pre></div>
+
+        
+
+        <h2>Cmd</h2>
+                <div class="codehilite"><pre><span></span><span class="p">[</span>
+    <span class="s2">&quot;/usr/bin/zypper&quot;</span><span class="p">,</span> 
+    <span class="s2">&quot;--quiet&quot;</span><span class="p">,</span> 
+    <span class="s2">&quot;--non-interactive&quot;</span><span class="p">,</span> 
+    <span class="s2">&quot;--xmlout&quot;</span><span class="p">,</span> 
+    <span class="s2">&quot;install&quot;</span><span class="p">,</span> 
+    <span class="s2">&quot;--type&quot;</span><span class="p">,</span> 
+    <span class="s2">&quot;package&quot;</span><span class="p">,</span> 
+    <span class="s2">&quot;--auto-agree-with-licenses&quot;</span><span class="p">,</span> 
+    <span class="s2">&quot;--no-recommends&quot;</span><span class="p">,</span> 
+    <span class="s2">&quot;--&quot;</span><span class="p">,</span> 
+    <span class="s2">&quot;+python-selinux&quot;</span>
+<span class="p">]</span>
+</pre></div>
+
+            <h2>Name</h2>
+                <div class="codehilite"><pre><span></span><span class="p">[</span>
+    <span class="s2">&quot;python-selinux&quot;</span>
+<span class="p">]</span>
+</pre></div>
+
+            <h2>State</h2>
+                <div class="codehilite"><pre><span></span>present
+</pre></div>
+
+            <h2>Stdout</h2>
+                <div class="codehilite"><pre><span></span>&lt;?xml version=&#39;1.0&#39;?&gt;
+&lt;stream&gt;
+&lt;message type=&quot;warning&quot;&gt;Repository &#39;OSS Update&#39; appears to be outdated. Consider using a different mirror or server.&lt;/message&gt;
+&lt;install-summary download-size=&quot;140740&quot; space-usage-diff=&quot;521469&quot;&gt;
+&lt;to-install&gt;
+&lt;solvable type=&quot;package&quot; name=&quot;python-selinux&quot; edition=&quot;2.5-2.9&quot; arch=&quot;x86_64&quot; summary=&quot;Python bindings for the SELinux runtime library&quot;&gt;
+&lt;description&gt;libselinux provides an interface to get and set process and file
+security contexts and to obtain security policy decisions.
+
+This subpackage contains Python extensions to use SELinux from that
+language.&lt;/description&gt;&lt;/solvable&gt;
+&lt;/to-install&gt;
+&lt;/install-summary&gt;
+&lt;prompt id=&quot;0&quot;&gt;
+&lt;text&gt;Continue?&lt;/text&gt;
+&lt;option default=&quot;1&quot; value=&quot;y&quot; desc=&quot;Yes, accept the summary and proceed with installation/removal of packages.&quot;/&gt;
+&lt;option value=&quot;n&quot; desc=&quot;No, cancel the operation.&quot;/&gt;
+&lt;option value=&quot;v&quot; desc=&quot;Toggle display of package versions.&quot;/&gt;
+&lt;option value=&quot;a&quot; desc=&quot;Toggle display of package architectures.&quot;/&gt;
+&lt;option value=&quot;r&quot; desc=&quot;Toggle display of repositories from which the packages will be installed.&quot;/&gt;
+&lt;option value=&quot;m&quot; desc=&quot;Toggle display of package vendor names.&quot;/&gt;
+&lt;option value=&quot;d&quot; desc=&quot;Toggle between showing all details and as few details as possible.&quot;/&gt;
+&lt;option value=&quot;g&quot; desc=&quot;View the summary in pager.&quot;/&gt;
+&lt;/prompt&gt;
+&lt;download url=&quot;http://download.opensuse.org/distribution/leap/42.2/repo/oss/suse/x86_64/python-selinux-2.5-2.9.x86_64.rpm&quot; percent=&quot;-1&quot; rate=&quot;-1&quot;/&gt;
+&lt;download url=&quot;http://download.opensuse.org/distribution/leap/42.2/repo/oss/suse/x86_64/python-selinux-2.5-2.9.x86_64.rpm&quot; percent=&quot;0&quot; rate=&quot;16024&quot;/&gt;
+&lt;download url=&quot;http://download.opensuse.org/distribution/leap/42.2/repo/oss/suse/x86_64/python-selinux-2.5-2.9.x86_64.rpm&quot; rate=&quot;16024&quot; done=&quot;1&quot;/&gt;
+&lt;/stream&gt;
+</pre></div>
+
+            
+                </div>
+            </div>
+        
+    
+          
+        </div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html class="layout-pf">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="ARA | Ansible Run Analysis records Ansible playbook runs seamlessly to make them easier to visualize, understand and troubleshoot">
+    <title>ARA | Ansible Run Analysis</title>
+    <script src="../../static/packaged/jquery/jquery.min.js"></script>
+    <script src="../../static/packaged/datatables/js/jquery.dataTables.min.js"></script>
+    <script src="../../static/packaged/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../../static/packaged/patternfly_bootstrap_treeview/js/bootstrap-treeview.min.js"></script>
+    <script src="../../static/packaged/patternfly/js/patternfly.min.js"></script>
+    <script src="../../static/js/ara.js"></script>
+    <link href="../../static/packaged/patternfly/css/patternfly.min.css" rel="stylesheet">
+    <link href="../../static/packaged/patternfly/css/patternfly-additions.min.css" rel="stylesheet">
+    <link href="../../static/packaged/patternfly_bootstrap_treeview/css/bootstrap-treeview.min.css" rel="stylesheet">
+    <link href="../../static/css/pygments.css" rel="stylesheet">
+    <link href="../../static/css/ara.css" rel="stylesheet">
+    <link rel="shortcut icon" href="../../static/images/favicon.ico">
+</head>
+
+
+
+<body>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12 results">
+          <h2>Task: <strong>Build an Ansible compatible image</strong></h2>
+          <h2>Host: <strong>localhost</strong></h2>
+          <p>Time: <strong>2018-04-04 17:44:50</strong></p>
+          <p>Ansible version: <strong>2.5.0</strong></p>
+          
+          
+              
+    
+        
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    
+    
+
+        <h2>Msg</h2>
+                <div class="codehilite"><pre><span></span>All items completed
+</pre></div>
+
+            <h2>Results</h2>
+                <div class="codehilite"><pre><span></span><span class="p">[</span>
+    <span class="p">{</span>
+        <span class="nt">&quot;_ansible_ignore_errors&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+        <span class="nt">&quot;_ansible_item_result&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span> 
+        <span class="nt">&quot;_ansible_no_log&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span> 
+        <span class="nt">&quot;_ansible_parsed&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span> 
+        <span class="nt">&quot;actions&quot;</span><span class="p">:</span> <span class="p">[</span>
+            <span class="s2">&quot;Built image molecule_local/opensuse:42.2 from /tmp/molecule/ansible-role-bootstrap/opensuse-42.2&quot;</span>
+        <span class="p">],</span> 
+        <span class="nt">&quot;changed&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span> 
+        <span class="nt">&quot;failed&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+        <span class="nt">&quot;image&quot;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="nt">&quot;Architecture&quot;</span><span class="p">:</span> <span class="s2">&quot;amd64&quot;</span><span class="p">,</span> 
+            <span class="nt">&quot;Author&quot;</span><span class="p">:</span> <span class="s2">&quot;SUSE Containers Team &lt;containers@suse.com&gt;&quot;</span><span class="p">,</span> 
+            <span class="nt">&quot;Comment&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span> 
+            <span class="nt">&quot;Config&quot;</span><span class="p">:</span> <span class="p">{</span>
+                <span class="nt">&quot;AttachStderr&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+                <span class="nt">&quot;AttachStdin&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+                <span class="nt">&quot;AttachStdout&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+                <span class="nt">&quot;Cmd&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                <span class="nt">&quot;Domainname&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span> 
+                <span class="nt">&quot;Entrypoint&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                <span class="nt">&quot;Env&quot;</span><span class="p">:</span> <span class="p">[</span>
+                    <span class="s2">&quot;PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin&quot;</span>
+                <span class="p">],</span> 
+                <span class="nt">&quot;Hostname&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span> 
+                <span class="nt">&quot;Image&quot;</span><span class="p">:</span> <span class="s2">&quot;sha256:5265fb20210c77adfc33c267ce847b02a73c4a0cf9a545af205aa1827813e55e&quot;</span><span class="p">,</span> 
+                <span class="nt">&quot;Labels&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                <span class="nt">&quot;OnBuild&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                <span class="nt">&quot;OpenStdin&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+                <span class="nt">&quot;StdinOnce&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+                <span class="nt">&quot;Tty&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+                <span class="nt">&quot;User&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span> 
+                <span class="nt">&quot;Volumes&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                <span class="nt">&quot;WorkingDir&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span>
+            <span class="p">},</span> 
+            <span class="nt">&quot;Container&quot;</span><span class="p">:</span> <span class="s2">&quot;41a6b2e3753f355da3039d46aab37e23757658f44c4b2748a7a40c7c4d994e50&quot;</span><span class="p">,</span> 
+            <span class="nt">&quot;ContainerConfig&quot;</span><span class="p">:</span> <span class="p">{</span>
+                <span class="nt">&quot;AttachStderr&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+                <span class="nt">&quot;AttachStdin&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+                <span class="nt">&quot;AttachStdout&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+                <span class="nt">&quot;Cmd&quot;</span><span class="p">:</span> <span class="p">[</span>
+                    <span class="s2">&quot;/bin/sh&quot;</span><span class="p">,</span> 
+                    <span class="s2">&quot;-c&quot;</span><span class="p">,</span> 
+                    <span class="s2">&quot;#(nop) ADD file:0ac094ba5dea77db1e367fca0e7b837f67b2b698c658d05a8be100ee683cc924 in / &quot;</span>
+                <span class="p">],</span> 
+                <span class="nt">&quot;Domainname&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span> 
+                <span class="nt">&quot;Entrypoint&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                <span class="nt">&quot;Env&quot;</span><span class="p">:</span> <span class="p">[</span>
+                    <span class="s2">&quot;PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin&quot;</span>
+                <span class="p">],</span> 
+                <span class="nt">&quot;Hostname&quot;</span><span class="p">:</span> <span class="s2">&quot;41a6b2e3753f&quot;</span><span class="p">,</span> 
+                <span class="nt">&quot;Image&quot;</span><span class="p">:</span> <span class="s2">&quot;sha256:5265fb20210c77adfc33c267ce847b02a73c4a0cf9a545af205aa1827813e55e&quot;</span><span class="p">,</span> 
+                <span class="nt">&quot;Labels&quot;</span><span class="p">:</span> <span class="p">{},</span> 
+                <span class="nt">&quot;OnBuild&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                <span class="nt">&quot;OpenStdin&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+                <span class="nt">&quot;StdinOnce&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+                <span class="nt">&quot;Tty&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+                <span class="nt">&quot;User&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span> 
+                <span class="nt">&quot;Volumes&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                <span class="nt">&quot;WorkingDir&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span>
+            <span class="p">},</span> 
+            <span class="nt">&quot;Created&quot;</span><span class="p">:</span> <span class="s2">&quot;2018-01-24T18:24:30.619676773Z&quot;</span><span class="p">,</span> 
+            <span class="nt">&quot;DockerVersion&quot;</span><span class="p">:</span> <span class="s2">&quot;17.06.2-ce&quot;</span><span class="p">,</span> 
+            <span class="nt">&quot;GraphDriver&quot;</span><span class="p">:</span> <span class="p">{</span>
+                <span class="nt">&quot;Data&quot;</span><span class="p">:</span> <span class="p">{</span>
+                    <span class="nt">&quot;MergedDir&quot;</span><span class="p">:</span> <span class="s2">&quot;/var/lib/docker/overlay2/7f4098e1c59e205155c7dd89fe56df0f23bc8a77d1dd5cf7d61147e115481ac3/merged&quot;</span><span class="p">,</span> 
+                    <span class="nt">&quot;UpperDir&quot;</span><span class="p">:</span> <span class="s2">&quot;/var/lib/docker/overlay2/7f4098e1c59e205155c7dd89fe56df0f23bc8a77d1dd5cf7d61147e115481ac3/diff&quot;</span><span class="p">,</span> 
+                    <span class="nt">&quot;WorkDir&quot;</span><span class="p">:</span> <span class="s2">&quot;/var/lib/docker/overlay2/7f4098e1c59e205155c7dd89fe56df0f23bc8a77d1dd5cf7d61147e115481ac3/work&quot;</span>
+                <span class="p">},</span> 
+                <span class="nt">&quot;Name&quot;</span><span class="p">:</span> <span class="s2">&quot;overlay2&quot;</span>
+            <span class="p">},</span> 
+            <span class="nt">&quot;Id&quot;</span><span class="p">:</span> <span class="s2">&quot;sha256:377239f1cc447e72e17b4267f8569d6ad26bfffc09f47aafa0a22389110e0333&quot;</span><span class="p">,</span> 
+            <span class="nt">&quot;Metadata&quot;</span><span class="p">:</span> <span class="p">{</span>
+                <span class="nt">&quot;LastTagTime&quot;</span><span class="p">:</span> <span class="s2">&quot;2018-04-04T17:44:56.569542376Z&quot;</span>
+            <span class="p">},</span> 
+            <span class="nt">&quot;Os&quot;</span><span class="p">:</span> <span class="s2">&quot;linux&quot;</span><span class="p">,</span> 
+            <span class="nt">&quot;Parent&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span> 
+            <span class="nt">&quot;RepoDigests&quot;</span><span class="p">:</span> <span class="p">[</span>
+                <span class="s2">&quot;opensuse@sha256:ae726971f52a64efc2265dde30b4eea17d00e0bf1cf45d41aa337920844229e9&quot;</span>
+            <span class="p">],</span> 
+            <span class="nt">&quot;RepoTags&quot;</span><span class="p">:</span> <span class="p">[</span>
+                <span class="s2">&quot;opensuse:42.2&quot;</span><span class="p">,</span> 
+                <span class="s2">&quot;molecule_local/opensuse:42.2&quot;</span>
+            <span class="p">],</span> 
+            <span class="nt">&quot;RootFS&quot;</span><span class="p">:</span> <span class="p">{</span>
+                <span class="nt">&quot;Layers&quot;</span><span class="p">:</span> <span class="p">[</span>
+                    <span class="s2">&quot;sha256:f160e6db234da74dff7519273c3b7cfd32f1a76291af9c5a3b72fb6a43bbbb79&quot;</span>
+                <span class="p">],</span> 
+                <span class="nt">&quot;Type&quot;</span><span class="p">:</span> <span class="s2">&quot;layers&quot;</span>
+            <span class="p">},</span> 
+            <span class="nt">&quot;Size&quot;</span><span class="p">:</span> <span class="mi">131961210</span><span class="p">,</span> 
+            <span class="nt">&quot;VirtualSize&quot;</span><span class="p">:</span> <span class="mi">131961210</span>
+        <span class="p">},</span> 
+        <span class="nt">&quot;invocation&quot;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="nt">&quot;module_args&quot;</span><span class="p">:</span> <span class="p">{</span>
+                <span class="nt">&quot;api_version&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                <span class="nt">&quot;archive_path&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                <span class="nt">&quot;buildargs&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                <span class="nt">&quot;cacert_path&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                <span class="nt">&quot;cert_path&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                <span class="nt">&quot;container_limits&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                <span class="nt">&quot;debug&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+                <span class="nt">&quot;docker_host&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                <span class="nt">&quot;dockerfile&quot;</span><span class="p">:</span> <span class="s2">&quot;/tmp/molecule/ansible-role-bootstrap/opensuse-42.2/Dockerfile_opensuse_42_2&quot;</span><span class="p">,</span> 
+                <span class="nt">&quot;filter_logger&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+                <span class="nt">&quot;force&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span> 
+                <span class="nt">&quot;http_timeout&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                <span class="nt">&quot;key_path&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                <span class="nt">&quot;load_path&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;molecule_local/opensuse:42.2&quot;</span><span class="p">,</span> 
+                <span class="nt">&quot;nocache&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+                <span class="nt">&quot;path&quot;</span><span class="p">:</span> <span class="s2">&quot;/tmp/molecule/ansible-role-bootstrap/opensuse-42.2&quot;</span><span class="p">,</span> 
+                <span class="nt">&quot;pull&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span> 
+                <span class="nt">&quot;push&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+                <span class="nt">&quot;repository&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                <span class="nt">&quot;rm&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span> 
+                <span class="nt">&quot;ssl_version&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                <span class="nt">&quot;state&quot;</span><span class="p">:</span> <span class="s2">&quot;present&quot;</span><span class="p">,</span> 
+                <span class="nt">&quot;tag&quot;</span><span class="p">:</span> <span class="s2">&quot;latest&quot;</span><span class="p">,</span> 
+                <span class="nt">&quot;timeout&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                <span class="nt">&quot;tls&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                <span class="nt">&quot;tls_hostname&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                <span class="nt">&quot;tls_verify&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                <span class="nt">&quot;use_tls&quot;</span><span class="p">:</span> <span class="s2">&quot;no&quot;</span>
+            <span class="p">}</span>
+        <span class="p">},</span> 
+        <span class="nt">&quot;item&quot;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="nt">&quot;_ansible_ignore_errors&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+            <span class="nt">&quot;_ansible_item_result&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span> 
+            <span class="nt">&quot;_ansible_no_log&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span> 
+            <span class="nt">&quot;_ansible_parsed&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span> 
+            <span class="nt">&quot;changed&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span> 
+            <span class="nt">&quot;checksum&quot;</span><span class="p">:</span> <span class="s2">&quot;5fe10073e5dba18bb55cbd276bacd9c2b8b91409&quot;</span><span class="p">,</span> 
+            <span class="nt">&quot;dest&quot;</span><span class="p">:</span> <span class="s2">&quot;/tmp/molecule/ansible-role-bootstrap/opensuse-42.2/Dockerfile_opensuse_42_2&quot;</span><span class="p">,</span> 
+            <span class="nt">&quot;diff&quot;</span><span class="p">:</span> <span class="p">[],</span> 
+            <span class="nt">&quot;failed&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+            <span class="nt">&quot;gid&quot;</span><span class="p">:</span> <span class="mi">2000</span><span class="p">,</span> 
+            <span class="nt">&quot;group&quot;</span><span class="p">:</span> <span class="s2">&quot;travis&quot;</span><span class="p">,</span> 
+            <span class="nt">&quot;invocation&quot;</span><span class="p">:</span> <span class="p">{</span>
+                <span class="nt">&quot;module_args&quot;</span><span class="p">:</span> <span class="p">{</span>
+                    <span class="nt">&quot;attributes&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                    <span class="nt">&quot;backup&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+                    <span class="nt">&quot;checksum&quot;</span><span class="p">:</span> <span class="s2">&quot;5fe10073e5dba18bb55cbd276bacd9c2b8b91409&quot;</span><span class="p">,</span> 
+                    <span class="nt">&quot;content&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                    <span class="nt">&quot;delimiter&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                    <span class="nt">&quot;dest&quot;</span><span class="p">:</span> <span class="s2">&quot;/tmp/molecule/ansible-role-bootstrap/opensuse-42.2/Dockerfile_opensuse_42_2&quot;</span><span class="p">,</span> 
+                    <span class="nt">&quot;directory_mode&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                    <span class="nt">&quot;follow&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+                    <span class="nt">&quot;force&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span> 
+                    <span class="nt">&quot;group&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                    <span class="nt">&quot;local_follow&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                    <span class="nt">&quot;mode&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                    <span class="nt">&quot;original_basename&quot;</span><span class="p">:</span> <span class="s2">&quot;Dockerfile.j2&quot;</span><span class="p">,</span> 
+                    <span class="nt">&quot;owner&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                    <span class="nt">&quot;regexp&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                    <span class="nt">&quot;remote_src&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                    <span class="nt">&quot;selevel&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                    <span class="nt">&quot;serole&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                    <span class="nt">&quot;setype&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                    <span class="nt">&quot;seuser&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                    <span class="nt">&quot;src&quot;</span><span class="p">:</span> <span class="s2">&quot;/home/travis/.ansible/tmp/ansible-tmp-1522863889.26-122686234654380/source&quot;</span><span class="p">,</span> 
+                    <span class="nt">&quot;unsafe_writes&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                    <span class="nt">&quot;validate&quot;</span><span class="p">:</span> <span class="kc">null</span>
+                <span class="p">}</span>
+            <span class="p">},</span> 
+            <span class="nt">&quot;item&quot;</span><span class="p">:</span> <span class="p">{</span>
+                <span class="nt">&quot;image&quot;</span><span class="p">:</span> <span class="s2">&quot;opensuse:42.2&quot;</span><span class="p">,</span> 
+                <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;bootstrap-opensuse-42.2&quot;</span>
+            <span class="p">},</span> 
+            <span class="nt">&quot;md5sum&quot;</span><span class="p">:</span> <span class="s2">&quot;084c97bca79b7372a121bca97db23b49&quot;</span><span class="p">,</span> 
+            <span class="nt">&quot;mode&quot;</span><span class="p">:</span> <span class="s2">&quot;0664&quot;</span><span class="p">,</span> 
+            <span class="nt">&quot;owner&quot;</span><span class="p">:</span> <span class="s2">&quot;travis&quot;</span><span class="p">,</span> 
+            <span class="nt">&quot;size&quot;</span><span class="p">:</span> <span class="mi">39</span><span class="p">,</span> 
+            <span class="nt">&quot;src&quot;</span><span class="p">:</span> <span class="s2">&quot;/home/travis/.ansible/tmp/ansible-tmp-1522863889.26-122686234654380/source&quot;</span><span class="p">,</span> 
+            <span class="nt">&quot;state&quot;</span><span class="p">:</span> <span class="s2">&quot;file&quot;</span><span class="p">,</span> 
+            <span class="nt">&quot;uid&quot;</span><span class="p">:</span> <span class="mi">2000</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+<span class="p">]</span>
+</pre></div>
+
+            
+                </div>
+            </div>
+        
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    
+    
+
+        <h2>Censored</h2>
+                <div class="codehilite"><pre><span></span>the output has been hidden due to the fact that &#39;no_log: true&#39; was specified for this result
+</pre></div>
+
+            
+                </div>
+            </div>
+        
+    
+          
+        </div>
+    </div>
+</div>
+</body>
+</html>

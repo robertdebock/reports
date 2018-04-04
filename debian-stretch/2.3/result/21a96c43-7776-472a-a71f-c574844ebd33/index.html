@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html class="layout-pf">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="ARA | Ansible Run Analysis records Ansible playbook runs seamlessly to make them easier to visualize, understand and troubleshoot">
+    <title>ARA | Ansible Run Analysis</title>
+    <script src="../../static/packaged/jquery/jquery.min.js"></script>
+    <script src="../../static/packaged/datatables/js/jquery.dataTables.min.js"></script>
+    <script src="../../static/packaged/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../../static/packaged/patternfly_bootstrap_treeview/js/bootstrap-treeview.min.js"></script>
+    <script src="../../static/packaged/patternfly/js/patternfly.min.js"></script>
+    <script src="../../static/js/ara.js"></script>
+    <link href="../../static/packaged/patternfly/css/patternfly.min.css" rel="stylesheet">
+    <link href="../../static/packaged/patternfly/css/patternfly-additions.min.css" rel="stylesheet">
+    <link href="../../static/packaged/patternfly_bootstrap_treeview/css/bootstrap-treeview.min.css" rel="stylesheet">
+    <link href="../../static/css/pygments.css" rel="stylesheet">
+    <link href="../../static/css/ara.css" rel="stylesheet">
+    <link rel="shortcut icon" href="../../static/images/favicon.ico">
+</head>
+
+
+
+<body>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12 results">
+          <h2>Task: <strong>ansible-role-bootstrap : install software to support preview modules</strong></h2>
+          <h2>Host: <strong>bootstrap-debian-stretch</strong></h2>
+          <p>Time: <strong>2018-04-04 16:33:46</strong></p>
+          <p>Ansible version: <strong>2.3.3.0</strong></p>
+          
+          
+              
+    
+        
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    
+    
+
+        <h2>Msg</h2>
+                <div class="codehilite"><pre><span></span>All items completed
+</pre></div>
+
+            
+                </div>
+            </div>
+        
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    
+    <h2>Item</h2>
+            <div class="codehilite"><pre><span></span>apt-transport-https
+</pre></div>
+
+        
+
+        <h2>Cache_update_time</h2>
+                <div class="codehilite"><pre><span></span>1522859600
+</pre></div>
+
+            <h2>Stderr</h2>
+                <div class="codehilite"><pre><span></span>debconf: delaying package configuration, since apt-utils is not installed
+</pre></div>
+
+            <h2>Stderr_lines</h2>
+                <div class="codehilite"><pre><span></span><span class="p">[</span>
+    <span class="s2">&quot;debconf: delaying package configuration, since apt-utils is not installed&quot;</span>
+<span class="p">]</span>
+</pre></div>
+
+            <h2>Stdout</h2>
+                <div class="codehilite"><pre><span></span>Reading package lists...
+Building dependency tree...
+Reading state information...
+The following additional packages will be installed:
+  krb5-locales libcurl3-gnutls libgssapi-krb5-2 libidn2-0 libk5crypto3
+  libkeyutils1 libkrb5-3 libkrb5support0 libnghttp2-14 libpsl5 librtmp1
+  libssh2-1 libunistring0 publicsuffix
+Suggested packages:
+  krb5-doc krb5-user
+The following NEW packages will be installed:
+  apt-transport-https krb5-locales libcurl3-gnutls libgssapi-krb5-2 libidn2-0
+  libk5crypto3 libkeyutils1 libkrb5-3 libkrb5support0 libnghttp2-14 libpsl5
+  librtmp1 libssh2-1 libunistring0 publicsuffix
+0 upgraded, 15 newly installed, 0 to remove and 3 not upgraded.
+Need to get 1975 kB of archives.
+After this operation, 5517 kB of additional disk space will be used.
+Get:1 http://deb.debian.org/debian stretch/main amd64 krb5-locales all 1.15-1+deb9u1 [93.8 kB]
+Get:2 http://security.debian.org stretch/updates/main amd64 libcurl3-gnutls amd64 7.52.1-5+deb9u5 [290 kB]
+Get:3 http://deb.debian.org/debian stretch/main amd64 libkeyutils1 amd64 1.5.9-9 [12.4 kB]
+Get:4 http://deb.debian.org/debian stretch/main amd64 libkrb5support0 amd64 1.15-1+deb9u1 [61.9 kB]
+Get:5 http://deb.debian.org/debian stretch/main amd64 libk5crypto3 amd64 1.15-1+deb9u1 [119 kB]
+Get:6 http://deb.debian.org/debian stretch/main amd64 libkrb5-3 amd64 1.15-1+deb9u1 [311 kB]
+Get:7 http://deb.debian.org/debian stretch/main amd64 libgssapi-krb5-2 amd64 1.15-1+deb9u1 [155 kB]
+Get:8 http://deb.debian.org/debian stretch/main amd64 libunistring0 amd64 0.9.6+really0.9.3-0.1 [279 kB]
+Get:9 http://deb.debian.org/debian stretch/main amd64 libidn2-0 amd64 0.16-1+deb9u1 [60.7 kB]
+Get:10 http://deb.debian.org/debian stretch/main amd64 libnghttp2-14 amd64 1.18.1-1 [79.1 kB]
+Get:11 http://deb.debian.org/debian stretch/main amd64 libpsl5 amd64 0.17.0-3 [41.8 kB]
+Get:12 http://deb.debian.org/debian stretch/main amd64 librtmp1 amd64 2.4+20151223.gitfa8646d.1-1+b1 [60.4 kB]
+Get:13 http://deb.debian.org/debian stretch/main amd64 libssh2-1 amd64 1.7.0-1 [138 kB]
+Get:14 http://deb.debian.org/debian stretch/main amd64 apt-transport-https amd64 1.4.8 [171 kB]
+Get:15 http://deb.debian.org/debian stretch/main amd64 publicsuffix all 20180218.2049-0+deb9u1 [103 kB]
+Fetched 1975 kB in 0s (16.7 MB/s)
+Selecting previously unselected package krb5-locales.
+(Reading database ... 
+(Reading database ... 5%
+(Reading database ... 10%
+(Reading database ... 15%
+(Reading database ... 20%
+(Reading database ... 25%
+(Reading database ... 30%
+(Reading database ... 35%
+(Reading database ... 40%
+(Reading database ... 45%
+(Reading database ... 50%
+(Reading database ... 55%
+(Reading database ... 60%
+(Reading database ... 65%
+(Reading database ... 70%
+(Reading database ... 75%
+(Reading database ... 80%
+(Reading database ... 85%
+(Reading database ... 90%
+(Reading database ... 95%
+(Reading database ... 100%
+(Reading database ... 10292 files and directories currently installed.)
+Preparing to unpack .../00-krb5-locales_1.15-1+deb9u1_all.deb ...
+Unpacking krb5-locales (1.15-1+deb9u1) ...
+Selecting previously unselected package libkeyutils1:amd64.
+Preparing to unpack .../01-libkeyutils1_1.5.9-9_amd64.deb ...
+Unpacking libkeyutils1:amd64 (1.5.9-9) ...
+Selecting previously unselected package libkrb5support0:amd64.
+Preparing to unpack .../02-libkrb5support0_1.15-1+deb9u1_amd64.deb ...
+Unpacking libkrb5support0:amd64 (1.15-1+deb9u1) ...
+Selecting previously unselected package libk5crypto3:amd64.
+Preparing to unpack .../03-libk5crypto3_1.15-1+deb9u1_amd64.deb ...
+Unpacking libk5crypto3:amd64 (1.15-1+deb9u1) ...
+Selecting previously unselected package libkrb5-3:amd64.
+Preparing to unpack .../04-libkrb5-3_1.15-1+deb9u1_amd64.deb ...
+Unpacking libkrb5-3:amd64 (1.15-1+deb9u1) ...
+Selecting previously unselected package libgssapi-krb5-2:amd64.
+Preparing to unpack .../05-libgssapi-krb5-2_1.15-1+deb9u1_amd64.deb ...
+Unpacking libgssapi-krb5-2:amd64 (1.15-1+deb9u1) ...
+Selecting previously unselected package libunistring0:amd64.
+Preparing to unpack .../06-libunistring0_0.9.6+really0.9.3-0.1_amd64.deb ...
+Unpacking libunistring0:amd64 (0.9.6+really0.9.3-0.1) ...
+Selecting previously unselected package libidn2-0:amd64.
+Preparing to unpack .../07-libidn2-0_0.16-1+deb9u1_amd64.deb ...
+Unpacking libidn2-0:amd64 (0.16-1+deb9u1) ...
+Selecting previously unselected package libnghttp2-14:amd64.
+Preparing to unpack .../08-libnghttp2-14_1.18.1-1_amd64.deb ...
+Unpacking libnghttp2-14:amd64 (1.18.1-1) ...
+Selecting previously unselected package libpsl5:amd64.
+Preparing to unpack .../09-libpsl5_0.17.0-3_amd64.deb ...
+Unpacking libpsl5:amd64 (0.17.0-3) ...
+Selecting previously unselected package librtmp1:amd64.
+Preparing to unpack .../10-librtmp1_2.4+20151223.gitfa8646d.1-1+b1_amd64.deb ...
+Unpacking librtmp1:amd64 (2.4+20151223.gitfa8646d.1-1+b1) ...
+Selecting previously unselected package libssh2-1:amd64.
+Preparing to unpack .../11-libssh2-1_1.7.0-1_amd64.deb ...
+Unpacking libssh2-1:amd64 (1.7.0-1) ...
+Selecting previously unselected package libcurl3-gnutls:amd64.
+Preparing to unpack .../12-libcurl3-gnutls_7.52.1-5+deb9u5_amd64.deb ...
+Unpacking libcurl3-gnutls:amd64 (7.52.1-5+deb9u5) ...
+Selecting previously unselected package apt-transport-https.
+Preparing to unpack .../13-apt-transport-https_1.4.8_amd64.deb ...
+Unpacking apt-transport-https (1.4.8) ...
+Selecting previously unselected package publicsuffix.
+Preparing to unpack .../14-publicsuffix_20180218.2049-0+deb9u1_all.deb ...
+Unpacking publicsuffix (20180218.2049-0+deb9u1) ...
+Setting up libnghttp2-14:amd64 (1.18.1-1) ...
+Setting up librtmp1:amd64 (2.4+20151223.gitfa8646d.1-1+b1) ...
+Setting up libssh2-1:amd64 (1.7.0-1) ...
+Setting up krb5-locales (1.15-1+deb9u1) ...
+Processing triggers for libc-bin (2.24-11+deb9u3) ...
+Setting up publicsuffix (20180218.2049-0+deb9u1) ...
+Setting up libunistring0:amd64 (0.9.6+really0.9.3-0.1) ...
+Setting up libkeyutils1:amd64 (1.5.9-9) ...
+Setting up libidn2-0:amd64 (0.16-1+deb9u1) ...
+Setting up libpsl5:amd64 (0.17.0-3) ...
+Setting up libkrb5support0:amd64 (1.15-1+deb9u1) ...
+Setting up libk5crypto3:amd64 (1.15-1+deb9u1) ...
+Setting up libkrb5-3:amd64 (1.15-1+deb9u1) ...
+Setting up libgssapi-krb5-2:amd64 (1.15-1+deb9u1) ...
+Setting up libcurl3-gnutls:amd64 (7.52.1-5+deb9u5) ...
+Setting up apt-transport-https (1.4.8) ...
+Processing triggers for libc-bin (2.24-11+deb9u3) ...
+</pre></div>
+
+            
+                </div>
+            </div>
+        
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    
+    <h2>Item</h2>
+            <div class="codehilite"><pre><span></span>lvm2
+</pre></div>
+
+        
+
+        <h2>Cache_update_time</h2>
+                <div class="codehilite"><pre><span></span>1522859600
+</pre></div>
+
+            <h2>Stderr</h2>
+                <div class="codehilite"><pre><span></span>debconf: delaying package configuration, since apt-utils is not installed
+</pre></div>
+
+            <h2>Stderr_lines</h2>
+                <div class="codehilite"><pre><span></span><span class="p">[</span>
+    <span class="s2">&quot;debconf: delaying package configuration, since apt-utils is not installed&quot;</span>
+<span class="p">]</span>
+</pre></div>
+
+            <h2>Stdout</h2>
+                <div class="codehilite"><pre><span></span>Reading package lists...
+Building dependency tree...
+Reading state information...
+The following additional packages will be installed:
+  dmeventd dmsetup libdevmapper-event1.02.1 libdevmapper1.02.1 liblvm2app2.2
+  liblvm2cmd2.02 libreadline5
+Suggested packages:
+  thin-provisioning-tools
+The following NEW packages will be installed:
+  dmeventd dmsetup libdevmapper-event1.02.1 libdevmapper1.02.1 liblvm2app2.2
+  liblvm2cmd2.02 libreadline5 lvm2
+0 upgraded, 8 newly installed, 0 to remove and 3 not upgraded.
+Need to get 2667 kB of archives.
+After this operation, 6900 kB of additional disk space will be used.
+Get:1 http://deb.debian.org/debian stretch/main amd64 dmsetup amd64 2:1.02.137-2 [107 kB]
+Get:2 http://deb.debian.org/debian stretch/main amd64 libdevmapper1.02.1 amd64 2:1.02.137-2 [170 kB]
+Get:3 http://deb.debian.org/debian stretch/main amd64 libdevmapper-event1.02.1 amd64 2:1.02.137-2 [41.6 kB]
+Get:4 http://deb.debian.org/debian stretch/main amd64 liblvm2cmd2.02 amd64 2.02.168-2 [683 kB]
+Get:5 http://deb.debian.org/debian stretch/main amd64 dmeventd amd64 2:1.02.137-2 [59.5 kB]
+Get:6 http://deb.debian.org/debian stretch/main amd64 liblvm2app2.2 amd64 2.02.168-2 [554 kB]
+Get:7 http://deb.debian.org/debian stretch/main amd64 libreadline5 amd64 5.2+dfsg-3+b1 [119 kB]
+Get:8 http://deb.debian.org/debian stretch/main amd64 lvm2 amd64 2.02.168-2 [933 kB]
+Fetched 2667 kB in 0s (8445 kB/s)
+Selecting previously unselected package dmsetup.
+(Reading database ... 
+(Reading database ... 5%
+(Reading database ... 10%
+(Reading database ... 15%
+(Reading database ... 20%
+(Reading database ... 25%
+(Reading database ... 30%
+(Reading database ... 35%
+(Reading database ... 40%
+(Reading database ... 45%
+(Reading database ... 50%
+(Reading database ... 55%
+(Reading database ... 60%
+(Reading database ... 65%
+(Reading database ... 70%
+(Reading database ... 75%
+(Reading database ... 80%
+(Reading database ... 85%
+(Reading database ... 90%
+(Reading database ... 95%
+(Reading database ... 100%
+(Reading database ... 10413 files and directories currently installed.)
+Preparing to unpack .../0-dmsetup_2%3a1.02.137-2_amd64.deb ...
+Unpacking dmsetup (2:1.02.137-2) ...
+Selecting previously unselected package libdevmapper1.02.1:amd64.
+Preparing to unpack .../1-libdevmapper1.02.1_2%3a1.02.137-2_amd64.deb ...
+Unpacking libdevmapper1.02.1:amd64 (2:1.02.137-2) ...
+Selecting previously unselected package libdevmapper-event1.02.1:amd64.
+Preparing to unpack .../2-libdevmapper-event1.02.1_2%3a1.02.137-2_amd64.deb ...
+Unpacking libdevmapper-event1.02.1:amd64 (2:1.02.137-2) ...
+Selecting previously unselected package liblvm2cmd2.02:amd64.
+Preparing to unpack .../3-liblvm2cmd2.02_2.02.168-2_amd64.deb ...
+Unpacking liblvm2cmd2.02:amd64 (2.02.168-2) ...
+Selecting previously unselected package dmeventd.
+Preparing to unpack .../4-dmeventd_2%3a1.02.137-2_amd64.deb ...
+Unpacking dmeventd (2:1.02.137-2) ...
+Selecting previously unselected package liblvm2app2.2:amd64.
+Preparing to unpack .../5-liblvm2app2.2_2.02.168-2_amd64.deb ...
+Unpacking liblvm2app2.2:amd64 (2.02.168-2) ...
+Selecting previously unselected package libreadline5:amd64.
+Preparing to unpack .../6-libreadline5_5.2+dfsg-3+b1_amd64.deb ...
+Unpacking libreadline5:amd64 (5.2+dfsg-3+b1) ...
+Selecting previously unselected package lvm2.
+Preparing to unpack .../7-lvm2_2.02.168-2_amd64.deb ...
+Unpacking lvm2 (2.02.168-2) ...
+Processing triggers for libc-bin (2.24-11+deb9u3) ...
+Setting up libreadline5:amd64 (5.2+dfsg-3+b1) ...
+Setting up libdevmapper1.02.1:amd64 (2:1.02.137-2) ...
+Setting up libdevmapper-event1.02.1:amd64 (2:1.02.137-2) ...
+Setting up liblvm2cmd2.02:amd64 (2.02.168-2) ...
+Setting up dmsetup (2:1.02.137-2) ...
+Setting up liblvm2app2.2:amd64 (2.02.168-2) ...
+Setting up dmeventd (2:1.02.137-2) ...
+Setting up lvm2 (2.02.168-2) ...
+invoke-rc.d: could not determine current runlevel
+invoke-rc.d: policy-rc.d denied execution of start.
+invoke-rc.d: could not determine current runlevel
+invoke-rc.d: policy-rc.d denied execution of start.
+invoke-rc.d: could not determine current runlevel
+invoke-rc.d: policy-rc.d denied execution of start.
+Processing triggers for libc-bin (2.24-11+deb9u3) ...
+</pre></div>
+
+            
+                </div>
+            </div>
+        
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    
+    <h2>Item</h2>
+            <div class="codehilite"><pre><span></span>tar
+</pre></div>
+
+        
+
+        <h2>Cache_update_time</h2>
+                <div class="codehilite"><pre><span></span>1522859600
+</pre></div>
+
+            
+                </div>
+            </div>
+        
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    
+    <h2>Item</h2>
+            <div class="codehilite"><pre><span></span>unzip
+</pre></div>
+
+        
+
+        <h2>Cache_update_time</h2>
+                <div class="codehilite"><pre><span></span>1522859600
+</pre></div>
+
+            <h2>Stderr</h2>
+                <div class="codehilite"><pre><span></span>debconf: delaying package configuration, since apt-utils is not installed
+</pre></div>
+
+            <h2>Stderr_lines</h2>
+                <div class="codehilite"><pre><span></span><span class="p">[</span>
+    <span class="s2">&quot;debconf: delaying package configuration, since apt-utils is not installed&quot;</span>
+<span class="p">]</span>
+</pre></div>
+
+            <h2>Stdout</h2>
+                <div class="codehilite"><pre><span></span>Reading package lists...
+Building dependency tree...
+Reading state information...
+Suggested packages:
+  zip
+The following NEW packages will be installed:
+  unzip
+0 upgraded, 1 newly installed, 0 to remove and 3 not upgraded.
+Need to get 170 kB of archives.
+After this operation, 547 kB of additional disk space will be used.
+Get:1 http://deb.debian.org/debian stretch/main amd64 unzip amd64 6.0-21 [170 kB]
+Fetched 170 kB in 0s (1885 kB/s)
+Selecting previously unselected package unzip.
+(Reading database ... 
+(Reading database ... 5%
+(Reading database ... 10%
+(Reading database ... 15%
+(Reading database ... 20%
+(Reading database ... 25%
+(Reading database ... 30%
+(Reading database ... 35%
+(Reading database ... 40%
+(Reading database ... 45%
+(Reading database ... 50%
+(Reading database ... 55%
+(Reading database ... 60%
+(Reading database ... 65%
+(Reading database ... 70%
+(Reading database ... 75%
+(Reading database ... 80%
+(Reading database ... 85%
+(Reading database ... 90%
+(Reading database ... 95%
+(Reading database ... 100%
+(Reading database ... 10628 files and directories currently installed.)
+Preparing to unpack .../unzip_6.0-21_amd64.deb ...
+Unpacking unzip (6.0-21) ...
+Processing triggers for mime-support (3.60) ...
+Setting up unzip (6.0-21) ...
+</pre></div>
+
+            
+                </div>
+            </div>
+        
+    
+          
+        </div>
+    </div>
+</div>
+</body>
+</html>

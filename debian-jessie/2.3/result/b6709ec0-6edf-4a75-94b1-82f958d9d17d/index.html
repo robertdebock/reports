@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html class="layout-pf">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="ARA | Ansible Run Analysis records Ansible playbook runs seamlessly to make them easier to visualize, understand and troubleshoot">
+    <title>ARA | Ansible Run Analysis</title>
+    <script src="../../static/packaged/jquery/jquery.min.js"></script>
+    <script src="../../static/packaged/datatables/js/jquery.dataTables.min.js"></script>
+    <script src="../../static/packaged/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../../static/packaged/patternfly_bootstrap_treeview/js/bootstrap-treeview.min.js"></script>
+    <script src="../../static/packaged/patternfly/js/patternfly.min.js"></script>
+    <script src="../../static/js/ara.js"></script>
+    <link href="../../static/packaged/patternfly/css/patternfly.min.css" rel="stylesheet">
+    <link href="../../static/packaged/patternfly/css/patternfly-additions.min.css" rel="stylesheet">
+    <link href="../../static/packaged/patternfly_bootstrap_treeview/css/bootstrap-treeview.min.css" rel="stylesheet">
+    <link href="../../static/css/pygments.css" rel="stylesheet">
+    <link href="../../static/css/ara.css" rel="stylesheet">
+    <link rel="shortcut icon" href="../../static/images/favicon.ico">
+</head>
+
+
+
+<body>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12 results">
+          <h2>Task: <strong>ansible-role-bootstrap : install software to support preview modules</strong></h2>
+          <h2>Host: <strong>bootstrap-debian-jessie</strong></h2>
+          <p>Time: <strong>2018-04-04 16:31:05</strong></p>
+          <p>Ansible version: <strong>2.3.3.0</strong></p>
+          
+          
+              
+    
+        
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    
+    
+
+        <h2>Msg</h2>
+                <div class="codehilite"><pre><span></span>All items completed
+</pre></div>
+
+            
+                </div>
+            </div>
+        
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    
+    <h2>Item</h2>
+            <div class="codehilite"><pre><span></span>apt-transport-https
+</pre></div>
+
+        
+
+        <h2>Cache_update_time</h2>
+                <div class="codehilite"><pre><span></span>1522859444
+</pre></div>
+
+            <h2>Stderr</h2>
+                <div class="codehilite"><pre><span></span>debconf: delaying package configuration, since apt-utils is not installed
+</pre></div>
+
+            <h2>Stderr_lines</h2>
+                <div class="codehilite"><pre><span></span><span class="p">[</span>
+    <span class="s2">&quot;debconf: delaying package configuration, since apt-utils is not installed&quot;</span>
+<span class="p">]</span>
+</pre></div>
+
+            <h2>Stdout</h2>
+                <div class="codehilite"><pre><span></span>Reading package lists...
+Building dependency tree...
+Reading state information...
+The following extra packages will be installed:
+  krb5-locales libcurl3-gnutls libgmp10 libgnutls-deb0-28 libgssapi-krb5-2
+  libhogweed2 libidn11 libk5crypto3 libkeyutils1 libkrb5-3 libkrb5support0
+  libldap-2.4-2 libnettle4 libp11-kit0 librtmp1 libsasl2-2 libsasl2-modules
+  libsasl2-modules-db libssh2-1 libtasn1-6
+Suggested packages:
+  gnutls-bin krb5-doc krb5-user libsasl2-modules-otp libsasl2-modules-ldap
+  libsasl2-modules-sql libsasl2-modules-gssapi-mit
+  libsasl2-modules-gssapi-heimdal
+The following NEW packages will be installed:
+  apt-transport-https krb5-locales libcurl3-gnutls libgmp10 libgnutls-deb0-28
+  libgssapi-krb5-2 libhogweed2 libidn11 libk5crypto3 libkeyutils1 libkrb5-3
+  libkrb5support0 libldap-2.4-2 libnettle4 libp11-kit0 librtmp1 libsasl2-2
+  libsasl2-modules libsasl2-modules-db libssh2-1 libtasn1-6
+0 upgraded, 21 newly installed, 0 to remove and 1 not upgraded.
+Need to get 5876 kB of archives.
+After this operation, 10.5 MB of additional disk space will be used.
+Get:1 http://deb.debian.org/debian/ jessie/main libgmp10 amd64 2:6.0.0+dfsg-6 [253 kB]
+Get:2 http://deb.debian.org/debian/ jessie/main libnettle4 amd64 2.7.1-5+deb8u2 [176 kB]
+Get:3 http://deb.debian.org/debian/ jessie/main libhogweed2 amd64 2.7.1-5+deb8u2 [125 kB]
+Get:4 http://deb.debian.org/debian/ jessie/main libp11-kit0 amd64 0.20.7-1 [81.2 kB]
+Get:5 http://deb.debian.org/debian/ jessie/main libtasn1-6 amd64 4.2-3+deb8u3 [49.2 kB]
+Get:6 http://deb.debian.org/debian/ jessie/main libgnutls-deb0-28 amd64 3.3.8-6+deb8u7 [696 kB]
+Get:7 http://deb.debian.org/debian/ jessie/main libkeyutils1 amd64 1.5.9-5+b1 [12.0 kB]
+Get:8 http://deb.debian.org/debian/ jessie/main libkrb5support0 amd64 1.12.1+dfsg-19+deb8u4 [59.4 kB]
+Get:9 http://security.debian.org/ jessie/updates/main libcurl3-gnutls amd64 7.38.0-4+deb8u10 [252 kB]
+Get:10 http://deb.debian.org/debian/ jessie/main libk5crypto3 amd64 1.12.1+dfsg-19+deb8u4 [116 kB]
+Get:11 http://deb.debian.org/debian/ jessie/main libkrb5-3 amd64 1.12.1+dfsg-19+deb8u4 [303 kB]
+Get:12 http://deb.debian.org/debian/ jessie/main libgssapi-krb5-2 amd64 1.12.1+dfsg-19+deb8u4 [152 kB]
+Get:13 http://deb.debian.org/debian/ jessie/main libidn11 amd64 1.29-1+deb8u2 [136 kB]
+Get:14 http://deb.debian.org/debian/ jessie/main libsasl2-modules-db amd64 2.1.26.dfsg1-13+deb8u1 [67.1 kB]
+Get:15 http://deb.debian.org/debian/ jessie/main libsasl2-2 amd64 2.1.26.dfsg1-13+deb8u1 [105 kB]
+Get:16 http://deb.debian.org/debian/ jessie/main libldap-2.4-2 amd64 2.4.40+dfsg-1+deb8u3 [218 kB]
+Get:17 http://deb.debian.org/debian/ jessie/main librtmp1 amd64 2.4+20150115.gita107cef-1+deb8u1 [60.0 kB]
+Get:18 http://deb.debian.org/debian/ jessie/main libssh2-1 amd64 1.4.3-4.1+deb8u1 [125 kB]
+Get:19 http://deb.debian.org/debian/ jessie/main krb5-locales all 1.12.1+dfsg-19+deb8u4 [2649 kB]
+Get:20 http://deb.debian.org/debian/ jessie/main apt-transport-https amd64 1.0.9.8.4 [138 kB]
+Get:21 http://deb.debian.org/debian/ jessie/main libsasl2-modules amd64 2.1.26.dfsg1-13+deb8u1 [101 kB]
+Fetched 5876 kB in 2s (2509 kB/s)
+Selecting previously unselected package libgmp10:amd64.
+(Reading database ... 
+(Reading database ... 5%
+(Reading database ... 10%
+(Reading database ... 15%
+(Reading database ... 20%
+(Reading database ... 25%
+(Reading database ... 30%
+(Reading database ... 35%
+(Reading database ... 40%
+(Reading database ... 45%
+(Reading database ... 50%
+(Reading database ... 55%
+(Reading database ... 60%
+(Reading database ... 65%
+(Reading database ... 70%
+(Reading database ... 75%
+(Reading database ... 80%
+(Reading database ... 85%
+(Reading database ... 90%
+(Reading database ... 95%
+(Reading database ... 100%
+(Reading database ... 9612 files and directories currently installed.)
+Preparing to unpack .../libgmp10_2%3a6.0.0+dfsg-6_amd64.deb ...
+Unpacking libgmp10:amd64 (2:6.0.0+dfsg-6) ...
+Selecting previously unselected package libnettle4:amd64.
+Preparing to unpack .../libnettle4_2.7.1-5+deb8u2_amd64.deb ...
+Unpacking libnettle4:amd64 (2.7.1-5+deb8u2) ...
+Selecting previously unselected package libhogweed2:amd64.
+Preparing to unpack .../libhogweed2_2.7.1-5+deb8u2_amd64.deb ...
+Unpacking libhogweed2:amd64 (2.7.1-5+deb8u2) ...
+Selecting previously unselected package libp11-kit0:amd64.
+Preparing to unpack .../libp11-kit0_0.20.7-1_amd64.deb ...
+Unpacking libp11-kit0:amd64 (0.20.7-1) ...
+Selecting previously unselected package libtasn1-6:amd64.
+Preparing to unpack .../libtasn1-6_4.2-3+deb8u3_amd64.deb ...
+Unpacking libtasn1-6:amd64 (4.2-3+deb8u3) ...
+Selecting previously unselected package libgnutls-deb0-28:amd64.
+Preparing to unpack .../libgnutls-deb0-28_3.3.8-6+deb8u7_amd64.deb ...
+Unpacking libgnutls-deb0-28:amd64 (3.3.8-6+deb8u7) ...
+Selecting previously unselected package libkeyutils1:amd64.
+Preparing to unpack .../libkeyutils1_1.5.9-5+b1_amd64.deb ...
+Unpacking libkeyutils1:amd64 (1.5.9-5+b1) ...
+Selecting previously unselected package libkrb5support0:amd64.
+Preparing to unpack .../libkrb5support0_1.12.1+dfsg-19+deb8u4_amd64.deb ...
+Unpacking libkrb5support0:amd64 (1.12.1+dfsg-19+deb8u4) ...
+Selecting previously unselected package libk5crypto3:amd64.
+Preparing to unpack .../libk5crypto3_1.12.1+dfsg-19+deb8u4_amd64.deb ...
+Unpacking libk5crypto3:amd64 (1.12.1+dfsg-19+deb8u4) ...
+Selecting previously unselected package libkrb5-3:amd64.
+Preparing to unpack .../libkrb5-3_1.12.1+dfsg-19+deb8u4_amd64.deb ...
+Unpacking libkrb5-3:amd64 (1.12.1+dfsg-19+deb8u4) ...
+Selecting previously unselected package libgssapi-krb5-2:amd64.
+Preparing to unpack .../libgssapi-krb5-2_1.12.1+dfsg-19+deb8u4_amd64.deb ...
+Unpacking libgssapi-krb5-2:amd64 (1.12.1+dfsg-19+deb8u4) ...
+Selecting previously unselected package libidn11:amd64.
+Preparing to unpack .../libidn11_1.29-1+deb8u2_amd64.deb ...
+Unpacking libidn11:amd64 (1.29-1+deb8u2) ...
+Selecting previously unselected package libsasl2-modules-db:amd64.
+Preparing to unpack .../libsasl2-modules-db_2.1.26.dfsg1-13+deb8u1_amd64.deb ...
+Unpacking libsasl2-modules-db:amd64 (2.1.26.dfsg1-13+deb8u1) ...
+Selecting previously unselected package libsasl2-2:amd64.
+Preparing to unpack .../libsasl2-2_2.1.26.dfsg1-13+deb8u1_amd64.deb ...
+Unpacking libsasl2-2:amd64 (2.1.26.dfsg1-13+deb8u1) ...
+Selecting previously unselected package libldap-2.4-2:amd64.
+Preparing to unpack .../libldap-2.4-2_2.4.40+dfsg-1+deb8u3_amd64.deb ...
+Unpacking libldap-2.4-2:amd64 (2.4.40+dfsg-1+deb8u3) ...
+Selecting previously unselected package librtmp1:amd64.
+Preparing to unpack .../librtmp1_2.4+20150115.gita107cef-1+deb8u1_amd64.deb ...
+Unpacking librtmp1:amd64 (2.4+20150115.gita107cef-1+deb8u1) ...
+Selecting previously unselected package libssh2-1:amd64.
+Preparing to unpack .../libssh2-1_1.4.3-4.1+deb8u1_amd64.deb ...
+Unpacking libssh2-1:amd64 (1.4.3-4.1+deb8u1) ...
+Selecting previously unselected package libcurl3-gnutls:amd64.
+Preparing to unpack .../libcurl3-gnutls_7.38.0-4+deb8u10_amd64.deb ...
+Unpacking libcurl3-gnutls:amd64 (7.38.0-4+deb8u10) ...
+Selecting previously unselected package krb5-locales.
+Preparing to unpack .../krb5-locales_1.12.1+dfsg-19+deb8u4_all.deb ...
+Unpacking krb5-locales (1.12.1+dfsg-19+deb8u4) ...
+Selecting previously unselected package apt-transport-https.
+Preparing to unpack .../apt-transport-https_1.0.9.8.4_amd64.deb ...
+Unpacking apt-transport-https (1.0.9.8.4) ...
+Selecting previously unselected package libsasl2-modules:amd64.
+Preparing to unpack .../libsasl2-modules_2.1.26.dfsg1-13+deb8u1_amd64.deb ...
+Unpacking libsasl2-modules:amd64 (2.1.26.dfsg1-13+deb8u1) ...
+Setting up libgmp10:amd64 (2:6.0.0+dfsg-6) ...
+Setting up libnettle4:amd64 (2.7.1-5+deb8u2) ...
+Setting up libhogweed2:amd64 (2.7.1-5+deb8u2) ...
+Setting up libp11-kit0:amd64 (0.20.7-1) ...
+Setting up libtasn1-6:amd64 (4.2-3+deb8u3) ...
+Setting up libgnutls-deb0-28:amd64 (3.3.8-6+deb8u7) ...
+Setting up libkeyutils1:amd64 (1.5.9-5+b1) ...
+Setting up libkrb5support0:amd64 (1.12.1+dfsg-19+deb8u4) ...
+Setting up libk5crypto3:amd64 (1.12.1+dfsg-19+deb8u4) ...
+Setting up libkrb5-3:amd64 (1.12.1+dfsg-19+deb8u4) ...
+Setting up libgssapi-krb5-2:amd64 (1.12.1+dfsg-19+deb8u4) ...
+Setting up libidn11:amd64 (1.29-1+deb8u2) ...
+Setting up libsasl2-modules-db:amd64 (2.1.26.dfsg1-13+deb8u1) ...
+Setting up libsasl2-2:amd64 (2.1.26.dfsg1-13+deb8u1) ...
+Setting up libldap-2.4-2:amd64 (2.4.40+dfsg-1+deb8u3) ...
+Setting up librtmp1:amd64 (2.4+20150115.gita107cef-1+deb8u1) ...
+Setting up libssh2-1:amd64 (1.4.3-4.1+deb8u1) ...
+Setting up libcurl3-gnutls:amd64 (7.38.0-4+deb8u10) ...
+Setting up krb5-locales (1.12.1+dfsg-19+deb8u4) ...
+Setting up apt-transport-https (1.0.9.8.4) ...
+Setting up libsasl2-modules:amd64 (2.1.26.dfsg1-13+deb8u1) ...
+Processing triggers for libc-bin (2.19-18+deb8u10) ...
+</pre></div>
+
+            
+                </div>
+            </div>
+        
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    
+    <h2>Item</h2>
+            <div class="codehilite"><pre><span></span>lvm2
+</pre></div>
+
+        
+
+        <h2>Cache_update_time</h2>
+                <div class="codehilite"><pre><span></span>1522859444
+</pre></div>
+
+            <h2>Stderr</h2>
+                <div class="codehilite"><pre><span></span>debconf: delaying package configuration, since apt-utils is not installed
+</pre></div>
+
+            <h2>Stderr_lines</h2>
+                <div class="codehilite"><pre><span></span><span class="p">[</span>
+    <span class="s2">&quot;debconf: delaying package configuration, since apt-utils is not installed&quot;</span>
+<span class="p">]</span>
+</pre></div>
+
+            <h2>Stdout</h2>
+                <div class="codehilite"><pre><span></span>Reading package lists...
+Building dependency tree...
+Reading state information...
+The following extra packages will be installed:
+  dmeventd init-system-helpers libdevmapper-event1.02.1 liblvm2cmd2.02
+  libreadline5
+Suggested packages:
+  thin-provisioning-tools
+The following NEW packages will be installed:
+  dmeventd init-system-helpers libdevmapper-event1.02.1 liblvm2cmd2.02
+  libreadline5 lvm2
+0 upgraded, 6 newly installed, 0 to remove and 1 not upgraded.
+Need to get 1486 kB of archives.
+After this operation, 3637 kB of additional disk space will be used.
+Get:1 http://deb.debian.org/debian/ jessie/main libdevmapper-event1.02.1 amd64 2:1.02.90-2.2+deb8u1 [35.8 kB]
+Get:2 http://deb.debian.org/debian/ jessie/main init-system-helpers all 1.22 [14.0 kB]
+Get:3 http://deb.debian.org/debian/ jessie/main dmeventd amd64 2:1.02.90-2.2+deb8u1 [50.2 kB]
+Get:4 http://deb.debian.org/debian/ jessie/main liblvm2cmd2.02 amd64 2.02.111-2.2+deb8u1 [522 kB]
+Get:5 http://deb.debian.org/debian/ jessie/main libreadline5 amd64 5.2+dfsg-2 [151 kB]
+Get:6 http://deb.debian.org/debian/ jessie/main lvm2 amd64 2.02.111-2.2+deb8u1 [713 kB]
+Fetched 1486 kB in 0s (1805 kB/s)
+Selecting previously unselected package libdevmapper-event1.02.1:amd64.
+(Reading database ... 
+(Reading database ... 5%
+(Reading database ... 10%
+(Reading database ... 15%
+(Reading database ... 20%
+(Reading database ... 25%
+(Reading database ... 30%
+(Reading database ... 35%
+(Reading database ... 40%
+(Reading database ... 45%
+(Reading database ... 50%
+(Reading database ... 55%
+(Reading database ... 60%
+(Reading database ... 65%
+(Reading database ... 70%
+(Reading database ... 75%
+(Reading database ... 80%
+(Reading database ... 85%
+(Reading database ... 90%
+(Reading database ... 95%
+(Reading database ... 100%
+(Reading database ... 9818 files and directories currently installed.)
+Preparing to unpack .../libdevmapper-event1.02.1_2%3a1.02.90-2.2+deb8u1_amd64.deb ...
+Unpacking libdevmapper-event1.02.1:amd64 (2:1.02.90-2.2+deb8u1) ...
+Selecting previously unselected package init-system-helpers.
+Preparing to unpack .../init-system-helpers_1.22_all.deb ...
+Unpacking init-system-helpers (1.22) ...
+Selecting previously unselected package dmeventd.
+Preparing to unpack .../dmeventd_2%3a1.02.90-2.2+deb8u1_amd64.deb ...
+Unpacking dmeventd (2:1.02.90-2.2+deb8u1) ...
+Selecting previously unselected package liblvm2cmd2.02:amd64.
+Preparing to unpack .../liblvm2cmd2.02_2.02.111-2.2+deb8u1_amd64.deb ...
+Unpacking liblvm2cmd2.02:amd64 (2.02.111-2.2+deb8u1) ...
+Selecting previously unselected package libreadline5:amd64.
+Preparing to unpack .../libreadline5_5.2+dfsg-2_amd64.deb ...
+Unpacking libreadline5:amd64 (5.2+dfsg-2) ...
+Selecting previously unselected package lvm2.
+Preparing to unpack .../lvm2_2.02.111-2.2+deb8u1_amd64.deb ...
+Unpacking lvm2 (2.02.111-2.2+deb8u1) ...
+Processing triggers for systemd (215-17+deb8u7) ...
+Setting up libdevmapper-event1.02.1:amd64 (2:1.02.90-2.2+deb8u1) ...
+Setting up init-system-helpers (1.22) ...
+Setting up libreadline5:amd64 (5.2+dfsg-2) ...
+Setting up liblvm2cmd2.02:amd64 (2.02.111-2.2+deb8u1) ...
+Setting up dmeventd (2:1.02.90-2.2+deb8u1) ...
+Setting up lvm2 (2.02.111-2.2+deb8u1) ...
+invoke-rc.d: policy-rc.d denied execution of start.
+update-rc.d: warning: start and stop actions are no longer supported; falling back to defaults
+Processing triggers for libc-bin (2.19-18+deb8u10) ...
+Processing triggers for systemd (215-17+deb8u7) ...
+</pre></div>
+
+            
+                </div>
+            </div>
+        
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    
+    <h2>Item</h2>
+            <div class="codehilite"><pre><span></span>tar
+</pre></div>
+
+        
+
+        <h2>Cache_update_time</h2>
+                <div class="codehilite"><pre><span></span>1522859444
+</pre></div>
+
+            
+                </div>
+            </div>
+        
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    
+    <h2>Item</h2>
+            <div class="codehilite"><pre><span></span>unzip
+</pre></div>
+
+        
+
+        <h2>Cache_update_time</h2>
+                <div class="codehilite"><pre><span></span>1522859444
+</pre></div>
+
+            <h2>Stderr</h2>
+                <div class="codehilite"><pre><span></span>debconf: delaying package configuration, since apt-utils is not installed
+</pre></div>
+
+            <h2>Stderr_lines</h2>
+                <div class="codehilite"><pre><span></span><span class="p">[</span>
+    <span class="s2">&quot;debconf: delaying package configuration, since apt-utils is not installed&quot;</span>
+<span class="p">]</span>
+</pre></div>
+
+            <h2>Stdout</h2>
+                <div class="codehilite"><pre><span></span>Reading package lists...
+Building dependency tree...
+Reading state information...
+Suggested packages:
+  zip
+The following NEW packages will be installed:
+  unzip
+0 upgraded, 1 newly installed, 0 to remove and 1 not upgraded.
+Need to get 162 kB of archives.
+After this operation, 395 kB of additional disk space will be used.
+Get:1 http://deb.debian.org/debian/ jessie/main unzip amd64 6.0-16+deb8u3 [162 kB]
+Fetched 162 kB in 0s (446 kB/s)
+Selecting previously unselected package unzip.
+(Reading database ... 
+(Reading database ... 5%
+(Reading database ... 10%
+(Reading database ... 15%
+(Reading database ... 20%
+(Reading database ... 25%
+(Reading database ... 30%
+(Reading database ... 35%
+(Reading database ... 40%
+(Reading database ... 45%
+(Reading database ... 50%
+(Reading database ... 55%
+(Reading database ... 60%
+(Reading database ... 65%
+(Reading database ... 70%
+(Reading database ... 75%
+(Reading database ... 80%
+(Reading database ... 85%
+(Reading database ... 90%
+(Reading database ... 95%
+(Reading database ... 100%
+(Reading database ... 9992 files and directories currently installed.)
+Preparing to unpack .../unzip_6.0-16+deb8u3_amd64.deb ...
+Unpacking unzip (6.0-16+deb8u3) ...
+Processing triggers for mime-support (3.58) ...
+Setting up unzip (6.0-16+deb8u3) ...
+</pre></div>
+
+            
+                </div>
+            </div>
+        
+    
+          
+        </div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html class="layout-pf">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="ARA | Ansible Run Analysis records Ansible playbook runs seamlessly to make them easier to visualize, understand and troubleshoot">
+    <title>ARA | Ansible Run Analysis</title>
+    <script src="../../static/packaged/jquery/jquery.min.js"></script>
+    <script src="../../static/packaged/datatables/js/jquery.dataTables.min.js"></script>
+    <script src="../../static/packaged/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../../static/packaged/patternfly_bootstrap_treeview/js/bootstrap-treeview.min.js"></script>
+    <script src="../../static/packaged/patternfly/js/patternfly.min.js"></script>
+    <script src="../../static/js/ara.js"></script>
+    <link href="../../static/packaged/patternfly/css/patternfly.min.css" rel="stylesheet">
+    <link href="../../static/packaged/patternfly/css/patternfly-additions.min.css" rel="stylesheet">
+    <link href="../../static/packaged/patternfly_bootstrap_treeview/css/bootstrap-treeview.min.css" rel="stylesheet">
+    <link href="../../static/css/pygments.css" rel="stylesheet">
+    <link href="../../static/css/ara.css" rel="stylesheet">
+    <link rel="shortcut icon" href="../../static/images/favicon.ico">
+</head>
+
+
+
+<body>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12 results">
+          <h2>Task: <strong>ansible-role-bootstrap : install software with apt-get</strong></h2>
+          <h2>Host: <strong>bootstrap-debian-jessie</strong></h2>
+          <p>Time: <strong>2018-04-04 16:30:28</strong></p>
+          <p>Ansible version: <strong>2.3.3.0</strong></p>
+          
+          
+              
+    
+
+        <h2>Stderr</h2>
+                <div class="codehilite"><pre><span></span>debconf: delaying package configuration, since apt-utils is not installed
+</pre></div>
+
+            <h2>Stdout</h2>
+                <div class="codehilite"><pre><span></span>Get:1 http://security.debian.org jessie/updates InRelease [63.1 kB]
+Ign http://deb.debian.org jessie InRelease
+Get:2 http://security.debian.org jessie/updates/main amd64 Packages [644 kB]
+Get:3 http://deb.debian.org jessie-updates InRelease [145 kB]
+Get:4 http://deb.debian.org jessie Release.gpg [2434 B]
+Get:5 http://deb.debian.org jessie Release [148 kB]
+Get:6 http://deb.debian.org jessie-updates/main amd64 Packages [23.1 kB]
+Get:7 http://deb.debian.org jessie/main amd64 Packages [9064 kB]
+Fetched 10.1 MB in 2s (4780 kB/s)
+Reading package lists...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following extra packages will be installed:
+  file libexpat1 libffi6 libmagic1 libpython-stdlib libpython2.7-minimal
+  libpython2.7-stdlib libsqlite3-0 libssl1.0.0 mime-support python-minimal
+  python2.7 python2.7-minimal
+Suggested packages:
+  python-doc python-tk python2.7-doc binutils binfmt-support
+The following NEW packages will be installed:
+  file libexpat1 libffi6 libmagic1 libpython-stdlib libpython2.7-minimal
+  libpython2.7-stdlib libsqlite3-0 libssl1.0.0 mime-support python
+  python-minimal python2.7 python2.7-minimal sudo
+0 upgraded, 15 newly installed, 0 to remove and 1 not upgraded.
+Need to get 6872 kB of archives.
+After this operation, 26.8 MB of additional disk space will be used.
+Get:1 http://security.debian.org/ jessie/updates/main libssl1.0.0 amd64 1.0.1t-1+deb8u8 [1044 kB]
+Get:2 http://deb.debian.org/debian/ jessie/main libmagic1 amd64 1:5.22+15-2+deb8u3 [250 kB]
+Get:3 http://deb.debian.org/debian/ jessie/main libsqlite3-0 amd64 3.8.7.1-1+deb8u2 [438 kB]
+Get:4 http://deb.debian.org/debian/ jessie/main libpython2.7-minimal amd64 2.7.9-2+deb8u1 [378 kB]
+Get:5 http://deb.debian.org/debian/ jessie/main python2.7-minimal amd64 2.7.9-2+deb8u1 [1401 kB]
+Get:6 http://deb.debian.org/debian/ jessie/main python-minimal amd64 2.7.9-1 [40.3 kB]
+Get:7 http://deb.debian.org/debian/ jessie/main mime-support all 3.58 [36.0 kB]
+Get:8 http://deb.debian.org/debian/ jessie/main libexpat1 amd64 2.1.0-6+deb8u4 [80.2 kB]
+Get:9 http://deb.debian.org/debian/ jessie/main libffi6 amd64 3.1-2+deb8u1 [20.2 kB]
+Get:10 http://deb.debian.org/debian/ jessie/main libpython2.7-stdlib amd64 2.7.9-2+deb8u1 [1847 kB]
+Get:11 http://deb.debian.org/debian/ jessie/main python2.7 amd64 2.7.9-2+deb8u1 [252 kB]
+Get:12 http://deb.debian.org/debian/ jessie/main libpython-stdlib amd64 2.7.9-1 [19.5 kB]
+Get:13 http://deb.debian.org/debian/ jessie/main python amd64 2.7.9-1 [151 kB]
+Get:14 http://deb.debian.org/debian/ jessie/main file amd64 1:5.22+15-2+deb8u3 [60.4 kB]
+Get:15 http://deb.debian.org/debian/ jessie/main sudo amd64 1.8.10p3-1+deb8u5 [854 kB]
+Fetched 6872 kB in 1s (4047 kB/s)
+Selecting previously unselected package libssl1.0.0:amd64.
+(Reading database ... 
+(Reading database ... 5%
+(Reading database ... 10%
+(Reading database ... 15%
+(Reading database ... 20%
+(Reading database ... 25%
+(Reading database ... 30%
+(Reading database ... 35%
+(Reading database ... 40%
+(Reading database ... 45%
+(Reading database ... 50%
+(Reading database ... 55%
+(Reading database ... 60%
+(Reading database ... 65%
+(Reading database ... 70%
+(Reading database ... 75%
+(Reading database ... 80%
+(Reading database ... 85%
+(Reading database ... 90%
+(Reading database ... 95%
+(Reading database ... 100%
+(Reading database ... 7561 files and directories currently installed.)
+Preparing to unpack .../libssl1.0.0_1.0.1t-1+deb8u8_amd64.deb ...
+Unpacking libssl1.0.0:amd64 (1.0.1t-1+deb8u8) ...
+Selecting previously unselected package libmagic1:amd64.
+Preparing to unpack .../libmagic1_1%3a5.22+15-2+deb8u3_amd64.deb ...
+Unpacking libmagic1:amd64 (1:5.22+15-2+deb8u3) ...
+Selecting previously unselected package libsqlite3-0:amd64.
+Preparing to unpack .../libsqlite3-0_3.8.7.1-1+deb8u2_amd64.deb ...
+Unpacking libsqlite3-0:amd64 (3.8.7.1-1+deb8u2) ...
+Selecting previously unselected package libpython2.7-minimal:amd64.
+Preparing to unpack .../libpython2.7-minimal_2.7.9-2+deb8u1_amd64.deb ...
+Unpacking libpython2.7-minimal:amd64 (2.7.9-2+deb8u1) ...
+Selecting previously unselected package python2.7-minimal.
+Preparing to unpack .../python2.7-minimal_2.7.9-2+deb8u1_amd64.deb ...
+Unpacking python2.7-minimal (2.7.9-2+deb8u1) ...
+Selecting previously unselected package python-minimal.
+Preparing to unpack .../python-minimal_2.7.9-1_amd64.deb ...
+Unpacking python-minimal (2.7.9-1) ...
+Selecting previously unselected package mime-support.
+Preparing to unpack .../mime-support_3.58_all.deb ...
+Unpacking mime-support (3.58) ...
+Selecting previously unselected package libexpat1:amd64.
+Preparing to unpack .../libexpat1_2.1.0-6+deb8u4_amd64.deb ...
+Unpacking libexpat1:amd64 (2.1.0-6+deb8u4) ...
+Selecting previously unselected package libffi6:amd64.
+Preparing to unpack .../libffi6_3.1-2+deb8u1_amd64.deb ...
+Unpacking libffi6:amd64 (3.1-2+deb8u1) ...
+Selecting previously unselected package libpython2.7-stdlib:amd64.
+Preparing to unpack .../libpython2.7-stdlib_2.7.9-2+deb8u1_amd64.deb ...
+Unpacking libpython2.7-stdlib:amd64 (2.7.9-2+deb8u1) ...
+Selecting previously unselected package python2.7.
+Preparing to unpack .../python2.7_2.7.9-2+deb8u1_amd64.deb ...
+Unpacking python2.7 (2.7.9-2+deb8u1) ...
+Selecting previously unselected package libpython-stdlib:amd64.
+Preparing to unpack .../libpython-stdlib_2.7.9-1_amd64.deb ...
+Unpacking libpython-stdlib:amd64 (2.7.9-1) ...
+Setting up libpython2.7-minimal:amd64 (2.7.9-2+deb8u1) ...
+Setting up python2.7-minimal (2.7.9-2+deb8u1) ...
+Linking and byte-compiling packages for runtime python2.7...
+Setting up python-minimal (2.7.9-1) ...
+Selecting previously unselected package python.
+(Reading database ... 
+(Reading database ... 5%
+(Reading database ... 10%
+(Reading database ... 15%
+(Reading database ... 20%
+(Reading database ... 25%
+(Reading database ... 30%
+(Reading database ... 35%
+(Reading database ... 40%
+(Reading database ... 45%
+(Reading database ... 50%
+(Reading database ... 55%
+(Reading database ... 60%
+(Reading database ... 65%
+(Reading database ... 70%
+(Reading database ... 75%
+(Reading database ... 80%
+(Reading database ... 85%
+(Reading database ... 90%
+(Reading database ... 95%
+(Reading database ... 100%
+(Reading database ... 8393 files and directories currently installed.)
+Preparing to unpack .../python_2.7.9-1_amd64.deb ...
+Unpacking python (2.7.9-1) ...
+Selecting previously unselected package file.
+Preparing to unpack .../file_1%3a5.22+15-2+deb8u3_amd64.deb ...
+Unpacking file (1:5.22+15-2+deb8u3) ...
+Selecting previously unselected package sudo.
+Preparing to unpack .../sudo_1.8.10p3-1+deb8u5_amd64.deb ...
+Unpacking sudo (1.8.10p3-1+deb8u5) ...
+Processing triggers for systemd (215-17+deb8u7) ...
+Setting up libssl1.0.0:amd64 (1.0.1t-1+deb8u8) ...
+debconf: unable to initialize frontend: Dialog
+debconf: (TERM is not set, so the dialog frontend is not usable.)
+debconf: falling back to frontend: Readline
+debconf: unable to initialize frontend: Readline
+debconf: (Can&#39;t locate Term/ReadLine.pm in @INC (you may need to install the Term::ReadLine module) (@INC contains: /etc/perl /usr/local/lib/x86_64-linux-gnu/perl/5.20.2 /usr/local/share/perl/5.20.2 /usr/lib/x86_64-linux-gnu/perl5/5.20 /usr/share/perl5 /usr/lib/x86_64-linux-gnu/perl/5.20 /usr/share/perl/5.20 /usr/local/lib/site_perl .) at /usr/share/perl5/Debconf/FrontEnd/Readline.pm line 7.)
+debconf: falling back to frontend: Teletype
+Setting up libmagic1:amd64 (1:5.22+15-2+deb8u3) ...
+Setting up libsqlite3-0:amd64 (3.8.7.1-1+deb8u2) ...
+Setting up mime-support (3.58) ...
+Setting up libexpat1:amd64 (2.1.0-6+deb8u4) ...
+Setting up libffi6:amd64 (3.1-2+deb8u1) ...
+Setting up libpython2.7-stdlib:amd64 (2.7.9-2+deb8u1) ...
+Setting up python2.7 (2.7.9-2+deb8u1) ...
+Setting up libpython-stdlib:amd64 (2.7.9-1) ...
+Setting up python (2.7.9-1) ...
+Setting up file (1:5.22+15-2+deb8u3) ...
+Setting up sudo (1.8.10p3-1+deb8u5) ...
+Processing triggers for libc-bin (2.19-18+deb8u10) ...
+Processing triggers for systemd (215-17+deb8u7) ...
+</pre></div>
+
+            
+          
+        </div>
+    </div>
+</div>
+</body>
+</html>

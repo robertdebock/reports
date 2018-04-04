@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html class="layout-pf">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="ARA | Ansible Run Analysis records Ansible playbook runs seamlessly to make them easier to visualize, understand and troubleshoot">
+    <title>ARA | Ansible Run Analysis</title>
+    <script src="../static/packaged/jquery/jquery.min.js"></script>
+    <script src="../static/packaged/datatables/js/jquery.dataTables.min.js"></script>
+    <script src="../static/packaged/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../static/packaged/patternfly_bootstrap_treeview/js/bootstrap-treeview.min.js"></script>
+    <script src="../static/packaged/patternfly/js/patternfly.min.js"></script>
+    <script src="../static/js/ara.js"></script>
+    <link href="../static/packaged/patternfly/css/patternfly.min.css" rel="stylesheet">
+    <link href="../static/packaged/patternfly/css/patternfly-additions.min.css" rel="stylesheet">
+    <link href="../static/packaged/patternfly_bootstrap_treeview/css/bootstrap-treeview.min.css" rel="stylesheet">
+    <link href="../static/css/pygments.css" rel="stylesheet">
+    <link href="../static/css/ara.css" rel="stylesheet">
+    <link rel="shortcut icon" href="../static/images/favicon.ico">
+</head>
+
+<body>
+<!-- Begin navbar -->
+<nav class="navbar navbar-default navbar-pf" role="navigation">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="../reports/index.html">
+            <img src="../static/images/logo-header.svg" width="81" height="32" alt="ARA: Ansible Run Analysis" />
+        </a>
+    </div>
+    <div class="collapse navbar-collapse navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-utility">
+            <li><a href="https://ara.readthedocs.io/en/latest/" target="_blank">Documentation</a></li>
+            <li><a href="https://github.com/openstack/ara" target="_blank"><strong>ARA</strong> 0.14.6</a></li>
+            <li><a href="https://www.ansible.com/" target="_blank"><strong>Ansible</strong> 2.4.3.0</a></li>
+            <li><a href="https://www.python.org/" target="_blank"><strong>Python</strong> 2.7</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-primary">
+            <li class="active">
+            <a href="index.html">About</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<!-- End navbar -->
+
+<!-- Begin about -->
+<div class="container-fluid">
+    <div class="col-md-custom col-md-offset-custom">
+        <div class="row text-center">
+            <br>
+            <img src="../static/images/logo-main.svg" width="287" height="226" alt="ARA: Ansible Run Analysis" />
+            <h1><strong>ARA - Ansible Run Analysis</strong></h1>
+            <h2><a href="https://github.com/openstack/ara" target="_blank">ARA</a> records <a href="https://www.ansible.com/" target="_blank">Ansible</a> playbook runs seamlessly to make them easier to visualize, understand and troubleshoot.</h2>
+            <h3>
+                ARA doesn't run your playbooks for you: it integrates with Ansible as a callback plugin wherever it is.<br>
+                Whether you are running Ansible from your personal laptop or a server,
+                all you need to do is to <a href="https://ara.readthedocs.io/en/latest/installation.html" target="_blank">install ARA</a>,
+                <a href="https://ara.readthedocs.io/en/latest/configuration.html" target="_blank">configure Ansible to use ARA</a> and you're good to go.
+            </h3>
+            <h3>
+                The ARA project puts a lot of emphasis on being simple to install and use without requiring you change your existing Ansible workflows.<br>
+                You can read about the project's core values and principles in the <a href="https://ara.readthedocs.io/en/latest/manifesto.html" target="_blank">project manifesto</a>.
+            </h3>
+            <br>
+            <h2><strong>The ARA database is empty or the web application is not configured properly to find your playbook data.</strong></h2>
+            <h2>Get started by <a href="https://ara.readthedocs.io/en/latest/configuration.html" target="_blank">configuring Ansible to use ARA</a>.</h2>
+            <h2>Your data will be available in the interface after an <code>ansible-playbook</code> is run after configuring Ansible to use ARA.</h2>
+            <br>
+            <br>
+                <h3>Need help ? Look at the <a href="https://ara.readthedocs.io/en/latest/" target="_blank">documentation</a> or come chat with the <a href="https://github.com/openstack/ara#community-and-getting-help" target="_blank">community</a> !</h3>
+            </div>
+    </div>
+</div>
+<br>
+<br>
+<!-- End about -->
+</body>
+</html>

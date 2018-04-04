@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html class="layout-pf">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="ARA | Ansible Run Analysis records Ansible playbook runs seamlessly to make them easier to visualize, understand and troubleshoot">
+    <title>ARA | Ansible Run Analysis</title>
+    <script src="../../static/packaged/jquery/jquery.min.js"></script>
+    <script src="../../static/packaged/datatables/js/jquery.dataTables.min.js"></script>
+    <script src="../../static/packaged/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../../static/packaged/patternfly_bootstrap_treeview/js/bootstrap-treeview.min.js"></script>
+    <script src="../../static/packaged/patternfly/js/patternfly.min.js"></script>
+    <script src="../../static/js/ara.js"></script>
+    <link href="../../static/packaged/patternfly/css/patternfly.min.css" rel="stylesheet">
+    <link href="../../static/packaged/patternfly/css/patternfly-additions.min.css" rel="stylesheet">
+    <link href="../../static/packaged/patternfly_bootstrap_treeview/css/bootstrap-treeview.min.css" rel="stylesheet">
+    <link href="../../static/css/pygments.css" rel="stylesheet">
+    <link href="../../static/css/ara.css" rel="stylesheet">
+    <link rel="shortcut icon" href="../../static/images/favicon.ico">
+</head>
+
+
+
+<body>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12 results">
+          <h2>Task: <strong>Build an Ansible compatible image</strong></h2>
+          <h2>Host: <strong>localhost</strong></h2>
+          <p>Time: <strong>2018-04-04 16:18:08</strong></p>
+          <p>Ansible version: <strong>2.5.0</strong></p>
+          
+          
+              
+    
+        
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    
+    
+
+        <h2>Msg</h2>
+                <div class="codehilite"><pre><span></span>All items completed
+</pre></div>
+
+            <h2>Results</h2>
+                <div class="codehilite"><pre><span></span><span class="p">[</span>
+    <span class="p">{</span>
+        <span class="nt">&quot;_ansible_ignore_errors&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+        <span class="nt">&quot;_ansible_item_result&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span> 
+        <span class="nt">&quot;_ansible_no_log&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span> 
+        <span class="nt">&quot;_ansible_parsed&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span> 
+        <span class="nt">&quot;actions&quot;</span><span class="p">:</span> <span class="p">[</span>
+            <span class="s2">&quot;Built image molecule_local/base/archlinux:latest from /tmp/molecule/ansible-role-bootstrap/archlinux&quot;</span>
+        <span class="p">],</span> 
+        <span class="nt">&quot;changed&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span> 
+        <span class="nt">&quot;failed&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+        <span class="nt">&quot;image&quot;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="nt">&quot;Architecture&quot;</span><span class="p">:</span> <span class="s2">&quot;amd64&quot;</span><span class="p">,</span> 
+            <span class="nt">&quot;Author&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span> 
+            <span class="nt">&quot;Comment&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span> 
+            <span class="nt">&quot;Config&quot;</span><span class="p">:</span> <span class="p">{</span>
+                <span class="nt">&quot;ArgsEscaped&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span> 
+                <span class="nt">&quot;AttachStderr&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+                <span class="nt">&quot;AttachStdin&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+                <span class="nt">&quot;AttachStdout&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+                <span class="nt">&quot;Cmd&quot;</span><span class="p">:</span> <span class="p">[</span>
+                    <span class="s2">&quot;/bin/bash&quot;</span>
+                <span class="p">],</span> 
+                <span class="nt">&quot;Domainname&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span> 
+                <span class="nt">&quot;Entrypoint&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                <span class="nt">&quot;Env&quot;</span><span class="p">:</span> <span class="p">[</span>
+                    <span class="s2">&quot;PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin&quot;</span>
+                <span class="p">],</span> 
+                <span class="nt">&quot;Hostname&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span> 
+                <span class="nt">&quot;Image&quot;</span><span class="p">:</span> <span class="s2">&quot;sha256:c954689eae2feee0ec03cc12323021225b01948530b5ab78246a31936755ad8b&quot;</span><span class="p">,</span> 
+                <span class="nt">&quot;Labels&quot;</span><span class="p">:</span> <span class="p">{</span>
+                    <span class="nt">&quot;maintainer&quot;</span><span class="p">:</span> <span class="s2">&quot;ArchLinux Dockerimage Maintainers&quot;</span>
+                <span class="p">},</span> 
+                <span class="nt">&quot;OnBuild&quot;</span><span class="p">:</span> <span class="p">[],</span> 
+                <span class="nt">&quot;OpenStdin&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+                <span class="nt">&quot;StdinOnce&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+                <span class="nt">&quot;Tty&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+                <span class="nt">&quot;User&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span> 
+                <span class="nt">&quot;Volumes&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                <span class="nt">&quot;WorkingDir&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span>
+            <span class="p">},</span> 
+            <span class="nt">&quot;Container&quot;</span><span class="p">:</span> <span class="s2">&quot;e746bd383249d1a4dad7c843f6637a5d96883a518ec9c90c501180ba809964b0&quot;</span><span class="p">,</span> 
+            <span class="nt">&quot;ContainerConfig&quot;</span><span class="p">:</span> <span class="p">{</span>
+                <span class="nt">&quot;ArgsEscaped&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span> 
+                <span class="nt">&quot;AttachStderr&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+                <span class="nt">&quot;AttachStdin&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+                <span class="nt">&quot;AttachStdout&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+                <span class="nt">&quot;Cmd&quot;</span><span class="p">:</span> <span class="p">[</span>
+                    <span class="s2">&quot;/bin/sh&quot;</span><span class="p">,</span> 
+                    <span class="s2">&quot;-c&quot;</span><span class="p">,</span> 
+                    <span class="s2">&quot;#(nop) &quot;</span><span class="p">,</span> 
+                    <span class="s2">&quot;CMD [\&quot;/bin/bash\&quot;]&quot;</span>
+                <span class="p">],</span> 
+                <span class="nt">&quot;Domainname&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span> 
+                <span class="nt">&quot;Entrypoint&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                <span class="nt">&quot;Env&quot;</span><span class="p">:</span> <span class="p">[</span>
+                    <span class="s2">&quot;PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin&quot;</span>
+                <span class="p">],</span> 
+                <span class="nt">&quot;Hostname&quot;</span><span class="p">:</span> <span class="s2">&quot;e746bd383249&quot;</span><span class="p">,</span> 
+                <span class="nt">&quot;Image&quot;</span><span class="p">:</span> <span class="s2">&quot;sha256:c954689eae2feee0ec03cc12323021225b01948530b5ab78246a31936755ad8b&quot;</span><span class="p">,</span> 
+                <span class="nt">&quot;Labels&quot;</span><span class="p">:</span> <span class="p">{</span>
+                    <span class="nt">&quot;maintainer&quot;</span><span class="p">:</span> <span class="s2">&quot;ArchLinux Dockerimage Maintainers&quot;</span>
+                <span class="p">},</span> 
+                <span class="nt">&quot;OnBuild&quot;</span><span class="p">:</span> <span class="p">[],</span> 
+                <span class="nt">&quot;OpenStdin&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+                <span class="nt">&quot;StdinOnce&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+                <span class="nt">&quot;Tty&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+                <span class="nt">&quot;User&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span> 
+                <span class="nt">&quot;Volumes&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                <span class="nt">&quot;WorkingDir&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span>
+            <span class="p">},</span> 
+            <span class="nt">&quot;Created&quot;</span><span class="p">:</span> <span class="s2">&quot;2018-04-04T14:30:51.511655528Z&quot;</span><span class="p">,</span> 
+            <span class="nt">&quot;DockerVersion&quot;</span><span class="p">:</span> <span class="s2">&quot;17.09.0-ce&quot;</span><span class="p">,</span> 
+            <span class="nt">&quot;GraphDriver&quot;</span><span class="p">:</span> <span class="p">{</span>
+                <span class="nt">&quot;Data&quot;</span><span class="p">:</span> <span class="p">{</span>
+                    <span class="nt">&quot;LowerDir&quot;</span><span class="p">:</span> <span class="s2">&quot;/var/lib/docker/overlay2/20ff64534757d8b46c8c6bb5d612c651a92be4750419ea71b29439a57c478e63/diff:/var/lib/docker/overlay2/ebbac0e9e3da7e75aef1f18fc3108ee0d4265d586b787767f4e60123fe2dd586/diff:/var/lib/docker/overlay2/3a044f61bd4803d9411ae79d3f7ffa88411d4c397d777867036e8f8c921d6def/diff&quot;</span><span class="p">,</span> 
+                    <span class="nt">&quot;MergedDir&quot;</span><span class="p">:</span> <span class="s2">&quot;/var/lib/docker/overlay2/2cdd13ba1912d0560886b7646dec708b97f5f3ed3d1789421716ac128784e17f/merged&quot;</span><span class="p">,</span> 
+                    <span class="nt">&quot;UpperDir&quot;</span><span class="p">:</span> <span class="s2">&quot;/var/lib/docker/overlay2/2cdd13ba1912d0560886b7646dec708b97f5f3ed3d1789421716ac128784e17f/diff&quot;</span><span class="p">,</span> 
+                    <span class="nt">&quot;WorkDir&quot;</span><span class="p">:</span> <span class="s2">&quot;/var/lib/docker/overlay2/2cdd13ba1912d0560886b7646dec708b97f5f3ed3d1789421716ac128784e17f/work&quot;</span>
+                <span class="p">},</span> 
+                <span class="nt">&quot;Name&quot;</span><span class="p">:</span> <span class="s2">&quot;overlay2&quot;</span>
+            <span class="p">},</span> 
+            <span class="nt">&quot;Id&quot;</span><span class="p">:</span> <span class="s2">&quot;sha256:58ec71d61042344900d95f69ee64a8753939c9e995e12d00f4755384958ea06d&quot;</span><span class="p">,</span> 
+            <span class="nt">&quot;Metadata&quot;</span><span class="p">:</span> <span class="p">{</span>
+                <span class="nt">&quot;LastTagTime&quot;</span><span class="p">:</span> <span class="s2">&quot;2018-04-04T16:18:26.107989636Z&quot;</span>
+            <span class="p">},</span> 
+            <span class="nt">&quot;Os&quot;</span><span class="p">:</span> <span class="s2">&quot;linux&quot;</span><span class="p">,</span> 
+            <span class="nt">&quot;Parent&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span> 
+            <span class="nt">&quot;RepoDigests&quot;</span><span class="p">:</span> <span class="p">[</span>
+                <span class="s2">&quot;base/archlinux@sha256:9453b4a23caae4b3988846e4ef493e25d5aeb991fd7cf20b96cdbdf6d6dae50b&quot;</span>
+            <span class="p">],</span> 
+            <span class="nt">&quot;RepoTags&quot;</span><span class="p">:</span> <span class="p">[</span>
+                <span class="s2">&quot;base/archlinux:latest&quot;</span><span class="p">,</span> 
+                <span class="s2">&quot;molecule_local/base/archlinux:latest&quot;</span>
+            <span class="p">],</span> 
+            <span class="nt">&quot;RootFS&quot;</span><span class="p">:</span> <span class="p">{</span>
+                <span class="nt">&quot;Layers&quot;</span><span class="p">:</span> <span class="p">[</span>
+                    <span class="s2">&quot;sha256:0f9b52d3dbad705018a23a74d46cd59efc2a5c5b61192bf3c7736e696931d5aa&quot;</span><span class="p">,</span> 
+                    <span class="s2">&quot;sha256:3ffc3b81663c818c17f79e8e84fd73c7e3c4239271a36bf24913656074cabeb4&quot;</span><span class="p">,</span> 
+                    <span class="s2">&quot;sha256:f283890a09960c5a0f6c91cfde101bd0e4f0344f7dea12f3531bc3804e5edffa&quot;</span><span class="p">,</span> 
+                    <span class="s2">&quot;sha256:90cb8e017e4581b4c06224d896f7ac8ebf367ca8fb2003365bd1ec20e49f89f6&quot;</span>
+                <span class="p">],</span> 
+                <span class="nt">&quot;Type&quot;</span><span class="p">:</span> <span class="s2">&quot;layers&quot;</span>
+            <span class="p">},</span> 
+            <span class="nt">&quot;Size&quot;</span><span class="p">:</span> <span class="mi">431801925</span><span class="p">,</span> 
+            <span class="nt">&quot;VirtualSize&quot;</span><span class="p">:</span> <span class="mi">431801925</span>
+        <span class="p">},</span> 
+        <span class="nt">&quot;invocation&quot;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="nt">&quot;module_args&quot;</span><span class="p">:</span> <span class="p">{</span>
+                <span class="nt">&quot;api_version&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                <span class="nt">&quot;archive_path&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                <span class="nt">&quot;buildargs&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                <span class="nt">&quot;cacert_path&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                <span class="nt">&quot;cert_path&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                <span class="nt">&quot;container_limits&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                <span class="nt">&quot;debug&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+                <span class="nt">&quot;docker_host&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                <span class="nt">&quot;dockerfile&quot;</span><span class="p">:</span> <span class="s2">&quot;/tmp/molecule/ansible-role-bootstrap/archlinux/Dockerfile_base_archlinux&quot;</span><span class="p">,</span> 
+                <span class="nt">&quot;filter_logger&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+                <span class="nt">&quot;force&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span> 
+                <span class="nt">&quot;http_timeout&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                <span class="nt">&quot;key_path&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                <span class="nt">&quot;load_path&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;molecule_local/base/archlinux&quot;</span><span class="p">,</span> 
+                <span class="nt">&quot;nocache&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+                <span class="nt">&quot;path&quot;</span><span class="p">:</span> <span class="s2">&quot;/tmp/molecule/ansible-role-bootstrap/archlinux&quot;</span><span class="p">,</span> 
+                <span class="nt">&quot;pull&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span> 
+                <span class="nt">&quot;push&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+                <span class="nt">&quot;repository&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                <span class="nt">&quot;rm&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span> 
+                <span class="nt">&quot;ssl_version&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                <span class="nt">&quot;state&quot;</span><span class="p">:</span> <span class="s2">&quot;present&quot;</span><span class="p">,</span> 
+                <span class="nt">&quot;tag&quot;</span><span class="p">:</span> <span class="s2">&quot;latest&quot;</span><span class="p">,</span> 
+                <span class="nt">&quot;timeout&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                <span class="nt">&quot;tls&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                <span class="nt">&quot;tls_hostname&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                <span class="nt">&quot;tls_verify&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                <span class="nt">&quot;use_tls&quot;</span><span class="p">:</span> <span class="s2">&quot;no&quot;</span>
+            <span class="p">}</span>
+        <span class="p">},</span> 
+        <span class="nt">&quot;item&quot;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="nt">&quot;_ansible_ignore_errors&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+            <span class="nt">&quot;_ansible_item_result&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span> 
+            <span class="nt">&quot;_ansible_no_log&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span> 
+            <span class="nt">&quot;_ansible_parsed&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span> 
+            <span class="nt">&quot;changed&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span> 
+            <span class="nt">&quot;checksum&quot;</span><span class="p">:</span> <span class="s2">&quot;023f5f9b968a7fc80e82a2c6494de4703f0b6ec6&quot;</span><span class="p">,</span> 
+            <span class="nt">&quot;dest&quot;</span><span class="p">:</span> <span class="s2">&quot;/tmp/molecule/ansible-role-bootstrap/archlinux/Dockerfile_base_archlinux&quot;</span><span class="p">,</span> 
+            <span class="nt">&quot;diff&quot;</span><span class="p">:</span> <span class="p">[],</span> 
+            <span class="nt">&quot;failed&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+            <span class="nt">&quot;gid&quot;</span><span class="p">:</span> <span class="mi">2000</span><span class="p">,</span> 
+            <span class="nt">&quot;group&quot;</span><span class="p">:</span> <span class="s2">&quot;travis&quot;</span><span class="p">,</span> 
+            <span class="nt">&quot;invocation&quot;</span><span class="p">:</span> <span class="p">{</span>
+                <span class="nt">&quot;module_args&quot;</span><span class="p">:</span> <span class="p">{</span>
+                    <span class="nt">&quot;attributes&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                    <span class="nt">&quot;backup&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+                    <span class="nt">&quot;checksum&quot;</span><span class="p">:</span> <span class="s2">&quot;023f5f9b968a7fc80e82a2c6494de4703f0b6ec6&quot;</span><span class="p">,</span> 
+                    <span class="nt">&quot;content&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                    <span class="nt">&quot;delimiter&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                    <span class="nt">&quot;dest&quot;</span><span class="p">:</span> <span class="s2">&quot;/tmp/molecule/ansible-role-bootstrap/archlinux/Dockerfile_base_archlinux&quot;</span><span class="p">,</span> 
+                    <span class="nt">&quot;directory_mode&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                    <span class="nt">&quot;follow&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+                    <span class="nt">&quot;force&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span> 
+                    <span class="nt">&quot;group&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                    <span class="nt">&quot;local_follow&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                    <span class="nt">&quot;mode&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                    <span class="nt">&quot;original_basename&quot;</span><span class="p">:</span> <span class="s2">&quot;Dockerfile.j2&quot;</span><span class="p">,</span> 
+                    <span class="nt">&quot;owner&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                    <span class="nt">&quot;regexp&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                    <span class="nt">&quot;remote_src&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                    <span class="nt">&quot;selevel&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                    <span class="nt">&quot;serole&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                    <span class="nt">&quot;setype&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                    <span class="nt">&quot;seuser&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                    <span class="nt">&quot;src&quot;</span><span class="p">:</span> <span class="s2">&quot;/home/travis/.ansible/tmp/ansible-tmp-1522858687.23-88402631321779/source&quot;</span><span class="p">,</span> 
+                    <span class="nt">&quot;unsafe_writes&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                    <span class="nt">&quot;validate&quot;</span><span class="p">:</span> <span class="kc">null</span>
+                <span class="p">}</span>
+            <span class="p">},</span> 
+            <span class="nt">&quot;item&quot;</span><span class="p">:</span> <span class="p">{</span>
+                <span class="nt">&quot;image&quot;</span><span class="p">:</span> <span class="s2">&quot;base/archlinux&quot;</span><span class="p">,</span> 
+                <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;bootstrap-archlinux&quot;</span>
+            <span class="p">},</span> 
+            <span class="nt">&quot;md5sum&quot;</span><span class="p">:</span> <span class="s2">&quot;7f3d8df2d681a7c9aff7e16e9cfa6b86&quot;</span><span class="p">,</span> 
+            <span class="nt">&quot;mode&quot;</span><span class="p">:</span> <span class="s2">&quot;0664&quot;</span><span class="p">,</span> 
+            <span class="nt">&quot;owner&quot;</span><span class="p">:</span> <span class="s2">&quot;travis&quot;</span><span class="p">,</span> 
+            <span class="nt">&quot;size&quot;</span><span class="p">:</span> <span class="mi">40</span><span class="p">,</span> 
+            <span class="nt">&quot;src&quot;</span><span class="p">:</span> <span class="s2">&quot;/home/travis/.ansible/tmp/ansible-tmp-1522858687.23-88402631321779/source&quot;</span><span class="p">,</span> 
+            <span class="nt">&quot;state&quot;</span><span class="p">:</span> <span class="s2">&quot;file&quot;</span><span class="p">,</span> 
+            <span class="nt">&quot;uid&quot;</span><span class="p">:</span> <span class="mi">2000</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+<span class="p">]</span>
+</pre></div>
+
+            
+                </div>
+            </div>
+        
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    
+    
+
+        <h2>Censored</h2>
+                <div class="codehilite"><pre><span></span>the output has been hidden due to the fact that &#39;no_log: true&#39; was specified for this result
+</pre></div>
+
+            
+                </div>
+            </div>
+        
+    
+          
+        </div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html class="layout-pf">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="ARA | Ansible Run Analysis records Ansible playbook runs seamlessly to make them easier to visualize, understand and troubleshoot">
+    <title>ARA | Ansible Run Analysis</title>
+    <script src="../../static/packaged/jquery/jquery.min.js"></script>
+    <script src="../../static/packaged/datatables/js/jquery.dataTables.min.js"></script>
+    <script src="../../static/packaged/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../../static/packaged/patternfly_bootstrap_treeview/js/bootstrap-treeview.min.js"></script>
+    <script src="../../static/packaged/patternfly/js/patternfly.min.js"></script>
+    <script src="../../static/js/ara.js"></script>
+    <link href="../../static/packaged/patternfly/css/patternfly.min.css" rel="stylesheet">
+    <link href="../../static/packaged/patternfly/css/patternfly-additions.min.css" rel="stylesheet">
+    <link href="../../static/packaged/patternfly_bootstrap_treeview/css/bootstrap-treeview.min.css" rel="stylesheet">
+    <link href="../../static/css/pygments.css" rel="stylesheet">
+    <link href="../../static/css/ara.css" rel="stylesheet">
+    <link rel="shortcut icon" href="../../static/images/favicon.ico">
+</head>
+
+
+
+<body>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12 results">
+          <h2>Task: <strong>Display details about the goss results</strong></h2>
+          <h2>Host: <strong>bootstrap-ubuntu-xenial</strong></h2>
+          <p>Time: <strong>2018-04-04 17:07:02</strong></p>
+          <p>Ansible version: <strong>2.3.3.0</strong></p>
+          
+          
+              
+    
+        
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    
+    
+
+        <h2>Msg</h2>
+                <div class="codehilite"><pre><span></span>All items completed
+</pre></div>
+
+            
+                </div>
+            </div>
+        
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    
+    <h2>Item</h2>
+            <div class="codehilite"><pre><span></span><span class="p">{</span>
+    <span class="nt">&quot;changed&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span> 
+    <span class="nt">&quot;cmd&quot;</span><span class="p">:</span> <span class="p">[</span>
+        <span class="s2">&quot;goss&quot;</span><span class="p">,</span> 
+        <span class="s2">&quot;-g&quot;</span><span class="p">,</span> 
+        <span class="s2">&quot;/tmp/test_default.yml&quot;</span><span class="p">,</span> 
+        <span class="s2">&quot;validate&quot;</span><span class="p">,</span> 
+        <span class="s2">&quot;--format&quot;</span><span class="p">,</span> 
+        <span class="s2">&quot;documentation&quot;</span>
+    <span class="p">],</span> 
+    <span class="nt">&quot;delta&quot;</span><span class="p">:</span> <span class="s2">&quot;0:00:00.039123&quot;</span><span class="p">,</span> 
+    <span class="nt">&quot;end&quot;</span><span class="p">:</span> <span class="s2">&quot;2018-04-04 17:07:02.174585&quot;</span><span class="p">,</span> 
+    <span class="nt">&quot;invocation&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="nt">&quot;module_args&quot;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="nt">&quot;_raw_params&quot;</span><span class="p">:</span> <span class="s2">&quot;goss -g /tmp/test_default.yml validate --format documentation&quot;</span><span class="p">,</span> 
+            <span class="nt">&quot;_uses_shell&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+            <span class="nt">&quot;chdir&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+            <span class="nt">&quot;creates&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+            <span class="nt">&quot;executable&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+            <span class="nt">&quot;removes&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+            <span class="nt">&quot;warn&quot;</span><span class="p">:</span> <span class="kc">true</span>
+        <span class="p">}</span>
+    <span class="p">},</span> 
+    <span class="nt">&quot;item&quot;</span><span class="p">:</span> <span class="s2">&quot;/tmp/test_default.yml&quot;</span><span class="p">,</span> 
+    <span class="nt">&quot;rc&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> 
+    <span class="nt">&quot;start&quot;</span><span class="p">:</span> <span class="s2">&quot;2018-04-04 17:07:02.135462&quot;</span><span class="p">,</span> 
+    <span class="nt">&quot;stderr&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span> 
+    <span class="nt">&quot;stderr_lines&quot;</span><span class="p">:</span> <span class="p">[],</span> 
+    <span class="nt">&quot;stdout&quot;</span><span class="p">:</span> <span class="s2">&quot;File: /usr/bin/python: exists: matches expectation: [true]\nFile: /usr/bin/python: owner: matches expectation: [\&quot;root\&quot;]\nFile: /usr/bin/python: group: matches expectation: [\&quot;root\&quot;]\n\n\nTotal Duration: 0.000s\nCount: 3, Failed: 0, Skipped: 0&quot;</span><span class="p">,</span> 
+    <span class="nt">&quot;stdout_lines&quot;</span><span class="p">:</span> <span class="p">[</span>
+        <span class="s2">&quot;File: /usr/bin/python: exists: matches expectation: [true]&quot;</span><span class="p">,</span> 
+        <span class="s2">&quot;File: /usr/bin/python: owner: matches expectation: [\&quot;root\&quot;]&quot;</span><span class="p">,</span> 
+        <span class="s2">&quot;File: /usr/bin/python: group: matches expectation: [\&quot;root\&quot;]&quot;</span><span class="p">,</span> 
+        <span class="s2">&quot;&quot;</span><span class="p">,</span> 
+        <span class="s2">&quot;&quot;</span><span class="p">,</span> 
+        <span class="s2">&quot;Total Duration: 0.000s&quot;</span><span class="p">,</span> 
+        <span class="s2">&quot;Count: 3, Failed: 0, Skipped: 0&quot;</span>
+    <span class="p">]</span>
+<span class="p">}</span>
+</pre></div>
+
+        
+
+        <h2>Msg</h2>
+                <div class="codehilite"><pre><span></span><span class="p">[</span>
+    <span class="s2">&quot;File: /usr/bin/python: exists: matches expectation: [true]&quot;</span><span class="p">,</span> 
+    <span class="s2">&quot;File: /usr/bin/python: owner: matches expectation: [\&quot;root\&quot;]&quot;</span><span class="p">,</span> 
+    <span class="s2">&quot;File: /usr/bin/python: group: matches expectation: [\&quot;root\&quot;]&quot;</span><span class="p">,</span> 
+    <span class="s2">&quot;&quot;</span><span class="p">,</span> 
+    <span class="s2">&quot;&quot;</span><span class="p">,</span> 
+    <span class="s2">&quot;Total Duration: 0.000s&quot;</span><span class="p">,</span> 
+    <span class="s2">&quot;Count: 3, Failed: 0, Skipped: 0&quot;</span>
+<span class="p">]</span>
+</pre></div>
+
+            
+                </div>
+            </div>
+        
+    
+          
+        </div>
+    </div>
+</div>
+</body>
+</html>

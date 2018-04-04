@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html class="layout-pf">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="ARA | Ansible Run Analysis records Ansible playbook runs seamlessly to make them easier to visualize, understand and troubleshoot">
+    <title>ARA | Ansible Run Analysis</title>
+    <script src="../../static/packaged/jquery/jquery.min.js"></script>
+    <script src="../../static/packaged/datatables/js/jquery.dataTables.min.js"></script>
+    <script src="../../static/packaged/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../../static/packaged/patternfly_bootstrap_treeview/js/bootstrap-treeview.min.js"></script>
+    <script src="../../static/packaged/patternfly/js/patternfly.min.js"></script>
+    <script src="../../static/js/ara.js"></script>
+    <link href="../../static/packaged/patternfly/css/patternfly.min.css" rel="stylesheet">
+    <link href="../../static/packaged/patternfly/css/patternfly-additions.min.css" rel="stylesheet">
+    <link href="../../static/packaged/patternfly_bootstrap_treeview/css/bootstrap-treeview.min.css" rel="stylesheet">
+    <link href="../../static/css/pygments.css" rel="stylesheet">
+    <link href="../../static/css/ara.css" rel="stylesheet">
+    <link rel="shortcut icon" href="../../static/images/favicon.ico">
+</head>
+
+
+
+<body>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12 results">
+          <h2>Task: <strong>ansible-role-bootstrap : install software to support stable modules</strong></h2>
+          <h2>Host: <strong>bootstrap-debian-stretch</strong></h2>
+          <p>Time: <strong>2018-04-04 16:35:13</strong></p>
+          <p>Ansible version: <strong>2.5.0</strong></p>
+          
+          
+              
+    
+        
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    
+    
+
+        <h2>Msg</h2>
+                <div class="codehilite"><pre><span></span>All items completed
+</pre></div>
+
+            <h2>Results</h2>
+                <div class="codehilite"><pre><span></span><span class="p">[</span>
+    <span class="p">{</span>
+        <span class="nt">&quot;_ansible_ignore_errors&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+        <span class="nt">&quot;_ansible_item_result&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span> 
+        <span class="nt">&quot;_ansible_no_log&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+        <span class="nt">&quot;_ansible_parsed&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span> 
+        <span class="nt">&quot;cache_update_time&quot;</span><span class="p">:</span> <span class="mi">1522859705</span><span class="p">,</span> 
+        <span class="nt">&quot;cache_updated&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+        <span class="nt">&quot;changed&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span> 
+        <span class="nt">&quot;diff&quot;</span><span class="p">:</span> <span class="p">{},</span> 
+        <span class="nt">&quot;failed&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+        <span class="nt">&quot;invocation&quot;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="nt">&quot;module_args&quot;</span><span class="p">:</span> <span class="p">{</span>
+                <span class="nt">&quot;allow_unauthenticated&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+                <span class="nt">&quot;autoclean&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+                <span class="nt">&quot;autoremove&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+                <span class="nt">&quot;cache_valid_time&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> 
+                <span class="nt">&quot;deb&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                <span class="nt">&quot;default_release&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                <span class="nt">&quot;dpkg_options&quot;</span><span class="p">:</span> <span class="s2">&quot;force-confdef,force-confold&quot;</span><span class="p">,</span> 
+                <span class="nt">&quot;force&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+                <span class="nt">&quot;force_apt_get&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+                <span class="nt">&quot;install_recommends&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;ca-certificates&quot;</span><span class="p">,</span> 
+                <span class="nt">&quot;only_upgrade&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+                <span class="nt">&quot;package&quot;</span><span class="p">:</span> <span class="p">[</span>
+                    <span class="s2">&quot;ca-certificates&quot;</span>
+                <span class="p">],</span> 
+                <span class="nt">&quot;purge&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+                <span class="nt">&quot;state&quot;</span><span class="p">:</span> <span class="s2">&quot;present&quot;</span><span class="p">,</span> 
+                <span class="nt">&quot;update_cache&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                <span class="nt">&quot;upgrade&quot;</span><span class="p">:</span> <span class="kc">null</span>
+            <span class="p">}</span>
+        <span class="p">},</span> 
+        <span class="nt">&quot;item&quot;</span><span class="p">:</span> <span class="s2">&quot;ca-certificates&quot;</span><span class="p">,</span> 
+        <span class="nt">&quot;stderr&quot;</span><span class="p">:</span> <span class="s2">&quot;debconf: delaying package configuration, since apt-utils is not installed\n&quot;</span><span class="p">,</span> 
+        <span class="nt">&quot;stderr_lines&quot;</span><span class="p">:</span> <span class="p">[</span>
+            <span class="s2">&quot;debconf: delaying package configuration, since apt-utils is not installed&quot;</span>
+        <span class="p">],</span> 
+        <span class="nt">&quot;stdout&quot;</span><span class="p">:</span> <span class="s2">&quot;Reading package lists...\nBuilding dependency tree...\nReading state information...\nThe following additional packages will be installed:\n  openssl\nThe following NEW packages will be installed:\n  ca-certificates openssl\n0 upgraded, 2 newly installed, 0 to remove and 3 not upgraded.\nNeed to get 921 kB of archives.\nAfter this operation, 1753 kB of additional disk space will be used.\nGet:1 http://security.debian.org stretch/updates/main amd64 openssl amd64 1.1.0f-3+deb9u2 [725 kB]\nGet:2 http://deb.debian.org/debian stretch/main amd64 ca-certificates all 20161130+nmu1 [196 kB]\nFetched 921 kB in 0s (4566 kB/s)\nSelecting previously unselected package openssl.\r\n(Reading database ... \r(Reading database ... 5%\r(Reading database ... 10%\r(Reading database ... 15%\r(Reading database ... 20%\r(Reading database ... 25%\r(Reading database ... 30%\r(Reading database ... 35%\r(Reading database ... 40%\r(Reading database ... 45%\r(Reading database ... 50%\r(Reading database ... 55%\r(Reading database ... 60%\r(Reading database ... 65%\r(Reading database ... 70%\r(Reading database ... 75%\r(Reading database ... 80%\r(Reading database ... 85%\r(Reading database ... 90%\r(Reading database ... 95%\r(Reading database ... 100%\r(Reading database ... 9955 files and directories currently installed.)\r\nPreparing to unpack .../openssl_1.1.0f-3+deb9u2_amd64.deb ...\r\nUnpacking openssl (1.1.0f-3+deb9u2) ...\r\nSelecting previously unselected package ca-certificates.\r\nPreparing to unpack .../ca-certificates_20161130+nmu1_all.deb ...\r\nUnpacking ca-certificates (20161130+nmu1) ...\r\nSetting up openssl (1.1.0f-3+deb9u2) ...\r\nSetting up ca-certificates (20161130+nmu1) ...\r\nUpdating certificates in /etc/ssl/certs...\r\n166 added, 0 removed; done.\r\nProcessing triggers for ca-certificates (20161130+nmu1) ...\r\nUpdating certificates in /etc/ssl/certs...\r\n0 added, 0 removed; done.\r\nRunning hooks in /etc/ca-certificates/update.d...\r\ndone.\r\n&quot;</span><span class="p">,</span> 
+        <span class="nt">&quot;stdout_lines&quot;</span><span class="p">:</span> <span class="p">[</span>
+            <span class="s2">&quot;Reading package lists...&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;Building dependency tree...&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;Reading state information...&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;The following additional packages will be installed:&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;  openssl&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;The following NEW packages will be installed:&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;  ca-certificates openssl&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;0 upgraded, 2 newly installed, 0 to remove and 3 not upgraded.&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;Need to get 921 kB of archives.&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;After this operation, 1753 kB of additional disk space will be used.&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;Get:1 http://security.debian.org stretch/updates/main amd64 openssl amd64 1.1.0f-3+deb9u2 [725 kB]&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;Get:2 http://deb.debian.org/debian stretch/main amd64 ca-certificates all 20161130+nmu1 [196 kB]&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;Fetched 921 kB in 0s (4566 kB/s)&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;Selecting previously unselected package openssl.&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;(Reading database ... &quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;(Reading database ... 5%&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;(Reading database ... 10%&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;(Reading database ... 15%&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;(Reading database ... 20%&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;(Reading database ... 25%&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;(Reading database ... 30%&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;(Reading database ... 35%&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;(Reading database ... 40%&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;(Reading database ... 45%&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;(Reading database ... 50%&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;(Reading database ... 55%&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;(Reading database ... 60%&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;(Reading database ... 65%&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;(Reading database ... 70%&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;(Reading database ... 75%&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;(Reading database ... 80%&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;(Reading database ... 85%&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;(Reading database ... 90%&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;(Reading database ... 95%&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;(Reading database ... 100%&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;(Reading database ... 9955 files and directories currently installed.)&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;Preparing to unpack .../openssl_1.1.0f-3+deb9u2_amd64.deb ...&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;Unpacking openssl (1.1.0f-3+deb9u2) ...&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;Selecting previously unselected package ca-certificates.&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;Preparing to unpack .../ca-certificates_20161130+nmu1_all.deb ...&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;Unpacking ca-certificates (20161130+nmu1) ...&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;Setting up openssl (1.1.0f-3+deb9u2) ...&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;Setting up ca-certificates (20161130+nmu1) ...&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;Updating certificates in /etc/ssl/certs...&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;166 added, 0 removed; done.&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;Processing triggers for ca-certificates (20161130+nmu1) ...&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;Updating certificates in /etc/ssl/certs...&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;0 added, 0 removed; done.&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;Running hooks in /etc/ca-certificates/update.d...&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;done.&quot;</span>
+        <span class="p">]</span>
+    <span class="p">},</span> 
+    <span class="p">{</span>
+        <span class="nt">&quot;_ansible_ignore_errors&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+        <span class="nt">&quot;_ansible_item_result&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span> 
+        <span class="nt">&quot;_ansible_no_log&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+        <span class="nt">&quot;_ansible_parsed&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span> 
+        <span class="nt">&quot;cache_update_time&quot;</span><span class="p">:</span> <span class="mi">1522859705</span><span class="p">,</span> 
+        <span class="nt">&quot;cache_updated&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+        <span class="nt">&quot;changed&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+        <span class="nt">&quot;failed&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+        <span class="nt">&quot;invocation&quot;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="nt">&quot;module_args&quot;</span><span class="p">:</span> <span class="p">{</span>
+                <span class="nt">&quot;allow_unauthenticated&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+                <span class="nt">&quot;autoclean&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+                <span class="nt">&quot;autoremove&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+                <span class="nt">&quot;cache_valid_time&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> 
+                <span class="nt">&quot;deb&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                <span class="nt">&quot;default_release&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                <span class="nt">&quot;dpkg_options&quot;</span><span class="p">:</span> <span class="s2">&quot;force-confdef,force-confold&quot;</span><span class="p">,</span> 
+                <span class="nt">&quot;force&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+                <span class="nt">&quot;force_apt_get&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+                <span class="nt">&quot;install_recommends&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;python-apt&quot;</span><span class="p">,</span> 
+                <span class="nt">&quot;only_upgrade&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+                <span class="nt">&quot;package&quot;</span><span class="p">:</span> <span class="p">[</span>
+                    <span class="s2">&quot;python-apt&quot;</span>
+                <span class="p">],</span> 
+                <span class="nt">&quot;purge&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+                <span class="nt">&quot;state&quot;</span><span class="p">:</span> <span class="s2">&quot;present&quot;</span><span class="p">,</span> 
+                <span class="nt">&quot;update_cache&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                <span class="nt">&quot;upgrade&quot;</span><span class="p">:</span> <span class="kc">null</span>
+            <span class="p">}</span>
+        <span class="p">},</span> 
+        <span class="nt">&quot;item&quot;</span><span class="p">:</span> <span class="s2">&quot;python-apt&quot;</span>
+    <span class="p">},</span> 
+    <span class="p">{</span>
+        <span class="nt">&quot;_ansible_ignore_errors&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+        <span class="nt">&quot;_ansible_item_result&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span> 
+        <span class="nt">&quot;_ansible_no_log&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+        <span class="nt">&quot;_ansible_parsed&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span> 
+        <span class="nt">&quot;cache_update_time&quot;</span><span class="p">:</span> <span class="mi">1522859705</span><span class="p">,</span> 
+        <span class="nt">&quot;cache_updated&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+        <span class="nt">&quot;changed&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span> 
+        <span class="nt">&quot;diff&quot;</span><span class="p">:</span> <span class="p">{},</span> 
+        <span class="nt">&quot;failed&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+        <span class="nt">&quot;invocation&quot;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="nt">&quot;module_args&quot;</span><span class="p">:</span> <span class="p">{</span>
+                <span class="nt">&quot;allow_unauthenticated&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+                <span class="nt">&quot;autoclean&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+                <span class="nt">&quot;autoremove&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+                <span class="nt">&quot;cache_valid_time&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> 
+                <span class="nt">&quot;deb&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                <span class="nt">&quot;default_release&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                <span class="nt">&quot;dpkg_options&quot;</span><span class="p">:</span> <span class="s2">&quot;force-confdef,force-confold&quot;</span><span class="p">,</span> 
+                <span class="nt">&quot;force&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+                <span class="nt">&quot;force_apt_get&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+                <span class="nt">&quot;install_recommends&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;python-simplejson&quot;</span><span class="p">,</span> 
+                <span class="nt">&quot;only_upgrade&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+                <span class="nt">&quot;package&quot;</span><span class="p">:</span> <span class="p">[</span>
+                    <span class="s2">&quot;python-simplejson&quot;</span>
+                <span class="p">],</span> 
+                <span class="nt">&quot;purge&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+                <span class="nt">&quot;state&quot;</span><span class="p">:</span> <span class="s2">&quot;present&quot;</span><span class="p">,</span> 
+                <span class="nt">&quot;update_cache&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                <span class="nt">&quot;upgrade&quot;</span><span class="p">:</span> <span class="kc">null</span>
+            <span class="p">}</span>
+        <span class="p">},</span> 
+        <span class="nt">&quot;item&quot;</span><span class="p">:</span> <span class="s2">&quot;python-simplejson&quot;</span><span class="p">,</span> 
+        <span class="nt">&quot;stderr&quot;</span><span class="p">:</span> <span class="s2">&quot;debconf: delaying package configuration, since apt-utils is not installed\n&quot;</span><span class="p">,</span> 
+        <span class="nt">&quot;stderr_lines&quot;</span><span class="p">:</span> <span class="p">[</span>
+            <span class="s2">&quot;debconf: delaying package configuration, since apt-utils is not installed&quot;</span>
+        <span class="p">],</span> 
+        <span class="nt">&quot;stdout&quot;</span><span class="p">:</span> <span class="s2">&quot;Reading package lists...\nBuilding dependency tree...\nReading state information...\nThe following NEW packages will be installed:\n  python-simplejson\n0 upgraded, 1 newly installed, 0 to remove and 3 not upgraded.\nNeed to get 70.5 kB of archives.\nAfter this operation, 255 kB of additional disk space will be used.\nGet:1 http://deb.debian.org/debian stretch/main amd64 python-simplejson amd64 3.10.0-1 [70.5 kB]\nFetched 70.5 kB in 0s (811 kB/s)\nSelecting previously unselected package python-simplejson.\r\n(Reading database ... \r(Reading database ... 5%\r(Reading database ... 10%\r(Reading database ... 15%\r(Reading database ... 20%\r(Reading database ... 25%\r(Reading database ... 30%\r(Reading database ... 35%\r(Reading database ... 40%\r(Reading database ... 45%\r(Reading database ... 50%\r(Reading database ... 55%\r(Reading database ... 60%\r(Reading database ... 65%\r(Reading database ... 70%\r(Reading database ... 75%\r(Reading database ... 80%\r(Reading database ... 85%\r(Reading database ... 90%\r(Reading database ... 95%\r(Reading database ... 100%\r(Reading database ... 10245 files and directories currently installed.)\r\nPreparing to unpack .../python-simplejson_3.10.0-1_amd64.deb ...\r\nUnpacking python-simplejson (3.10.0-1) ...\r\nSetting up python-simplejson (3.10.0-1) ...\r\n&quot;</span><span class="p">,</span> 
+        <span class="nt">&quot;stdout_lines&quot;</span><span class="p">:</span> <span class="p">[</span>
+            <span class="s2">&quot;Reading package lists...&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;Building dependency tree...&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;Reading state information...&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;The following NEW packages will be installed:&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;  python-simplejson&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;0 upgraded, 1 newly installed, 0 to remove and 3 not upgraded.&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;Need to get 70.5 kB of archives.&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;After this operation, 255 kB of additional disk space will be used.&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;Get:1 http://deb.debian.org/debian stretch/main amd64 python-simplejson amd64 3.10.0-1 [70.5 kB]&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;Fetched 70.5 kB in 0s (811 kB/s)&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;Selecting previously unselected package python-simplejson.&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;(Reading database ... &quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;(Reading database ... 5%&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;(Reading database ... 10%&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;(Reading database ... 15%&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;(Reading database ... 20%&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;(Reading database ... 25%&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;(Reading database ... 30%&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;(Reading database ... 35%&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;(Reading database ... 40%&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;(Reading database ... 45%&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;(Reading database ... 50%&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;(Reading database ... 55%&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;(Reading database ... 60%&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;(Reading database ... 65%&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;(Reading database ... 70%&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;(Reading database ... 75%&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;(Reading database ... 80%&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;(Reading database ... 85%&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;(Reading database ... 90%&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;(Reading database ... 95%&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;(Reading database ... 100%&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;(Reading database ... 10245 files and directories currently installed.)&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;Preparing to unpack .../python-simplejson_3.10.0-1_amd64.deb ...&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;Unpacking python-simplejson (3.10.0-1) ...&quot;</span><span class="p">,</span> 
+            <span class="s2">&quot;Setting up python-simplejson (3.10.0-1) ...&quot;</span>
+        <span class="p">]</span>
+    <span class="p">}</span>
+<span class="p">]</span>
+</pre></div>
+
+            
+                </div>
+            </div>
+        
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    
+    <h2>Item</h2>
+            <div class="codehilite"><pre><span></span>ca-certificates
+</pre></div>
+
+        
+
+        <h2>Cache_update_time</h2>
+                <div class="codehilite"><pre><span></span>1522859705
+</pre></div>
+
+            <h2>Stderr</h2>
+                <div class="codehilite"><pre><span></span>debconf: delaying package configuration, since apt-utils is not installed
+</pre></div>
+
+            <h2>Stderr_lines</h2>
+                <div class="codehilite"><pre><span></span><span class="p">[</span>
+    <span class="s2">&quot;debconf: delaying package configuration, since apt-utils is not installed&quot;</span>
+<span class="p">]</span>
+</pre></div>
+
+            <h2>Stdout</h2>
+                <div class="codehilite"><pre><span></span>Reading package lists...
+Building dependency tree...
+Reading state information...
+The following additional packages will be installed:
+  openssl
+The following NEW packages will be installed:
+  ca-certificates openssl
+0 upgraded, 2 newly installed, 0 to remove and 3 not upgraded.
+Need to get 921 kB of archives.
+After this operation, 1753 kB of additional disk space will be used.
+Get:1 http://security.debian.org stretch/updates/main amd64 openssl amd64 1.1.0f-3+deb9u2 [725 kB]
+Get:2 http://deb.debian.org/debian stretch/main amd64 ca-certificates all 20161130+nmu1 [196 kB]
+Fetched 921 kB in 0s (4566 kB/s)
+Selecting previously unselected package openssl.
+(Reading database ... 
+(Reading database ... 5%
+(Reading database ... 10%
+(Reading database ... 15%
+(Reading database ... 20%
+(Reading database ... 25%
+(Reading database ... 30%
+(Reading database ... 35%
+(Reading database ... 40%
+(Reading database ... 45%
+(Reading database ... 50%
+(Reading database ... 55%
+(Reading database ... 60%
+(Reading database ... 65%
+(Reading database ... 70%
+(Reading database ... 75%
+(Reading database ... 80%
+(Reading database ... 85%
+(Reading database ... 90%
+(Reading database ... 95%
+(Reading database ... 100%
+(Reading database ... 9955 files and directories currently installed.)
+Preparing to unpack .../openssl_1.1.0f-3+deb9u2_amd64.deb ...
+Unpacking openssl (1.1.0f-3+deb9u2) ...
+Selecting previously unselected package ca-certificates.
+Preparing to unpack .../ca-certificates_20161130+nmu1_all.deb ...
+Unpacking ca-certificates (20161130+nmu1) ...
+Setting up openssl (1.1.0f-3+deb9u2) ...
+Setting up ca-certificates (20161130+nmu1) ...
+Updating certificates in /etc/ssl/certs...
+166 added, 0 removed; done.
+Processing triggers for ca-certificates (20161130+nmu1) ...
+Updating certificates in /etc/ssl/certs...
+0 added, 0 removed; done.
+Running hooks in /etc/ca-certificates/update.d...
+done.
+</pre></div>
+
+            
+                </div>
+            </div>
+        
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    
+    <h2>Item</h2>
+            <div class="codehilite"><pre><span></span>python-apt
+</pre></div>
+
+        
+
+        <h2>Cache_update_time</h2>
+                <div class="codehilite"><pre><span></span>1522859705
+</pre></div>
+
+            
+                </div>
+            </div>
+        
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    
+    <h2>Item</h2>
+            <div class="codehilite"><pre><span></span>python-simplejson
+</pre></div>
+
+        
+
+        <h2>Cache_update_time</h2>
+                <div class="codehilite"><pre><span></span>1522859705
+</pre></div>
+
+            <h2>Stderr</h2>
+                <div class="codehilite"><pre><span></span>debconf: delaying package configuration, since apt-utils is not installed
+</pre></div>
+
+            <h2>Stderr_lines</h2>
+                <div class="codehilite"><pre><span></span><span class="p">[</span>
+    <span class="s2">&quot;debconf: delaying package configuration, since apt-utils is not installed&quot;</span>
+<span class="p">]</span>
+</pre></div>
+
+            <h2>Stdout</h2>
+                <div class="codehilite"><pre><span></span>Reading package lists...
+Building dependency tree...
+Reading state information...
+The following NEW packages will be installed:
+  python-simplejson
+0 upgraded, 1 newly installed, 0 to remove and 3 not upgraded.
+Need to get 70.5 kB of archives.
+After this operation, 255 kB of additional disk space will be used.
+Get:1 http://deb.debian.org/debian stretch/main amd64 python-simplejson amd64 3.10.0-1 [70.5 kB]
+Fetched 70.5 kB in 0s (811 kB/s)
+Selecting previously unselected package python-simplejson.
+(Reading database ... 
+(Reading database ... 5%
+(Reading database ... 10%
+(Reading database ... 15%
+(Reading database ... 20%
+(Reading database ... 25%
+(Reading database ... 30%
+(Reading database ... 35%
+(Reading database ... 40%
+(Reading database ... 45%
+(Reading database ... 50%
+(Reading database ... 55%
+(Reading database ... 60%
+(Reading database ... 65%
+(Reading database ... 70%
+(Reading database ... 75%
+(Reading database ... 80%
+(Reading database ... 85%
+(Reading database ... 90%
+(Reading database ... 95%
+(Reading database ... 100%
+(Reading database ... 10245 files and directories currently installed.)
+Preparing to unpack .../python-simplejson_3.10.0-1_amd64.deb ...
+Unpacking python-simplejson (3.10.0-1) ...
+Setting up python-simplejson (3.10.0-1) ...
+</pre></div>
+
+            
+                </div>
+            </div>
+        
+    
+          
+        </div>
+    </div>
+</div>
+</body>
+</html>

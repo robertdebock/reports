@@ -1,0 +1,921 @@
+<!DOCTYPE html>
+<html class="layout-pf">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="ARA | Ansible Run Analysis records Ansible playbook runs seamlessly to make them easier to visualize, understand and troubleshoot">
+    <title>ARA | Ansible Run Analysis</title>
+    <script src="../../static/packaged/jquery/jquery.min.js"></script>
+    <script src="../../static/packaged/datatables/js/jquery.dataTables.min.js"></script>
+    <script src="../../static/packaged/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../../static/packaged/patternfly_bootstrap_treeview/js/bootstrap-treeview.min.js"></script>
+    <script src="../../static/packaged/patternfly/js/patternfly.min.js"></script>
+    <script src="../../static/js/ara.js"></script>
+    <link href="../../static/packaged/patternfly/css/patternfly.min.css" rel="stylesheet">
+    <link href="../../static/packaged/patternfly/css/patternfly-additions.min.css" rel="stylesheet">
+    <link href="../../static/packaged/patternfly_bootstrap_treeview/css/bootstrap-treeview.min.css" rel="stylesheet">
+    <link href="../../static/css/pygments.css" rel="stylesheet">
+    <link href="../../static/css/ara.css" rel="stylesheet">
+    <link rel="shortcut icon" href="../../static/images/favicon.ico">
+</head>
+<body>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12">
+          <h2>Host facts: <strong>bootstrap-debian-buster</strong></h2>
+          <p>Last updated: 2018-04-04 16:38:44</p>
+          <p>Ansible version: <strong>2.4.3.0</strong></p>
+          <table class="table table-striped table-bordered table-hover table-condensed facts">
+              <thead>
+                  <tr>
+                      <th>Fact</th>
+                      <th>Value</th>
+                  </tr>
+              </thead>
+              <tbody>
+                  <tr>
+                      <td id="ansible_all_ipv4_addresses"><a href="#ansible_all_ipv4_addresses">ansible_all_ipv4_addresses</a></td>
+                      <td><div class="codehilite"><pre><span></span><span class="p">[</span>
+    <span class="s2">&quot;172.17.0.2&quot;</span>
+<span class="p">]</span>
+</pre></div>
+</td>
+                  </tr>
+                  <tr>
+                      <td id="ansible_all_ipv6_addresses"><a href="#ansible_all_ipv6_addresses">ansible_all_ipv6_addresses</a></td>
+                      <td><div class="codehilite"><pre><span></span><span class="p">[]</span>
+</pre></div>
+</td>
+                  </tr>
+                  <tr>
+                      <td id="ansible_apparmor"><a href="#ansible_apparmor">ansible_apparmor</a></td>
+                      <td><div class="codehilite"><pre><span></span><span class="p">{</span>
+    <span class="nt">&quot;status&quot;</span><span class="p">:</span> <span class="s2">&quot;disabled&quot;</span>
+<span class="p">}</span>
+</pre></div>
+</td>
+                  </tr>
+                  <tr>
+                      <td id="ansible_architecture"><a href="#ansible_architecture">ansible_architecture</a></td>
+                      <td><div class="codehilite"><pre><span></span>x86_64
+</pre></div>
+</td>
+                  </tr>
+                  <tr>
+                      <td id="ansible_bios_date"><a href="#ansible_bios_date">ansible_bios_date</a></td>
+                      <td><div class="codehilite"><pre><span></span>01/01/2011
+</pre></div>
+</td>
+                  </tr>
+                  <tr>
+                      <td id="ansible_bios_version"><a href="#ansible_bios_version">ansible_bios_version</a></td>
+                      <td><div class="codehilite"><pre><span></span>Google
+</pre></div>
+</td>
+                  </tr>
+                  <tr>
+                      <td id="ansible_cmdline"><a href="#ansible_cmdline">ansible_cmdline</a></td>
+                      <td><div class="codehilite"><pre><span></span><span class="p">{</span>
+    <span class="nt">&quot;BOOT_IMAGE&quot;</span><span class="p">:</span> <span class="s2">&quot;/boot/vmlinuz-4.4.0-101-generic&quot;</span><span class="p">,</span> 
+    <span class="nt">&quot;apparmor&quot;</span><span class="p">:</span> <span class="s2">&quot;0&quot;</span><span class="p">,</span> 
+    <span class="nt">&quot;cgroup_enable&quot;</span><span class="p">:</span> <span class="s2">&quot;memory&quot;</span><span class="p">,</span> 
+    <span class="nt">&quot;console&quot;</span><span class="p">:</span> <span class="s2">&quot;ttyS0&quot;</span><span class="p">,</span> 
+    <span class="nt">&quot;ro&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span> 
+    <span class="nt">&quot;root&quot;</span><span class="p">:</span> <span class="s2">&quot;UUID=752b4ef1-0512-4cae-b541-f03ffd29be1b&quot;</span><span class="p">,</span> 
+    <span class="nt">&quot;swapaccount&quot;</span><span class="p">:</span> <span class="s2">&quot;1&quot;</span>
+<span class="p">}</span>
+</pre></div>
+</td>
+                  </tr>
+                  <tr>
+                      <td id="ansible_date_time"><a href="#ansible_date_time">ansible_date_time</a></td>
+                      <td><div class="codehilite"><pre><span></span><span class="p">{</span>
+    <span class="nt">&quot;date&quot;</span><span class="p">:</span> <span class="s2">&quot;2018-04-04&quot;</span><span class="p">,</span> 
+    <span class="nt">&quot;day&quot;</span><span class="p">:</span> <span class="s2">&quot;04&quot;</span><span class="p">,</span> 
+    <span class="nt">&quot;epoch&quot;</span><span class="p">:</span> <span class="s2">&quot;1522859924&quot;</span><span class="p">,</span> 
+    <span class="nt">&quot;hour&quot;</span><span class="p">:</span> <span class="s2">&quot;16&quot;</span><span class="p">,</span> 
+    <span class="nt">&quot;iso8601&quot;</span><span class="p">:</span> <span class="s2">&quot;2018-04-04T16:38:44Z&quot;</span><span class="p">,</span> 
+    <span class="nt">&quot;iso8601_basic&quot;</span><span class="p">:</span> <span class="s2">&quot;20180404T163844337895&quot;</span><span class="p">,</span> 
+    <span class="nt">&quot;iso8601_basic_short&quot;</span><span class="p">:</span> <span class="s2">&quot;20180404T163844&quot;</span><span class="p">,</span> 
+    <span class="nt">&quot;iso8601_micro&quot;</span><span class="p">:</span> <span class="s2">&quot;2018-04-04T16:38:44.338005Z&quot;</span><span class="p">,</span> 
+    <span class="nt">&quot;minute&quot;</span><span class="p">:</span> <span class="s2">&quot;38&quot;</span><span class="p">,</span> 
+    <span class="nt">&quot;month&quot;</span><span class="p">:</span> <span class="s2">&quot;04&quot;</span><span class="p">,</span> 
+    <span class="nt">&quot;second&quot;</span><span class="p">:</span> <span class="s2">&quot;44&quot;</span><span class="p">,</span> 
+    <span class="nt">&quot;time&quot;</span><span class="p">:</span> <span class="s2">&quot;16:38:44&quot;</span><span class="p">,</span> 
+    <span class="nt">&quot;tz&quot;</span><span class="p">:</span> <span class="s2">&quot;UTC&quot;</span><span class="p">,</span> 
+    <span class="nt">&quot;tz_offset&quot;</span><span class="p">:</span> <span class="s2">&quot;+0000&quot;</span><span class="p">,</span> 
+    <span class="nt">&quot;weekday&quot;</span><span class="p">:</span> <span class="s2">&quot;Wednesday&quot;</span><span class="p">,</span> 
+    <span class="nt">&quot;weekday_number&quot;</span><span class="p">:</span> <span class="s2">&quot;3&quot;</span><span class="p">,</span> 
+    <span class="nt">&quot;weeknumber&quot;</span><span class="p">:</span> <span class="s2">&quot;14&quot;</span><span class="p">,</span> 
+    <span class="nt">&quot;year&quot;</span><span class="p">:</span> <span class="s2">&quot;2018&quot;</span>
+<span class="p">}</span>
+</pre></div>
+</td>
+                  </tr>
+                  <tr>
+                      <td id="ansible_default_ipv4"><a href="#ansible_default_ipv4">ansible_default_ipv4</a></td>
+                      <td><div class="codehilite"><pre><span></span><span class="p">{</span>
+    <span class="nt">&quot;address&quot;</span><span class="p">:</span> <span class="s2">&quot;172.17.0.2&quot;</span><span class="p">,</span> 
+    <span class="nt">&quot;alias&quot;</span><span class="p">:</span> <span class="s2">&quot;eth0&quot;</span><span class="p">,</span> 
+    <span class="nt">&quot;broadcast&quot;</span><span class="p">:</span> <span class="s2">&quot;global&quot;</span><span class="p">,</span> 
+    <span class="nt">&quot;gateway&quot;</span><span class="p">:</span> <span class="s2">&quot;172.17.0.1&quot;</span><span class="p">,</span> 
+    <span class="nt">&quot;interface&quot;</span><span class="p">:</span> <span class="s2">&quot;eth0&quot;</span><span class="p">,</span> 
+    <span class="nt">&quot;macaddress&quot;</span><span class="p">:</span> <span class="s2">&quot;02:42:ac:11:00:02&quot;</span><span class="p">,</span> 
+    <span class="nt">&quot;mtu&quot;</span><span class="p">:</span> <span class="mi">1500</span><span class="p">,</span> 
+    <span class="nt">&quot;netmask&quot;</span><span class="p">:</span> <span class="s2">&quot;255.255.0.0&quot;</span><span class="p">,</span> 
+    <span class="nt">&quot;network&quot;</span><span class="p">:</span> <span class="s2">&quot;172.17.0.0&quot;</span><span class="p">,</span> 
+    <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;ether&quot;</span>
+<span class="p">}</span>
+</pre></div>
+</td>
+                  </tr>
+                  <tr>
+                      <td id="ansible_default_ipv6"><a href="#ansible_default_ipv6">ansible_default_ipv6</a></td>
+                      <td><div class="codehilite"><pre><span></span><span class="p">{}</span>
+</pre></div>
+</td>
+                  </tr>
+                  <tr>
+                      <td id="ansible_device_links"><a href="#ansible_device_links">ansible_device_links</a></td>
+                      <td><div class="codehilite"><pre><span></span><span class="p">{</span>
+    <span class="nt">&quot;ids&quot;</span><span class="p">:</span> <span class="p">{},</span> 
+    <span class="nt">&quot;labels&quot;</span><span class="p">:</span> <span class="p">{},</span> 
+    <span class="nt">&quot;masters&quot;</span><span class="p">:</span> <span class="p">{},</span> 
+    <span class="nt">&quot;uuids&quot;</span><span class="p">:</span> <span class="p">{}</span>
+<span class="p">}</span>
+</pre></div>
+</td>
+                  </tr>
+                  <tr>
+                      <td id="ansible_devices"><a href="#ansible_devices">ansible_devices</a></td>
+                      <td><div class="codehilite"><pre><span></span><span class="p">{</span>
+    <span class="nt">&quot;loop0&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="nt">&quot;holders&quot;</span><span class="p">:</span> <span class="p">[],</span> 
+        <span class="nt">&quot;host&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span> 
+        <span class="nt">&quot;links&quot;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="nt">&quot;ids&quot;</span><span class="p">:</span> <span class="p">[],</span> 
+            <span class="nt">&quot;labels&quot;</span><span class="p">:</span> <span class="p">[],</span> 
+            <span class="nt">&quot;masters&quot;</span><span class="p">:</span> <span class="p">[],</span> 
+            <span class="nt">&quot;uuids&quot;</span><span class="p">:</span> <span class="p">[]</span>
+        <span class="p">},</span> 
+        <span class="nt">&quot;model&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+        <span class="nt">&quot;partitions&quot;</span><span class="p">:</span> <span class="p">{},</span> 
+        <span class="nt">&quot;removable&quot;</span><span class="p">:</span> <span class="s2">&quot;0&quot;</span><span class="p">,</span> 
+        <span class="nt">&quot;rotational&quot;</span><span class="p">:</span> <span class="s2">&quot;1&quot;</span><span class="p">,</span> 
+        <span class="nt">&quot;sas_address&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+        <span class="nt">&quot;sas_device_handle&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+        <span class="nt">&quot;scheduler_mode&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span> 
+        <span class="nt">&quot;sectors&quot;</span><span class="p">:</span> <span class="s2">&quot;0&quot;</span><span class="p">,</span> 
+        <span class="nt">&quot;sectorsize&quot;</span><span class="p">:</span> <span class="s2">&quot;512&quot;</span><span class="p">,</span> 
+        <span class="nt">&quot;size&quot;</span><span class="p">:</span> <span class="s2">&quot;0.00 Bytes&quot;</span><span class="p">,</span> 
+        <span class="nt">&quot;support_discard&quot;</span><span class="p">:</span> <span class="s2">&quot;0&quot;</span><span class="p">,</span> 
+        <span class="nt">&quot;vendor&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+        <span class="nt">&quot;virtual&quot;</span><span class="p">:</span> <span class="mi">1</span>
+    <span class="p">},</span> 
+    <span class="nt">&quot;loop1&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="nt">&quot;holders&quot;</span><span class="p">:</span> <span class="p">[],</span> 
+        <span class="nt">&quot;host&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span> 
+        <span class="nt">&quot;links&quot;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="nt">&quot;ids&quot;</span><span class="p">:</span> <span class="p">[],</span> 
+            <span class="nt">&quot;labels&quot;</span><span class="p">:</span> <span class="p">[],</span> 
+            <span class="nt">&quot;masters&quot;</span><span class="p">:</span> <span class="p">[],</span> 
+            <span class="nt">&quot;uuids&quot;</span><span class="p">:</span> <span class="p">[]</span>
+        <span class="p">},</span> 
+        <span class="nt">&quot;model&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+        <span class="nt">&quot;partitions&quot;</span><span class="p">:</span> <span class="p">{},</span> 
+        <span class="nt">&quot;removable&quot;</span><span class="p">:</span> <span class="s2">&quot;0&quot;</span><span class="p">,</span> 
+        <span class="nt">&quot;rotational&quot;</span><span class="p">:</span> <span class="s2">&quot;1&quot;</span><span class="p">,</span> 
+        <span class="nt">&quot;sas_address&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+        <span class="nt">&quot;sas_device_handle&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+        <span class="nt">&quot;scheduler_mode&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span> 
+        <span class="nt">&quot;sectors&quot;</span><span class="p">:</span> <span class="s2">&quot;0&quot;</span><span class="p">,</span> 
+        <span class="nt">&quot;sectorsize&quot;</span><span class="p">:</span> <span class="s2">&quot;512&quot;</span><span class="p">,</span> 
+        <span class="nt">&quot;size&quot;</span><span class="p">:</span> <span class="s2">&quot;0.00 Bytes&quot;</span><span class="p">,</span> 
+        <span class="nt">&quot;support_discard&quot;</span><span class="p">:</span> <span class="s2">&quot;0&quot;</span><span class="p">,</span> 
+        <span class="nt">&quot;vendor&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+        <span class="nt">&quot;virtual&quot;</span><span class="p">:</span> <span class="mi">1</span>
+    <span class="p">},</span> 
+    <span class="nt">&quot;loop2&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="nt">&quot;holders&quot;</span><span class="p">:</span> <span class="p">[],</span> 
+        <span class="nt">&quot;host&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span> 
+        <span class="nt">&quot;links&quot;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="nt">&quot;ids&quot;</span><span class="p">:</span> <span class="p">[],</span> 
+            <span class="nt">&quot;labels&quot;</span><span class="p">:</span> <span class="p">[],</span> 
+            <span class="nt">&quot;masters&quot;</span><span class="p">:</span> <span class="p">[],</span> 
+            <span class="nt">&quot;uuids&quot;</span><span class="p">:</span> <span class="p">[]</span>
+        <span class="p">},</span> 
+        <span class="nt">&quot;model&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+        <span class="nt">&quot;partitions&quot;</span><span class="p">:</span> <span class="p">{},</span> 
+        <span class="nt">&quot;removable&quot;</span><span class="p">:</span> <span class="s2">&quot;0&quot;</span><span class="p">,</span> 
+        <span class="nt">&quot;rotational&quot;</span><span class="p">:</span> <span class="s2">&quot;1&quot;</span><span class="p">,</span> 
+        <span class="nt">&quot;sas_address&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+        <span class="nt">&quot;sas_device_handle&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+        <span class="nt">&quot;scheduler_mode&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span> 
+        <span class="nt">&quot;sectors&quot;</span><span class="p">:</span> <span class="s2">&quot;0&quot;</span><span class="p">,</span> 
+        <span class="nt">&quot;sectorsize&quot;</span><span class="p">:</span> <span class="s2">&quot;512&quot;</span><span class="p">,</span> 
+        <span class="nt">&quot;size&quot;</span><span class="p">:</span> <span class="s2">&quot;0.00 Bytes&quot;</span><span class="p">,</span> 
+        <span class="nt">&quot;support_discard&quot;</span><span class="p">:</span> <span class="s2">&quot;0&quot;</span><span class="p">,</span> 
+        <span class="nt">&quot;vendor&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+        <span class="nt">&quot;virtual&quot;</span><span class="p">:</span> <span class="mi">1</span>
+    <span class="p">},</span> 
+    <span class="nt">&quot;loop3&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="nt">&quot;holders&quot;</span><span class="p">:</span> <span class="p">[],</span> 
+        <span class="nt">&quot;host&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span> 
+        <span class="nt">&quot;links&quot;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="nt">&quot;ids&quot;</span><span class="p">:</span> <span class="p">[],</span> 
+            <span class="nt">&quot;labels&quot;</span><span class="p">:</span> <span class="p">[],</span> 
+            <span class="nt">&quot;masters&quot;</span><span class="p">:</span> <span class="p">[],</span> 
+            <span class="nt">&quot;uuids&quot;</span><span class="p">:</span> <span class="p">[]</span>
+        <span class="p">},</span> 
+        <span class="nt">&quot;model&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+        <span class="nt">&quot;partitions&quot;</span><span class="p">:</span> <span class="p">{},</span> 
+        <span class="nt">&quot;removable&quot;</span><span class="p">:</span> <span class="s2">&quot;0&quot;</span><span class="p">,</span> 
+        <span class="nt">&quot;rotational&quot;</span><span class="p">:</span> <span class="s2">&quot;1&quot;</span><span class="p">,</span> 
+        <span class="nt">&quot;sas_address&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+        <span class="nt">&quot;sas_device_handle&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+        <span class="nt">&quot;scheduler_mode&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span> 
+        <span class="nt">&quot;sectors&quot;</span><span class="p">:</span> <span class="s2">&quot;0&quot;</span><span class="p">,</span> 
+        <span class="nt">&quot;sectorsize&quot;</span><span class="p">:</span> <span class="s2">&quot;512&quot;</span><span class="p">,</span> 
+        <span class="nt">&quot;size&quot;</span><span class="p">:</span> <span class="s2">&quot;0.00 Bytes&quot;</span><span class="p">,</span> 
+        <span class="nt">&quot;support_discard&quot;</span><span class="p">:</span> <span class="s2">&quot;0&quot;</span><span class="p">,</span> 
+        <span class="nt">&quot;vendor&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+        <span class="nt">&quot;virtual&quot;</span><span class="p">:</span> <span class="mi">1</span>
+    <span class="p">},</span> 
+    <span class="nt">&quot;loop4&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="nt">&quot;holders&quot;</span><span class="p">:</span> <span class="p">[],</span> 
+        <span class="nt">&quot;host&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span> 
+        <span class="nt">&quot;links&quot;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="nt">&quot;ids&quot;</span><span class="p">:</span> <span class="p">[],</span> 
+            <span class="nt">&quot;labels&quot;</span><span class="p">:</span> <span class="p">[],</span> 
+            <span class="nt">&quot;masters&quot;</span><span class="p">:</span> <span class="p">[],</span> 
+            <span class="nt">&quot;uuids&quot;</span><span class="p">:</span> <span class="p">[]</span>
+        <span class="p">},</span> 
+        <span class="nt">&quot;model&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+        <span class="nt">&quot;partitions&quot;</span><span class="p">:</span> <span class="p">{},</span> 
+        <span class="nt">&quot;removable&quot;</span><span class="p">:</span> <span class="s2">&quot;0&quot;</span><span class="p">,</span> 
+        <span class="nt">&quot;rotational&quot;</span><span class="p">:</span> <span class="s2">&quot;1&quot;</span><span class="p">,</span> 
+        <span class="nt">&quot;sas_address&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+        <span class="nt">&quot;sas_device_handle&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+        <span class="nt">&quot;scheduler_mode&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span> 
+        <span class="nt">&quot;sectors&quot;</span><span class="p">:</span> <span class="s2">&quot;0&quot;</span><span class="p">,</span> 
+        <span class="nt">&quot;sectorsize&quot;</span><span class="p">:</span> <span class="s2">&quot;512&quot;</span><span class="p">,</span> 
+        <span class="nt">&quot;size&quot;</span><span class="p">:</span> <span class="s2">&quot;0.00 Bytes&quot;</span><span class="p">,</span> 
+        <span class="nt">&quot;support_discard&quot;</span><span class="p">:</span> <span class="s2">&quot;0&quot;</span><span class="p">,</span> 
+        <span class="nt">&quot;vendor&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+        <span class="nt">&quot;virtual&quot;</span><span class="p">:</span> <span class="mi">1</span>
+    <span class="p">},</span> 
+    <span class="nt">&quot;loop5&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="nt">&quot;holders&quot;</span><span class="p">:</span> <span class="p">[],</span> 
+        <span class="nt">&quot;host&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span> 
+        <span class="nt">&quot;links&quot;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="nt">&quot;ids&quot;</span><span class="p">:</span> <span class="p">[],</span> 
+            <span class="nt">&quot;labels&quot;</span><span class="p">:</span> <span class="p">[],</span> 
+            <span class="nt">&quot;masters&quot;</span><span class="p">:</span> <span class="p">[],</span> 
+            <span class="nt">&quot;uuids&quot;</span><span class="p">:</span> <span class="p">[]</span>
+        <span class="p">},</span> 
+        <span class="nt">&quot;model&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+        <span class="nt">&quot;partitions&quot;</span><span class="p">:</span> <span class="p">{},</span> 
+        <span class="nt">&quot;removable&quot;</span><span class="p">:</span> <span class="s2">&quot;0&quot;</span><span class="p">,</span> 
+        <span class="nt">&quot;rotational&quot;</span><span class="p">:</span> <span class="s2">&quot;1&quot;</span><span class="p">,</span> 
+        <span class="nt">&quot;sas_address&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+        <span class="nt">&quot;sas_device_handle&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+        <span class="nt">&quot;scheduler_mode&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span> 
+        <span class="nt">&quot;sectors&quot;</span><span class="p">:</span> <span class="s2">&quot;0&quot;</span><span class="p">,</span> 
+        <span class="nt">&quot;sectorsize&quot;</span><span class="p">:</span> <span class="s2">&quot;512&quot;</span><span class="p">,</span> 
+        <span class="nt">&quot;size&quot;</span><span class="p">:</span> <span class="s2">&quot;0.00 Bytes&quot;</span><span class="p">,</span> 
+        <span class="nt">&quot;support_discard&quot;</span><span class="p">:</span> <span class="s2">&quot;0&quot;</span><span class="p">,</span> 
+        <span class="nt">&quot;vendor&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+        <span class="nt">&quot;virtual&quot;</span><span class="p">:</span> <span class="mi">1</span>
+    <span class="p">},</span> 
+    <span class="nt">&quot;loop6&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="nt">&quot;holders&quot;</span><span class="p">:</span> <span class="p">[],</span> 
+        <span class="nt">&quot;host&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span> 
+        <span class="nt">&quot;links&quot;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="nt">&quot;ids&quot;</span><span class="p">:</span> <span class="p">[],</span> 
+            <span class="nt">&quot;labels&quot;</span><span class="p">:</span> <span class="p">[],</span> 
+            <span class="nt">&quot;masters&quot;</span><span class="p">:</span> <span class="p">[],</span> 
+            <span class="nt">&quot;uuids&quot;</span><span class="p">:</span> <span class="p">[]</span>
+        <span class="p">},</span> 
+        <span class="nt">&quot;model&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+        <span class="nt">&quot;partitions&quot;</span><span class="p">:</span> <span class="p">{},</span> 
+        <span class="nt">&quot;removable&quot;</span><span class="p">:</span> <span class="s2">&quot;0&quot;</span><span class="p">,</span> 
+        <span class="nt">&quot;rotational&quot;</span><span class="p">:</span> <span class="s2">&quot;1&quot;</span><span class="p">,</span> 
+        <span class="nt">&quot;sas_address&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+        <span class="nt">&quot;sas_device_handle&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+        <span class="nt">&quot;scheduler_mode&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span> 
+        <span class="nt">&quot;sectors&quot;</span><span class="p">:</span> <span class="s2">&quot;0&quot;</span><span class="p">,</span> 
+        <span class="nt">&quot;sectorsize&quot;</span><span class="p">:</span> <span class="s2">&quot;512&quot;</span><span class="p">,</span> 
+        <span class="nt">&quot;size&quot;</span><span class="p">:</span> <span class="s2">&quot;0.00 Bytes&quot;</span><span class="p">,</span> 
+        <span class="nt">&quot;support_discard&quot;</span><span class="p">:</span> <span class="s2">&quot;0&quot;</span><span class="p">,</span> 
+        <span class="nt">&quot;vendor&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+        <span class="nt">&quot;virtual&quot;</span><span class="p">:</span> <span class="mi">1</span>
+    <span class="p">},</span> 
+    <span class="nt">&quot;loop7&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="nt">&quot;holders&quot;</span><span class="p">:</span> <span class="p">[],</span> 
+        <span class="nt">&quot;host&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span> 
+        <span class="nt">&quot;links&quot;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="nt">&quot;ids&quot;</span><span class="p">:</span> <span class="p">[],</span> 
+            <span class="nt">&quot;labels&quot;</span><span class="p">:</span> <span class="p">[],</span> 
+            <span class="nt">&quot;masters&quot;</span><span class="p">:</span> <span class="p">[],</span> 
+            <span class="nt">&quot;uuids&quot;</span><span class="p">:</span> <span class="p">[]</span>
+        <span class="p">},</span> 
+        <span class="nt">&quot;model&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+        <span class="nt">&quot;partitions&quot;</span><span class="p">:</span> <span class="p">{},</span> 
+        <span class="nt">&quot;removable&quot;</span><span class="p">:</span> <span class="s2">&quot;0&quot;</span><span class="p">,</span> 
+        <span class="nt">&quot;rotational&quot;</span><span class="p">:</span> <span class="s2">&quot;1&quot;</span><span class="p">,</span> 
+        <span class="nt">&quot;sas_address&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+        <span class="nt">&quot;sas_device_handle&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+        <span class="nt">&quot;scheduler_mode&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span> 
+        <span class="nt">&quot;sectors&quot;</span><span class="p">:</span> <span class="s2">&quot;0&quot;</span><span class="p">,</span> 
+        <span class="nt">&quot;sectorsize&quot;</span><span class="p">:</span> <span class="s2">&quot;512&quot;</span><span class="p">,</span> 
+        <span class="nt">&quot;size&quot;</span><span class="p">:</span> <span class="s2">&quot;0.00 Bytes&quot;</span><span class="p">,</span> 
+        <span class="nt">&quot;support_discard&quot;</span><span class="p">:</span> <span class="s2">&quot;0&quot;</span><span class="p">,</span> 
+        <span class="nt">&quot;vendor&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+        <span class="nt">&quot;virtual&quot;</span><span class="p">:</span> <span class="mi">1</span>
+    <span class="p">},</span> 
+    <span class="nt">&quot;sda&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="nt">&quot;holders&quot;</span><span class="p">:</span> <span class="p">[],</span> 
+        <span class="nt">&quot;host&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span> 
+        <span class="nt">&quot;links&quot;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="nt">&quot;ids&quot;</span><span class="p">:</span> <span class="p">[],</span> 
+            <span class="nt">&quot;labels&quot;</span><span class="p">:</span> <span class="p">[],</span> 
+            <span class="nt">&quot;masters&quot;</span><span class="p">:</span> <span class="p">[],</span> 
+            <span class="nt">&quot;uuids&quot;</span><span class="p">:</span> <span class="p">[]</span>
+        <span class="p">},</span> 
+        <span class="nt">&quot;model&quot;</span><span class="p">:</span> <span class="s2">&quot;PersistentDisk&quot;</span><span class="p">,</span> 
+        <span class="nt">&quot;partitions&quot;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="nt">&quot;sda1&quot;</span><span class="p">:</span> <span class="p">{</span>
+                <span class="nt">&quot;holders&quot;</span><span class="p">:</span> <span class="p">[],</span> 
+                <span class="nt">&quot;links&quot;</span><span class="p">:</span> <span class="p">{</span>
+                    <span class="nt">&quot;ids&quot;</span><span class="p">:</span> <span class="p">[],</span> 
+                    <span class="nt">&quot;labels&quot;</span><span class="p">:</span> <span class="p">[],</span> 
+                    <span class="nt">&quot;masters&quot;</span><span class="p">:</span> <span class="p">[],</span> 
+                    <span class="nt">&quot;uuids&quot;</span><span class="p">:</span> <span class="p">[]</span>
+                <span class="p">},</span> 
+                <span class="nt">&quot;sectors&quot;</span><span class="p">:</span> <span class="s2">&quot;62912512&quot;</span><span class="p">,</span> 
+                <span class="nt">&quot;sectorsize&quot;</span><span class="p">:</span> <span class="mi">512</span><span class="p">,</span> 
+                <span class="nt">&quot;size&quot;</span><span class="p">:</span> <span class="s2">&quot;30.00 GB&quot;</span><span class="p">,</span> 
+                <span class="nt">&quot;start&quot;</span><span class="p">:</span> <span class="s2">&quot;2048&quot;</span><span class="p">,</span> 
+                <span class="nt">&quot;uuid&quot;</span><span class="p">:</span> <span class="kc">null</span>
+            <span class="p">}</span>
+        <span class="p">},</span> 
+        <span class="nt">&quot;removable&quot;</span><span class="p">:</span> <span class="s2">&quot;0&quot;</span><span class="p">,</span> 
+        <span class="nt">&quot;rotational&quot;</span><span class="p">:</span> <span class="s2">&quot;0&quot;</span><span class="p">,</span> 
+        <span class="nt">&quot;sas_address&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+        <span class="nt">&quot;sas_device_handle&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+        <span class="nt">&quot;scheduler_mode&quot;</span><span class="p">:</span> <span class="s2">&quot;noop&quot;</span><span class="p">,</span> 
+        <span class="nt">&quot;sectors&quot;</span><span class="p">:</span> <span class="s2">&quot;62914560&quot;</span><span class="p">,</span> 
+        <span class="nt">&quot;sectorsize&quot;</span><span class="p">:</span> <span class="s2">&quot;512&quot;</span><span class="p">,</span> 
+        <span class="nt">&quot;size&quot;</span><span class="p">:</span> <span class="s2">&quot;30.00 GB&quot;</span><span class="p">,</span> 
+        <span class="nt">&quot;support_discard&quot;</span><span class="p">:</span> <span class="s2">&quot;512&quot;</span><span class="p">,</span> 
+        <span class="nt">&quot;vendor&quot;</span><span class="p">:</span> <span class="s2">&quot;Google&quot;</span><span class="p">,</span> 
+        <span class="nt">&quot;virtual&quot;</span><span class="p">:</span> <span class="mi">1</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</td>
+                  </tr>
+                  <tr>
+                      <td id="ansible_distribution"><a href="#ansible_distribution">ansible_distribution</a></td>
+                      <td><div class="codehilite"><pre><span></span>Debian
+</pre></div>
+</td>
+                  </tr>
+                  <tr>
+                      <td id="ansible_distribution_file_parsed"><a href="#ansible_distribution_file_parsed">ansible_distribution_file_parsed</a></td>
+                      <td><div class="codehilite"><pre><span></span>True
+</pre></div>
+</td>
+                  </tr>
+                  <tr>
+                      <td id="ansible_distribution_file_path"><a href="#ansible_distribution_file_path">ansible_distribution_file_path</a></td>
+                      <td><div class="codehilite"><pre><span></span>/etc/os-release
+</pre></div>
+</td>
+                  </tr>
+                  <tr>
+                      <td id="ansible_distribution_file_variety"><a href="#ansible_distribution_file_variety">ansible_distribution_file_variety</a></td>
+                      <td><div class="codehilite"><pre><span></span>Debian
+</pre></div>
+</td>
+                  </tr>
+                  <tr>
+                      <td id="ansible_distribution_major_version"><a href="#ansible_distribution_major_version">ansible_distribution_major_version</a></td>
+                      <td><div class="codehilite"><pre><span></span>buster/sid
+</pre></div>
+</td>
+                  </tr>
+                  <tr>
+                      <td id="ansible_distribution_release"><a href="#ansible_distribution_release">ansible_distribution_release</a></td>
+                      <td><div class="codehilite"><pre><span></span>NA
+</pre></div>
+</td>
+                  </tr>
+                  <tr>
+                      <td id="ansible_distribution_version"><a href="#ansible_distribution_version">ansible_distribution_version</a></td>
+                      <td><div class="codehilite"><pre><span></span>buster/sid
+</pre></div>
+</td>
+                  </tr>
+                  <tr>
+                      <td id="ansible_dns"><a href="#ansible_dns">ansible_dns</a></td>
+                      <td><div class="codehilite"><pre><span></span><span class="p">{</span>
+    <span class="nt">&quot;nameservers&quot;</span><span class="p">:</span> <span class="p">[</span>
+        <span class="s2">&quot;169.254.169.254&quot;</span>
+    <span class="p">],</span> 
+    <span class="nt">&quot;search&quot;</span><span class="p">:</span> <span class="p">[</span>
+        <span class="s2">&quot;c.travis-ci-prod-4.internal&quot;</span><span class="p">,</span> 
+        <span class="s2">&quot;google.internal&quot;</span>
+    <span class="p">]</span>
+<span class="p">}</span>
+</pre></div>
+</td>
+                  </tr>
+                  <tr>
+                      <td id="ansible_domain"><a href="#ansible_domain">ansible_domain</a></td>
+                      <td><div class="codehilite"><pre><span></span>
+</pre></div>
+</td>
+                  </tr>
+                  <tr>
+                      <td id="ansible_effective_group_id"><a href="#ansible_effective_group_id">ansible_effective_group_id</a></td>
+                      <td><div class="codehilite"><pre><span></span>0
+</pre></div>
+</td>
+                  </tr>
+                  <tr>
+                      <td id="ansible_effective_user_id"><a href="#ansible_effective_user_id">ansible_effective_user_id</a></td>
+                      <td><div class="codehilite"><pre><span></span>0
+</pre></div>
+</td>
+                  </tr>
+                  <tr>
+                      <td id="ansible_env"><a href="#ansible_env">ansible_env</a></td>
+                      <td><div class="codehilite"><pre><span></span><span class="p">{</span>
+    <span class="nt">&quot;HOME&quot;</span><span class="p">:</span> <span class="s2">&quot;/root&quot;</span><span class="p">,</span> 
+    <span class="nt">&quot;HOSTNAME&quot;</span><span class="p">:</span> <span class="s2">&quot;bootstrap-debian-buster&quot;</span><span class="p">,</span> 
+    <span class="nt">&quot;PATH&quot;</span><span class="p">:</span> <span class="s2">&quot;/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin&quot;</span><span class="p">,</span> 
+    <span class="nt">&quot;PWD&quot;</span><span class="p">:</span> <span class="s2">&quot;/&quot;</span>
+<span class="p">}</span>
+</pre></div>
+</td>
+                  </tr>
+                  <tr>
+                      <td id="ansible_eth0"><a href="#ansible_eth0">ansible_eth0</a></td>
+                      <td><div class="codehilite"><pre><span></span><span class="p">{</span>
+    <span class="nt">&quot;active&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span> 
+    <span class="nt">&quot;device&quot;</span><span class="p">:</span> <span class="s2">&quot;eth0&quot;</span><span class="p">,</span> 
+    <span class="nt">&quot;ipv4&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="nt">&quot;address&quot;</span><span class="p">:</span> <span class="s2">&quot;172.17.0.2&quot;</span><span class="p">,</span> 
+        <span class="nt">&quot;broadcast&quot;</span><span class="p">:</span> <span class="s2">&quot;global&quot;</span><span class="p">,</span> 
+        <span class="nt">&quot;netmask&quot;</span><span class="p">:</span> <span class="s2">&quot;255.255.0.0&quot;</span><span class="p">,</span> 
+        <span class="nt">&quot;network&quot;</span><span class="p">:</span> <span class="s2">&quot;172.17.0.0&quot;</span>
+    <span class="p">},</span> 
+    <span class="nt">&quot;macaddress&quot;</span><span class="p">:</span> <span class="s2">&quot;02:42:ac:11:00:02&quot;</span><span class="p">,</span> 
+    <span class="nt">&quot;mtu&quot;</span><span class="p">:</span> <span class="mi">1500</span><span class="p">,</span> 
+    <span class="nt">&quot;promisc&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+    <span class="nt">&quot;speed&quot;</span><span class="p">:</span> <span class="mi">10000</span><span class="p">,</span> 
+    <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;ether&quot;</span>
+<span class="p">}</span>
+</pre></div>
+</td>
+                  </tr>
+                  <tr>
+                      <td id="ansible_fips"><a href="#ansible_fips">ansible_fips</a></td>
+                      <td><div class="codehilite"><pre><span></span>False
+</pre></div>
+</td>
+                  </tr>
+                  <tr>
+                      <td id="ansible_form_factor"><a href="#ansible_form_factor">ansible_form_factor</a></td>
+                      <td><div class="codehilite"><pre><span></span>Other
+</pre></div>
+</td>
+                  </tr>
+                  <tr>
+                      <td id="ansible_fqdn"><a href="#ansible_fqdn">ansible_fqdn</a></td>
+                      <td><div class="codehilite"><pre><span></span>bootstrap-debian-buster
+</pre></div>
+</td>
+                  </tr>
+                  <tr>
+                      <td id="ansible_hostname"><a href="#ansible_hostname">ansible_hostname</a></td>
+                      <td><div class="codehilite"><pre><span></span>bootstrap-debian-buster
+</pre></div>
+</td>
+                  </tr>
+                  <tr>
+                      <td id="ansible_interfaces"><a href="#ansible_interfaces">ansible_interfaces</a></td>
+                      <td><div class="codehilite"><pre><span></span><span class="p">[</span>
+    <span class="s2">&quot;lo&quot;</span><span class="p">,</span> 
+    <span class="s2">&quot;eth0&quot;</span>
+<span class="p">]</span>
+</pre></div>
+</td>
+                  </tr>
+                  <tr>
+                      <td id="ansible_kernel"><a href="#ansible_kernel">ansible_kernel</a></td>
+                      <td><div class="codehilite"><pre><span></span>4.4.0-101-generic
+</pre></div>
+</td>
+                  </tr>
+                  <tr>
+                      <td id="ansible_lo"><a href="#ansible_lo">ansible_lo</a></td>
+                      <td><div class="codehilite"><pre><span></span><span class="p">{</span>
+    <span class="nt">&quot;active&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span> 
+    <span class="nt">&quot;device&quot;</span><span class="p">:</span> <span class="s2">&quot;lo&quot;</span><span class="p">,</span> 
+    <span class="nt">&quot;ipv4&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="nt">&quot;address&quot;</span><span class="p">:</span> <span class="s2">&quot;127.0.0.1&quot;</span><span class="p">,</span> 
+        <span class="nt">&quot;broadcast&quot;</span><span class="p">:</span> <span class="s2">&quot;host&quot;</span><span class="p">,</span> 
+        <span class="nt">&quot;netmask&quot;</span><span class="p">:</span> <span class="s2">&quot;255.0.0.0&quot;</span><span class="p">,</span> 
+        <span class="nt">&quot;network&quot;</span><span class="p">:</span> <span class="s2">&quot;127.0.0.0&quot;</span>
+    <span class="p">},</span> 
+    <span class="nt">&quot;mtu&quot;</span><span class="p">:</span> <span class="mi">65536</span><span class="p">,</span> 
+    <span class="nt">&quot;promisc&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+    <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;loopback&quot;</span>
+<span class="p">}</span>
+</pre></div>
+</td>
+                  </tr>
+                  <tr>
+                      <td id="ansible_local"><a href="#ansible_local">ansible_local</a></td>
+                      <td><div class="codehilite"><pre><span></span><span class="p">{}</span>
+</pre></div>
+</td>
+                  </tr>
+                  <tr>
+                      <td id="ansible_lsb"><a href="#ansible_lsb">ansible_lsb</a></td>
+                      <td><div class="codehilite"><pre><span></span><span class="p">{</span>
+    <span class="nt">&quot;codename&quot;</span><span class="p">:</span> <span class="s2">&quot;buster&quot;</span><span class="p">,</span> 
+    <span class="nt">&quot;description&quot;</span><span class="p">:</span> <span class="s2">&quot;Debian GNU/Linux testing (buster)&quot;</span><span class="p">,</span> 
+    <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;Debian&quot;</span><span class="p">,</span> 
+    <span class="nt">&quot;major_release&quot;</span><span class="p">:</span> <span class="s2">&quot;testing&quot;</span><span class="p">,</span> 
+    <span class="nt">&quot;release&quot;</span><span class="p">:</span> <span class="s2">&quot;testing&quot;</span>
+<span class="p">}</span>
+</pre></div>
+</td>
+                  </tr>
+                  <tr>
+                      <td id="ansible_lvm"><a href="#ansible_lvm">ansible_lvm</a></td>
+                      <td><div class="codehilite"><pre><span></span><span class="p">{</span>
+    <span class="nt">&quot;lvs&quot;</span><span class="p">:</span> <span class="p">{},</span> 
+    <span class="nt">&quot;pvs&quot;</span><span class="p">:</span> <span class="p">{},</span> 
+    <span class="nt">&quot;vgs&quot;</span><span class="p">:</span> <span class="p">{}</span>
+<span class="p">}</span>
+</pre></div>
+</td>
+                  </tr>
+                  <tr>
+                      <td id="ansible_machine"><a href="#ansible_machine">ansible_machine</a></td>
+                      <td><div class="codehilite"><pre><span></span>x86_64
+</pre></div>
+</td>
+                  </tr>
+                  <tr>
+                      <td id="ansible_machine_id"><a href="#ansible_machine_id">ansible_machine_id</a></td>
+                      <td><div class="codehilite"><pre><span></span>9a42689812eb38507e3b66a77cdd7645
+</pre></div>
+</td>
+                  </tr>
+                  <tr>
+                      <td id="ansible_memfree_mb"><a href="#ansible_memfree_mb">ansible_memfree_mb</a></td>
+                      <td><div class="codehilite"><pre><span></span>5457
+</pre></div>
+</td>
+                  </tr>
+                  <tr>
+                      <td id="ansible_memory_mb"><a href="#ansible_memory_mb">ansible_memory_mb</a></td>
+                      <td><div class="codehilite"><pre><span></span><span class="p">{</span>
+    <span class="nt">&quot;nocache&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="nt">&quot;free&quot;</span><span class="p">:</span> <span class="mi">7017</span><span class="p">,</span> 
+        <span class="nt">&quot;used&quot;</span><span class="p">:</span> <span class="mi">462</span>
+    <span class="p">},</span> 
+    <span class="nt">&quot;real&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="nt">&quot;free&quot;</span><span class="p">:</span> <span class="mi">5457</span><span class="p">,</span> 
+        <span class="nt">&quot;total&quot;</span><span class="p">:</span> <span class="mi">7479</span><span class="p">,</span> 
+        <span class="nt">&quot;used&quot;</span><span class="p">:</span> <span class="mi">2022</span>
+    <span class="p">},</span> 
+    <span class="nt">&quot;swap&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="nt">&quot;cached&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> 
+        <span class="nt">&quot;free&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> 
+        <span class="nt">&quot;total&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> 
+        <span class="nt">&quot;used&quot;</span><span class="p">:</span> <span class="mi">0</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</td>
+                  </tr>
+                  <tr>
+                      <td id="ansible_memtotal_mb"><a href="#ansible_memtotal_mb">ansible_memtotal_mb</a></td>
+                      <td><div class="codehilite"><pre><span></span>7479
+</pre></div>
+</td>
+                  </tr>
+                  <tr>
+                      <td id="ansible_mounts"><a href="#ansible_mounts">ansible_mounts</a></td>
+                      <td><div class="codehilite"><pre><span></span><span class="p">[</span>
+    <span class="p">{</span>
+        <span class="nt">&quot;block_available&quot;</span><span class="p">:</span> <span class="mi">4573151</span><span class="p">,</span> 
+        <span class="nt">&quot;block_size&quot;</span><span class="p">:</span> <span class="mi">4096</span><span class="p">,</span> 
+        <span class="nt">&quot;block_total&quot;</span><span class="p">:</span> <span class="mi">7732479</span><span class="p">,</span> 
+        <span class="nt">&quot;block_used&quot;</span><span class="p">:</span> <span class="mi">3159328</span><span class="p">,</span> 
+        <span class="nt">&quot;device&quot;</span><span class="p">:</span> <span class="s2">&quot;/dev/sda1&quot;</span><span class="p">,</span> 
+        <span class="nt">&quot;fstype&quot;</span><span class="p">:</span> <span class="s2">&quot;ext4&quot;</span><span class="p">,</span> 
+        <span class="nt">&quot;inode_available&quot;</span><span class="p">:</span> <span class="mi">1732849</span><span class="p">,</span> 
+        <span class="nt">&quot;inode_total&quot;</span><span class="p">:</span> <span class="mi">1966080</span><span class="p">,</span> 
+        <span class="nt">&quot;inode_used&quot;</span><span class="p">:</span> <span class="mi">233231</span><span class="p">,</span> 
+        <span class="nt">&quot;mount&quot;</span><span class="p">:</span> <span class="s2">&quot;/etc/resolv.conf&quot;</span><span class="p">,</span> 
+        <span class="nt">&quot;options&quot;</span><span class="p">:</span> <span class="s2">&quot;rw,relatime,data=ordered,bind&quot;</span><span class="p">,</span> 
+        <span class="nt">&quot;size_available&quot;</span><span class="p">:</span> <span class="mi">18731626496</span><span class="p">,</span> 
+        <span class="nt">&quot;size_total&quot;</span><span class="p">:</span> <span class="mi">31672233984</span><span class="p">,</span> 
+        <span class="nt">&quot;uuid&quot;</span><span class="p">:</span> <span class="s2">&quot;N/A&quot;</span>
+    <span class="p">},</span> 
+    <span class="p">{</span>
+        <span class="nt">&quot;block_available&quot;</span><span class="p">:</span> <span class="mi">4573151</span><span class="p">,</span> 
+        <span class="nt">&quot;block_size&quot;</span><span class="p">:</span> <span class="mi">4096</span><span class="p">,</span> 
+        <span class="nt">&quot;block_total&quot;</span><span class="p">:</span> <span class="mi">7732479</span><span class="p">,</span> 
+        <span class="nt">&quot;block_used&quot;</span><span class="p">:</span> <span class="mi">3159328</span><span class="p">,</span> 
+        <span class="nt">&quot;device&quot;</span><span class="p">:</span> <span class="s2">&quot;/dev/sda1&quot;</span><span class="p">,</span> 
+        <span class="nt">&quot;fstype&quot;</span><span class="p">:</span> <span class="s2">&quot;ext4&quot;</span><span class="p">,</span> 
+        <span class="nt">&quot;inode_available&quot;</span><span class="p">:</span> <span class="mi">1732849</span><span class="p">,</span> 
+        <span class="nt">&quot;inode_total&quot;</span><span class="p">:</span> <span class="mi">1966080</span><span class="p">,</span> 
+        <span class="nt">&quot;inode_used&quot;</span><span class="p">:</span> <span class="mi">233231</span><span class="p">,</span> 
+        <span class="nt">&quot;mount&quot;</span><span class="p">:</span> <span class="s2">&quot;/etc/hostname&quot;</span><span class="p">,</span> 
+        <span class="nt">&quot;options&quot;</span><span class="p">:</span> <span class="s2">&quot;rw,relatime,data=ordered,bind&quot;</span><span class="p">,</span> 
+        <span class="nt">&quot;size_available&quot;</span><span class="p">:</span> <span class="mi">18731626496</span><span class="p">,</span> 
+        <span class="nt">&quot;size_total&quot;</span><span class="p">:</span> <span class="mi">31672233984</span><span class="p">,</span> 
+        <span class="nt">&quot;uuid&quot;</span><span class="p">:</span> <span class="s2">&quot;N/A&quot;</span>
+    <span class="p">},</span> 
+    <span class="p">{</span>
+        <span class="nt">&quot;block_available&quot;</span><span class="p">:</span> <span class="mi">4573151</span><span class="p">,</span> 
+        <span class="nt">&quot;block_size&quot;</span><span class="p">:</span> <span class="mi">4096</span><span class="p">,</span> 
+        <span class="nt">&quot;block_total&quot;</span><span class="p">:</span> <span class="mi">7732479</span><span class="p">,</span> 
+        <span class="nt">&quot;block_used&quot;</span><span class="p">:</span> <span class="mi">3159328</span><span class="p">,</span> 
+        <span class="nt">&quot;device&quot;</span><span class="p">:</span> <span class="s2">&quot;/dev/sda1&quot;</span><span class="p">,</span> 
+        <span class="nt">&quot;fstype&quot;</span><span class="p">:</span> <span class="s2">&quot;ext4&quot;</span><span class="p">,</span> 
+        <span class="nt">&quot;inode_available&quot;</span><span class="p">:</span> <span class="mi">1732849</span><span class="p">,</span> 
+        <span class="nt">&quot;inode_total&quot;</span><span class="p">:</span> <span class="mi">1966080</span><span class="p">,</span> 
+        <span class="nt">&quot;inode_used&quot;</span><span class="p">:</span> <span class="mi">233231</span><span class="p">,</span> 
+        <span class="nt">&quot;mount&quot;</span><span class="p">:</span> <span class="s2">&quot;/etc/hosts&quot;</span><span class="p">,</span> 
+        <span class="nt">&quot;options&quot;</span><span class="p">:</span> <span class="s2">&quot;rw,relatime,data=ordered,bind&quot;</span><span class="p">,</span> 
+        <span class="nt">&quot;size_available&quot;</span><span class="p">:</span> <span class="mi">18731626496</span><span class="p">,</span> 
+        <span class="nt">&quot;size_total&quot;</span><span class="p">:</span> <span class="mi">31672233984</span><span class="p">,</span> 
+        <span class="nt">&quot;uuid&quot;</span><span class="p">:</span> <span class="s2">&quot;N/A&quot;</span>
+    <span class="p">}</span>
+<span class="p">]</span>
+</pre></div>
+</td>
+                  </tr>
+                  <tr>
+                      <td id="ansible_nodename"><a href="#ansible_nodename">ansible_nodename</a></td>
+                      <td><div class="codehilite"><pre><span></span>bootstrap-debian-buster
+</pre></div>
+</td>
+                  </tr>
+                  <tr>
+                      <td id="ansible_os_family"><a href="#ansible_os_family">ansible_os_family</a></td>
+                      <td><div class="codehilite"><pre><span></span>Debian
+</pre></div>
+</td>
+                  </tr>
+                  <tr>
+                      <td id="ansible_pkg_mgr"><a href="#ansible_pkg_mgr">ansible_pkg_mgr</a></td>
+                      <td><div class="codehilite"><pre><span></span>apt
+</pre></div>
+</td>
+                  </tr>
+                  <tr>
+                      <td id="ansible_processor"><a href="#ansible_processor">ansible_processor</a></td>
+                      <td><div class="codehilite"><pre><span></span><span class="p">[</span>
+    <span class="s2">&quot;0&quot;</span><span class="p">,</span> 
+    <span class="s2">&quot;GenuineIntel&quot;</span><span class="p">,</span> 
+    <span class="s2">&quot;Intel(R) Xeon(R) CPU @ 2.50GHz&quot;</span><span class="p">,</span> 
+    <span class="s2">&quot;1&quot;</span><span class="p">,</span> 
+    <span class="s2">&quot;GenuineIntel&quot;</span><span class="p">,</span> 
+    <span class="s2">&quot;Intel(R) Xeon(R) CPU @ 2.50GHz&quot;</span>
+<span class="p">]</span>
+</pre></div>
+</td>
+                  </tr>
+                  <tr>
+                      <td id="ansible_processor_cores"><a href="#ansible_processor_cores">ansible_processor_cores</a></td>
+                      <td><div class="codehilite"><pre><span></span>1
+</pre></div>
+</td>
+                  </tr>
+                  <tr>
+                      <td id="ansible_processor_count"><a href="#ansible_processor_count">ansible_processor_count</a></td>
+                      <td><div class="codehilite"><pre><span></span>1
+</pre></div>
+</td>
+                  </tr>
+                  <tr>
+                      <td id="ansible_processor_threads_per_core"><a href="#ansible_processor_threads_per_core">ansible_processor_threads_per_core</a></td>
+                      <td><div class="codehilite"><pre><span></span>2
+</pre></div>
+</td>
+                  </tr>
+                  <tr>
+                      <td id="ansible_processor_vcpus"><a href="#ansible_processor_vcpus">ansible_processor_vcpus</a></td>
+                      <td><div class="codehilite"><pre><span></span>2
+</pre></div>
+</td>
+                  </tr>
+                  <tr>
+                      <td id="ansible_product_name"><a href="#ansible_product_name">ansible_product_name</a></td>
+                      <td><div class="codehilite"><pre><span></span>Google Compute Engine
+</pre></div>
+</td>
+                  </tr>
+                  <tr>
+                      <td id="ansible_product_serial"><a href="#ansible_product_serial">ansible_product_serial</a></td>
+                      <td><div class="codehilite"><pre><span></span>GoogleCloud-7BF80A3D36998E543A05833F887E4D8F
+</pre></div>
+</td>
+                  </tr>
+                  <tr>
+                      <td id="ansible_product_uuid"><a href="#ansible_product_uuid">ansible_product_uuid</a></td>
+                      <td><div class="codehilite"><pre><span></span>7BF80A3D-3699-8E54-3A05-833F887E4D8F
+</pre></div>
+</td>
+                  </tr>
+                  <tr>
+                      <td id="ansible_product_version"><a href="#ansible_product_version">ansible_product_version</a></td>
+                      <td><div class="codehilite"><pre><span></span>NA
+</pre></div>
+</td>
+                  </tr>
+                  <tr>
+                      <td id="ansible_python"><a href="#ansible_python">ansible_python</a></td>
+                      <td><div class="codehilite"><pre><span></span><span class="p">{</span>
+    <span class="nt">&quot;executable&quot;</span><span class="p">:</span> <span class="s2">&quot;/usr/bin/python&quot;</span><span class="p">,</span> 
+    <span class="nt">&quot;has_sslcontext&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span> 
+    <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;CPython&quot;</span><span class="p">,</span> 
+    <span class="nt">&quot;version&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="nt">&quot;major&quot;</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span> 
+        <span class="nt">&quot;micro&quot;</span><span class="p">:</span> <span class="mi">14</span><span class="p">,</span> 
+        <span class="nt">&quot;minor&quot;</span><span class="p">:</span> <span class="mi">7</span><span class="p">,</span> 
+        <span class="nt">&quot;releaselevel&quot;</span><span class="p">:</span> <span class="s2">&quot;final&quot;</span><span class="p">,</span> 
+        <span class="nt">&quot;serial&quot;</span><span class="p">:</span> <span class="mi">0</span>
+    <span class="p">},</span> 
+    <span class="nt">&quot;version_info&quot;</span><span class="p">:</span> <span class="p">[</span>
+        <span class="mi">2</span><span class="p">,</span> 
+        <span class="mi">7</span><span class="p">,</span> 
+        <span class="mi">14</span><span class="p">,</span> 
+        <span class="s2">&quot;final&quot;</span><span class="p">,</span> 
+        <span class="mi">0</span>
+    <span class="p">]</span>
+<span class="p">}</span>
+</pre></div>
+</td>
+                  </tr>
+                  <tr>
+                      <td id="ansible_python_version"><a href="#ansible_python_version">ansible_python_version</a></td>
+                      <td><div class="codehilite"><pre><span></span>2.7.14+
+</pre></div>
+</td>
+                  </tr>
+                  <tr>
+                      <td id="ansible_real_group_id"><a href="#ansible_real_group_id">ansible_real_group_id</a></td>
+                      <td><div class="codehilite"><pre><span></span>0
+</pre></div>
+</td>
+                  </tr>
+                  <tr>
+                      <td id="ansible_real_user_id"><a href="#ansible_real_user_id">ansible_real_user_id</a></td>
+                      <td><div class="codehilite"><pre><span></span>0
+</pre></div>
+</td>
+                  </tr>
+                  <tr>
+                      <td id="ansible_selinux"><a href="#ansible_selinux">ansible_selinux</a></td>
+                      <td><div class="codehilite"><pre><span></span><span class="p">{</span>
+    <span class="nt">&quot;status&quot;</span><span class="p">:</span> <span class="s2">&quot;Missing selinux Python library&quot;</span>
+<span class="p">}</span>
+</pre></div>
+</td>
+                  </tr>
+                  <tr>
+                      <td id="ansible_selinux_python_present"><a href="#ansible_selinux_python_present">ansible_selinux_python_present</a></td>
+                      <td><div class="codehilite"><pre><span></span>False
+</pre></div>
+</td>
+                  </tr>
+                  <tr>
+                      <td id="ansible_service_mgr"><a href="#ansible_service_mgr">ansible_service_mgr</a></td>
+                      <td><div class="codehilite"><pre><span></span>sysvinit
+</pre></div>
+</td>
+                  </tr>
+                  <tr>
+                      <td id="ansible_swapfree_mb"><a href="#ansible_swapfree_mb">ansible_swapfree_mb</a></td>
+                      <td><div class="codehilite"><pre><span></span>0
+</pre></div>
+</td>
+                  </tr>
+                  <tr>
+                      <td id="ansible_swaptotal_mb"><a href="#ansible_swaptotal_mb">ansible_swaptotal_mb</a></td>
+                      <td><div class="codehilite"><pre><span></span>0
+</pre></div>
+</td>
+                  </tr>
+                  <tr>
+                      <td id="ansible_system"><a href="#ansible_system">ansible_system</a></td>
+                      <td><div class="codehilite"><pre><span></span>Linux
+</pre></div>
+</td>
+                  </tr>
+                  <tr>
+                      <td id="ansible_system_vendor"><a href="#ansible_system_vendor">ansible_system_vendor</a></td>
+                      <td><div class="codehilite"><pre><span></span>Google
+</pre></div>
+</td>
+                  </tr>
+                  <tr>
+                      <td id="ansible_uptime_seconds"><a href="#ansible_uptime_seconds">ansible_uptime_seconds</a></td>
+                      <td><div class="codehilite"><pre><span></span>203
+</pre></div>
+</td>
+                  </tr>
+                  <tr>
+                      <td id="ansible_user_dir"><a href="#ansible_user_dir">ansible_user_dir</a></td>
+                      <td><div class="codehilite"><pre><span></span>/root
+</pre></div>
+</td>
+                  </tr>
+                  <tr>
+                      <td id="ansible_user_gecos"><a href="#ansible_user_gecos">ansible_user_gecos</a></td>
+                      <td><div class="codehilite"><pre><span></span>root
+</pre></div>
+</td>
+                  </tr>
+                  <tr>
+                      <td id="ansible_user_gid"><a href="#ansible_user_gid">ansible_user_gid</a></td>
+                      <td><div class="codehilite"><pre><span></span>0
+</pre></div>
+</td>
+                  </tr>
+                  <tr>
+                      <td id="ansible_user_id"><a href="#ansible_user_id">ansible_user_id</a></td>
+                      <td><div class="codehilite"><pre><span></span>root
+</pre></div>
+</td>
+                  </tr>
+                  <tr>
+                      <td id="ansible_user_shell"><a href="#ansible_user_shell">ansible_user_shell</a></td>
+                      <td><div class="codehilite"><pre><span></span>/bin/bash
+</pre></div>
+</td>
+                  </tr>
+                  <tr>
+                      <td id="ansible_user_uid"><a href="#ansible_user_uid">ansible_user_uid</a></td>
+                      <td><div class="codehilite"><pre><span></span>0
+</pre></div>
+</td>
+                  </tr>
+                  <tr>
+                      <td id="ansible_userspace_architecture"><a href="#ansible_userspace_architecture">ansible_userspace_architecture</a></td>
+                      <td><div class="codehilite"><pre><span></span>x86_64
+</pre></div>
+</td>
+                  </tr>
+                  <tr>
+                      <td id="ansible_userspace_bits"><a href="#ansible_userspace_bits">ansible_userspace_bits</a></td>
+                      <td><div class="codehilite"><pre><span></span><span class="mi">64</span>
+</pre></div>
+</td>
+                  </tr>
+                  <tr>
+                      <td id="ansible_virtualization_role"><a href="#ansible_virtualization_role">ansible_virtualization_role</a></td>
+                      <td><div class="codehilite"><pre><span></span>guest
+</pre></div>
+</td>
+                  </tr>
+                  <tr>
+                      <td id="ansible_virtualization_type"><a href="#ansible_virtualization_type">ansible_virtualization_type</a></td>
+                      <td><div class="codehilite"><pre><span></span>docker
+</pre></div>
+</td>
+                  </tr>
+                  <tr>
+                      <td id="gather_subset"><a href="#gather_subset">gather_subset</a></td>
+                      <td><div class="codehilite"><pre><span></span><span class="p">[</span>
+    <span class="s2">&quot;all&quot;</span>
+<span class="p">]</span>
+</pre></div>
+</td>
+                  </tr>
+                  <tr>
+                      <td id="module_setup"><a href="#module_setup">module_setup</a></td>
+                      <td><div class="codehilite"><pre><span></span>True
+</pre></div>
+</td>
+                  </tr>
+                  </tbody>
+          </table>
+        </div>
+    </div>
+</div>
+</body>
+</html>

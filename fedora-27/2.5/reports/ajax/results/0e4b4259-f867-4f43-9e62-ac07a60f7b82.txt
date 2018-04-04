@@ -1,0 +1,140 @@
+{
+  "data": [
+    [
+      "\n<div class=\"pull-left\">ansible-role-bootstrap : register apk</div>\n", 
+      "bootstrap-fedora-27", 
+      "<a href=\"#\" data-toggle=\"modal\" data-target=\"#file_modal\" data-load=\"25031b1f-69de-4e12-8eb5-7bd5677e2714/#line-3\">raw</a>\n", 
+      "0:00:00", 
+      "0:00:00", 
+      "<a href=\"#\" data-toggle=\"modal\" data-target=\"#task_result_modal\" data-load=\"a534a987-30dd-4188-9bf3-3ddb8568585b/\"><span class=\"ok label\">OK</span></a>"
+    ], 
+    [
+      "\n<div class=\"pull-left\">ansible-role-bootstrap : register apt_get</div>\n", 
+      "bootstrap-fedora-27", 
+      "<a href=\"#\" data-toggle=\"modal\" data-target=\"#file_modal\" data-load=\"25031b1f-69de-4e12-8eb5-7bd5677e2714/#line-11\">raw</a>\n", 
+      "0:00:00", 
+      "0:00:00", 
+      "<a href=\"#\" data-toggle=\"modal\" data-target=\"#task_result_modal\" data-load=\"1ce9a26a-6613-4690-8cef-78736e67329d/\"><span class=\"ok label\">OK</span></a>"
+    ], 
+    [
+      "\n<div class=\"pull-left\">ansible-role-bootstrap : register dnf</div>\n", 
+      "bootstrap-fedora-27", 
+      "<a href=\"#\" data-toggle=\"modal\" data-target=\"#file_modal\" data-load=\"25031b1f-69de-4e12-8eb5-7bd5677e2714/#line-19\">raw</a>\n", 
+      "0:00:00", 
+      "0:00:00", 
+      "<a href=\"#\" data-toggle=\"modal\" data-target=\"#task_result_modal\" data-load=\"f6331bfc-9823-4205-93f2-2b53a3604a48/\"><span class=\"ok label\">OK</span></a>"
+    ], 
+    [
+      "\n<div class=\"pull-left\">ansible-role-bootstrap : register pacman</div>\n", 
+      "bootstrap-fedora-27", 
+      "<a href=\"#\" data-toggle=\"modal\" data-target=\"#file_modal\" data-load=\"25031b1f-69de-4e12-8eb5-7bd5677e2714/#line-27\">raw</a>\n", 
+      "0:00:01", 
+      "0:00:00", 
+      "<a href=\"#\" data-toggle=\"modal\" data-target=\"#task_result_modal\" data-load=\"ff645914-1821-4ff6-8bcf-34acd0edc5d5/\"><span class=\"ok label\">OK</span></a>"
+    ], 
+    [
+      "\n<div class=\"pull-left\">ansible-role-bootstrap : register yum</div>\n", 
+      "bootstrap-fedora-27", 
+      "<a href=\"#\" data-toggle=\"modal\" data-target=\"#file_modal\" data-load=\"25031b1f-69de-4e12-8eb5-7bd5677e2714/#line-35\">raw</a>\n", 
+      "0:00:01", 
+      "0:00:00", 
+      "<a href=\"#\" data-toggle=\"modal\" data-target=\"#task_result_modal\" data-load=\"f76f1ff8-5187-407e-92d6-5417179972da/\"><span class=\"ok label\">OK</span></a>"
+    ], 
+    [
+      "\n<div class=\"pull-left\">ansible-role-bootstrap : register zypper</div>\n", 
+      "bootstrap-fedora-27", 
+      "<a href=\"#\" data-toggle=\"modal\" data-target=\"#file_modal\" data-load=\"25031b1f-69de-4e12-8eb5-7bd5677e2714/#line-43\">raw</a>\n", 
+      "0:00:01", 
+      "0:00:00", 
+      "<a href=\"#\" data-toggle=\"modal\" data-target=\"#task_result_modal\" data-load=\"26224d83-4370-47a1-a03d-04be6779bbc3/\"><span class=\"ok label\">OK</span></a>"
+    ], 
+    [
+      "\n<div class=\"pull-left\">ansible-role-bootstrap : install software with apk</div>\n", 
+      "bootstrap-fedora-27", 
+      "<a href=\"#\" data-toggle=\"modal\" data-target=\"#file_modal\" data-load=\"25031b1f-69de-4e12-8eb5-7bd5677e2714/#line-51\">raw</a>\n", 
+      "0:00:01", 
+      "0:00:00", 
+      "<a href=\"#\" data-toggle=\"modal\" data-target=\"#task_result_modal\" data-load=\"bfc6616a-e130-465a-acd8-01c984f1d107/\"><span class=\"skipped label\">SKIPPED</span></a>"
+    ], 
+    [
+      "\n<div class=\"pull-left\">ansible-role-bootstrap : install software with apt-get</div>\n", 
+      "bootstrap-fedora-27", 
+      "<a href=\"#\" data-toggle=\"modal\" data-target=\"#file_modal\" data-load=\"25031b1f-69de-4e12-8eb5-7bd5677e2714/#line-60\">raw</a>\n", 
+      "0:00:01", 
+      "0:00:00", 
+      "<a href=\"#\" data-toggle=\"modal\" data-target=\"#task_result_modal\" data-load=\"6d44014f-0efe-49dd-a9e7-fb5e60191fcf/\"><span class=\"skipped label\">SKIPPED</span></a>"
+    ], 
+    [
+      "\n<div class=\"pull-left\">ansible-role-bootstrap : install software with dnf</div>\n", 
+      "bootstrap-fedora-27", 
+      "<a href=\"#\" data-toggle=\"modal\" data-target=\"#file_modal\" data-load=\"25031b1f-69de-4e12-8eb5-7bd5677e2714/#line-69\">raw</a>\n", 
+      "0:00:02", 
+      "0:00:43", 
+      "<a href=\"#\" data-toggle=\"modal\" data-target=\"#task_result_modal\" data-load=\"13ce8528-4dcf-4a6d-bf82-b4c008939181/\"><span class=\"changed label\">CHANGED</span></a>"
+    ], 
+    [
+      "\n<div class=\"pull-left\">ansible-role-bootstrap : install software with pacman</div>\n", 
+      "bootstrap-fedora-27", 
+      "<a href=\"#\" data-toggle=\"modal\" data-target=\"#file_modal\" data-load=\"25031b1f-69de-4e12-8eb5-7bd5677e2714/#line-78\">raw</a>\n", 
+      "0:00:45", 
+      "0:00:00", 
+      "<a href=\"#\" data-toggle=\"modal\" data-target=\"#task_result_modal\" data-load=\"97094f83-327d-4f7e-8231-c022b8f89ed4/\"><span class=\"skipped label\">SKIPPED</span></a>"
+    ], 
+    [
+      "\n<div class=\"pull-left\">ansible-role-bootstrap : install software with yum</div>\n", 
+      "bootstrap-fedora-27", 
+      "<a href=\"#\" data-toggle=\"modal\" data-target=\"#file_modal\" data-load=\"25031b1f-69de-4e12-8eb5-7bd5677e2714/#line-87\">raw</a>\n", 
+      "0:00:45", 
+      "0:00:02", 
+      "<a href=\"#\" data-toggle=\"modal\" data-target=\"#task_result_modal\" data-load=\"25016ee3-b09d-4b65-bc88-3d7d60673f0f/\"><span class=\"ok label\">OK</span></a>"
+    ], 
+    [
+      "\n<div class=\"pull-left\">ansible-role-bootstrap : install software with zypper</div>\n", 
+      "bootstrap-fedora-27", 
+      "<a href=\"#\" data-toggle=\"modal\" data-target=\"#file_modal\" data-load=\"25031b1f-69de-4e12-8eb5-7bd5677e2714/#line-96\">raw</a>\n", 
+      "0:00:48", 
+      "0:00:00", 
+      "<a href=\"#\" data-toggle=\"modal\" data-target=\"#task_result_modal\" data-load=\"286755e9-baa1-4d20-b9ac-ac2bb9a0cc26/\"><span class=\"skipped label\">SKIPPED</span></a>"
+    ], 
+    [
+      "\n<div class=\"pull-left\">ansible-role-bootstrap : gather facts</div>\n", 
+      "bootstrap-fedora-27", 
+      "<a href=\"#\" data-toggle=\"modal\" data-target=\"#file_modal\" data-load=\"25031b1f-69de-4e12-8eb5-7bd5677e2714/#line-106\">setup</a>\n", 
+      "0:00:48", 
+      "0:00:01", 
+      "<a href=\"#\" data-toggle=\"modal\" data-target=\"#task_result_modal\" data-load=\"6908885a-aac0-4204-8b78-c79769fc892b/\"><span class=\"ok label\">OK</span></a>"
+    ], 
+    [
+      "\n<div class=\"pull-left\">ansible-role-bootstrap : install software to support stable modules</div>\n", 
+      "bootstrap-fedora-27", 
+      "<a href=\"#\" data-toggle=\"modal\" data-target=\"#file_modal\" data-load=\"25031b1f-69de-4e12-8eb5-7bd5677e2714/#line-111\">package</a>\n", 
+      "0:00:49", 
+      "0:00:19", 
+      "<a href=\"#\" data-toggle=\"modal\" data-target=\"#task_result_modal\" data-load=\"5df94b88-d8c5-4f1e-8f65-5778fc67e154/\"><span class=\"changed label\">CHANGED</span></a>"
+    ], 
+    [
+      "\n<div class=\"pull-left\">ansible-role-bootstrap : install software to support preview modules</div>\n", 
+      "bootstrap-fedora-27", 
+      "<a href=\"#\" data-toggle=\"modal\" data-target=\"#file_modal\" data-load=\"25031b1f-69de-4e12-8eb5-7bd5677e2714/#line-119\">package</a>\n", 
+      "0:01:09", 
+      "0:00:07", 
+      "<a href=\"#\" data-toggle=\"modal\" data-target=\"#task_result_modal\" data-load=\"fc09a2dc-2341-4a4e-b286-d404d17ad5d6/\"><span class=\"changed label\">CHANGED</span></a>"
+    ], 
+    [
+      "\n<div class=\"pull-left\">ansible-role-bootstrap : gather facts after installation of packages</div>\n", 
+      "bootstrap-fedora-27", 
+      "<a href=\"#\" data-toggle=\"modal\" data-target=\"#file_modal\" data-load=\"25031b1f-69de-4e12-8eb5-7bd5677e2714/#line-129\">setup</a>\n", 
+      "0:01:17", 
+      "0:00:00", 
+      "<a href=\"#\" data-toggle=\"modal\" data-target=\"#task_result_modal\" data-load=\"657591e6-5a66-4d10-8215-06e9f84cea5d/\"><span class=\"ok label\">OK</span></a>"
+    ], 
+    [
+      "\n<div class=\"pull-left\">test connection</div>\n", 
+      "bootstrap-fedora-27", 
+      "<a href=\"#\" data-toggle=\"modal\" data-target=\"#file_modal\" data-load=\"06f5ea1e-bc95-407c-97c8-304ec72e6546/#line-11\">ping</a>\n", 
+      "0:01:18", 
+      "0:00:00", 
+      "<a href=\"#\" data-toggle=\"modal\" data-target=\"#task_result_modal\" data-load=\"3671c98f-bdb3-4254-87ee-d9a684046e19/\"><span class=\"ok label\">OK</span></a>"
+    ]
+  ]
+}

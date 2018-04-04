@@ -1,0 +1,60 @@
+{
+  "data": [
+    [
+      "\n<div class=\"pull-left\" data-toggle=\"tooltip\" data-placement=\"bottom\" data-html=\"true\" title=\"This task has the following tags:\n    <ul>\n        <li>always</li>\n        \n    </ul>\n\">Gathering Facts</div>\n", 
+      "bootstrap-alpine-3.6", 
+      "<a href=\"#\" data-toggle=\"modal\" data-target=\"#file_modal\" data-load=\"7b4fb4b0-7b77-49fb-a634-9637469bd6d1/#line-1\">setup</a>\n", 
+      "0:00:00", 
+      "0:00:01", 
+      "<a href=\"#\" data-toggle=\"modal\" data-target=\"#task_result_modal\" data-load=\"93fc6775-e9f3-401e-b99d-233f54ad1526/\"><span class=\"ok label\">OK</span></a>"
+    ], 
+    [
+      "\n<div class=\"pull-left\">Download and install Goss</div>\n", 
+      "bootstrap-alpine-3.6", 
+      "<a href=\"#\" data-toggle=\"modal\" data-target=\"#file_modal\" data-load=\"7b4fb4b0-7b77-49fb-a634-9637469bd6d1/#line-23\">get_url</a>\n", 
+      "0:00:01", 
+      "0:00:02", 
+      "<a href=\"#\" data-toggle=\"modal\" data-target=\"#task_result_modal\" data-load=\"6a5d62cd-b367-4638-b1a0-6b76627f63ed/\"><span class=\"changed label\">CHANGED</span></a>"
+    ], 
+    [
+      "\n<div class=\"pull-left\">Copy Goss tests to remote</div>\n", 
+      "bootstrap-alpine-3.6", 
+      "<a href=\"#\" data-toggle=\"modal\" data-target=\"#file_modal\" data-load=\"7b4fb4b0-7b77-49fb-a634-9637469bd6d1/#line-30\">copy</a>\n", 
+      "0:00:04", 
+      "0:00:01", 
+      "<a href=\"#\" data-toggle=\"modal\" data-target=\"#task_result_modal\" data-load=\"3b8cf45b-c981-4f21-a03e-3b7d73471a88/\"><span class=\"changed label\">CHANGED</span></a>"
+    ], 
+    [
+      "\n<div class=\"pull-left\">Register test files</div>\n", 
+      "bootstrap-alpine-3.6", 
+      "<a href=\"#\" data-toggle=\"modal\" data-target=\"#file_modal\" data-load=\"7b4fb4b0-7b77-49fb-a634-9637469bd6d1/#line-37\">command</a>\n", 
+      "0:00:05", 
+      "0:00:00", 
+      "<a href=\"#\" data-toggle=\"modal\" data-target=\"#task_result_modal\" data-load=\"bdde2fdc-b36d-4f59-86bc-29bc8456be11/\"><span class=\"changed label\">CHANGED</span></a>"
+    ], 
+    [
+      "\n<div class=\"pull-left\">Execute Goss tests</div>\n", 
+      "bootstrap-alpine-3.6", 
+      "<a href=\"#\" data-toggle=\"modal\" data-target=\"#file_modal\" data-load=\"7b4fb4b0-7b77-49fb-a634-9637469bd6d1/#line-41\">command</a>\n", 
+      "0:00:05", 
+      "0:00:00", 
+      "<a href=\"#\" data-toggle=\"modal\" data-target=\"#task_result_modal\" data-load=\"26c1e41c-5701-4339-afa6-1e9581ec5a5e/\"><span class=\"changed label\">CHANGED</span></a>"
+    ], 
+    [
+      "\n<div class=\"pull-left\">Display details about the goss results</div>\n", 
+      "bootstrap-alpine-3.6", 
+      "<a href=\"#\" data-toggle=\"modal\" data-target=\"#file_modal\" data-load=\"7b4fb4b0-7b77-49fb-a634-9637469bd6d1/#line-47\">debug</a>\n", 
+      "0:00:06", 
+      "0:00:00", 
+      "<a href=\"#\" data-toggle=\"modal\" data-target=\"#task_result_modal\" data-load=\"ef21fb9d-02dc-4a46-a719-4074c11862cd/\"><span class=\"ok label\">OK</span></a>"
+    ], 
+    [
+      "\n<div class=\"pull-left\">Fail when tests fail</div>\n", 
+      "bootstrap-alpine-3.6", 
+      "<a href=\"#\" data-toggle=\"modal\" data-target=\"#file_modal\" data-load=\"7b4fb4b0-7b77-49fb-a634-9637469bd6d1/#line-52\">fail</a>\n", 
+      "0:00:06", 
+      "0:00:00", 
+      "<a href=\"#\" data-toggle=\"modal\" data-target=\"#task_result_modal\" data-load=\"8fbd4b47-7656-4c27-8b1c-c5e03ac86875/\"><span class=\"skipped label\">SKIPPED</span></a>"
+    ]
+  ]
+}

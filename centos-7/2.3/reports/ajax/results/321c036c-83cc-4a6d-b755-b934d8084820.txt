@@ -1,0 +1,12 @@
+{
+  "data": [
+    [
+      "\n<div class=\"pull-left\">Destroy molecule instance(s)</div>\n", 
+      "localhost", 
+      "<a href=\"#\" data-toggle=\"modal\" data-target=\"#file_modal\" data-load=\"01b1d87a-367c-4fd7-9170-b64fd14828c8/#line-11\">docker_container</a>\n", 
+      "0:00:00", 
+      "0:00:00", 
+      "<a href=\"#\" data-toggle=\"modal\" data-target=\"#task_result_modal\" data-load=\"13bc4292-2f0c-4030-b969-d1ff35f1d3b6/\"><span class=\"ok label\">OK</span></a>"
+    ]
+  ]
+}

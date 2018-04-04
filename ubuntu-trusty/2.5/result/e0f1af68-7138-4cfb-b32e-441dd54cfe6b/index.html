@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html class="layout-pf">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="ARA | Ansible Run Analysis records Ansible playbook runs seamlessly to make them easier to visualize, understand and troubleshoot">
+    <title>ARA | Ansible Run Analysis</title>
+    <script src="../../static/packaged/jquery/jquery.min.js"></script>
+    <script src="../../static/packaged/datatables/js/jquery.dataTables.min.js"></script>
+    <script src="../../static/packaged/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../../static/packaged/patternfly_bootstrap_treeview/js/bootstrap-treeview.min.js"></script>
+    <script src="../../static/packaged/patternfly/js/patternfly.min.js"></script>
+    <script src="../../static/js/ara.js"></script>
+    <link href="../../static/packaged/patternfly/css/patternfly.min.css" rel="stylesheet">
+    <link href="../../static/packaged/patternfly/css/patternfly-additions.min.css" rel="stylesheet">
+    <link href="../../static/packaged/patternfly_bootstrap_treeview/css/bootstrap-treeview.min.css" rel="stylesheet">
+    <link href="../../static/css/pygments.css" rel="stylesheet">
+    <link href="../../static/css/ara.css" rel="stylesheet">
+    <link rel="shortcut icon" href="../../static/images/favicon.ico">
+</head>
+
+
+
+<body>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12 results">
+          <h2>Task: <strong>ansible-role-bootstrap : install software with apt-get</strong></h2>
+          <h2>Host: <strong>bootstrap-ubuntu-trusty</strong></h2>
+          <p>Time: <strong>2018-04-04 17:02:55</strong></p>
+          <p>Ansible version: <strong>2.5.0</strong></p>
+          
+          
+              
+    
+
+        <h2>Stderr</h2>
+                <div class="codehilite"><pre><span></span>debconf: unable to initialize frontend: Dialog
+debconf: (TERM is not set, so the dialog frontend is not usable.)
+debconf: falling back to frontend: Readline
+debconf: unable to initialize frontend: Readline
+debconf: (This frontend requires a controlling tty.)
+debconf: falling back to frontend: Teletype
+dpkg-preconfigure: unable to re-open stdin:
+</pre></div>
+
+            <h2>Stdout</h2>
+                <div class="codehilite"><pre><span></span>Get:1 http://security.ubuntu.com trusty-security InRelease [65.9 kB]
+Ign http://archive.ubuntu.com trusty InRelease
+Get:2 http://archive.ubuntu.com trusty-updates InRelease [65.9 kB]
+Get:3 http://archive.ubuntu.com trusty-backports InRelease [65.9 kB]
+Get:4 http://archive.ubuntu.com trusty Release.gpg [933 B]
+Get:5 http://archive.ubuntu.com trusty Release [58.5 kB]
+Get:6 http://security.ubuntu.com trusty-security/universe Sources [85.4 kB]
+Get:7 http://archive.ubuntu.com trusty-updates/universe Sources [250 kB]
+Get:8 http://security.ubuntu.com trusty-security/main amd64 Packages [903 kB]
+Get:9 http://archive.ubuntu.com trusty-updates/main amd64 Packages [1326 kB]
+Get:10 http://security.ubuntu.com trusty-security/restricted amd64 Packages [18.1 kB]
+Get:11 http://security.ubuntu.com trusty-security/universe amd64 Packages [284 kB]
+Get:12 http://archive.ubuntu.com trusty-updates/restricted amd64 Packages [21.4 kB]
+Get:13 http://security.ubuntu.com trusty-security/multiverse amd64 Packages [4717 B]
+Get:14 http://archive.ubuntu.com trusty-updates/universe amd64 Packages [580 kB]
+Get:15 http://archive.ubuntu.com trusty-updates/multiverse amd64 Packages [16.0 kB]
+Get:16 http://archive.ubuntu.com trusty-backports/main amd64 Packages [14.7 kB]
+Get:17 http://archive.ubuntu.com trusty-backports/restricted amd64 Packages [40 B]
+Get:18 http://archive.ubuntu.com trusty-backports/universe amd64 Packages [52.5 kB]
+Get:19 http://archive.ubuntu.com trusty-backports/multiverse amd64 Packages [1392 B]
+Get:20 http://archive.ubuntu.com trusty/universe Sources [7926 kB]
+Get:21 http://archive.ubuntu.com trusty/main amd64 Packages [1743 kB]
+Get:22 http://archive.ubuntu.com trusty/restricted amd64 Packages [16.0 kB]
+Get:23 http://archive.ubuntu.com trusty/universe amd64 Packages [7589 kB]
+Get:24 http://archive.ubuntu.com trusty/multiverse amd64 Packages [169 kB]
+Fetched 21.3 MB in 3s (6845 kB/s)
+Reading package lists...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+sudo is already the newest version.
+The following extra packages will be installed:
+  libpython-stdlib libpython2.7-minimal libpython2.7-stdlib python-minimal
+  python2.7 python2.7-minimal
+Suggested packages:
+  python-doc python-tk python2.7-doc binutils binfmt-support
+The following NEW packages will be installed:
+  libpython-stdlib libpython2.7-minimal libpython2.7-stdlib python
+  python-minimal python2.7 python2.7-minimal
+0 upgraded, 7 newly installed, 0 to remove and 4 not upgraded.
+Need to get 3728 kB of archives.
+After this operation, 16.0 MB of additional disk space will be used.
+Get:1 http://archive.ubuntu.com/ubuntu/ trusty-updates/main libpython2.7-minimal amd64 2.7.6-8ubuntu0.4 [307 kB]
+Get:2 http://archive.ubuntu.com/ubuntu/ trusty-updates/main python2.7-minimal amd64 2.7.6-8ubuntu0.4 [1188 kB]
+Get:3 http://archive.ubuntu.com/ubuntu/ trusty-updates/main libpython2.7-stdlib amd64 2.7.6-8ubuntu0.4 [1869 kB]
+Get:4 http://archive.ubuntu.com/ubuntu/ trusty/main libpython-stdlib amd64 2.7.5-5ubuntu3 [7012 B]
+Get:5 http://archive.ubuntu.com/ubuntu/ trusty-updates/main python2.7 amd64 2.7.6-8ubuntu0.4 [196 kB]
+Get:6 http://archive.ubuntu.com/ubuntu/ trusty/main python-minimal amd64 2.7.5-5ubuntu3 [27.5 kB]
+Get:7 http://archive.ubuntu.com/ubuntu/ trusty/main python amd64 2.7.5-5ubuntu3 [134 kB]
+Fetched 3728 kB in 3s (992 kB/s)
+Selecting previously unselected package libpython2.7-minimal:amd64.
+(Reading database ... 11571 files and directories currently installed.)
+Preparing to unpack .../libpython2.7-minimal_2.7.6-8ubuntu0.4_amd64.deb ...
+Unpacking libpython2.7-minimal:amd64 (2.7.6-8ubuntu0.4) ...
+Selecting previously unselected package python2.7-minimal.
+Preparing to unpack .../python2.7-minimal_2.7.6-8ubuntu0.4_amd64.deb ...
+Unpacking python2.7-minimal (2.7.6-8ubuntu0.4) ...
+Selecting previously unselected package libpython2.7-stdlib:amd64.
+Preparing to unpack .../libpython2.7-stdlib_2.7.6-8ubuntu0.4_amd64.deb ...
+Unpacking libpython2.7-stdlib:amd64 (2.7.6-8ubuntu0.4) ...
+Selecting previously unselected package libpython-stdlib:amd64.
+Preparing to unpack .../libpython-stdlib_2.7.5-5ubuntu3_amd64.deb ...
+Unpacking libpython-stdlib:amd64 (2.7.5-5ubuntu3) ...
+Selecting previously unselected package python2.7.
+Preparing to unpack .../python2.7_2.7.6-8ubuntu0.4_amd64.deb ...
+Unpacking python2.7 (2.7.6-8ubuntu0.4) ...
+Selecting previously unselected package python-minimal.
+Preparing to unpack .../python-minimal_2.7.5-5ubuntu3_amd64.deb ...
+Unpacking python-minimal (2.7.5-5ubuntu3) ...
+Selecting previously unselected package python.
+Preparing to unpack .../python_2.7.5-5ubuntu3_amd64.deb ...
+Unpacking python (2.7.5-5ubuntu3) ...
+Processing triggers for mime-support (3.54ubuntu1.1) ...
+Setting up libpython2.7-minimal:amd64 (2.7.6-8ubuntu0.4) ...
+Setting up python2.7-minimal (2.7.6-8ubuntu0.4) ...
+Linking and byte-compiling packages for runtime python2.7...
+Setting up libpython2.7-stdlib:amd64 (2.7.6-8ubuntu0.4) ...
+Setting up libpython-stdlib:amd64 (2.7.5-5ubuntu3) ...
+Setting up python2.7 (2.7.6-8ubuntu0.4) ...
+Setting up python-minimal (2.7.5-5ubuntu3) ...
+Setting up python (2.7.5-5ubuntu3) ...
+</pre></div>
+
+            
+          
+        </div>
+    </div>
+</div>
+</body>
+</html>

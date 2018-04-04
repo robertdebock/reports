@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html class="layout-pf">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="ARA | Ansible Run Analysis records Ansible playbook runs seamlessly to make them easier to visualize, understand and troubleshoot">
+    <title>ARA | Ansible Run Analysis</title>
+    <script src="../../static/packaged/jquery/jquery.min.js"></script>
+    <script src="../../static/packaged/datatables/js/jquery.dataTables.min.js"></script>
+    <script src="../../static/packaged/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../../static/packaged/patternfly_bootstrap_treeview/js/bootstrap-treeview.min.js"></script>
+    <script src="../../static/packaged/patternfly/js/patternfly.min.js"></script>
+    <script src="../../static/js/ara.js"></script>
+    <link href="../../static/packaged/patternfly/css/patternfly.min.css" rel="stylesheet">
+    <link href="../../static/packaged/patternfly/css/patternfly-additions.min.css" rel="stylesheet">
+    <link href="../../static/packaged/patternfly_bootstrap_treeview/css/bootstrap-treeview.min.css" rel="stylesheet">
+    <link href="../../static/css/pygments.css" rel="stylesheet">
+    <link href="../../static/css/ara.css" rel="stylesheet">
+    <link rel="shortcut icon" href="../../static/images/favicon.ico">
+</head>
+
+
+
+<body>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12 results">
+          <h2>Task: <strong>ansible-role-bootstrap : install software with apt-get</strong></h2>
+          <h2>Host: <strong>bootstrap-debian-stretch</strong></h2>
+          <p>Time: <strong>2018-04-04 17:44:20</strong></p>
+          <p>Ansible version: <strong>2.4.3.0</strong></p>
+          
+          
+              
+    
+
+        <h2>Stderr</h2>
+                <div class="codehilite"><pre><span></span>debconf: delaying package configuration, since apt-utils is not installed
+</pre></div>
+
+            <h2>Stdout</h2>
+                <div class="codehilite"><pre><span></span>Get:1 http://security.debian.org stretch/updates InRelease [63.0 kB]
+Ign:2 http://deb.debian.org/debian stretch InRelease
+Get:3 http://deb.debian.org/debian stretch-updates InRelease [91.0 kB]
+Get:4 http://deb.debian.org/debian stretch Release [118 kB]
+Get:5 http://deb.debian.org/debian stretch Release.gpg [2434 B]
+Get:6 http://deb.debian.org/debian stretch-updates/main amd64 Packages [12.1 kB]
+Get:7 http://security.debian.org stretch/updates/main amd64 Packages [459 kB]
+Get:8 http://deb.debian.org/debian stretch/main amd64 Packages [9530 kB]
+Fetched 10.3 MB in 1s (8942 kB/s)
+Reading package lists...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following additional packages will be installed:
+  bzip2 file libexpat1 libffi6 libmagic-mgc libmagic1 libpython-stdlib
+  libpython2.7-minimal libpython2.7-stdlib libreadline7 libsqlite3-0 libssl1.1
+  mime-support python-minimal python2.7 python2.7-minimal readline-common
+  xz-utils
+Suggested packages:
+  bzip2-doc python-doc python-tk python2.7-doc binutils binfmt-support
+  readline-doc
+The following NEW packages will be installed:
+  bzip2 file libexpat1 libffi6 libmagic-mgc libmagic1 libpython-stdlib
+  libpython2.7-minimal libpython2.7-stdlib libreadline7 libsqlite3-0 libssl1.1
+  mime-support python python-minimal python2.7 python2.7-minimal
+  readline-common sudo xz-utils
+0 upgraded, 20 newly installed, 0 to remove and 3 not upgraded.
+Need to get 8209 kB of archives.
+After this operation, 31.7 MB of additional disk space will be used.
+Get:1 http://security.debian.org stretch/updates/main amd64 libssl1.1 amd64 1.1.0f-3+deb9u2 [1344 kB]
+Get:2 http://deb.debian.org/debian stretch/main amd64 libpython2.7-minimal amd64 2.7.13-2+deb9u2 [389 kB]
+Get:3 http://deb.debian.org/debian stretch/main amd64 python2.7-minimal amd64 2.7.13-2+deb9u2 [1382 kB]
+Get:4 http://deb.debian.org/debian stretch/main amd64 python-minimal amd64 2.7.13-2 [40.5 kB]
+Get:5 http://deb.debian.org/debian stretch/main amd64 mime-support all 3.60 [36.7 kB]
+Get:6 http://deb.debian.org/debian stretch/main amd64 libexpat1 amd64 2.2.0-2+deb9u1 [83.4 kB]
+Get:7 http://deb.debian.org/debian stretch/main amd64 libffi6 amd64 3.2.1-6 [20.4 kB]
+Get:8 http://deb.debian.org/debian stretch/main amd64 readline-common all 7.0-3 [70.4 kB]
+Get:9 http://deb.debian.org/debian stretch/main amd64 libreadline7 amd64 7.0-3 [151 kB]
+Get:10 http://deb.debian.org/debian stretch/main amd64 libsqlite3-0 amd64 3.16.2-5+deb9u1 [572 kB]
+Get:11 http://deb.debian.org/debian stretch/main amd64 libpython2.7-stdlib amd64 2.7.13-2+deb9u2 [1896 kB]
+Get:12 http://deb.debian.org/debian stretch/main amd64 python2.7 amd64 2.7.13-2+deb9u2 [285 kB]
+Get:13 http://deb.debian.org/debian stretch/main amd64 libpython-stdlib amd64 2.7.13-2 [20.0 kB]
+Get:14 http://deb.debian.org/debian stretch/main amd64 python amd64 2.7.13-2 [154 kB]
+Get:15 http://deb.debian.org/debian stretch/main amd64 bzip2 amd64 1.0.6-8.1 [47.5 kB]
+Get:16 http://deb.debian.org/debian stretch/main amd64 libmagic-mgc amd64 1:5.30-1+deb9u1 [222 kB]
+Get:17 http://deb.debian.org/debian stretch/main amd64 libmagic1 amd64 1:5.30-1+deb9u1 [111 kB]
+Get:18 http://deb.debian.org/debian stretch/main amd64 file amd64 1:5.30-1+deb9u1 [64.1 kB]
+Get:19 http://deb.debian.org/debian stretch/main amd64 xz-utils amd64 5.2.2-1.2+b1 [266 kB]
+Get:20 http://deb.debian.org/debian stretch/main amd64 sudo amd64 1.8.19p1-2.1 [1055 kB]
+Fetched 8209 kB in 0s (34.7 MB/s)
+Selecting previously unselected package libpython2.7-minimal:amd64.
+(Reading database ... 
+(Reading database ... 5%
+(Reading database ... 10%
+(Reading database ... 15%
+(Reading database ... 20%
+(Reading database ... 25%
+(Reading database ... 30%
+(Reading database ... 35%
+(Reading database ... 40%
+(Reading database ... 45%
+(Reading database ... 50%
+(Reading database ... 55%
+(Reading database ... 60%
+(Reading database ... 65%
+(Reading database ... 70%
+(Reading database ... 75%
+(Reading database ... 80%
+(Reading database ... 85%
+(Reading database ... 90%
+(Reading database ... 95%
+(Reading database ... 100%
+(Reading database ... 6487 files and directories currently installed.)
+Preparing to unpack .../00-libpython2.7-minimal_2.7.13-2+deb9u2_amd64.deb ...
+Unpacking libpython2.7-minimal:amd64 (2.7.13-2+deb9u2) ...
+Selecting previously unselected package python2.7-minimal.
+Preparing to unpack .../01-python2.7-minimal_2.7.13-2+deb9u2_amd64.deb ...
+Unpacking python2.7-minimal (2.7.13-2+deb9u2) ...
+Selecting previously unselected package python-minimal.
+Preparing to unpack .../02-python-minimal_2.7.13-2_amd64.deb ...
+Unpacking python-minimal (2.7.13-2) ...
+Selecting previously unselected package mime-support.
+Preparing to unpack .../03-mime-support_3.60_all.deb ...
+Unpacking mime-support (3.60) ...
+Selecting previously unselected package libexpat1:amd64.
+Preparing to unpack .../04-libexpat1_2.2.0-2+deb9u1_amd64.deb ...
+Unpacking libexpat1:amd64 (2.2.0-2+deb9u1) ...
+Selecting previously unselected package libffi6:amd64.
+Preparing to unpack .../05-libffi6_3.2.1-6_amd64.deb ...
+Unpacking libffi6:amd64 (3.2.1-6) ...
+Selecting previously unselected package readline-common.
+Preparing to unpack .../06-readline-common_7.0-3_all.deb ...
+Unpacking readline-common (7.0-3) ...
+Selecting previously unselected package libreadline7:amd64.
+Preparing to unpack .../07-libreadline7_7.0-3_amd64.deb ...
+Unpacking libreadline7:amd64 (7.0-3) ...
+Selecting previously unselected package libsqlite3-0:amd64.
+Preparing to unpack .../08-libsqlite3-0_3.16.2-5+deb9u1_amd64.deb ...
+Unpacking libsqlite3-0:amd64 (3.16.2-5+deb9u1) ...
+Selecting previously unselected package libssl1.1:amd64.
+Preparing to unpack .../09-libssl1.1_1.1.0f-3+deb9u2_amd64.deb ...
+Unpacking libssl1.1:amd64 (1.1.0f-3+deb9u2) ...
+Selecting previously unselected package libpython2.7-stdlib:amd64.
+Preparing to unpack .../10-libpython2.7-stdlib_2.7.13-2+deb9u2_amd64.deb ...
+Unpacking libpython2.7-stdlib:amd64 (2.7.13-2+deb9u2) ...
+Selecting previously unselected package python2.7.
+Preparing to unpack .../11-python2.7_2.7.13-2+deb9u2_amd64.deb ...
+Unpacking python2.7 (2.7.13-2+deb9u2) ...
+Selecting previously unselected package libpython-stdlib:amd64.
+Preparing to unpack .../12-libpython-stdlib_2.7.13-2_amd64.deb ...
+Unpacking libpython-stdlib:amd64 (2.7.13-2) ...
+Setting up libpython2.7-minimal:amd64 (2.7.13-2+deb9u2) ...
+Setting up python2.7-minimal (2.7.13-2+deb9u2) ...
+Linking and byte-compiling packages for runtime python2.7...
+Setting up python-minimal (2.7.13-2) ...
+Selecting previously unselected package python.
+(Reading database ... 
+(Reading database ... 5%
+(Reading database ... 10%
+(Reading database ... 15%
+(Reading database ... 20%
+(Reading database ... 25%
+(Reading database ... 30%
+(Reading database ... 35%
+(Reading database ... 40%
+(Reading database ... 45%
+(Reading database ... 50%
+(Reading database ... 55%
+(Reading database ... 60%
+(Reading database ... 65%
+(Reading database ... 70%
+(Reading database ... 75%
+(Reading database ... 80%
+(Reading database ... 85%
+(Reading database ... 90%
+(Reading database ... 95%
+(Reading database ... 100%
+(Reading database ... 7313 files and directories currently installed.)
+Preparing to unpack .../0-python_2.7.13-2_amd64.deb ...
+Unpacking python (2.7.13-2) ...
+Selecting previously unselected package bzip2.
+Preparing to unpack .../1-bzip2_1.0.6-8.1_amd64.deb ...
+Unpacking bzip2 (1.0.6-8.1) ...
+Selecting previously unselected package libmagic-mgc.
+Preparing to unpack .../2-libmagic-mgc_1%3a5.30-1+deb9u1_amd64.deb ...
+Unpacking libmagic-mgc (1:5.30-1+deb9u1) ...
+Selecting previously unselected package libmagic1:amd64.
+Preparing to unpack .../3-libmagic1_1%3a5.30-1+deb9u1_amd64.deb ...
+Unpacking libmagic1:amd64 (1:5.30-1+deb9u1) ...
+Selecting previously unselected package file.
+Preparing to unpack .../4-file_1%3a5.30-1+deb9u1_amd64.deb ...
+Unpacking file (1:5.30-1+deb9u1) ...
+Selecting previously unselected package xz-utils.
+Preparing to unpack .../5-xz-utils_5.2.2-1.2+b1_amd64.deb ...
+Unpacking xz-utils (5.2.2-1.2+b1) ...
+Selecting previously unselected package sudo.
+Preparing to unpack .../6-sudo_1.8.19p1-2.1_amd64.deb ...
+Unpacking sudo (1.8.19p1-2.1) ...
+Setting up readline-common (7.0-3) ...
+Setting up libexpat1:amd64 (2.2.0-2+deb9u1) ...
+Setting up mime-support (3.60) ...
+Setting up sudo (1.8.19p1-2.1) ...
+Setting up libreadline7:amd64 (7.0-3) ...
+Setting up libmagic-mgc (1:5.30-1+deb9u1) ...
+Setting up bzip2 (1.0.6-8.1) ...
+Setting up libmagic1:amd64 (1:5.30-1+deb9u1) ...
+Processing triggers for libc-bin (2.24-11+deb9u3) ...
+Setting up libssl1.1:amd64 (1.1.0f-3+deb9u2) ...
+debconf: unable to initialize frontend: Dialog
+debconf: (TERM is not set, so the dialog frontend is not usable.)
+debconf: falling back to frontend: Readline
+debconf: unable to initialize frontend: Readline
+debconf: (Can&#39;t locate Term/ReadLine.pm in @INC (you may need to install the Term::ReadLine module) (@INC contains: /etc/perl /usr/local/lib/x86_64-linux-gnu/perl/5.24.1 /usr/local/share/perl/5.24.1 /usr/lib/x86_64-linux-gnu/perl5/5.24 /usr/share/perl5 /usr/lib/x86_64-linux-gnu/perl/5.24 /usr/share/perl/5.24 /usr/local/lib/site_perl /usr/lib/x86_64-linux-gnu/perl-base .) at /usr/share/perl5/Debconf/FrontEnd/Readline.pm line 7.)
+debconf: falling back to frontend: Teletype
+Setting up xz-utils (5.2.2-1.2+b1) ...
+update-alternatives: using /usr/bin/xz to provide /usr/bin/lzma (lzma) in auto mode
+Setting up libsqlite3-0:amd64 (3.16.2-5+deb9u1) ...
+Setting up libffi6:amd64 (3.2.1-6) ...
+Setting up libpython2.7-stdlib:amd64 (2.7.13-2+deb9u2) ...
+Setting up python2.7 (2.7.13-2+deb9u2) ...
+Setting up file (1:5.30-1+deb9u1) ...
+Setting up libpython-stdlib:amd64 (2.7.13-2) ...
+Setting up python (2.7.13-2) ...
+Processing triggers for libc-bin (2.24-11+deb9u3) ...
+</pre></div>
+
+            
+          
+        </div>
+    </div>
+</div>
+</body>
+</html>

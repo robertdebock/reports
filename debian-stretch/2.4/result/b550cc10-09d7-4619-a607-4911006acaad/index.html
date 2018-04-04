@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html class="layout-pf">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="ARA | Ansible Run Analysis records Ansible playbook runs seamlessly to make them easier to visualize, understand and troubleshoot">
+    <title>ARA | Ansible Run Analysis</title>
+    <script src="../../static/packaged/jquery/jquery.min.js"></script>
+    <script src="../../static/packaged/datatables/js/jquery.dataTables.min.js"></script>
+    <script src="../../static/packaged/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../../static/packaged/patternfly_bootstrap_treeview/js/bootstrap-treeview.min.js"></script>
+    <script src="../../static/packaged/patternfly/js/patternfly.min.js"></script>
+    <script src="../../static/js/ara.js"></script>
+    <link href="../../static/packaged/patternfly/css/patternfly.min.css" rel="stylesheet">
+    <link href="../../static/packaged/patternfly/css/patternfly-additions.min.css" rel="stylesheet">
+    <link href="../../static/packaged/patternfly_bootstrap_treeview/css/bootstrap-treeview.min.css" rel="stylesheet">
+    <link href="../../static/css/pygments.css" rel="stylesheet">
+    <link href="../../static/css/ara.css" rel="stylesheet">
+    <link rel="shortcut icon" href="../../static/images/favicon.ico">
+</head>
+
+
+
+<body>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12 results">
+          <h2>Task: <strong>Create Dockerfiles from image names</strong></h2>
+          <h2>Host: <strong>localhost</strong></h2>
+          <p>Time: <strong>2018-04-04 17:44:09</strong></p>
+          <p>Ansible version: <strong>2.4.3.0</strong></p>
+          
+          
+              
+    
+        
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    
+    
+
+        <h2>Msg</h2>
+                <div class="codehilite"><pre><span></span>All items completed
+</pre></div>
+
+            <h2>Results</h2>
+                <div class="codehilite"><pre><span></span><span class="p">[</span>
+    <span class="p">{</span>
+        <span class="nt">&quot;_ansible_ignore_errors&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+        <span class="nt">&quot;_ansible_item_result&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span> 
+        <span class="nt">&quot;_ansible_no_log&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span> 
+        <span class="nt">&quot;_ansible_parsed&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span> 
+        <span class="nt">&quot;changed&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span> 
+        <span class="nt">&quot;checksum&quot;</span><span class="p">:</span> <span class="s2">&quot;e0505c8ee620716920c5470536509d1858e0cbb6&quot;</span><span class="p">,</span> 
+        <span class="nt">&quot;dest&quot;</span><span class="p">:</span> <span class="s2">&quot;/tmp/molecule/ansible-role-bootstrap/debian-stretch/Dockerfile_debian_stretch&quot;</span><span class="p">,</span> 
+        <span class="nt">&quot;diff&quot;</span><span class="p">:</span> <span class="p">[],</span> 
+        <span class="nt">&quot;failed&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+        <span class="nt">&quot;gid&quot;</span><span class="p">:</span> <span class="mi">2000</span><span class="p">,</span> 
+        <span class="nt">&quot;group&quot;</span><span class="p">:</span> <span class="s2">&quot;travis&quot;</span><span class="p">,</span> 
+        <span class="nt">&quot;invocation&quot;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="nt">&quot;module_args&quot;</span><span class="p">:</span> <span class="p">{</span>
+                <span class="nt">&quot;attributes&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                <span class="nt">&quot;backup&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+                <span class="nt">&quot;content&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                <span class="nt">&quot;delimiter&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                <span class="nt">&quot;dest&quot;</span><span class="p">:</span> <span class="s2">&quot;/tmp/molecule/ansible-role-bootstrap/debian-stretch/Dockerfile_debian_stretch&quot;</span><span class="p">,</span> 
+                <span class="nt">&quot;directory_mode&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                <span class="nt">&quot;follow&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+                <span class="nt">&quot;force&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span> 
+                <span class="nt">&quot;group&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                <span class="nt">&quot;local_follow&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                <span class="nt">&quot;mode&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                <span class="nt">&quot;original_basename&quot;</span><span class="p">:</span> <span class="s2">&quot;Dockerfile.j2&quot;</span><span class="p">,</span> 
+                <span class="nt">&quot;owner&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                <span class="nt">&quot;regexp&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                <span class="nt">&quot;remote_src&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                <span class="nt">&quot;selevel&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                <span class="nt">&quot;serole&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                <span class="nt">&quot;setype&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                <span class="nt">&quot;seuser&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                <span class="nt">&quot;src&quot;</span><span class="p">:</span> <span class="s2">&quot;/home/travis/.ansible/tmp/ansible-tmp-1522863849.62-200142477542024/source&quot;</span><span class="p">,</span> 
+                <span class="nt">&quot;unsafe_writes&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                <span class="nt">&quot;validate&quot;</span><span class="p">:</span> <span class="kc">null</span>
+            <span class="p">}</span>
+        <span class="p">},</span> 
+        <span class="nt">&quot;item&quot;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="nt">&quot;image&quot;</span><span class="p">:</span> <span class="s2">&quot;debian:stretch&quot;</span><span class="p">,</span> 
+            <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;bootstrap-debian-stretch&quot;</span>
+        <span class="p">},</span> 
+        <span class="nt">&quot;md5sum&quot;</span><span class="p">:</span> <span class="s2">&quot;a58078b4063c651f36b57746fde31bf7&quot;</span><span class="p">,</span> 
+        <span class="nt">&quot;mode&quot;</span><span class="p">:</span> <span class="s2">&quot;0664&quot;</span><span class="p">,</span> 
+        <span class="nt">&quot;owner&quot;</span><span class="p">:</span> <span class="s2">&quot;travis&quot;</span><span class="p">,</span> 
+        <span class="nt">&quot;size&quot;</span><span class="p">:</span> <span class="mi">40</span><span class="p">,</span> 
+        <span class="nt">&quot;src&quot;</span><span class="p">:</span> <span class="s2">&quot;/home/travis/.ansible/tmp/ansible-tmp-1522863849.62-200142477542024/source&quot;</span><span class="p">,</span> 
+        <span class="nt">&quot;state&quot;</span><span class="p">:</span> <span class="s2">&quot;file&quot;</span><span class="p">,</span> 
+        <span class="nt">&quot;uid&quot;</span><span class="p">:</span> <span class="mi">2000</span>
+    <span class="p">}</span>
+<span class="p">]</span>
+</pre></div>
+
+            
+                </div>
+            </div>
+        
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    
+    
+
+        <h2>Censored</h2>
+                <div class="codehilite"><pre><span></span>the output has been hidden due to the fact that &#39;no_log: true&#39; was specified for this result
+</pre></div>
+
+            
+                </div>
+            </div>
+        
+    
+          
+        </div>
+    </div>
+</div>
+</body>
+</html>

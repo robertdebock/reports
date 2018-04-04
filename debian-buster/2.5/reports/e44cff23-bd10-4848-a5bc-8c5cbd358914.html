@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html class="layout-pf">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="ARA | Ansible Run Analysis records Ansible playbook runs seamlessly to make them easier to visualize, understand and troubleshoot">
+    <title>ARA | Ansible Run Analysis</title>
+    <script src="../static/packaged/jquery/jquery.min.js"></script>
+    <script src="../static/packaged/datatables/js/jquery.dataTables.min.js"></script>
+    <script src="../static/packaged/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../static/packaged/patternfly_bootstrap_treeview/js/bootstrap-treeview.min.js"></script>
+    <script src="../static/packaged/patternfly/js/patternfly.min.js"></script>
+    <script src="../static/js/ara.js"></script>
+    <link href="../static/packaged/patternfly/css/patternfly.min.css" rel="stylesheet">
+    <link href="../static/packaged/patternfly/css/patternfly-additions.min.css" rel="stylesheet">
+    <link href="../static/packaged/patternfly_bootstrap_treeview/css/bootstrap-treeview.min.css" rel="stylesheet">
+    <link href="../static/css/pygments.css" rel="stylesheet">
+    <link href="../static/css/ara.css" rel="stylesheet">
+    <link rel="shortcut icon" href="../static/images/favicon.ico">
+</head>
+
+<body>
+<!-- Begin navbar -->
+<nav class="navbar navbar-default navbar-pf" role="navigation">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">
+            <img src="../static/images/logo-header.svg" width="81" height="32" alt="ARA: Ansible Run Analysis" />
+        </a>
+    </div>
+    <div class="collapse navbar-collapse navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-utility">
+            <li><a href="https://ara.readthedocs.io/en/latest/" target="_blank">Documentation</a></li>
+            <li><a href="https://github.com/openstack/ara" target="_blank"><strong>ARA</strong> 0.14.6</a></li>
+            <li><a href="https://www.ansible.com/" target="_blank"><strong>Ansible</strong> 2.5.0</a></li>
+            <li><a href="https://www.python.org/" target="_blank"><strong>Python</strong> 2.7</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-primary">
+            <li class="active">
+            <a href="index.html">Playbook reports</a>
+            </li>
+            <li>
+            <a href="../about/index.html">About</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<!-- End navbar -->
+
+<!-- Begin single report -->
+<div class="col-md-custom col-md-offset-custom">
+    <div class="row">
+        <div class="list-group list-view-pf list-view-pf-view">
+            <div class="list-group-item">
+    <div class="list-view-pf-left">
+        <a href="e44cff23-bd10-4848-a5bc-8c5cbd358914.html" class="link link-report"><span class="fa fa-link" title="Permanent link to this playbook report"></span></a>
+        <span data-toggle="tooltip" data-placement="bottom" title="Playbook completed successfully" class="pficon pficon-ok list-view-pf-icon-sm list-view-pf-icon-success"></span>
+    
+    </div>
+    <!-- Begin playbook entry in the list -->
+    <div class="list-view-pf-main-info">
+        <div class="list-view-pf-body">
+            <div class="list-view-pf-description">
+                <div class="list-group-item-heading timestamp-heading">
+                    <span title="Date at which the playbook started">2018-04-04 16:41:39</span>
+                </div>
+                <div class="list-group-item-heading">
+                    <a href="#" data-toggle="modal" data-target="#file_modal" data-load="222872e1-882b-4927-87d6-6125e59595d1/" title="/home/travis/build/robertdebock/ansible-role-bootstrap/molecule/debian-buster/verify.yml">verify.yml</a>
+                </div>
+            </div>
+            <div class="list-view-pf-additional-info">
+                <div class="list-view-pf-additional-info-item" title="Duration of the entire playbook">
+                    <span class="fa fa-clock-o"></span>
+                    <strong>0:00:07</strong>
+                </div>
+                <br>
+                <div class="list-view-pf-additional-info-item" title="Playbook parameters and options">
+                    <div class="list-view-pf-expand">
+                        <span class="fa fa-angle-right"></span>
+                        <span class="fa fa-gears"></span>
+                        Parameters
+                    </div>
+                </div>
+                <div class="list-view-pf-additional-info-item" title="Hosts involved in the playbook">
+                    <div class="list-view-pf-expand">
+                        <span class="fa fa-angle-right"></span>
+                        <span class="pficon pficon-server"></span>
+                        <strong>1</strong> Hosts
+                    </div>
+                </div>
+                <div class="list-view-pf-additional-info-item" title="Plays involved in the playbook">
+                    <div class="list-view-pf-expand">
+                        <span class="fa fa-angle-right"></span>
+                        <span class="pficon pficon-flag"></span>
+                        <strong>1</strong> Plays
+                    </div>
+                </div>
+                <div class="list-view-pf-additional-info-item" title="Role and task files involved in the playbook">
+                    <div class="list-view-pf-expand">
+                        <span class="fa fa-angle-right"></span>
+                        <span class="fa fa-folder-open"></span>
+                        <strong>1</strong> Files
+                    </div>
+                </div>
+                <div class="list-view-pf-additional-info-item" title="Tasks involved in the playbook">
+                    <div class="list-view-pf-expand">
+                        <span class="fa fa-angle-right"></span>
+                        <span class="fa fa-check"></span>
+                        <strong>7</strong> Tasks
+                    </div>
+                </div>
+                <div class="list-view-pf-additional-info-item" title="Records saved with ara_record throughout the playbook">
+                    <div class="list-view-pf-expand">
+                        <span class="fa fa-angle-right"></span>
+                        <span class="fa pficon-save"></span>
+                        <strong>0</strong> Records
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End playbook entry in the list -->
+
+    <!-- Begin playbook details -->
+    <!-- Begin playbook options -->
+    <div class="list-group-item-container container-fluid hidden">
+        <div class="close">
+            <span class="pficon pficon-close"></span>
+        </div>
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    <strong>Playbook parameters</strong>
+                    <span class="pficon pficon-help pull-right" data-toggle="tooltip" data-placement="bottom" data-html="true" title="<h3>Tips: Parameters</h3>
+<hr>
+<p>This panel contains all the parameters and options passed to the ansible-playbook command.</p>
+<p>You can control which parameters ARA should ignore with the <code>ARA_IGNORE_PARAMETERS</code> configuration.</p>"></span>
+                </h3>
+                <table class="table table-striped table-bordered table-hover table-condensed" id="parameters_e44cff23-bd10-4848-a5bc-8c5cbd358914">
+                    <thead>
+                        <tr>
+                            <th>Parameter</th>
+                            <th>Value</th>
+                        </tr>
+                    </thead>
+                </table>
+            </div>
+        </div>
+    </div>
+    <!-- End playbook host stats details -->
+
+    <!-- Begin playbook host stats details -->
+    <div class="list-group-item-container container-fluid hidden">
+        <div class="close">
+            <span class="pficon pficon-close"></span>
+        </div>
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    <strong>Hosts</strong>
+                    <span class="pficon pficon-help pull-right" data-toggle="tooltip" data-placement="bottom" data-html="true" title="<h3>Tips: Hosts</h3>
+<hr>
+<p>This panel contains all the hosts involved in the playbook, their tasks statistics and, if available, their host facts.</p>
+<p>
+    If host facts have been gathered, a summary will be available if you hover the host name. For the complete list of facts, click on the host.
+    Note that host facts are not in real time: they are saved at the time where facts are gathered.
+</p>
+<p>
+    The search box searches through both the host name and the host fact summary, for example:
+    <ul>
+        <li><strong>localhost</strong> would match only '<i>localhost</i>' (provided by default: the Ansible inventory hostname)</li>
+        <li><strong>fedora</strong> would match all '<i>fedora</i>' hosts (provided by the <i>ansible_distribution</i> fact)</li>
+        <li><strong>192.168.1</strong> would match all hosts with an IP in the '<i>192.168.1</i>' range (provided by the <i>ansible_all_ipv4_addresses</i> fact)</li>
+    </ul>
+</p>"></span>
+                </h3>
+                <table class="table table-striped table-bordered table-hover table-condensed" id="stats_e44cff23-bd10-4848-a5bc-8c5cbd358914">
+                    <thead>
+                        <tr>
+                            <th><span class="pull-left">Host</span></th>
+                            <th class="col-md-1"><span class="ok label">OK</span></th>
+                            <th class="col-md-1"><span class="changed label">CHANGED</span></th>
+                            <th class="col-md-1"><span class="failed label">FAILED</span></th>
+                            <th class="col-md-1"><span class="skipped label">SKIPPED</span></th>
+                            <th class="col-md-1"><span class="unreachable label">UNREACHABLE</span></th>
+                        </tr>
+                    </thead>
+                </table>
+                </div>
+        </div>
+    </div>
+    <!-- End playbook host stats details -->
+
+    <!-- Begin playbook play details -->
+    <div class="list-group-item-container container-fluid hidden">
+        <div class="close">
+            <span class="pficon pficon-close"></span>
+        </div>
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    <strong>Plays</strong>
+                    <span class="pficon pficon-help pull-right" data-toggle="tooltip" data-placement="bottom" data-html="true" title="<h3>Tips: Plays</h3>
+<hr>
+<p>This panel contains all the plays involved in your playbook run.</p>
+<p>To see your playbook file, click the playbook file path in the playbook report list.</p>"></span>
+                </h3>
+                <table class="table table-striped table-bordered table-hover table-condensed" id="plays_e44cff23-bd10-4848-a5bc-8c5cbd358914">
+                    <thead>
+                        <tr>
+                            <th><span class="pull-left">Play</span></th>
+                            <th class="col-md-2">Start</th>
+                            <th class="col-md-2">End</th>
+                            <th class="col-md-1">Duration</th>
+                        </tr>
+                    </thead>
+                </table>
+                </div>
+        </div>
+    </div>
+    <!-- End playbook play details -->
+
+    <!-- Begin playbook file details -->
+    <div class="list-group-item-container container-fluid hidden">
+        <div class="close">
+            <span class="pficon pficon-close"></span>
+        </div>
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    <strong>Files</strong>
+                    <span class="pficon pficon-help pull-right" data-toggle="tooltip" data-placement="bottom" data-html="true" title="<h3>Tips: Files</h3>
+<hr>
+<p>This panel contains all the files involved in your playbook.</p>
+<p>You can click on the files in order to view them as they were when your playbook ran.</p>"></span>
+                </h3>
+                <div id="files_e44cff23-bd10-4848-a5bc-8c5cbd358914" class="fa-border"></div>
+                </div>
+        </div>
+    </div>
+    <!-- End playbook file details -->
+
+    <!-- Begin playbook task details -->
+    <div class="list-group-item-container container-fluid hidden">
+        <div class="close">
+            <span class="pficon pficon-close"></span>
+        </div>
+        <div class="row">
+            <div class="col-md-10 col-md-offset-1">
+                <h3>
+                    <strong>Tasks</strong>
+                    <span class="pficon pficon-help pull-right" data-toggle="tooltip" data-placement="bottom" data-html="true" title="<h3>Tips: Tasks</h3>
+<hr>
+<p>This panel contains all the tasks and their results on your hosts in your playbook.</p>
+<p>Click on the action to view the task file in which that action is located.</p>
+<p>Click on the task status in order to view the detailed results of that task.</p>
+<p>
+    All table columns are sortable. This allows you to, for example:
+    <ul>
+        <li>Sort tasks by duration to find which tasks took the longest time</li>
+        <li>Sort (or reverse) the elapsed column to have the beginning of the playbook (or the end) first</li>
+    </ul>
+</p>
+<p>
+    The search box searches through all fields as well as task tags. This allows you to search, for example:
+    <ul>
+        <li><strong>do something</strong> would match tasks with '<i>do something</i>' in their name</li>
+        <li><strong>localhost</strong> would match tasks for the host '<i>localhost</i>'</li>
+        <li><strong>get_url</strong> would match tasks that use the '<i>get_url</i>' Ansible module</li>
+        <li><strong>failed</strong> would match tasks for which the status is '<i>failed</i>'</li>
+        <li><strong>production</strong> would match tasks that have the tag '<i>production</i>'</li>
+    </ul>
+</p>"></span>
+                </h3>
+                <table class="table table-striped table-bordered table-hover table-condensed" id="tasks_e44cff23-bd10-4848-a5bc-8c5cbd358914">
+                    <thead>
+                        <tr>
+                            <th><span class="pull-left">Task</span></th>
+                            <th>Host</th>
+                            <th>Action</th>
+                            <th class="col-md-1">Elapsed</th>
+                            <th class="col-md-1">Duration</th>
+                            <th class="col-md-1">Status</th>
+                        </tr>
+                    </thead>
+                </table>
+                </div>
+        </div>
+    </div>
+    <!-- End playbook task details -->
+
+    <!-- Begin playbook data details -->
+    <div class="list-group-item-container container-fluid hidden">
+        <div class="close">
+            <span class="pficon pficon-close"></span>
+        </div>
+        <div class="row">
+            <div class="col-md-10 col-md-offset-1">
+                <h3>
+                    <strong>Records</strong>
+                    <span class="pficon pficon-help pull-right" data-toggle="tooltip" data-placement="bottom" data-html="true" title="<h3>Tips: Records</h3>
+<hr>
+<p>This panel contains persistent data recorded from your playbooks with the <strong>ara_record</strong> Ansible module.</p>
+<p><strong>ara_record</strong> is an Ansible module bundled with ARA that allows you to record and attach any arbitrary data that is displayed here.</p>
+<p>
+    Some examples of things that can be registered with ara_record:
+    <ul>
+        <li>The git version of your playbooks</li>
+        <li>The host from which your playbook ran</li>
+        <li>An URL to retrieve logs for the playbook</li>
+        <li>Important variables or debug information obtained throughout your playbook</li>
+    </ul>
+</p>
+<p>For more information on how to use <strong>ara_record</strong> (and <strong>ara_read</strong>), refer to the documentation.</p>"></span>
+                </h3>
+                <div class="text-center fa-border">
+                    <h2>There is no recorded data for this playbook.</h2>
+                    <h3>The <a href="https://ara.readthedocs.io/en/latest/usage.html#ara-record" target="_blank">ara_record</a> Ansible module helps you record arbitrary persistent data that is displayed here.</h3>
+                    <h3>It provides the ability to save strings, lists, dicts, json or urls and each will be rendered accordingly. Try it out!</h3>
+                </div>
+                </div>
+        </div>
+    </div>
+    <!-- End playbook data details -->
+    <!-- End playbook details -->
+</div>
+
+<!-- Begin modals -->
+<div class="modal fade" id="host_modal" tabindex="-1" role="dialog" aria-labelledby="host_modal" aria-hidden="true">
+    <div class="modal-lg modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                    <span class="pficon pficon-close"></span>
+                </button>
+                <a data-href="../host/index.html" class="link link-modal" target="_blank"><span class="fa fa-link" title="Permanent link to this host"></span></a>
+            </div>
+            <div class="modal-body embed-responsive embed-responsive-item">
+                <div class="row text-center"><strong>Loading host facts...</strong></div>
+                <div class="spinner spinner-lg"></div>
+                <iframe id="host_iframe" class="iframe" data-src="../host/index.html"></iframe>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="file_modal" tabindex="-1" role="dialog" aria-labelledby="file_modal" aria-hidden="true">
+    <div class="modal-lg modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                    <span class="pficon pficon-close"></span>
+                </button>
+                <a data-href="../file/index.html" class="link link-modal" target="_blank"><span class="fa fa-link" title="Permanent link to this file"></span></a>
+            </div>
+            <div class="modal-body embed-responsive embed-responsive-item">
+                <div class="row text-center"><strong>Loading file content...</strong></div>
+                <div class="spinner spinner-lg"></div>
+                <iframe id="file_iframe" class="iframe" data-src="../file/index.html"></iframe>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="task_result_modal" tabindex="-1" role="dialog" aria-labelledby="task_result_modal" aria-hidden="true">
+    <div class="modal-lg modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                    <span class="pficon pficon-close"></span>
+                </button>
+                <a data-href="../result/index.html" class="link link-modal" target="_blank"><span class="fa fa-link" title="Permanent link to this task result"></span></a>
+            </div>
+            <div class="modal-body embed-responsive embed-responsive-item">
+                <div class="row text-center"><strong>Loading task details...</strong></div>
+                <div class="spinner spinner-lg"></div>
+                <iframe id="result_iframe" class="iframe" data-src="../result/index.html"></iframe>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End modals -->
+<!-- Begin data table javascript -->
+<script>
+    $("#parameters_e44cff23-bd10-4848-a5bc-8c5cbd358914").on( 'error.dt', function ( e, settings, techNote, message ) {
+        console.log( 'An error has been reported by DataTables: ', message );
+    }).DataTable({
+        "ajax": "ajax/parameters/e44cff23-bd10-4848-a5bc-8c5cbd358914.txt",
+        "deferRender": true,
+        "processing": true,
+        "order": [[ 0, "asc" ]],
+        "language": {
+            "search": "Search: ",
+            "loadingRecords": "<br><div class='row'>Loading playbook parameters...</div><div class='spinner table-spinner'></div>"
+        },
+        "paging": false
+    });
+    $("#stats_e44cff23-bd10-4848-a5bc-8c5cbd358914").on( 'error.dt', function ( e, settings, techNote, message ) {
+        console.log( 'An error has been reported by DataTables: ', message );
+    }).DataTable({
+        "ajax": "ajax/stats/e44cff23-bd10-4848-a5bc-8c5cbd358914.txt",
+        "deferRender": true,
+        "processing": true,
+        "order": [[ 0, "asc" ]],
+        "language": {
+            "search": "Search: ",
+            "loadingRecords": "<br><div class='row'>Loading host stats...</div><div class='spinner table-spinner'></div>"
+        },
+        "drawCallback": function(oSettings, json) {
+            $('[data-toggle="tooltip"]').tooltip();
+        },
+        "pageLength": 25
+    
+    });
+    $("#plays_e44cff23-bd10-4848-a5bc-8c5cbd358914").on( 'error.dt', function ( e, settings, techNote, message ) {
+        console.log( 'An error has been reported by DataTables: ', message );
+    }).DataTable({
+        "ajax": "ajax/plays/e44cff23-bd10-4848-a5bc-8c5cbd358914.txt",
+        "deferRender": true,
+        "processing": true,
+        "order": [[ 1, "asc" ]],
+        "language": {
+            "search": "Search: ",
+            "loadingRecords": "<br><div class='row'>Loading plays...</div><div class='spinner table-spinner'></div>"
+        },
+        "pageLength": 25
+    
+    });
+    $('#files_e44cff23-bd10-4848-a5bc-8c5cbd358914').treeview({
+      collapseIcon: "fa fa-angle-down",
+      data: [
+  {
+    "href": "#home", 
+    "nodes": [
+      {
+        "href": "#travis", 
+        "nodes": [
+          {
+            "href": "#build", 
+            "nodes": [
+              {
+                "href": "#robertdebock", 
+                "nodes": [
+                  {
+                    "href": "#ansible-role-bootstrap", 
+                    "nodes": [
+                      {
+                        "href": "#molecule", 
+                        "nodes": [
+                          {
+                            "href": "#debian-buster", 
+                            "nodes": [
+                              {
+                                "color": "#0088ce", 
+                                "dataAttr": {
+                                  "load": "222872e1-882b-4927-87d6-6125e59595d1", 
+                                  "target": "#file_modal", 
+                                  "toggle": "modal"
+                                }, 
+                                "href": "#", 
+                                "icon": "fa fa-file-code-o", 
+                                "state": {
+                                  "expanded": true
+                                }, 
+                                "text": "verify.yml"
+                              }
+                            ], 
+                            "state": {
+                              "expanded": true
+                            }, 
+                            "text": "debian-buster"
+                          }
+                        ], 
+                        "state": {
+                          "expanded": true
+                        }, 
+                        "text": "molecule"
+                      }
+                    ], 
+                    "state": {
+                      "expanded": true
+                    }, 
+                    "text": "ansible-role-bootstrap"
+                  }
+                ], 
+                "state": {
+                  "expanded": true
+                }, 
+                "text": "robertdebock"
+              }
+            ], 
+            "state": {
+              "expanded": true
+            }, 
+            "text": "build"
+          }
+        ], 
+        "state": {
+          "expanded": true
+        }, 
+        "text": "travis"
+      }
+    ], 
+    "state": {
+      "expanded": true
+    }, 
+    "text": "home"
+  }
+],
+      expandIcon: "fa fa-angle-right",
+      nodeIcon: "fa fa-folder-o",
+      showBorder: false
+    });
+    $("#tasks_e44cff23-bd10-4848-a5bc-8c5cbd358914").on( 'error.dt', function ( e, settings, techNote, message ) {
+        console.log( 'An error has been reported by DataTables: ', message );
+    }).DataTable({
+        "ajax": "ajax/results/e44cff23-bd10-4848-a5bc-8c5cbd358914.txt",
+        "deferRender": true,
+        "processing": true,
+        "order": [[ 3, "asc" ]],
+        "language": {
+            "search": "Search: ",
+            "loadingRecords": "<br><div class='row'>Loading task results...</div><div class='spinner table-spinner'></div>"
+        },
+        "drawCallback": function(oSettings, json) {
+            $('[data-toggle="tooltip"]').tooltip();
+        },
+        "pageLength": 25
+    
+    });
+    </script>
+<!-- End data table javascript -->
+
+<script>
+    $('.modal').on('show.bs.modal', function(e) {
+        /* Only load the iframe content when the modal is opened */
+        var load = $(e.relatedTarget).data('load');
+        $(this).find('a').prop('href', function() {
+            // Set their src attribute to the value of data-src
+            return $(this).data('href').replace('index.html','').concat(load);
+        });
+        $(this).find('iframe').prop('src', function() {
+            // Set their src attribute to the value of data-src
+            return $(this).data('src').replace('index.html','').concat(load);
+        });
+
+        /* Adjust modal and iframe height based on window size */
+        $('.modal .modal-body').css('max-height', $(window).height() * 0.7);
+        $('.embed-responsive-item').css('height', $(window).height() * 0.7);
+    });
+
+    /* Disable default error alerts from datatables, fold them to the javascript console instead */
+    $.fn.dataTable.ext.errMode = 'none';
+</script></div>
+    </div>
+</div>
+<!-- End single report -->
+</body>
+</html>

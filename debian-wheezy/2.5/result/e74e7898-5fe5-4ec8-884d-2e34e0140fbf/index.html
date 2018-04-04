@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html class="layout-pf">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="ARA | Ansible Run Analysis records Ansible playbook runs seamlessly to make them easier to visualize, understand and troubleshoot">
+    <title>ARA | Ansible Run Analysis</title>
+    <script src="../../static/packaged/jquery/jquery.min.js"></script>
+    <script src="../../static/packaged/datatables/js/jquery.dataTables.min.js"></script>
+    <script src="../../static/packaged/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../../static/packaged/patternfly_bootstrap_treeview/js/bootstrap-treeview.min.js"></script>
+    <script src="../../static/packaged/patternfly/js/patternfly.min.js"></script>
+    <script src="../../static/js/ara.js"></script>
+    <link href="../../static/packaged/patternfly/css/patternfly.min.css" rel="stylesheet">
+    <link href="../../static/packaged/patternfly/css/patternfly-additions.min.css" rel="stylesheet">
+    <link href="../../static/packaged/patternfly_bootstrap_treeview/css/bootstrap-treeview.min.css" rel="stylesheet">
+    <link href="../../static/css/pygments.css" rel="stylesheet">
+    <link href="../../static/css/ara.css" rel="stylesheet">
+    <link rel="shortcut icon" href="../../static/images/favicon.ico">
+</head>
+
+
+
+<body>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12 results">
+          <h2>Task: <strong>ansible-role-bootstrap : install software with apt-get</strong></h2>
+          <h2>Host: <strong>bootstrap-debian-wheezy</strong></h2>
+          <p>Time: <strong>2018-04-04 16:27:54</strong></p>
+          <p>Ansible version: <strong>2.5.0</strong></p>
+          
+          
+              
+    
+
+        <h2>Stderr</h2>
+                <div class="codehilite"><pre><span></span>debconf: delaying package configuration, since apt-utils is not installed
+debconf: unable to initialize frontend: Dialog
+debconf: (TERM is not set, so the dialog frontend is not usable.)
+debconf: falling back to frontend: Readline
+debconf: unable to initialize frontend: Readline
+debconf: (Can&#39;t locate Term/ReadLine.pm in @INC (@INC contains: /etc/perl /usr/local/lib/perl/5.14.2 /usr/local/share/perl/5.14.2 /usr/lib/perl5 /usr/share/perl5 /usr/lib/perl/5.14 /usr/share/perl/5.14 /usr/local/lib/site_perl .) at /usr/share/perl5/Debconf/FrontEnd/Readline.pm line 7.)
+debconf: falling back to frontend: Teletype
+</pre></div>
+
+            <h2>Stdout</h2>
+                <div class="codehilite"><pre><span></span>Get:1 http://security.debian.org wheezy/updates Release.gpg [1601 B]
+Get:2 http://security.debian.org wheezy/updates Release [39.0 kB]
+Get:3 http://security.debian.org wheezy/updates/main amd64 Packages [781 kB]
+Get:4 http://deb.debian.org wheezy Release.gpg [2373 B]
+Get:5 http://deb.debian.org wheezy-updates Release.gpg [1601 B]
+Get:6 http://deb.debian.org wheezy Release [191 kB]
+Get:7 http://deb.debian.org wheezy-updates Release [155 kB]
+Get:8 http://deb.debian.org wheezy/main amd64 Packages [7634 kB]
+Get:9 http://deb.debian.org wheezy-updates/main amd64 Packages [7481 B]
+Fetched 8813 kB in 1s (5045 kB/s)
+Reading package lists...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following extra packages will be installed:
+  file libexpat1 libgpm2 libmagic1 libncursesw5 libsqlite3-0 libssl1.0.0
+  mime-support python-minimal python2.7 python2.7-minimal
+Suggested packages:
+  gpm python-doc python-tk python2.7-doc binutils binfmt-support
+The following NEW packages will be installed:
+  file libexpat1 libgpm2 libmagic1 libncursesw5 libsqlite3-0 libssl1.0.0
+  mime-support python python-minimal python2.7 python2.7-minimal sudo
+0 upgraded, 13 newly installed, 0 to remove and 1 not upgraded.
+Need to get 7937 kB of archives.
+After this operation, 24.9 MB of additional disk space will be used.
+Get:1 http://security.debian.org/ wheezy/updates/main libssl1.0.0 amd64 1.0.1t-1+deb7u4 [1279 kB]
+Get:2 http://deb.debian.org/debian/ wheezy/main libncursesw5 amd64 5.9-10 [141 kB]
+Get:3 http://security.debian.org/ wheezy/updates/main libmagic1 amd64 5.11-2+deb7u9 [205 kB]
+Get:4 http://deb.debian.org/debian/ wheezy/main libgpm2 amd64 1.20.4-6 [35.8 kB]
+Get:5 http://security.debian.org/ wheezy/updates/main libexpat1 amd64 2.1.0-1+deb7u5 [139 kB]
+Get:6 http://security.debian.org/ wheezy/updates/main libsqlite3-0 amd64 3.7.13-1+deb7u4 [454 kB]
+Get:7 http://security.debian.org/ wheezy/updates/main file amd64 5.11-2+deb7u9 [53.5 kB]
+Get:8 http://deb.debian.org/debian/ wheezy/main mime-support all 3.52-1+deb7u1 [35.5 kB]
+Get:9 http://security.debian.org/ wheezy/updates/main python2.7-minimal amd64 2.7.3-6+deb7u4 [1786 kB]
+Get:10 http://security.debian.org/ wheezy/updates/main python2.7 amd64 2.7.3-6+deb7u4 [2731 kB]
+Get:11 http://deb.debian.org/debian/ wheezy/main python-minimal all 2.7.3-4+deb7u1 [42.8 kB]
+Get:12 http://security.debian.org/ wheezy/updates/main sudo amd64 1.8.5p2-1+nmu3+deb7u4 [854 kB]
+Get:13 http://deb.debian.org/debian/ wheezy/main python all 2.7.3-4+deb7u1 [181 kB]
+Fetched 7937 kB in 0s (11.4 MB/s)
+Selecting previously unselected package libncursesw5:amd64.
+(Reading database ... 6744 files and directories currently installed.)
+Unpacking libncursesw5:amd64 (from .../libncursesw5_5.9-10_amd64.deb) ...
+Selecting previously unselected package libssl1.0.0:amd64.
+Unpacking libssl1.0.0:amd64 (from .../libssl1.0.0_1.0.1t-1+deb7u4_amd64.deb) ...
+Selecting previously unselected package libgpm2:amd64.
+Unpacking libgpm2:amd64 (from .../libgpm2_1.20.4-6_amd64.deb) ...
+Selecting previously unselected package libmagic1:amd64.
+Unpacking libmagic1:amd64 (from .../libmagic1_5.11-2+deb7u9_amd64.deb) ...
+Selecting previously unselected package libexpat1:amd64.
+Unpacking libexpat1:amd64 (from .../libexpat1_2.1.0-1+deb7u5_amd64.deb) ...
+Selecting previously unselected package libsqlite3-0:amd64.
+Unpacking libsqlite3-0:amd64 (from .../libsqlite3-0_3.7.13-1+deb7u4_amd64.deb) ...
+Selecting previously unselected package file.
+Unpacking file (from .../file_5.11-2+deb7u9_amd64.deb) ...
+Selecting previously unselected package mime-support.
+Unpacking mime-support (from .../mime-support_3.52-1+deb7u1_all.deb) ...
+Selecting previously unselected package python2.7-minimal.
+Unpacking python2.7-minimal (from .../python2.7-minimal_2.7.3-6+deb7u4_amd64.deb) ...
+Selecting previously unselected package python2.7.
+Unpacking python2.7 (from .../python2.7_2.7.3-6+deb7u4_amd64.deb) ...
+Selecting previously unselected package python-minimal.
+Unpacking python-minimal (from .../python-minimal_2.7.3-4+deb7u1_all.deb) ...
+Selecting previously unselected package python.
+Unpacking python (from .../python_2.7.3-4+deb7u1_all.deb) ...
+Selecting previously unselected package sudo.
+Unpacking sudo (from .../sudo_1.8.5p2-1+nmu3+deb7u4_amd64.deb) ...
+Setting up libncursesw5:amd64 (5.9-10) ...
+Setting up libssl1.0.0:amd64 (1.0.1t-1+deb7u4) ...
+Setting up libgpm2:amd64 (1.20.4-6) ...
+Setting up libmagic1:amd64 (5.11-2+deb7u9) ...
+Setting up libexpat1:amd64 (2.1.0-1+deb7u5) ...
+Setting up libsqlite3-0:amd64 (3.7.13-1+deb7u4) ...
+Setting up file (5.11-2+deb7u9) ...
+Setting up mime-support (3.52-1+deb7u1) ...
+update-alternatives: using /usr/bin/see to provide /usr/bin/view (view) in auto mode
+Setting up python2.7-minimal (2.7.3-6+deb7u4) ...
+Linking and byte-compiling packages for runtime python2.7...
+Setting up python2.7 (2.7.3-6+deb7u4) ...
+Setting up python-minimal (2.7.3-4+deb7u1) ...
+Setting up python (2.7.3-4+deb7u1) ...
+Setting up sudo (1.8.5p2-1+nmu3+deb7u4) ...
+</pre></div>
+
+            
+          
+        </div>
+    </div>
+</div>
+</body>
+</html>

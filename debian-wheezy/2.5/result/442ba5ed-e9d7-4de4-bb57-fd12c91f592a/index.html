@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html class="layout-pf">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="ARA | Ansible Run Analysis records Ansible playbook runs seamlessly to make them easier to visualize, understand and troubleshoot">
+    <title>ARA | Ansible Run Analysis</title>
+    <script src="../../static/packaged/jquery/jquery.min.js"></script>
+    <script src="../../static/packaged/datatables/js/jquery.dataTables.min.js"></script>
+    <script src="../../static/packaged/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../../static/packaged/patternfly_bootstrap_treeview/js/bootstrap-treeview.min.js"></script>
+    <script src="../../static/packaged/patternfly/js/patternfly.min.js"></script>
+    <script src="../../static/js/ara.js"></script>
+    <link href="../../static/packaged/patternfly/css/patternfly.min.css" rel="stylesheet">
+    <link href="../../static/packaged/patternfly/css/patternfly-additions.min.css" rel="stylesheet">
+    <link href="../../static/packaged/patternfly_bootstrap_treeview/css/bootstrap-treeview.min.css" rel="stylesheet">
+    <link href="../../static/css/pygments.css" rel="stylesheet">
+    <link href="../../static/css/ara.css" rel="stylesheet">
+    <link rel="shortcut icon" href="../../static/images/favicon.ico">
+</head>
+
+
+
+<body>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12 results">
+          <h2>Task: <strong>ansible-role-bootstrap : install software to support preview modules</strong></h2>
+          <h2>Host: <strong>bootstrap-debian-wheezy</strong></h2>
+          <p>Time: <strong>2018-04-04 16:28:47</strong></p>
+          <p>Ansible version: <strong>2.5.0</strong></p>
+          
+          
+              
+    
+        
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    
+    
+
+        <h2>Msg</h2>
+                <div class="codehilite"><pre><span></span>All items completed
+</pre></div>
+
+            <h2>Results</h2>
+                <div class="codehilite"><pre><span></span><span class="p">[</span>
+    <span class="p">{</span>
+        <span class="nt">&quot;_ansible_ignore_errors&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+        <span class="nt">&quot;_ansible_item_result&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span> 
+        <span class="nt">&quot;_ansible_no_log&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+        <span class="nt">&quot;_ansible_parsed&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span> 
+        <span class="nt">&quot;cache_update_time&quot;</span><span class="p">:</span> <span class="mi">1522859318</span><span class="p">,</span> 
+        <span class="nt">&quot;cache_updated&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+        <span class="nt">&quot;changed&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+        <span class="nt">&quot;failed&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+        <span class="nt">&quot;invocation&quot;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="nt">&quot;module_args&quot;</span><span class="p">:</span> <span class="p">{</span>
+                <span class="nt">&quot;allow_unauthenticated&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+                <span class="nt">&quot;autoclean&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+                <span class="nt">&quot;autoremove&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+                <span class="nt">&quot;cache_valid_time&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> 
+                <span class="nt">&quot;deb&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                <span class="nt">&quot;default_release&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                <span class="nt">&quot;dpkg_options&quot;</span><span class="p">:</span> <span class="s2">&quot;force-confdef,force-confold&quot;</span><span class="p">,</span> 
+                <span class="nt">&quot;force&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+                <span class="nt">&quot;force_apt_get&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+                <span class="nt">&quot;install_recommends&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;apt-transport-https&quot;</span><span class="p">,</span> 
+                <span class="nt">&quot;only_upgrade&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+                <span class="nt">&quot;package&quot;</span><span class="p">:</span> <span class="p">[</span>
+                    <span class="s2">&quot;apt-transport-https&quot;</span>
+                <span class="p">],</span> 
+                <span class="nt">&quot;purge&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+                <span class="nt">&quot;state&quot;</span><span class="p">:</span> <span class="s2">&quot;present&quot;</span><span class="p">,</span> 
+                <span class="nt">&quot;update_cache&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                <span class="nt">&quot;upgrade&quot;</span><span class="p">:</span> <span class="kc">null</span>
+            <span class="p">}</span>
+        <span class="p">},</span> 
+        <span class="nt">&quot;item&quot;</span><span class="p">:</span> <span class="s2">&quot;apt-transport-https&quot;</span>
+    <span class="p">},</span> 
+    <span class="p">{</span>
+        <span class="nt">&quot;_ansible_ignore_errors&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+        <span class="nt">&quot;_ansible_item_result&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span> 
+        <span class="nt">&quot;_ansible_no_log&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+        <span class="nt">&quot;_ansible_parsed&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span> 
+        <span class="nt">&quot;cache_update_time&quot;</span><span class="p">:</span> <span class="mi">1522859318</span><span class="p">,</span> 
+        <span class="nt">&quot;cache_updated&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+        <span class="nt">&quot;changed&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+        <span class="nt">&quot;failed&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+        <span class="nt">&quot;invocation&quot;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="nt">&quot;module_args&quot;</span><span class="p">:</span> <span class="p">{</span>
+                <span class="nt">&quot;allow_unauthenticated&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+                <span class="nt">&quot;autoclean&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+                <span class="nt">&quot;autoremove&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+                <span class="nt">&quot;cache_valid_time&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> 
+                <span class="nt">&quot;deb&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                <span class="nt">&quot;default_release&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                <span class="nt">&quot;dpkg_options&quot;</span><span class="p">:</span> <span class="s2">&quot;force-confdef,force-confold&quot;</span><span class="p">,</span> 
+                <span class="nt">&quot;force&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+                <span class="nt">&quot;force_apt_get&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+                <span class="nt">&quot;install_recommends&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;lvm2&quot;</span><span class="p">,</span> 
+                <span class="nt">&quot;only_upgrade&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+                <span class="nt">&quot;package&quot;</span><span class="p">:</span> <span class="p">[</span>
+                    <span class="s2">&quot;lvm2&quot;</span>
+                <span class="p">],</span> 
+                <span class="nt">&quot;purge&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+                <span class="nt">&quot;state&quot;</span><span class="p">:</span> <span class="s2">&quot;present&quot;</span><span class="p">,</span> 
+                <span class="nt">&quot;update_cache&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                <span class="nt">&quot;upgrade&quot;</span><span class="p">:</span> <span class="kc">null</span>
+            <span class="p">}</span>
+        <span class="p">},</span> 
+        <span class="nt">&quot;item&quot;</span><span class="p">:</span> <span class="s2">&quot;lvm2&quot;</span>
+    <span class="p">},</span> 
+    <span class="p">{</span>
+        <span class="nt">&quot;_ansible_ignore_errors&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+        <span class="nt">&quot;_ansible_item_result&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span> 
+        <span class="nt">&quot;_ansible_no_log&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+        <span class="nt">&quot;_ansible_parsed&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span> 
+        <span class="nt">&quot;cache_update_time&quot;</span><span class="p">:</span> <span class="mi">1522859318</span><span class="p">,</span> 
+        <span class="nt">&quot;cache_updated&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+        <span class="nt">&quot;changed&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+        <span class="nt">&quot;failed&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+        <span class="nt">&quot;invocation&quot;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="nt">&quot;module_args&quot;</span><span class="p">:</span> <span class="p">{</span>
+                <span class="nt">&quot;allow_unauthenticated&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+                <span class="nt">&quot;autoclean&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+                <span class="nt">&quot;autoremove&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+                <span class="nt">&quot;cache_valid_time&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> 
+                <span class="nt">&quot;deb&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                <span class="nt">&quot;default_release&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                <span class="nt">&quot;dpkg_options&quot;</span><span class="p">:</span> <span class="s2">&quot;force-confdef,force-confold&quot;</span><span class="p">,</span> 
+                <span class="nt">&quot;force&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+                <span class="nt">&quot;force_apt_get&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+                <span class="nt">&quot;install_recommends&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;tar&quot;</span><span class="p">,</span> 
+                <span class="nt">&quot;only_upgrade&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+                <span class="nt">&quot;package&quot;</span><span class="p">:</span> <span class="p">[</span>
+                    <span class="s2">&quot;tar&quot;</span>
+                <span class="p">],</span> 
+                <span class="nt">&quot;purge&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+                <span class="nt">&quot;state&quot;</span><span class="p">:</span> <span class="s2">&quot;present&quot;</span><span class="p">,</span> 
+                <span class="nt">&quot;update_cache&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                <span class="nt">&quot;upgrade&quot;</span><span class="p">:</span> <span class="kc">null</span>
+            <span class="p">}</span>
+        <span class="p">},</span> 
+        <span class="nt">&quot;item&quot;</span><span class="p">:</span> <span class="s2">&quot;tar&quot;</span>
+    <span class="p">},</span> 
+    <span class="p">{</span>
+        <span class="nt">&quot;_ansible_ignore_errors&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+        <span class="nt">&quot;_ansible_item_result&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span> 
+        <span class="nt">&quot;_ansible_no_log&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+        <span class="nt">&quot;_ansible_parsed&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span> 
+        <span class="nt">&quot;cache_update_time&quot;</span><span class="p">:</span> <span class="mi">1522859318</span><span class="p">,</span> 
+        <span class="nt">&quot;cache_updated&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+        <span class="nt">&quot;changed&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+        <span class="nt">&quot;failed&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+        <span class="nt">&quot;invocation&quot;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="nt">&quot;module_args&quot;</span><span class="p">:</span> <span class="p">{</span>
+                <span class="nt">&quot;allow_unauthenticated&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+                <span class="nt">&quot;autoclean&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+                <span class="nt">&quot;autoremove&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+                <span class="nt">&quot;cache_valid_time&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> 
+                <span class="nt">&quot;deb&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                <span class="nt">&quot;default_release&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                <span class="nt">&quot;dpkg_options&quot;</span><span class="p">:</span> <span class="s2">&quot;force-confdef,force-confold&quot;</span><span class="p">,</span> 
+                <span class="nt">&quot;force&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+                <span class="nt">&quot;force_apt_get&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+                <span class="nt">&quot;install_recommends&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;unzip&quot;</span><span class="p">,</span> 
+                <span class="nt">&quot;only_upgrade&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+                <span class="nt">&quot;package&quot;</span><span class="p">:</span> <span class="p">[</span>
+                    <span class="s2">&quot;unzip&quot;</span>
+                <span class="p">],</span> 
+                <span class="nt">&quot;purge&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> 
+                <span class="nt">&quot;state&quot;</span><span class="p">:</span> <span class="s2">&quot;present&quot;</span><span class="p">,</span> 
+                <span class="nt">&quot;update_cache&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span> 
+                <span class="nt">&quot;upgrade&quot;</span><span class="p">:</span> <span class="kc">null</span>
+            <span class="p">}</span>
+        <span class="p">},</span> 
+        <span class="nt">&quot;item&quot;</span><span class="p">:</span> <span class="s2">&quot;unzip&quot;</span>
+    <span class="p">}</span>
+<span class="p">]</span>
+</pre></div>
+
+            
+                </div>
+            </div>
+        
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    
+    <h2>Item</h2>
+            <div class="codehilite"><pre><span></span>apt-transport-https
+</pre></div>
+
+        
+
+        <h2>Cache_update_time</h2>
+                <div class="codehilite"><pre><span></span>1522859318
+</pre></div>
+
+            
+                </div>
+            </div>
+        
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    
+    <h2>Item</h2>
+            <div class="codehilite"><pre><span></span>lvm2
+</pre></div>
+
+        
+
+        <h2>Cache_update_time</h2>
+                <div class="codehilite"><pre><span></span>1522859318
+</pre></div>
+
+            
+                </div>
+            </div>
+        
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    
+    <h2>Item</h2>
+            <div class="codehilite"><pre><span></span>tar
+</pre></div>
+
+        
+
+        <h2>Cache_update_time</h2>
+                <div class="codehilite"><pre><span></span>1522859318
+</pre></div>
+
+            
+                </div>
+            </div>
+        
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    
+    <h2>Item</h2>
+            <div class="codehilite"><pre><span></span>unzip
+</pre></div>
+
+        
+
+        <h2>Cache_update_time</h2>
+                <div class="codehilite"><pre><span></span>1522859318
+</pre></div>
+
+            
+                </div>
+            </div>
+        
+    
+          
+        </div>
+    </div>
+</div>
+</body>
+</html>

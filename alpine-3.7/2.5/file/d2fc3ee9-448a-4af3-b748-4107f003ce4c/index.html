@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html class="layout-pf">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="ARA | Ansible Run Analysis records Ansible playbook runs seamlessly to make them easier to visualize, understand and troubleshoot">
+    <title>ARA | Ansible Run Analysis</title>
+    <script src="../../static/packaged/jquery/jquery.min.js"></script>
+    <script src="../../static/packaged/datatables/js/jquery.dataTables.min.js"></script>
+    <script src="../../static/packaged/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../../static/packaged/patternfly_bootstrap_treeview/js/bootstrap-treeview.min.js"></script>
+    <script src="../../static/packaged/patternfly/js/patternfly.min.js"></script>
+    <script src="../../static/js/ara.js"></script>
+    <link href="../../static/packaged/patternfly/css/patternfly.min.css" rel="stylesheet">
+    <link href="../../static/packaged/patternfly/css/patternfly-additions.min.css" rel="stylesheet">
+    <link href="../../static/packaged/patternfly_bootstrap_treeview/css/bootstrap-treeview.min.css" rel="stylesheet">
+    <link href="../../static/css/pygments.css" rel="stylesheet">
+    <link href="../../static/css/ara.css" rel="stylesheet">
+    <link rel="shortcut icon" href="../../static/images/favicon.ico">
+</head>
+<body>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12">
+          <h2>File: <strong>/home/travis/build/robertdebock/ansible-role-bootstrap/molecule/alpine-3.7/verify.yml</strong></h2>
+          <p>Last updated: 2018-04-04 16:15:24</p>
+          <p>Ansible version: <strong>2.5.0</strong></p>
+          <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><a href="#line-1"> 1</a>
+<a href="#line-2"> 2</a>
+<a href="#line-3"> 3</a>
+<a href="#line-4"> 4</a>
+<a href="#line-5"> 5</a>
+<a href="#line-6"> 6</a>
+<a href="#line-7"> 7</a>
+<a href="#line-8"> 8</a>
+<a href="#line-9"> 9</a>
+<a href="#line-10">10</a>
+<a href="#line-11">11</a>
+<a href="#line-12">12</a>
+<a href="#line-13">13</a>
+<a href="#line-14">14</a>
+<a href="#line-15">15</a>
+<a href="#line-16">16</a>
+<a href="#line-17">17</a>
+<a href="#line-18">18</a>
+<a href="#line-19">19</a>
+<a href="#line-20">20</a>
+<a href="#line-21">21</a>
+<a href="#line-22">22</a>
+<a href="#line-23">23</a>
+<a href="#line-24">24</a>
+<a href="#line-25">25</a>
+<a href="#line-26">26</a>
+<a href="#line-27">27</a>
+<a href="#line-28">28</a>
+<a href="#line-29">29</a>
+<a href="#line-30">30</a>
+<a href="#line-31">31</a>
+<a href="#line-32">32</a>
+<a href="#line-33">33</a>
+<a href="#line-34">34</a>
+<a href="#line-35">35</a>
+<a href="#line-36">36</a>
+<a href="#line-37">37</a>
+<a href="#line-38">38</a>
+<a href="#line-39">39</a>
+<a href="#line-40">40</a>
+<a href="#line-41">41</a>
+<a href="#line-42">42</a>
+<a href="#line-43">43</a>
+<a href="#line-44">44</a>
+<a href="#line-45">45</a>
+<a href="#line-46">46</a>
+<a href="#line-47">47</a>
+<a href="#line-48">48</a>
+<a href="#line-49">49</a>
+<a href="#line-50">50</a>
+<a href="#line-51">51</a>
+<a href="#line-52">52</a>
+<a href="#line-53">53</a>
+<a href="#line-54">54</a>
+<a href="#line-55">55</a>
+<a href="#line-56">56</a></pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span id="line-1"><a name="line-1"></a><span class="nn">---</span>
+</span><span id="line-2"><a name="line-2"></a><span class="c1"># This is an example playbook to execute goss tests.</span>
+</span><span id="line-3"><a name="line-3"></a><span class="c1"># Tests need distributed to the appropriate ansible host/groups</span>
+</span><span id="line-4"><a name="line-4"></a><span class="c1"># prior to execution by `goss validate`.</span>
+</span><span id="line-5"><a name="line-5"></a><span class="c1">#</span>
+</span><span id="line-6"><a name="line-6"></a><span class="c1"># The goss ansible module is installed with molecule.  The ANSIBLE_LIBRARY</span>
+</span><span id="line-7"><a name="line-7"></a><span class="c1"># path is updated appropriately on `molecule verify`.</span>
+</span><span id="line-8"><a name="line-8"></a>
+</span><span id="line-9"><a name="line-9"></a><span class="c1"># Details about ansible module:</span>
+</span><span id="line-10"><a name="line-10"></a><span class="c1">#  - https://github.com/indusbox/goss-ansible</span>
+</span><span id="line-11"><a name="line-11"></a>
+</span><span id="line-12"><a name="line-12"></a><span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">name</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">Verify</span>
+</span><span id="line-13"><a name="line-13"></a>  <span class="l l-Scalar l-Scalar-Plain">hosts</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">all</span>
+</span><span id="line-14"><a name="line-14"></a>  <span class="l l-Scalar l-Scalar-Plain">vars</span><span class="p p-Indicator">:</span>
+</span><span id="line-15"><a name="line-15"></a>    <span class="l l-Scalar l-Scalar-Plain">goss_version</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">v0.3.2</span>
+</span><span id="line-16"><a name="line-16"></a>    <span class="l l-Scalar l-Scalar-Plain">goss_arch</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">amd64</span>
+</span><span id="line-17"><a name="line-17"></a>    <span class="l l-Scalar l-Scalar-Plain">goss_dst</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">/usr/local/bin/goss</span>
+</span><span id="line-18"><a name="line-18"></a>    <span class="l l-Scalar l-Scalar-Plain">goss_sha256sum</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">2f6727375db2ea0f81bee36e2c5be78ab5ab8d5981f632f761b25e4003e190ec</span>
+</span><span id="line-19"><a name="line-19"></a>    <span class="l l-Scalar l-Scalar-Plain">goss_url</span><span class="p p-Indicator">:</span> <span class="s">&quot;https://github.com/aelsabbahy/goss/releases/download/{{</span><span class="nv"> </span><span class="s">goss_version</span><span class="nv"> </span><span class="s">}}/goss-linux-{{</span><span class="nv"> </span><span class="s">goss_arch</span><span class="nv"> </span><span class="s">}}&quot;</span>
+</span><span id="line-20"><a name="line-20"></a>    <span class="l l-Scalar l-Scalar-Plain">goss_test_directory</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">/tmp</span>
+</span><span id="line-21"><a name="line-21"></a>    <span class="l l-Scalar l-Scalar-Plain">goss_format</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">documentation</span>
+</span><span id="line-22"><a name="line-22"></a>  <span class="l l-Scalar l-Scalar-Plain">tasks</span><span class="p p-Indicator">:</span>
+</span><span id="line-23"><a name="line-23"></a>    <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">name</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">Download and install Goss</span>
+</span><span id="line-24"><a name="line-24"></a>      <span class="l l-Scalar l-Scalar-Plain">get_url</span><span class="p p-Indicator">:</span>
+</span><span id="line-25"><a name="line-25"></a>        <span class="l l-Scalar l-Scalar-Plain">url</span><span class="p p-Indicator">:</span> <span class="s">&quot;{{</span><span class="nv"> </span><span class="s">goss_url</span><span class="nv"> </span><span class="s">}}&quot;</span>
+</span><span id="line-26"><a name="line-26"></a>        <span class="l l-Scalar l-Scalar-Plain">dest</span><span class="p p-Indicator">:</span> <span class="s">&quot;{{</span><span class="nv"> </span><span class="s">goss_dst</span><span class="nv"> </span><span class="s">}}&quot;</span>
+</span><span id="line-27"><a name="line-27"></a>        <span class="l l-Scalar l-Scalar-Plain">sha256sum</span><span class="p p-Indicator">:</span> <span class="s">&quot;{{</span><span class="nv"> </span><span class="s">goss_sha256sum</span><span class="nv"> </span><span class="s">}}&quot;</span>
+</span><span id="line-28"><a name="line-28"></a>        <span class="l l-Scalar l-Scalar-Plain">mode</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">0755</span>
+</span><span id="line-29"><a name="line-29"></a>
+</span><span id="line-30"><a name="line-30"></a>    <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">name</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">Copy Goss tests to remote</span>
+</span><span id="line-31"><a name="line-31"></a>      <span class="l l-Scalar l-Scalar-Plain">copy</span><span class="p p-Indicator">:</span>
+</span><span id="line-32"><a name="line-32"></a>        <span class="l l-Scalar l-Scalar-Plain">src</span><span class="p p-Indicator">:</span> <span class="s">&quot;{{</span><span class="nv"> </span><span class="s">item</span><span class="nv"> </span><span class="s">}}&quot;</span>
+</span><span id="line-33"><a name="line-33"></a>        <span class="l l-Scalar l-Scalar-Plain">dest</span><span class="p p-Indicator">:</span> <span class="s">&quot;{{</span><span class="nv"> </span><span class="s">goss_test_directory</span><span class="nv"> </span><span class="s">}}/{{</span><span class="nv"> </span><span class="s">item</span><span class="nv"> </span><span class="s">|</span><span class="nv"> </span><span class="s">basename</span><span class="nv"> </span><span class="s">}}&quot;</span>
+</span><span id="line-34"><a name="line-34"></a>      <span class="l l-Scalar l-Scalar-Plain">with_fileglob</span><span class="p p-Indicator">:</span>
+</span><span id="line-35"><a name="line-35"></a>        <span class="p p-Indicator">-</span> <span class="s">&quot;{{</span><span class="nv"> </span><span class="s">playbook_dir</span><span class="nv"> </span><span class="s">}}/tests/test_*.yml&quot;</span>
+</span><span id="line-36"><a name="line-36"></a>
+</span><span id="line-37"><a name="line-37"></a>    <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">name</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">Register test files</span>
+</span><span id="line-38"><a name="line-38"></a>      <span class="l l-Scalar l-Scalar-Plain">shell</span><span class="p p-Indicator">:</span> <span class="s">&quot;ls</span><span class="nv"> </span><span class="s">{{</span><span class="nv"> </span><span class="s">goss_test_directory</span><span class="nv"> </span><span class="s">}}/test_*.yml&quot;</span>
+</span><span id="line-39"><a name="line-39"></a>      <span class="l l-Scalar l-Scalar-Plain">register</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">test_files</span>
+</span><span id="line-40"><a name="line-40"></a>
+</span><span id="line-41"><a name="line-41"></a>    <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">name</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">Execute Goss tests</span>
+</span><span id="line-42"><a name="line-42"></a>      <span class="l l-Scalar l-Scalar-Plain">command</span><span class="p p-Indicator">:</span> <span class="s">&quot;goss</span><span class="nv"> </span><span class="s">-g</span><span class="nv"> </span><span class="s">{{</span><span class="nv"> </span><span class="s">item</span><span class="nv"> </span><span class="s">}}</span><span class="nv"> </span><span class="s">validate</span><span class="nv"> </span><span class="s">--format</span><span class="nv"> </span><span class="s">{{</span><span class="nv"> </span><span class="s">goss_format</span><span class="nv"> </span><span class="s">}}&quot;</span>
+</span><span id="line-43"><a name="line-43"></a>      <span class="l l-Scalar l-Scalar-Plain">register</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">test_results</span>
+</span><span id="line-44"><a name="line-44"></a>      <span class="l l-Scalar l-Scalar-Plain">with_items</span><span class="p p-Indicator">:</span> <span class="s">&quot;{{</span><span class="nv"> </span><span class="s">test_files.stdout_lines</span><span class="nv"> </span><span class="s">}}&quot;</span>
+</span><span id="line-45"><a name="line-45"></a>      <span class="l l-Scalar l-Scalar-Plain">ignore_errors</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">True</span>
+</span><span id="line-46"><a name="line-46"></a>
+</span><span id="line-47"><a name="line-47"></a>    <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">name</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">Display details about the goss results</span>
+</span><span id="line-48"><a name="line-48"></a>      <span class="l l-Scalar l-Scalar-Plain">debug</span><span class="p p-Indicator">:</span>
+</span><span id="line-49"><a name="line-49"></a>        <span class="l l-Scalar l-Scalar-Plain">msg</span><span class="p p-Indicator">:</span> <span class="s">&quot;{{</span><span class="nv"> </span><span class="s">item.stdout_lines</span><span class="nv"> </span><span class="s">}}&quot;</span>
+</span><span id="line-50"><a name="line-50"></a>      <span class="l l-Scalar l-Scalar-Plain">with_items</span><span class="p p-Indicator">:</span> <span class="s">&quot;{{</span><span class="nv"> </span><span class="s">test_results.results</span><span class="nv"> </span><span class="s">}}&quot;</span>
+</span><span id="line-51"><a name="line-51"></a>
+</span><span id="line-52"><a name="line-52"></a>    <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">name</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">Fail when tests fail</span>
+</span><span id="line-53"><a name="line-53"></a>      <span class="l l-Scalar l-Scalar-Plain">fail</span><span class="p p-Indicator">:</span>
+</span><span id="line-54"><a name="line-54"></a>        <span class="l l-Scalar l-Scalar-Plain">msg</span><span class="p p-Indicator">:</span> <span class="s">&quot;Goss</span><span class="nv"> </span><span class="s">failed</span><span class="nv"> </span><span class="s">to</span><span class="nv"> </span><span class="s">validate&quot;</span>
+</span><span id="line-55"><a name="line-55"></a>      <span class="l l-Scalar l-Scalar-Plain">when</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">item.rc != 0</span>
+</span><span id="line-56"><a name="line-56"></a>      <span class="l l-Scalar l-Scalar-Plain">with_items</span><span class="p p-Indicator">:</span> <span class="s">&quot;{{</span><span class="nv"> </span><span class="s">test_results.results</span><span class="nv"> </span><span class="s">}}&quot;</span>
+</span></pre></div>
+</td></tr></table>
+        </div>
+    </div>
+</div>
+</body>
+</html>

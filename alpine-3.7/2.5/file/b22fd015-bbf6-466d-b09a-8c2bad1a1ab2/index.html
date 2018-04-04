@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html class="layout-pf">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="ARA | Ansible Run Analysis records Ansible playbook runs seamlessly to make them easier to visualize, understand and troubleshoot">
+    <title>ARA | Ansible Run Analysis</title>
+    <script src="../../static/packaged/jquery/jquery.min.js"></script>
+    <script src="../../static/packaged/datatables/js/jquery.dataTables.min.js"></script>
+    <script src="../../static/packaged/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../../static/packaged/patternfly_bootstrap_treeview/js/bootstrap-treeview.min.js"></script>
+    <script src="../../static/packaged/patternfly/js/patternfly.min.js"></script>
+    <script src="../../static/js/ara.js"></script>
+    <link href="../../static/packaged/patternfly/css/patternfly.min.css" rel="stylesheet">
+    <link href="../../static/packaged/patternfly/css/patternfly-additions.min.css" rel="stylesheet">
+    <link href="../../static/packaged/patternfly_bootstrap_treeview/css/bootstrap-treeview.min.css" rel="stylesheet">
+    <link href="../../static/css/pygments.css" rel="stylesheet">
+    <link href="../../static/css/ara.css" rel="stylesheet">
+    <link rel="shortcut icon" href="../../static/images/favicon.ico">
+</head>
+<body>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12">
+          <h2>File: <strong>/home/travis/build/robertdebock/ansible-role-bootstrap/molecule/alpine-3.7/destroy.yml</strong></h2>
+          <p>Last updated: 2018-04-04 16:14:31</p>
+          <p>Ansible version: <strong>2.5.0</strong></p>
+          <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><a href="#line-1"> 1</a>
+<a href="#line-2"> 2</a>
+<a href="#line-3"> 3</a>
+<a href="#line-4"> 4</a>
+<a href="#line-5"> 5</a>
+<a href="#line-6"> 6</a>
+<a href="#line-7"> 7</a>
+<a href="#line-8"> 8</a>
+<a href="#line-9"> 9</a>
+<a href="#line-10">10</a>
+<a href="#line-11">11</a>
+<a href="#line-12">12</a>
+<a href="#line-13">13</a>
+<a href="#line-14">14</a>
+<a href="#line-15">15</a>
+<a href="#line-16">16</a></pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span id="line-1"><a name="line-1"></a><span class="nn">---</span>
+</span><span id="line-2"><a name="line-2"></a><span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">name</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">Destroy</span>
+</span><span id="line-3"><a name="line-3"></a>  <span class="l l-Scalar l-Scalar-Plain">hosts</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">localhost</span>
+</span><span id="line-4"><a name="line-4"></a>  <span class="l l-Scalar l-Scalar-Plain">connection</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">local</span>
+</span><span id="line-5"><a name="line-5"></a>  <span class="l l-Scalar l-Scalar-Plain">gather_facts</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">False</span>
+</span><span id="line-6"><a name="line-6"></a>  <span class="l l-Scalar l-Scalar-Plain">no_log</span><span class="p p-Indicator">:</span> <span class="s">&quot;{{</span><span class="nv"> </span><span class="s">not</span><span class="nv"> </span><span class="s">lookup(&#39;env&#39;,</span><span class="nv"> </span><span class="s">&#39;MOLECULE_DEBUG&#39;)</span><span class="nv"> </span><span class="s">|</span><span class="nv"> </span><span class="s">bool</span><span class="nv"> </span><span class="s">}}&quot;</span>
+</span><span id="line-7"><a name="line-7"></a>  <span class="l l-Scalar l-Scalar-Plain">vars</span><span class="p p-Indicator">:</span>
+</span><span id="line-8"><a name="line-8"></a>    <span class="l l-Scalar l-Scalar-Plain">molecule_file</span><span class="p p-Indicator">:</span> <span class="s">&quot;{{</span><span class="nv"> </span><span class="s">lookup(&#39;env&#39;,</span><span class="nv"> </span><span class="s">&#39;MOLECULE_FILE&#39;)</span><span class="nv"> </span><span class="s">}}&quot;</span>
+</span><span id="line-9"><a name="line-9"></a>    <span class="l l-Scalar l-Scalar-Plain">molecule_yml</span><span class="p p-Indicator">:</span> <span class="s">&quot;{{</span><span class="nv"> </span><span class="s">lookup(&#39;file&#39;,</span><span class="nv"> </span><span class="s">molecule_file)</span><span class="nv"> </span><span class="s">|</span><span class="nv"> </span><span class="s">molecule_from_yaml</span><span class="nv"> </span><span class="s">}}&quot;</span>
+</span><span id="line-10"><a name="line-10"></a>  <span class="l l-Scalar l-Scalar-Plain">tasks</span><span class="p p-Indicator">:</span>
+</span><span id="line-11"><a name="line-11"></a>    <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">name</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">Destroy molecule instance(s)</span>
+</span><span id="line-12"><a name="line-12"></a>      <span class="l l-Scalar l-Scalar-Plain">docker_container</span><span class="p p-Indicator">:</span>
+</span><span id="line-13"><a name="line-13"></a>        <span class="l l-Scalar l-Scalar-Plain">name</span><span class="p p-Indicator">:</span> <span class="s">&quot;{{</span><span class="nv"> </span><span class="s">item.name</span><span class="nv"> </span><span class="s">}}&quot;</span>
+</span><span id="line-14"><a name="line-14"></a>        <span class="l l-Scalar l-Scalar-Plain">state</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">absent</span>
+</span><span id="line-15"><a name="line-15"></a>        <span class="l l-Scalar l-Scalar-Plain">force_kill</span><span class="p p-Indicator">:</span> <span class="s">&quot;{{</span><span class="nv"> </span><span class="s">item.force_kill</span><span class="nv"> </span><span class="s">|</span><span class="nv"> </span><span class="s">default(True)</span><span class="nv"> </span><span class="s">}}&quot;</span>
+</span><span id="line-16"><a name="line-16"></a>      <span class="l l-Scalar l-Scalar-Plain">with_items</span><span class="p p-Indicator">:</span> <span class="s">&quot;{{</span><span class="nv"> </span><span class="s">molecule_yml.platforms</span><span class="nv"> </span><span class="s">}}&quot;</span>
+</span></pre></div>
+</td></tr></table>
+        </div>
+    </div>
+</div>
+</body>
+</html>

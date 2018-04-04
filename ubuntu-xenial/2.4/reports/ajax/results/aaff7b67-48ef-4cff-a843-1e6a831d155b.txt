@@ -1,0 +1,140 @@
+{
+  "data": [
+    [
+      "\n<div class=\"pull-left\">ansible-role-bootstrap : register apk</div>\n", 
+      "bootstrap-ubuntu-xenial", 
+      "<a href=\"#\" data-toggle=\"modal\" data-target=\"#file_modal\" data-load=\"571d68a6-0b3a-4ecd-be9f-5b7745ba6649/#line-3\">raw</a>\n", 
+      "0:00:00", 
+      "0:00:00", 
+      "<a href=\"#\" data-toggle=\"modal\" data-target=\"#task_result_modal\" data-load=\"a7fd523f-99ce-470c-a068-4626e9a3f21b/\"><span class=\"ok label\">OK</span></a>"
+    ], 
+    [
+      "\n<div class=\"pull-left\">ansible-role-bootstrap : register apt_get</div>\n", 
+      "bootstrap-ubuntu-xenial", 
+      "<a href=\"#\" data-toggle=\"modal\" data-target=\"#file_modal\" data-load=\"571d68a6-0b3a-4ecd-be9f-5b7745ba6649/#line-11\">raw</a>\n", 
+      "0:00:00", 
+      "0:00:00", 
+      "<a href=\"#\" data-toggle=\"modal\" data-target=\"#task_result_modal\" data-load=\"6c1c51a6-9b58-420e-9927-2e6c6413001c/\"><span class=\"ok label\">OK</span></a>"
+    ], 
+    [
+      "\n<div class=\"pull-left\">ansible-role-bootstrap : register dnf</div>\n", 
+      "bootstrap-ubuntu-xenial", 
+      "<a href=\"#\" data-toggle=\"modal\" data-target=\"#file_modal\" data-load=\"571d68a6-0b3a-4ecd-be9f-5b7745ba6649/#line-19\">raw</a>\n", 
+      "0:00:00", 
+      "0:00:00", 
+      "<a href=\"#\" data-toggle=\"modal\" data-target=\"#task_result_modal\" data-load=\"4558fc0b-7da5-4442-8ee3-0eae47a95470/\"><span class=\"ok label\">OK</span></a>"
+    ], 
+    [
+      "\n<div class=\"pull-left\">ansible-role-bootstrap : register pacman</div>\n", 
+      "bootstrap-ubuntu-xenial", 
+      "<a href=\"#\" data-toggle=\"modal\" data-target=\"#file_modal\" data-load=\"571d68a6-0b3a-4ecd-be9f-5b7745ba6649/#line-27\">raw</a>\n", 
+      "0:00:00", 
+      "0:00:00", 
+      "<a href=\"#\" data-toggle=\"modal\" data-target=\"#task_result_modal\" data-load=\"5438dc48-4872-4c1a-a09d-1e52e69d2fa7/\"><span class=\"ok label\">OK</span></a>"
+    ], 
+    [
+      "\n<div class=\"pull-left\">ansible-role-bootstrap : register yum</div>\n", 
+      "bootstrap-ubuntu-xenial", 
+      "<a href=\"#\" data-toggle=\"modal\" data-target=\"#file_modal\" data-load=\"571d68a6-0b3a-4ecd-be9f-5b7745ba6649/#line-35\">raw</a>\n", 
+      "0:00:00", 
+      "0:00:00", 
+      "<a href=\"#\" data-toggle=\"modal\" data-target=\"#task_result_modal\" data-load=\"37124fbd-dddb-47f8-a4d6-6ce6a7053d54/\"><span class=\"ok label\">OK</span></a>"
+    ], 
+    [
+      "\n<div class=\"pull-left\">ansible-role-bootstrap : register zypper</div>\n", 
+      "bootstrap-ubuntu-xenial", 
+      "<a href=\"#\" data-toggle=\"modal\" data-target=\"#file_modal\" data-load=\"571d68a6-0b3a-4ecd-be9f-5b7745ba6649/#line-43\">raw</a>\n", 
+      "0:00:00", 
+      "0:00:00", 
+      "<a href=\"#\" data-toggle=\"modal\" data-target=\"#task_result_modal\" data-load=\"f127e718-f69f-481f-9eeb-cd600c8815ac/\"><span class=\"ok label\">OK</span></a>"
+    ], 
+    [
+      "\n<div class=\"pull-left\">ansible-role-bootstrap : install software with apk</div>\n", 
+      "bootstrap-ubuntu-xenial", 
+      "<a href=\"#\" data-toggle=\"modal\" data-target=\"#file_modal\" data-load=\"571d68a6-0b3a-4ecd-be9f-5b7745ba6649/#line-51\">raw</a>\n", 
+      "0:00:01", 
+      "0:00:00", 
+      "<a href=\"#\" data-toggle=\"modal\" data-target=\"#task_result_modal\" data-load=\"2ad20e08-7d4f-4414-b613-8282a7a56dc0/\"><span class=\"skipped label\">SKIPPED</span></a>"
+    ], 
+    [
+      "\n<div class=\"pull-left\">ansible-role-bootstrap : install software with apt-get</div>\n", 
+      "bootstrap-ubuntu-xenial", 
+      "<a href=\"#\" data-toggle=\"modal\" data-target=\"#file_modal\" data-load=\"571d68a6-0b3a-4ecd-be9f-5b7745ba6649/#line-60\">raw</a>\n", 
+      "0:00:01", 
+      "0:00:00", 
+      "<a href=\"#\" data-toggle=\"modal\" data-target=\"#task_result_modal\" data-load=\"e3ae76e0-011f-40d5-8dea-80a4faae5eea/\"><span class=\"skipped label\">SKIPPED</span></a>"
+    ], 
+    [
+      "\n<div class=\"pull-left\">ansible-role-bootstrap : install software with dnf</div>\n", 
+      "bootstrap-ubuntu-xenial", 
+      "<a href=\"#\" data-toggle=\"modal\" data-target=\"#file_modal\" data-load=\"571d68a6-0b3a-4ecd-be9f-5b7745ba6649/#line-69\">raw</a>\n", 
+      "0:00:01", 
+      "0:00:00", 
+      "<a href=\"#\" data-toggle=\"modal\" data-target=\"#task_result_modal\" data-load=\"fc3576d3-7d65-4f6d-a263-f5df3f98a78d/\"><span class=\"skipped label\">SKIPPED</span></a>"
+    ], 
+    [
+      "\n<div class=\"pull-left\">ansible-role-bootstrap : install software with pacman</div>\n", 
+      "bootstrap-ubuntu-xenial", 
+      "<a href=\"#\" data-toggle=\"modal\" data-target=\"#file_modal\" data-load=\"571d68a6-0b3a-4ecd-be9f-5b7745ba6649/#line-78\">raw</a>\n", 
+      "0:00:01", 
+      "0:00:00", 
+      "<a href=\"#\" data-toggle=\"modal\" data-target=\"#task_result_modal\" data-load=\"c59f991a-ea1d-4708-a145-c5874ad5584d/\"><span class=\"skipped label\">SKIPPED</span></a>"
+    ], 
+    [
+      "\n<div class=\"pull-left\">ansible-role-bootstrap : install software with yum</div>\n", 
+      "bootstrap-ubuntu-xenial", 
+      "<a href=\"#\" data-toggle=\"modal\" data-target=\"#file_modal\" data-load=\"571d68a6-0b3a-4ecd-be9f-5b7745ba6649/#line-87\">raw</a>\n", 
+      "0:00:01", 
+      "0:00:00", 
+      "<a href=\"#\" data-toggle=\"modal\" data-target=\"#task_result_modal\" data-load=\"40964b6d-12e8-4248-a5c1-dbc638ce7d0f/\"><span class=\"skipped label\">SKIPPED</span></a>"
+    ], 
+    [
+      "\n<div class=\"pull-left\">ansible-role-bootstrap : install software with zypper</div>\n", 
+      "bootstrap-ubuntu-xenial", 
+      "<a href=\"#\" data-toggle=\"modal\" data-target=\"#file_modal\" data-load=\"571d68a6-0b3a-4ecd-be9f-5b7745ba6649/#line-96\">raw</a>\n", 
+      "0:00:01", 
+      "0:00:00", 
+      "<a href=\"#\" data-toggle=\"modal\" data-target=\"#task_result_modal\" data-load=\"c44294ce-b8f7-47a1-a1a3-24a6eff2d2e6/\"><span class=\"skipped label\">SKIPPED</span></a>"
+    ], 
+    [
+      "\n<div class=\"pull-left\">ansible-role-bootstrap : gather facts</div>\n", 
+      "bootstrap-ubuntu-xenial", 
+      "<a href=\"#\" data-toggle=\"modal\" data-target=\"#file_modal\" data-load=\"571d68a6-0b3a-4ecd-be9f-5b7745ba6649/#line-106\">setup</a>\n", 
+      "0:00:01", 
+      "0:00:01", 
+      "<a href=\"#\" data-toggle=\"modal\" data-target=\"#task_result_modal\" data-load=\"4a3595af-8c27-42b2-9775-bce301dc3de3/\"><span class=\"ok label\">OK</span></a>"
+    ], 
+    [
+      "\n<div class=\"pull-left\">ansible-role-bootstrap : install software to support stable modules</div>\n", 
+      "bootstrap-ubuntu-xenial", 
+      "<a href=\"#\" data-toggle=\"modal\" data-target=\"#file_modal\" data-load=\"571d68a6-0b3a-4ecd-be9f-5b7745ba6649/#line-111\">package</a>\n", 
+      "0:00:02", 
+      "0:00:04", 
+      "<a href=\"#\" data-toggle=\"modal\" data-target=\"#task_result_modal\" data-load=\"ebd7a40e-8be1-423c-9d86-2b80d993d9b8/\"><span class=\"ok label\">OK</span></a>"
+    ], 
+    [
+      "\n<div class=\"pull-left\">ansible-role-bootstrap : install software to support preview modules</div>\n", 
+      "bootstrap-ubuntu-xenial", 
+      "<a href=\"#\" data-toggle=\"modal\" data-target=\"#file_modal\" data-load=\"571d68a6-0b3a-4ecd-be9f-5b7745ba6649/#line-119\">package</a>\n", 
+      "0:00:07", 
+      "0:00:06", 
+      "<a href=\"#\" data-toggle=\"modal\" data-target=\"#task_result_modal\" data-load=\"711634fd-6da1-44e8-9e68-da9f51622d65/\"><span class=\"ok label\">OK</span></a>"
+    ], 
+    [
+      "\n<div class=\"pull-left\">ansible-role-bootstrap : gather facts after installation of packages</div>\n", 
+      "bootstrap-ubuntu-xenial", 
+      "<a href=\"#\" data-toggle=\"modal\" data-target=\"#file_modal\" data-load=\"571d68a6-0b3a-4ecd-be9f-5b7745ba6649/#line-129\">setup</a>\n", 
+      "0:00:13", 
+      "0:00:00", 
+      "<a href=\"#\" data-toggle=\"modal\" data-target=\"#task_result_modal\" data-load=\"361b8a2e-8169-4d4d-9ad6-020f43b09124/\"><span class=\"ok label\">OK</span></a>"
+    ], 
+    [
+      "\n<div class=\"pull-left\">test connection</div>\n", 
+      "bootstrap-ubuntu-xenial", 
+      "<a href=\"#\" data-toggle=\"modal\" data-target=\"#file_modal\" data-load=\"cc3db7ec-23ae-4439-879b-27c27512dc36/#line-11\">ping</a>\n", 
+      "0:00:14", 
+      "0:00:00", 
+      "<a href=\"#\" data-toggle=\"modal\" data-target=\"#task_result_modal\" data-load=\"e9d7f8e6-0fef-40a3-b8d5-83ffc78ed321/\"><span class=\"ok label\">OK</span></a>"
+    ]
+  ]
+}

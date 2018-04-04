@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html class="layout-pf">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="ARA | Ansible Run Analysis records Ansible playbook runs seamlessly to make them easier to visualize, understand and troubleshoot">
+    <title>ARA | Ansible Run Analysis</title>
+    <script src="../../static/packaged/jquery/jquery.min.js"></script>
+    <script src="../../static/packaged/datatables/js/jquery.dataTables.min.js"></script>
+    <script src="../../static/packaged/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../../static/packaged/patternfly_bootstrap_treeview/js/bootstrap-treeview.min.js"></script>
+    <script src="../../static/packaged/patternfly/js/patternfly.min.js"></script>
+    <script src="../../static/js/ara.js"></script>
+    <link href="../../static/packaged/patternfly/css/patternfly.min.css" rel="stylesheet">
+    <link href="../../static/packaged/patternfly/css/patternfly-additions.min.css" rel="stylesheet">
+    <link href="../../static/packaged/patternfly_bootstrap_treeview/css/bootstrap-treeview.min.css" rel="stylesheet">
+    <link href="../../static/css/pygments.css" rel="stylesheet">
+    <link href="../../static/css/ara.css" rel="stylesheet">
+    <link rel="shortcut icon" href="../../static/images/favicon.ico">
+</head>
+
+
+
+<body>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12 results">
+          <h2>Task: <strong>ansible-role-bootstrap : install software with apt-get</strong></h2>
+          <h2>Host: <strong>bootstrap-ubuntu-xenial</strong></h2>
+          <p>Time: <strong>2018-04-04 17:08:25</strong></p>
+          <p>Ansible version: <strong>2.4.3.0</strong></p>
+          
+          
+              
+    
+
+        <h2>Stderr</h2>
+                <div class="codehilite"><pre><span></span>debconf: delaying package configuration, since apt-utils is not installed
+</pre></div>
+
+            <h2>Stdout</h2>
+                <div class="codehilite"><pre><span></span>Get:1 http://archive.ubuntu.com/ubuntu xenial InRelease [247 kB]
+Get:2 http://archive.ubuntu.com/ubuntu xenial-updates InRelease [102 kB]
+Get:3 http://archive.ubuntu.com/ubuntu xenial-backports InRelease [102 kB]
+Get:4 http://archive.ubuntu.com/ubuntu xenial/universe Sources [9802 kB]
+Get:5 http://archive.ubuntu.com/ubuntu xenial/main amd64 Packages [1558 kB]
+Get:6 http://archive.ubuntu.com/ubuntu xenial/restricted amd64 Packages [14.1 kB]
+Get:7 http://archive.ubuntu.com/ubuntu xenial/universe amd64 Packages [9827 kB]
+Get:8 http://archive.ubuntu.com/ubuntu xenial/multiverse amd64 Packages [176 kB]
+Get:9 http://archive.ubuntu.com/ubuntu xenial-updates/universe Sources [250 kB]
+Get:10 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 Packages [970 kB]
+Get:11 http://archive.ubuntu.com/ubuntu xenial-updates/restricted amd64 Packages [13.1 kB]
+Get:12 http://archive.ubuntu.com/ubuntu xenial-updates/universe amd64 Packages [795 kB]
+Get:13 http://archive.ubuntu.com/ubuntu xenial-updates/multiverse amd64 Packages [18.5 kB]
+Get:14 http://archive.ubuntu.com/ubuntu xenial-backports/main amd64 Packages [5153 B]
+Get:15 http://archive.ubuntu.com/ubuntu xenial-backports/universe amd64 Packages [7734 B]
+Get:16 http://security.ubuntu.com/ubuntu xenial-security InRelease [102 kB]
+Get:17 http://security.ubuntu.com/ubuntu xenial-security/universe Sources [77.2 kB]
+Get:18 http://security.ubuntu.com/ubuntu xenial-security/main amd64 Packages [601 kB]
+Get:19 http://security.ubuntu.com/ubuntu xenial-security/restricted amd64 Packages [12.7 kB]
+Get:20 http://security.ubuntu.com/ubuntu xenial-security/universe amd64 Packages [430 kB]
+Get:21 http://security.ubuntu.com/ubuntu xenial-security/multiverse amd64 Packages [3492 B]
+Fetched 25.1 MB in 2s (9247 kB/s)
+Reading package lists...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following additional packages will be installed:
+  file libexpat1 libffi6 libmagic1 libpython-stdlib libpython2.7-minimal
+  libpython2.7-stdlib libsqlite3-0 libssl1.0.0 mime-support python-minimal
+  python2.7 python2.7-minimal
+Suggested packages:
+  python-doc python-tk python2.7-doc binutils binfmt-support
+The following NEW packages will be installed:
+  file libexpat1 libffi6 libmagic1 libpython-stdlib libpython2.7-minimal
+  libpython2.7-stdlib libsqlite3-0 libssl1.0.0 mime-support python
+  python-minimal python2.7 python2.7-minimal sudo
+0 upgraded, 15 newly installed, 0 to remove and 9 not upgraded.
+Need to get 6102 kB of archives.
+After this operation, 27.4 MB of additional disk space will be used.
+Get:1 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libpython2.7-minimal amd64 2.7.12-1ubuntu0~16.04.3 [340 kB]
+Get:2 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 python2.7-minimal amd64 2.7.12-1ubuntu0~16.04.3 [1261 kB]
+Get:3 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 python-minimal amd64 2.7.12-1~16.04 [28.1 kB]
+Get:4 http://archive.ubuntu.com/ubuntu xenial/main amd64 mime-support all 3.59ubuntu1 [31.0 kB]
+Get:5 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libexpat1 amd64 2.1.0-7ubuntu0.16.04.3 [71.2 kB]
+Get:6 http://archive.ubuntu.com/ubuntu xenial/main amd64 libffi6 amd64 3.2.1-4 [17.8 kB]
+Get:7 http://archive.ubuntu.com/ubuntu xenial/main amd64 libsqlite3-0 amd64 3.11.0-1ubuntu1 [396 kB]
+Get:8 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libssl1.0.0 amd64 1.0.2g-1ubuntu4.11 [1082 kB]
+Get:9 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libpython2.7-stdlib amd64 2.7.12-1ubuntu0~16.04.3 [1880 kB]
+Get:10 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 python2.7 amd64 2.7.12-1ubuntu0~16.04.3 [224 kB]
+Get:11 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libpython-stdlib amd64 2.7.12-1~16.04 [7768 B]
+Get:12 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 python amd64 2.7.12-1~16.04 [137 kB]
+Get:13 http://archive.ubuntu.com/ubuntu xenial/main amd64 libmagic1 amd64 1:5.25-2ubuntu1 [216 kB]
+Get:14 http://archive.ubuntu.com/ubuntu xenial/main amd64 file amd64 1:5.25-2ubuntu1 [21.2 kB]
+Get:15 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 sudo amd64 1.8.16-0ubuntu1.5 [390 kB]
+Fetched 6102 kB in 0s (13.7 MB/s)
+Selecting previously unselected package libpython2.7-minimal:amd64.
+(Reading database ... 
+(Reading database ... 5%
+(Reading database ... 10%
+(Reading database ... 15%
+(Reading database ... 20%
+(Reading database ... 25%
+(Reading database ... 30%
+(Reading database ... 35%
+(Reading database ... 40%
+(Reading database ... 45%
+(Reading database ... 50%
+(Reading database ... 55%
+(Reading database ... 60%
+(Reading database ... 65%
+(Reading database ... 70%
+(Reading database ... 75%
+(Reading database ... 80%
+(Reading database ... 85%
+(Reading database ... 90%
+(Reading database ... 95%
+(Reading database ... 100%
+(Reading database ... 4768 files and directories currently installed.)
+Preparing to unpack .../libpython2.7-minimal_2.7.12-1ubuntu0~16.04.3_amd64.deb ...
+Unpacking libpython2.7-minimal:amd64 (2.7.12-1ubuntu0~16.04.3) ...
+Selecting previously unselected package python2.7-minimal.
+Preparing to unpack .../python2.7-minimal_2.7.12-1ubuntu0~16.04.3_amd64.deb ...
+Unpacking python2.7-minimal (2.7.12-1ubuntu0~16.04.3) ...
+Selecting previously unselected package python-minimal.
+Preparing to unpack .../python-minimal_2.7.12-1~16.04_amd64.deb ...
+Unpacking python-minimal (2.7.12-1~16.04) ...
+Selecting previously unselected package mime-support.
+Preparing to unpack .../mime-support_3.59ubuntu1_all.deb ...
+Unpacking mime-support (3.59ubuntu1) ...
+Selecting previously unselected package libexpat1:amd64.
+Preparing to unpack .../libexpat1_2.1.0-7ubuntu0.16.04.3_amd64.deb ...
+Unpacking libexpat1:amd64 (2.1.0-7ubuntu0.16.04.3) ...
+Selecting previously unselected package libffi6:amd64.
+Preparing to unpack .../libffi6_3.2.1-4_amd64.deb ...
+Unpacking libffi6:amd64 (3.2.1-4) ...
+Selecting previously unselected package libsqlite3-0:amd64.
+Preparing to unpack .../libsqlite3-0_3.11.0-1ubuntu1_amd64.deb ...
+Unpacking libsqlite3-0:amd64 (3.11.0-1ubuntu1) ...
+Selecting previously unselected package libssl1.0.0:amd64.
+Preparing to unpack .../libssl1.0.0_1.0.2g-1ubuntu4.11_amd64.deb ...
+Unpacking libssl1.0.0:amd64 (1.0.2g-1ubuntu4.11) ...
+Selecting previously unselected package libpython2.7-stdlib:amd64.
+Preparing to unpack .../libpython2.7-stdlib_2.7.12-1ubuntu0~16.04.3_amd64.deb ...
+Unpacking libpython2.7-stdlib:amd64 (2.7.12-1ubuntu0~16.04.3) ...
+Selecting previously unselected package python2.7.
+Preparing to unpack .../python2.7_2.7.12-1ubuntu0~16.04.3_amd64.deb ...
+Unpacking python2.7 (2.7.12-1ubuntu0~16.04.3) ...
+Selecting previously unselected package libpython-stdlib:amd64.
+Preparing to unpack .../libpython-stdlib_2.7.12-1~16.04_amd64.deb ...
+Unpacking libpython-stdlib:amd64 (2.7.12-1~16.04) ...
+Processing triggers for libc-bin (2.23-0ubuntu10) ...
+Setting up libpython2.7-minimal:amd64 (2.7.12-1ubuntu0~16.04.3) ...
+Setting up python2.7-minimal (2.7.12-1ubuntu0~16.04.3) ...
+Linking and byte-compiling packages for runtime python2.7...
+Setting up python-minimal (2.7.12-1~16.04) ...
+Selecting previously unselected package python.
+(Reading database ... 
+(Reading database ... 5%
+(Reading database ... 10%
+(Reading database ... 15%
+(Reading database ... 20%
+(Reading database ... 25%
+(Reading database ... 30%
+(Reading database ... 35%
+(Reading database ... 40%
+(Reading database ... 45%
+(Reading database ... 50%
+(Reading database ... 55%
+(Reading database ... 60%
+(Reading database ... 65%
+(Reading database ... 70%
+(Reading database ... 75%
+(Reading database ... 80%
+(Reading database ... 85%
+(Reading database ... 90%
+(Reading database ... 95%
+(Reading database ... 100%
+(Reading database ... 5579 files and directories currently installed.)
+Preparing to unpack .../python_2.7.12-1~16.04_amd64.deb ...
+Unpacking python (2.7.12-1~16.04) ...
+Selecting previously unselected package libmagic1:amd64.
+Preparing to unpack .../libmagic1_1%3a5.25-2ubuntu1_amd64.deb ...
+Unpacking libmagic1:amd64 (1:5.25-2ubuntu1) ...
+Selecting previously unselected package file.
+Preparing to unpack .../file_1%3a5.25-2ubuntu1_amd64.deb ...
+Unpacking file (1:5.25-2ubuntu1) ...
+Selecting previously unselected package sudo.
+Preparing to unpack .../sudo_1.8.16-0ubuntu1.5_amd64.deb ...
+Unpacking sudo (1.8.16-0ubuntu1.5) ...
+Processing triggers for libc-bin (2.23-0ubuntu10) ...
+Setting up mime-support (3.59ubuntu1) ...
+Setting up libexpat1:amd64 (2.1.0-7ubuntu0.16.04.3) ...
+Setting up libffi6:amd64 (3.2.1-4) ...
+Setting up libsqlite3-0:amd64 (3.11.0-1ubuntu1) ...
+Setting up libssl1.0.0:amd64 (1.0.2g-1ubuntu4.11) ...
+debconf: unable to initialize frontend: Dialog
+debconf: (TERM is not set, so the dialog frontend is not usable.)
+debconf: falling back to frontend: Readline
+debconf: unable to initialize frontend: Readline
+debconf: (Can&#39;t locate Term/ReadLine.pm in @INC (you may need to install the Term::ReadLine module) (@INC contains: /etc/perl /usr/local/lib/x86_64-linux-gnu/perl/5.22.1 /usr/local/share/perl/5.22.1 /usr/lib/x86_64-linux-gnu/perl5/5.22 /usr/share/perl5 /usr/lib/x86_64-linux-gnu/perl/5.22 /usr/share/perl/5.22 /usr/local/lib/site_perl /usr/lib/x86_64-linux-gnu/perl-base .) at /usr/share/perl5/Debconf/FrontEnd/Readline.pm line 7.)
+debconf: falling back to frontend: Teletype
+Setting up libpython2.7-stdlib:amd64 (2.7.12-1ubuntu0~16.04.3) ...
+Setting up python2.7 (2.7.12-1ubuntu0~16.04.3) ...
+Setting up libpython-stdlib:amd64 (2.7.12-1~16.04) ...
+Setting up python (2.7.12-1~16.04) ...
+Setting up libmagic1:amd64 (1:5.25-2ubuntu1) ...
+Setting up file (1:5.25-2ubuntu1) ...
+Setting up sudo (1.8.16-0ubuntu1.5) ...
+Processing triggers for libc-bin (2.23-0ubuntu10) ...
+</pre></div>
+
+            
+          
+        </div>
+    </div>
+</div>
+</body>
+</html>
